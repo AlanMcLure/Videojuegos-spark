@@ -1,0 +1,2236 @@
+2025-05-29 19:05:31,927 — INFO — === INICIO DEL PIPELINE ETL VIDEOJUEGOS ===
+2025-05-29 19:05:31,929 — INFO — Tiempo de inicio: 2025-05-29 17:05:31.927461
+2025-05-29 19:05:31,929 — INFO — Inicializando base de datos y tabla de logs...
+2025-05-29 19:05:32,155 — ERROR — Error crítico en el pipeline: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "user"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-29 19:05:32,155 — ERROR — Pipeline terminado con errores
+2025-05-29 19:05:32,156 — INFO — Cerrando conexiones y limpiando recursos...
+2025-05-29 19:05:32,701 — INFO — Pipeline finalizado
+2025-05-29 19:07:48,051 — INFO — === INICIO DEL PIPELINE ETL VIDEOJUEGOS ===
+2025-05-29 19:07:48,052 — INFO — Tiempo de inicio: 2025-05-29 17:07:48.051380
+2025-05-29 19:07:48,052 — INFO — Inicializando base de datos y tabla de logs...
+2025-05-29 19:07:48,191 — ERROR — Error crítico en el pipeline: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "user"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-29 19:07:48,191 — ERROR — Pipeline terminado con errores
+2025-05-29 19:07:48,191 — INFO — Cerrando conexiones y limpiando recursos...
+2025-05-29 19:07:48,384 — INFO — Pipeline finalizado
+2025-05-29 19:12:55,337 — INFO — === INICIO DEL PIPELINE ETL VIDEOJUEGOS ===
+2025-05-29 19:12:55,338 — INFO — Tiempo de inicio: 2025-05-29 17:12:55.337429
+2025-05-29 19:12:55,340 — INFO — Inicializando base de datos y tabla de logs...
+2025-05-29 19:12:55,589 — ERROR — Error crítico en el pipeline: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "user"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-29 19:12:55,590 — ERROR — Pipeline terminado con errores
+2025-05-29 19:12:55,591 — INFO — Cerrando conexiones y limpiando recursos...
+2025-05-29 19:12:56,111 — INFO — Pipeline finalizado
+2025-05-29 19:20:26,280 — INFO — === INICIO DEL PIPELINE ETL VIDEOJUEGOS ===
+2025-05-29 19:20:26,280 — INFO — Tiempo de inicio: 2025-05-29 17:20:26.280587
+2025-05-29 19:20:26,282 — INFO — Inicializando base de datos y tabla de logs...
+2025-05-29 19:20:26,512 — INFO — Base de datos inicializada correctamente
+2025-05-29 19:20:26,513 — INFO — === FASE 1: EXTRACCIÓN DE DATOS ===
+2025-05-29 19:20:26,513 — INFO — Extrayendo datos de Twitch API...
+2025-05-29 19:20:26,513 — INFO — Twitch: iniciando extracción
+2025-05-29 19:20:29,872 — INFO — Twitch: obtenidos 200 juegos top
+2025-05-29 19:20:31,846 — INFO — Twitch: 50 streams para juego Just Chatting
+2025-05-29 19:20:33,254 — INFO — Twitch: 50 streams para juego Dota 2
+2025-05-29 19:20:33,937 — INFO — Twitch: 50 streams para juego League of Legends
+2025-05-29 19:20:35,701 — INFO — Twitch: 50 streams para juego Grand Theft Auto V
+2025-05-29 19:20:36,932 — INFO — Twitch: 50 streams para juego IRL
+2025-05-29 19:20:37,552 — INFO — Twitch: 50 streams para juego Call of Duty: Warzone
+2025-05-29 19:20:38,323 — INFO — Twitch: 50 streams para juego Fortnite
+2025-05-29 19:20:39,241 — INFO — Twitch: 50 streams para juego VALORANT
+2025-05-29 19:20:39,838 — INFO — Twitch: 50 streams para juego Counter-Strike
+2025-05-29 19:20:40,397 — INFO — Twitch: 50 streams para juego REMATCH
+2025-05-29 19:20:41,498 — INFO — Twitch: 50 streams para juego Minecraft
+2025-05-29 19:20:42,869 — INFO — Twitch: 50 streams para juego World of Warcraft
+2025-05-29 19:20:43,486 — INFO — Twitch: 50 streams para juego EA Sports FC 25
+2025-05-29 19:20:45,066 — INFO — Twitch: 50 streams para juego Dead by Daylight
+2025-05-29 19:20:46,265 — INFO — Twitch: 50 streams para juego Teamfight Tactics
+2025-05-29 19:20:47,491 — INFO — Twitch: 50 streams para juego Crystal of Atlan
+2025-05-29 19:20:48,707 — INFO — Twitch: 50 streams para juego Apex Legends
+2025-05-29 19:20:50,463 — INFO — Twitch: 50 streams para juego Overwatch 2
+2025-05-29 19:20:51,102 — INFO — Twitch: 50 streams para juego Marvel Rivals
+2025-05-29 19:20:52,104 — INFO — Twitch: 4 streams para juego Dread Hunger
+2025-05-29 19:20:53,094 — INFO — Twitch: 50 streams para juego F1 25
+2025-05-29 19:20:53,664 — INFO — Twitch: 50 streams para juego Elden Ring: Nightreign
+2025-05-29 19:20:55,041 — INFO — Twitch: 50 streams para juego Clair Obscur: Expedition 33
+2025-05-29 19:20:55,606 — INFO — Twitch: 50 streams para juego Sports
+2025-05-29 19:20:56,185 — INFO — Twitch: 50 streams para juego Rust
+2025-05-29 19:20:57,461 — INFO — Twitch: 50 streams para juego Hearthstone
+2025-05-29 19:20:58,627 — INFO — Twitch: 50 streams para juego Art
+2025-05-29 19:20:59,625 — INFO — Twitch: 39 streams para juego Virtual Casino
+2025-05-29 19:21:00,808 — INFO — Twitch: 50 streams para juego ELDEN RING
+2025-05-29 19:21:01,962 — INFO — Twitch: 50 streams para juego Slots
+2025-05-29 19:21:03,104 — INFO — Twitch: 50 streams para juego Age of Empires II
+2025-05-29 19:21:04,137 — INFO — Twitch: 12 streams para juego Guilty as Sock!
+2025-05-29 19:21:05,290 — INFO — Twitch: 50 streams para juego World of Tanks
+2025-05-29 19:21:05,906 — INFO — Twitch: 50 streams para juego Escape from Tarkov
+2025-05-29 19:21:06,484 — INFO — Twitch: 50 streams para juego DJs
+2025-05-29 19:21:08,312 — INFO — Twitch: 50 streams para juego Chess
+2025-05-29 19:21:09,103 — INFO — Twitch: 50 streams para juego Tainted Grail: The Fall of Avalon
+2025-05-29 19:21:09,901 — INFO — Twitch: 50 streams para juego Tom Clancy's Rainbow Six Siege
+2025-05-29 19:21:10,541 — INFO — Twitch: 50 streams para juego Tom Clancy's The Division 2
+2025-05-29 19:21:11,439 — INFO — Twitch: 15 streams para juego Legacy: Steel & Sorcery
+2025-05-29 19:21:12,114 — INFO — Twitch: 50 streams para juego I'm Only Sleeping
+2025-05-29 19:21:13,141 — INFO — Twitch: 9 streams para juego Deadly Days: Roadtrip
+2025-05-29 19:21:13,802 — INFO — Twitch: 50 streams para juego Talk Shows & Podcasts
+2025-05-29 19:21:15,020 — INFO — Twitch: 50 streams para juego MapleStory Worlds
+2025-05-29 19:21:16,259 — INFO — Twitch: 50 streams para juego Pokémon Trading Card Game Pocket
+2025-05-29 19:21:16,889 — INFO — Twitch: 50 streams para juego PUBG: BATTLEGROUNDS
+2025-05-29 19:21:17,857 — INFO — Twitch: 7 streams para juego The Dark Pictures Anthology: Man of Medan
+2025-05-29 19:21:18,569 — INFO — Twitch: 50 streams para juego ASMR
+2025-05-29 19:21:19,169 — INFO — Twitch: 50 streams para juego GeoGuessr
+2025-05-29 19:21:19,792 — INFO — Twitch: 50 streams para juego Valheim
+2025-05-29 19:21:20,969 — INFO — Twitch: 50 streams para juego World of Warships
+2025-05-29 19:21:22,242 — INFO — Twitch: 22 streams para juego 9 Kings
+2025-05-29 19:21:22,895 — INFO — Twitch: 50 streams para juego HELLDIVERS 2
+2025-05-29 19:21:24,299 — INFO — Twitch: 50 streams para juego Old School RuneScape
+2025-05-29 19:21:25,451 — INFO — Twitch: 50 streams para juego Arena Breakout: Infinite
+2025-05-29 19:21:26,061 — INFO — Twitch: 50 streams para juego FINAL FANTASY XIV ONLINE
+2025-05-29 19:21:27,350 — INFO — Twitch: 50 streams para juego Enshrouded
+2025-05-29 19:21:27,951 — INFO — Twitch: 50 streams para juego Tibia
+2025-05-29 19:21:29,257 — INFO — Twitch: 50 streams para juego Street Fighter 6
+2025-05-29 19:21:30,685 — INFO — Twitch: 50 streams para juego Rocket League
+2025-05-29 19:21:31,315 — INFO — Twitch: 50 streams para juego DayZ
+2025-05-29 19:21:31,943 — INFO — Twitch: 50 streams para juego Black Desert
+2025-05-29 19:21:33,228 — INFO — Twitch: 50 streams para juego DARK SOULS II: Scholar of the First Sin
+2025-05-29 19:21:34,488 — INFO — Twitch: 50 streams para juego Sea of Thieves
+2025-05-29 19:21:35,424 — INFO — Twitch: 50 streams para juego Red Dead Redemption 2
+2025-05-29 19:21:36,016 — INFO — Twitch: 50 streams para juego Poker
+2025-05-29 19:21:37,293 — INFO — Twitch: 50 streams para juego Retro
+2025-05-29 19:21:38,481 — INFO — Twitch: 50 streams para juego Albion Online
+2025-05-29 19:21:39,544 — INFO — Twitch: 49 streams para juego Star Citizen
+2025-05-29 19:21:40,149 — INFO — Twitch: 50 streams para juego Gray Zone Warfare
+2025-05-29 19:21:40,898 — INFO — Twitch: 50 streams para juego Pokémon Community Game
+2025-05-29 19:21:42,295 — INFO — Twitch: 50 streams para juego Music
+2025-05-29 19:21:43,415 — INFO — Twitch: 18 streams para juego Destiny: Rising
+2025-05-29 19:21:44,623 — INFO — Twitch: 50 streams para juego FANTASY LIFE i: The Girl Who Steals Time
+2025-05-29 19:21:45,928 — INFO — Twitch: 50 streams para juego Call of Duty: Black Ops 6
+2025-05-29 19:21:46,684 — INFO — Twitch: 50 streams para juego 7 Days to Die
+2025-05-29 19:21:47,929 — INFO — Twitch: 50 streams para juego Games + Demos
+2025-05-29 19:21:48,595 — INFO — Twitch: 50 streams para juego RoadCraft
+2025-05-29 19:21:49,343 — INFO — Twitch: 50 streams para juego Animals, Aquariums, and Zoos
+2025-05-29 19:21:49,995 — INFO — Twitch: 50 streams para juego Always On
+2025-05-29 19:21:50,767 — INFO — Twitch: 50 streams para juego Ragnarok Online
+2025-05-29 19:21:52,076 — INFO — Twitch: 50 streams para juego Software and Game Development
+2025-05-29 19:21:53,630 — INFO — Twitch: 50 streams para juego Marbles on Stream
+2025-05-29 19:21:55,199 — INFO — Twitch: 50 streams para juego Heroes of Might and Magic III: The Restoration of Erathia
+2025-05-29 19:21:55,940 — INFO — Twitch: 50 streams para juego R.E.P.O.
+2025-05-29 19:21:56,529 — INFO — Twitch: 50 streams para juego Trackmania
+2025-05-29 19:21:59,059 — INFO — Twitch: 50 streams para juego ROBLOX
+2025-05-29 19:22:00,610 — INFO — Twitch: 50 streams para juego Delta Force
+2025-05-29 19:22:01,757 — INFO — Twitch: 35 streams para juego The Legend of Zelda: Tears of the Kingdom
+2025-05-29 19:22:02,775 — INFO — Twitch: 2 streams para juego Metroid Dread
+2025-05-29 19:22:04,398 — INFO — Twitch: 47 streams para juego Monster Train 2
+2025-05-29 19:22:05,167 — INFO — Twitch: 50 streams para juego Path of Exile
+2025-05-29 19:22:05,910 — INFO — Twitch: 50 streams para juego Magic: The Gathering
+2025-05-29 19:22:06,692 — INFO — Twitch: 50 streams para juego Heroes of the Storm
+2025-05-29 19:22:07,564 — INFO — Twitch: 50 streams para juego Pokémon FireRed/LeafGreen
+2025-05-29 19:22:09,211 — INFO — Twitch: 50 streams para juego Lost Ark
+2025-05-29 19:22:10,011 — INFO — Twitch: 50 streams para juego Crypto
+2025-05-29 19:22:10,569 — INFO — Twitch: 50 streams para juego Mobile Legends: Bang Bang
+2025-05-29 19:22:11,654 — INFO — Twitch: 25 streams para juego The Bazaar
+2025-05-29 19:22:12,962 — INFO — Twitch: 50 streams para juego Destiny 2
+2025-05-29 19:22:13,860 — INFO — Twitch: 7 streams para juego Paranormal Cleanup
+2025-05-29 19:22:14,630 — INFO — Twitch: 50 streams para juego The Sims 4
+2025-05-29 19:22:15,682 — INFO — Twitch: 8 streams para juego Kerbal Space Program
+2025-05-29 19:22:17,235 — INFO — Twitch: 50 streams para juego Genshin Impact
+2025-05-29 19:22:17,798 — INFO — Twitch: 50 streams para juego Diablo IV
+2025-05-29 19:22:19,204 — INFO — Twitch: 50 streams para juego Path of Exile 2
+2025-05-29 19:22:20,323 — INFO — Twitch: 50 streams para juego NBA 2K25
+2025-05-29 19:22:21,569 — INFO — Twitch: 50 streams para juego Hunt: Showdown 1896
+2025-05-29 19:22:22,867 — INFO — Twitch: 50 streams para juego Pokémon Scarlet/Violet
+2025-05-29 19:22:23,993 — INFO — Twitch: 50 streams para juego Streamer University
+2025-05-29 19:22:25,186 — INFO — Twitch: 50 streams para juego Splitgate 2
+2025-05-29 19:22:26,226 — INFO — Twitch: 30 streams para juego Tinkerlands
+2025-05-29 19:22:26,945 — INFO — Twitch: 50 streams para juego War Thunder
+2025-05-29 19:22:27,872 — INFO — Twitch: 50 streams para juego Game of Thrones: Kingsroad
+2025-05-29 19:22:28,527 — INFO — Twitch: 50 streams para juego Co-working & Studying
+2025-05-29 19:22:29,641 — INFO — Twitch: 6 streams para juego Casino Simulator
+2025-05-29 19:22:30,906 — INFO — Twitch: 50 streams para juego Star Wars Battlefront II
+2025-05-29 19:22:32,276 — INFO — Twitch: 50 streams para juego VRChat
+2025-05-29 19:22:33,203 — INFO — Twitch: 4 streams para juego Forsaken Frontiers
+2025-05-29 19:22:34,657 — INFO — Twitch: 3 streams para juego Thief Simulator 2
+2025-05-29 19:22:35,662 — INFO — Twitch: 41 streams para juego StarCraft II
+2025-05-29 19:22:36,344 — INFO — Twitch: 50 streams para juego Special Events
+2025-05-29 19:22:37,361 — INFO — Twitch: 45 streams para juego Warcraft III
+2025-05-29 19:22:38,652 — INFO — Twitch: 50 streams para juego Call of Duty
+2025-05-29 19:22:40,303 — INFO — Twitch: 50 streams para juego Wuthering Waves
+2025-05-29 19:22:40,898 — INFO — Twitch: 50 streams para juego Among Us
+2025-05-29 19:22:41,596 — INFO — Twitch: 50 streams para juego Phasmophobia
+2025-05-29 19:22:42,359 — INFO — Twitch: 50 streams para juego Blue Prince
+2025-05-29 19:22:43,625 — INFO — Twitch: 50 streams para juego Zenless Zone Zero
+2025-05-29 19:22:44,795 — INFO — Twitch: 7 streams para juego Pokémon X/Y
+2025-05-29 19:22:45,782 — INFO — Twitch: 34 streams para juego Rise Online
+2025-05-29 19:22:47,299 — INFO — Twitch: 50 streams para juego Clash Royale
+2025-05-29 19:22:48,361 — INFO — Twitch: 42 streams para juego Star Wars: The Old Republic
+2025-05-29 19:22:49,277 — INFO — Twitch: 7 streams para juego Pieces of Me
+2025-05-29 19:22:50,474 — INFO — Twitch: 50 streams para juego DARK SOULS III
+2025-05-29 19:22:51,189 — INFO — Twitch: 50 streams para juego The Elder Scrolls Online
+2025-05-29 19:22:51,750 — INFO — Twitch: 50 streams para juego Dark and Darker
+2025-05-29 19:22:52,518 — INFO — Twitch: 50 streams para juego Deadlock
+2025-05-29 19:22:53,468 — INFO — Twitch: 15 streams para juego Black Russia
+2025-05-29 19:22:54,378 — INFO — Twitch: 3 streams para juego KLETKA
+2025-05-29 19:22:55,145 — INFO — Twitch: 50 streams para juego The Elder Scrolls IV: Oblivion Remastered
+2025-05-29 19:22:56,062 — INFO — Twitch: 50 streams para juego Stardew Valley
+2025-05-29 19:22:57,639 — INFO — Twitch: 50 streams para juego Detroit: Become Human
+2025-05-29 19:22:58,870 — INFO — Twitch: 50 streams para juego Yu-Gi-Oh! Master Duel
+2025-05-29 19:23:00,022 — INFO — Twitch: 50 streams para juego DOOM: The Dark Ages
+2025-05-29 19:23:01,076 — INFO — Twitch: 44 streams para juego Diablo II
+2025-05-29 19:23:02,035 — INFO — Twitch: 3 streams para juego Rennsport
+2025-05-29 19:23:02,974 — INFO — Twitch: 3 streams para juego Resident Evil: Revelations
+2025-05-29 19:23:03,966 — INFO — Twitch: 41 streams para juego Cuphead
+2025-05-29 19:23:04,605 — INFO — Twitch: 50 streams para juego Baldur's Gate 3
+2025-05-29 19:23:05,637 — INFO — Twitch: 3 streams para juego Dawn of Discovery
+2025-05-29 19:23:06,268 — INFO — Twitch: 50 streams para juego iRacing
+2025-05-29 19:23:07,299 — INFO — Twitch: 29 streams para juego Goose Goose Duck
+2025-05-29 19:23:08,358 — INFO — Twitch: 12 streams para juego Car Dealer Simulator
+2025-05-29 19:23:10,944 — INFO — Twitch: 50 streams para juego Warframe
+2025-05-29 19:23:11,562 — INFO — Twitch: 50 streams para juego PUBG Mobile
+2025-05-29 19:23:12,824 — INFO — Twitch: 8 streams para juego MiSide
+2025-05-29 19:23:14,008 — INFO — Twitch: 42 streams para juego Off The Grid
+2025-05-29 19:23:15,642 — INFO — Twitch: 50 streams para juego Brawl Stars
+2025-05-29 19:23:16,589 — INFO — Twitch: 12 streams para juego Half Sword
+2025-05-29 19:23:17,146 — INFO — Twitch: 50 streams para juego Monster Hunter Wilds
+2025-05-29 19:23:18,338 — INFO — Twitch: 50 streams para juego Once Human
+2025-05-29 19:23:19,467 — INFO — Twitch: 50 streams para juego TEKKEN 8
+2025-05-29 19:23:21,034 — INFO — Twitch: 49 streams para juego God of War
+2025-05-29 19:23:22,355 — INFO — Twitch: 48 streams para juego Death Stranding: Director's Cut
+2025-05-29 19:23:23,417 — INFO — Twitch: 22 streams para juego Slay the Spire
+2025-05-29 19:23:24,831 — INFO — Twitch: 50 streams para juego MLB The Show 25
+2025-05-29 19:23:26,028 — INFO — Twitch: 50 streams para juego Farming Simulator 25
+2025-05-29 19:23:27,194 — INFO — Twitch: 50 streams para juego Mir Tankov
+2025-05-29 19:23:27,865 — INFO — Twitch: 50 streams para juego Honkai: Star Rail
+2025-05-29 19:23:28,787 — INFO — Twitch: 41 streams para juego EVE Online
+2025-05-29 19:23:29,406 — INFO — Twitch: 50 streams para juego Throne and Liberty
+2025-05-29 19:23:30,108 — INFO — Twitch: 50 streams para juego Pokémon Emerald Version
+2025-05-29 19:23:30,870 — INFO — Twitch: 50 streams para juego Terraria
+2025-05-29 19:23:31,900 — INFO — Twitch: 28 streams para juego Age of Empires IV
+2025-05-29 19:23:33,125 — INFO — Twitch: 9 streams para juego Shakes and Fidget
+2025-05-29 19:23:34,093 — INFO — Twitch: 31 streams para juego MapleStory
+2025-05-29 19:23:35,589 — INFO — Twitch: 50 streams para juego SMITE 2
+2025-05-29 19:23:36,858 — INFO — Twitch: 50 streams para juego League of Legends: Wild Rift
+2025-05-29 19:23:37,567 — INFO — Twitch: 50 streams para juego Russian Fishing 4
+2025-05-29 19:23:38,911 — INFO — Twitch: 50 streams para juego The Last of Us Part II: Remastered
+2025-05-29 19:23:39,961 — INFO — Twitch: 31 streams para juego Tournament Poker
+2025-05-29 19:23:40,838 — INFO — Twitch: 50 streams para juego MU Online
+2025-05-29 19:23:42,031 — INFO — Twitch: 50 streams para juego Madden NFL 25
+2025-05-29 19:23:42,629 — INFO — Twitch: 50 streams para juego Factorio
+2025-05-29 19:23:43,637 — INFO — Twitch: 15 streams para juego Marvel Snap
+2025-05-29 19:23:44,598 — INFO — Twitch: 1 streams para juego Phantasy Star Online
+2025-05-29 19:23:45,728 — INFO — Twitch: 30 streams para juego Pools, Hot Tubs, and Beaches
+2025-05-29 19:23:47,291 — INFO — Twitch: 50 streams para juego ARK: Survival Ascended
+2025-05-29 19:23:48,207 — INFO — Twitch: 20 streams para juego Summoners War: Sky Arena
+2025-05-29 19:23:49,403 — INFO — Twitch: 50 streams para juego Project Zomboid
+2025-05-29 19:23:50,658 — INFO — Twitch: 50 streams para juego The Last of Us
+2025-05-29 19:23:51,599 — INFO — Twitch: 39 streams para juego Anno 1800
+2025-05-29 19:23:52,645 — INFO — Twitch: 3 streams para juego Ghost Frequency
+2025-05-29 19:23:53,738 — INFO — Twitch: 47 streams para juego Quarantine Zone: The Last Check
+2025-05-29 19:23:54,761 — INFO — Twitch: 45 streams para juego Super Mario 64
+2025-05-29 19:23:57,119 — INFO — Twitch: 50 streams para juego THE FINALS
+2025-05-29 19:23:57,796 — INFO — Twitch: 50 streams para juego Dark Souls: Remastered
+2025-05-29 19:23:58,395 — INFO — Twitch: 50 streams para juego RimWorld
+2025-05-29 19:23:59,435 — INFO — Twitch: 6 streams para juego Danganronpa 2: Goodbye Despair
+2025-05-29 19:23:59,435 — INFO — Twitch: total registros preparados 8698
+2025-05-29 19:24:00,322 — INFO — Twitch: RDD creado
+2025-05-29 19:24:00,330 — INFO — Extracción de Twitch completada
+2025-05-29 19:24:00,331 — INFO — Extrayendo datos de Pokémon Showdown API...
+2025-05-29 19:24:00,333 — INFO — Showdown: iniciando extracción de ladders y perfiles
+2025-05-29 19:24:00,812 — ERROR — Error en fase de extracción: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/formats-data.json
+2025-05-29 19:24:00,816 — ERROR — Error crítico en el pipeline: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/formats-data.json
+2025-05-29 19:24:00,818 — ERROR — Pipeline terminado con errores
+2025-05-29 19:24:00,818 — INFO — Cerrando conexiones y limpiando recursos...
+2025-05-29 19:24:01,418 — INFO — Pipeline finalizado
+2025-05-29 20:08:44,699 — INFO — === INICIO DEL PIPELINE ETL VIDEOJUEGOS ===
+2025-05-29 20:08:44,701 — INFO — Tiempo de inicio: 2025-05-29 18:08:44.699498
+2025-05-29 20:08:44,701 — INFO — Inicializando base de datos y tabla de logs...
+2025-05-29 20:08:44,977 — INFO — Base de datos inicializada correctamente
+2025-05-29 20:08:44,977 — INFO — === FASE 1: EXTRACCIÓN DE DATOS ===
+2025-05-29 20:08:44,977 — INFO — Extrayendo datos de Twitch API...
+2025-05-29 20:08:44,977 — INFO — Twitch: iniciando extracción
+2025-05-29 20:08:47,669 — INFO — Twitch: obtenidos 200 juegos top
+2025-05-29 20:08:48,925 — INFO — Twitch: 50 streams para juego Just Chatting
+2025-05-29 20:08:49,760 — INFO — Twitch: 50 streams para juego Dota 2
+2025-05-29 20:08:50,415 — INFO — Twitch: 50 streams para juego League of Legends
+2025-05-29 20:08:51,747 — INFO — Twitch: 50 streams para juego Grand Theft Auto V
+2025-05-29 20:08:53,238 — INFO — Twitch: 50 streams para juego IRL
+2025-05-29 20:08:54,611 — INFO — Twitch: 50 streams para juego Call of Duty: Warzone
+2025-05-29 20:08:55,991 — INFO — Twitch: 50 streams para juego Fortnite
+2025-05-29 20:08:57,519 — INFO — Twitch: 50 streams para juego Counter-Strike
+2025-05-29 20:08:58,868 — INFO — Twitch: 50 streams para juego VALORANT
+2025-05-29 20:09:00,214 — INFO — Twitch: 50 streams para juego Minecraft
+2025-05-29 20:09:00,907 — INFO — Twitch: 50 streams para juego REMATCH
+2025-05-29 20:09:01,573 — INFO — Twitch: 50 streams para juego World of Warcraft
+2025-05-29 20:09:03,177 — INFO — Twitch: 50 streams para juego EA Sports FC 25
+2025-05-29 20:09:03,896 — INFO — Twitch: 50 streams para juego Dead by Daylight
+2025-05-29 20:09:04,493 — INFO — Twitch: 50 streams para juego Teamfight Tactics
+2025-05-29 20:09:06,828 — INFO — Twitch: 50 streams para juego Apex Legends
+2025-05-29 20:09:08,186 — INFO — Twitch: 50 streams para juego Crystal of Atlan
+2025-05-29 20:09:08,910 — INFO — Twitch: 50 streams para juego ELDEN RING
+2025-05-29 20:09:09,545 — INFO — Twitch: 50 streams para juego Marvel Rivals
+2025-05-29 20:09:10,587 — INFO — Twitch: 13 streams para juego Contraband Police
+2025-05-29 20:09:11,344 — INFO — Twitch: 50 streams para juego Overwatch 2
+2025-05-29 20:09:12,672 — INFO — Twitch: 50 streams para juego Chess
+2025-05-29 20:09:13,416 — INFO — Twitch: 50 streams para juego Clair Obscur: Expedition 33
+2025-05-29 20:09:14,721 — INFO — Twitch: 50 streams para juego Elden Ring: Nightreign
+2025-05-29 20:09:15,747 — INFO — Twitch: 5 streams para juego Dread Hunger
+2025-05-29 20:09:16,524 — INFO — Twitch: 50 streams para juego Hearthstone
+2025-05-29 20:09:17,946 — INFO — Twitch: 50 streams para juego Art
+2025-05-29 20:09:19,004 — INFO — Twitch: 20 streams para juego Guilty as Sock!
+2025-05-29 20:09:20,459 — INFO — Twitch: 50 streams para juego Rust
+2025-05-29 20:09:21,192 — INFO — Twitch: 50 streams para juego Escape from Tarkov
+2025-05-29 20:09:23,700 — INFO — Twitch: 50 streams para juego Tainted Grail: The Fall of Avalon
+2025-05-29 20:09:27,734 — INFO — Twitch: 50 streams para juego Slots
+2025-05-29 20:09:29,581 — INFO — Twitch: 50 streams para juego World of Tanks
+2025-05-29 20:09:30,709 — INFO — Twitch: 50 streams para juego Age of Empires II
+2025-05-29 20:09:31,885 — INFO — Twitch: 50 streams para juego DJs
+2025-05-29 20:09:32,993 — INFO — Twitch: 50 streams para juego Tom Clancy's Rainbow Six Siege
+2025-05-29 20:09:34,220 — INFO — Twitch: 50 streams para juego Tom Clancy's The Division 2
+2025-05-29 20:09:35,342 — INFO — Twitch: 50 streams para juego PUBG: BATTLEGROUNDS
+2025-05-29 20:09:36,532 — INFO — Twitch: 50 streams para juego I'm Only Sleeping
+2025-05-29 20:09:37,456 — INFO — Twitch: 10 streams para juego Deadly Days: Roadtrip
+2025-05-29 20:09:38,769 — INFO — Twitch: 9 streams para juego The Dark Pictures Anthology: Man of Medan
+2025-05-29 20:09:39,908 — INFO — Twitch: 50 streams para juego FINAL FANTASY XIV ONLINE
+2025-05-29 20:09:41,126 — INFO — Twitch: 50 streams para juego Talk Shows & Podcasts
+2025-05-29 20:09:42,467 — INFO — Twitch: 50 streams para juego F1 25
+2025-05-29 20:09:44,083 — INFO — Twitch: 50 streams para juego Valheim
+2025-05-29 20:09:45,431 — INFO — Twitch: 50 streams para juego World of Warships
+2025-05-29 20:09:47,308 — INFO — Twitch: 50 streams para juego Gray Zone Warfare
+2025-05-29 20:09:48,098 — INFO — Twitch: 50 streams para juego Red Dead Redemption 2
+2025-05-29 20:09:49,400 — INFO — Twitch: 50 streams para juego Call of Duty: Black Ops 6
+2025-05-29 20:09:49,971 — INFO — Twitch: 50 streams para juego Pokémon Trading Card Game Pocket
+2025-05-29 20:09:51,556 — INFO — Twitch: 50 streams para juego MapleStory Worlds
+2025-05-29 20:09:52,952 — INFO — Twitch: 50 streams para juego Old School RuneScape
+2025-05-29 20:09:54,688 — INFO — Twitch: 50 streams para juego Arena Breakout: Infinite
+2025-05-29 20:09:57,283 — INFO — Twitch: 50 streams para juego Music
+2025-05-29 20:09:58,579 — INFO — Twitch: 50 streams para juego ASMR
+2025-05-29 20:09:59,773 — INFO — Twitch: 50 streams para juego Tibia
+2025-05-29 20:10:01,140 — INFO — Twitch: 50 streams para juego DayZ
+2025-05-29 20:10:01,767 — INFO — Twitch: 50 streams para juego Enshrouded
+2025-05-29 20:10:03,102 — INFO — Twitch: 50 streams para juego Poker
+2025-05-29 20:10:04,197 — INFO — Twitch: 31 streams para juego 9 Kings
+2025-05-29 20:10:05,484 — INFO — Twitch: 50 streams para juego Sea of Thieves
+2025-05-29 20:10:06,809 — INFO — Twitch: 50 streams para juego Star Citizen
+2025-05-29 20:10:08,055 — INFO — Twitch: 50 streams para juego Rocket League
+2025-05-29 20:10:09,256 — INFO — Twitch: 50 streams para juego Games + Demos
+2025-05-29 20:10:09,905 — INFO — Twitch: 50 streams para juego Black Desert
+2025-05-29 20:10:11,081 — INFO — Twitch: 50 streams para juego HELLDIVERS 2
+2025-05-29 20:10:12,169 — INFO — Twitch: 35 streams para juego Virtual Casino
+2025-05-29 20:10:12,774 — INFO — Twitch: 50 streams para juego Albion Online
+2025-05-29 20:10:13,510 — INFO — Twitch: 50 streams para juego Pokémon Community Game
+2025-05-29 20:10:14,599 — INFO — Twitch: 18 streams para juego Destiny: Rising
+2025-05-29 20:10:15,321 — INFO — Twitch: 50 streams para juego R.E.P.O.
+2025-05-29 20:10:16,556 — INFO — Twitch: 50 streams para juego Retro
+2025-05-29 20:10:17,966 — INFO — Twitch: 50 streams para juego Ragnarok Online
+2025-05-29 20:10:18,647 — INFO — Twitch: 50 streams para juego RoadCraft
+2025-05-29 20:10:19,914 — INFO — Twitch: 50 streams para juego FANTASY LIFE i: The Girl Who Steals Time
+2025-05-29 20:10:21,125 — INFO — Twitch: 50 streams para juego Heroes of Might and Magic III: The Restoration of Erathia
+2025-05-29 20:10:21,696 — INFO — Twitch: 50 streams para juego Animals, Aquariums, and Zoos
+2025-05-29 20:10:22,366 — INFO — Twitch: 50 streams para juego Always On
+2025-05-29 20:10:23,805 — INFO — Twitch: 50 streams para juego ROBLOX
+2025-05-29 20:10:25,272 — INFO — Twitch: 50 streams para juego DARK SOULS III
+2025-05-29 20:10:26,512 — INFO — Twitch: 50 streams para juego Marbles on Stream
+2025-05-29 20:10:27,158 — INFO — Twitch: 50 streams para juego Monster Train 2
+2025-05-29 20:10:28,347 — INFO — Twitch: 50 streams para juego Among Us
+2025-05-29 20:10:29,263 — INFO — Twitch: 5 streams para juego Forsaken Frontiers
+2025-05-29 20:10:30,165 — INFO — Twitch: 14 streams para juego LOCKDOWN Protocol
+2025-05-29 20:10:31,335 — INFO — Twitch: 50 streams para juego Magic: The Gathering
+2025-05-29 20:10:32,421 — INFO — Twitch: 32 streams para juego The Legend of Zelda: Tears of the Kingdom
+2025-05-29 20:10:33,901 — INFO — Twitch: 50 streams para juego Crypto
+2025-05-29 20:10:35,428 — INFO — Twitch: 50 streams para juego Genshin Impact
+2025-05-29 20:10:36,893 — INFO — Twitch: 50 streams para juego Clash Royale
+2025-05-29 20:10:38,234 — INFO — Twitch: 50 streams para juego Hunt: Showdown 1896
+2025-05-29 20:10:39,321 — INFO — Twitch: 25 streams para juego The Bazaar
+2025-05-29 20:10:40,801 — INFO — Twitch: 50 streams para juego Heroes of the Storm
+2025-05-29 20:10:42,473 — INFO — Twitch: 50 streams para juego Destiny 2
+2025-05-29 20:10:44,172 — INFO — Twitch: 50 streams para juego Pokémon FireRed/LeafGreen
+2025-05-29 20:10:45,368 — INFO — Twitch: 50 streams para juego Mobile Legends: Bang Bang
+2025-05-29 20:10:46,697 — INFO — Twitch: 50 streams para juego Sports
+2025-05-29 20:10:47,467 — INFO — Twitch: 50 streams para juego Lost Ark
+2025-05-29 20:10:48,239 — INFO — Twitch: 50 streams para juego Path of Exile
+2025-05-29 20:10:48,922 — INFO — Twitch: 50 streams para juego Call of Duty
+2025-05-29 20:10:50,432 — INFO — Twitch: 50 streams para juego Street Fighter 6
+2025-05-29 20:10:51,442 — INFO — Twitch: 50 streams para juego Diablo IV
+2025-05-29 20:10:52,800 — INFO — Twitch: 50 streams para juego Delta Force
+2025-05-29 20:10:54,480 — INFO — Twitch: 50 streams para juego The Sims 4
+2025-05-29 20:10:55,189 — INFO — Twitch: 50 streams para juego NBA 2K25
+2025-05-29 20:10:55,877 — INFO — Twitch: 50 streams para juego Trackmania
+2025-05-29 20:10:57,411 — INFO — Twitch: 50 streams para juego Splitgate 2
+2025-05-29 20:10:58,519 — INFO — Twitch: 45 streams para juego StarCraft II
+2025-05-29 20:10:59,832 — INFO — Twitch: 50 streams para juego Streamer University
+2025-05-29 20:11:00,414 — INFO — Twitch: 50 streams para juego Warcraft III
+2025-05-29 20:11:02,090 — INFO — Twitch: 50 streams para juego Co-working & Studying
+2025-05-29 20:11:03,327 — INFO — Twitch: 50 streams para juego Game of Thrones: Kingsroad
+2025-05-29 20:11:04,764 — INFO — Twitch: 50 streams para juego War Thunder
+2025-05-29 20:11:06,085 — INFO — Twitch: 8 streams para juego Kerbal Space Program
+2025-05-29 20:11:07,120 — INFO — Twitch: 50 streams para juego Dark and Darker
+2025-05-29 20:11:07,797 — INFO — Twitch: 50 streams para juego Baldur's Gate 3
+2025-05-29 20:11:12,639 — INFO — Twitch: 50 streams para juego Pokémon Scarlet/Violet
+2025-05-29 20:11:13,818 — INFO — Twitch: 40 streams para juego Politics
+2025-05-29 20:11:16,182 — INFO — Twitch: 50 streams para juego Wuthering Waves
+2025-05-29 20:11:17,871 — INFO — Twitch: 50 streams para juego Deadlock
+2025-05-29 20:11:19,338 — INFO — Twitch: 5 streams para juego Thief Simulator 2
+2025-05-29 20:11:20,510 — INFO — Twitch: 9 streams para juego Shakes and Fidget
+2025-05-29 20:11:22,126 — INFO — Twitch: 50 streams para juego GeoGuessr
+2025-05-29 20:11:22,976 — INFO — Twitch: 50 streams para juego Software and Game Development
+2025-05-29 20:11:23,747 — INFO — Twitch: 50 streams para juego Special Events
+2025-05-29 20:11:25,078 — INFO — Twitch: 46 streams para juego Diablo II
+2025-05-29 20:11:26,334 — INFO — Twitch: 50 streams para juego DOOM: The Dark Ages
+2025-05-29 20:11:27,305 — INFO — Twitch: 37 streams para juego Rise Online
+2025-05-29 20:11:28,484 — INFO — Twitch: 50 streams para juego Zenless Zone Zero
+2025-05-29 20:11:29,439 — INFO — Twitch: 9 streams para juego Pokémon X/Y
+2025-05-29 20:11:30,344 — INFO — Twitch: 15 streams para juego Half Sword
+2025-05-29 20:11:31,874 — INFO — Twitch: 50 streams para juego The Last of Us Part II: Remastered
+2025-05-29 20:11:33,103 — INFO — Twitch: 50 streams para juego Stardew Valley
+2025-05-29 20:11:34,319 — INFO — Twitch: 50 streams para juego VRChat
+2025-05-29 20:11:35,733 — INFO — Twitch: 50 streams para juego Blue Prince
+2025-05-29 20:11:36,998 — INFO — Twitch: 10 streams para juego Pieces of Me
+2025-05-29 20:11:37,674 — INFO — Twitch: 50 streams para juego Monster Hunter Wilds
+2025-05-29 20:11:38,743 — INFO — Twitch: 1 streams para juego Resident Evil: Revelations 2
+2025-05-29 20:11:39,664 — INFO — Twitch: 31 streams para juego Car Dealer Simulator
+2025-05-29 20:11:41,252 — INFO — Twitch: 50 streams para juego Warframe
+2025-05-29 20:11:42,585 — INFO — Twitch: 50 streams para juego DARK SOULS II: Scholar of the First Sin
+2025-05-29 20:11:43,691 — INFO — Twitch: 15 streams para juego Deadzone: Rogue
+2025-05-29 20:11:44,261 — INFO — Twitch: 50 streams para juego iRacing
+2025-05-29 20:11:45,943 — INFO — Twitch: 50 streams para juego 7 Days to Die
+2025-05-29 20:11:46,986 — INFO — Twitch: 25 streams para juego Dinkum
+2025-05-29 20:11:49,205 — INFO — Twitch: 46 streams para juego Knight Online
+2025-05-29 20:11:50,454 — INFO — Twitch: 50 streams para juego PUBG Mobile
+2025-05-29 20:11:51,822 — INFO — Twitch: 50 streams para juego Star Wars: The Old Republic
+2025-05-29 20:11:52,483 — INFO — Twitch: 50 streams para juego Path of Exile 2
+2025-05-29 20:11:53,523 — INFO — Twitch: 42 streams para juego Cuphead
+2025-05-29 20:11:54,842 — INFO — Twitch: 30 streams para juego Goose Goose Duck
+2025-05-29 20:11:56,159 — INFO — Twitch: 2 streams para juego Dawn of Discovery
+2025-05-29 20:11:57,665 — INFO — Twitch: 50 streams para juego Detroit: Become Human
+2025-05-29 20:11:58,920 — INFO — Twitch: 50 streams para juego Star Wars Battlefront II
+2025-05-29 20:11:59,679 — INFO — Twitch: 50 streams para juego The Elder Scrolls Online
+2025-05-29 20:12:02,441 — INFO — Twitch: 50 streams para juego Brawl Stars
+2025-05-29 20:12:03,036 — INFO — Twitch: 50 streams para juego Phasmophobia
+2025-05-29 20:12:04,089 — INFO — Twitch: 43 streams para juego Off The Grid
+2025-05-29 20:12:05,073 — INFO — Twitch: 3 streams para juego Rennsport
+2025-05-29 20:12:06,329 — INFO — Twitch: 50 streams para juego Farming Simulator 25
+2025-05-29 20:12:07,481 — INFO — Twitch: 50 streams para juego Schedule I
+2025-05-29 20:12:08,785 — INFO — Twitch: 50 streams para juego TEKKEN 8
+2025-05-29 20:12:09,865 — INFO — Twitch: 47 streams para juego Super Mario 64
+2025-05-29 20:12:10,563 — INFO — Twitch: 50 streams para juego Grand Theft Auto IV
+2025-05-29 20:12:11,392 — INFO — Twitch: 50 streams para juego Once Human
+2025-05-29 20:12:12,427 — INFO — Twitch: 47 streams para juego God of War
+2025-05-29 20:12:13,783 — INFO — Twitch: 4 streams para juego KLETKA
+2025-05-29 20:12:14,978 — INFO — Twitch: 33 streams para juego MapleStory
+2025-05-29 20:12:16,143 — INFO — Twitch: 32 streams para juego Age of Empires IV
+2025-05-29 20:12:17,484 — INFO — Twitch: 50 streams para juego Honkai: Star Rail
+2025-05-29 20:12:18,694 — INFO — Twitch: 50 streams para juego Madden NFL 25
+2025-05-29 20:12:20,071 — INFO — Twitch: 50 streams para juego ARK: Survival Ascended
+2025-05-29 20:12:21,741 — INFO — Twitch: 48 streams para juego Pokémon Emerald Version
+2025-05-29 20:12:23,217 — INFO — Twitch: 50 streams para juego Mir Tankov
+2025-05-29 20:12:24,917 — INFO — Twitch: 50 streams para juego Predecessor
+2025-05-29 20:12:26,572 — INFO — Twitch: 50 streams para juego Palia
+2025-05-29 20:12:27,486 — INFO — Twitch: 50 streams para juego Throne and Liberty
+2025-05-29 20:12:28,547 — INFO — Twitch: 23 streams para juego House Flipper 2
+2025-05-29 20:12:29,691 — INFO — Twitch: 33 streams para juego Tournament Poker
+2025-05-29 20:12:30,273 — INFO — Twitch: 50 streams para juego MU Online
+2025-05-29 20:12:31,529 — INFO — Twitch: 50 streams para juego SMITE 2
+2025-05-29 20:12:32,813 — INFO — Twitch: 50 streams para juego Russian Fishing 4
+2025-05-29 20:12:33,774 — INFO — Twitch: 49 streams para juego Quarantine Zone: The Last Check
+2025-05-29 20:12:34,659 — INFO — Twitch: 5 streams para juego Deep Rock Galactic: Survivor
+2025-05-29 20:12:35,853 — INFO — Twitch: 50 streams para juego Dark Souls: Remastered
+2025-05-29 20:12:37,147 — INFO — Twitch: 50 streams para juego The Elder Scrolls IV: Oblivion Remastered
+2025-05-29 20:12:38,366 — INFO — Twitch: 50 streams para juego The Last of Us
+2025-05-29 20:12:38,976 — INFO — Twitch: 50 streams para juego RimWorld
+2025-05-29 20:12:40,004 — INFO — Twitch: 6 streams para juego Paranormal Cleanup
+2025-05-29 20:12:41,082 — INFO — Twitch: 42 streams para juego EVE Online
+2025-05-29 20:12:42,577 — INFO — Twitch: 44 streams para juego The Legend of Zelda: Ocarina of Time
+2025-05-29 20:12:43,511 — INFO — Twitch: 18 streams para juego Mahjong Soul
+2025-05-29 20:12:44,455 — INFO — Twitch: 50 streams para juego Yu-Gi-Oh! Master Duel
+2025-05-29 20:12:45,916 — INFO — Twitch: 50 streams para juego Project Zomboid
+2025-05-29 20:12:46,917 — INFO — Twitch: 20 streams para juego Marvel Snap
+2025-05-29 20:12:47,960 — INFO — Twitch: 17 streams para juego Summoners War: Sky Arena
+2025-05-29 20:12:48,583 — INFO — Twitch: 50 streams para juego Perfect World
+2025-05-29 20:12:49,545 — INFO — Twitch: 35 streams para juego Anno 1800
+2025-05-29 20:12:50,505 — INFO — Twitch: 1 streams para juego Slackers: Carts of Glory
+2025-05-29 20:12:51,819 — INFO — Twitch: 50 streams para juego THE FINALS
+2025-05-29 20:12:51,820 — INFO — Twitch: total registros preparados 8883
+2025-05-29 20:12:52,658 — INFO — Twitch: RDD creado
+2025-05-29 20:12:52,665 — INFO — Extracción de Twitch completada
+2025-05-29 20:12:52,665 — INFO — Extrayendo datos de Pokémon Showdown API...
+2025-05-29 20:12:52,667 — INFO — Showdown: iniciando extracción de ladders y perfiles
+2025-05-29 20:12:52,667 — INFO — Showdown: usando 33 formatos Gen9 predefinidos
+2025-05-29 20:12:53,515 — INFO — gen9randombattle: 0 jugadores en top
+2025-05-29 20:12:54,325 — INFO — gen9challengecup1v1: 0 jugadores en top
+2025-05-29 20:12:55,053 — INFO — gen9hackmonscup: 0 jugadores en top
+2025-05-29 20:12:55,948 — INFO — gen9ou: 0 jugadores en top
+2025-05-29 20:12:56,904 — INFO — gen9ubers: 0 jugadores en top
+2025-05-29 20:12:57,670 — INFO — gen9uu: 0 jugadores en top
+2025-05-29 20:12:58,469 — INFO — gen9ru: 0 jugadores en top
+2025-05-29 20:12:59,245 — INFO — gen9nu: 0 jugadores en top
+2025-05-29 20:12:59,984 — INFO — gen9pu: 0 jugadores en top
+2025-05-29 20:13:00,746 — INFO — gen9lc: 0 jugadores en top
+2025-05-29 20:13:01,761 — INFO — gen9monotype: 0 jugadores en top
+2025-05-29 20:13:02,469 — INFO — gen91v1: 0 jugadores en top
+2025-05-29 20:13:03,419 — INFO — gen9anythinggoes: 0 jugadores en top
+2025-05-29 20:13:04,969 — INFO — gen9zu: 0 jugadores en top
+2025-05-29 20:13:06,142 — INFO — gen9bssregi: 0 jugadores en top
+2025-05-29 20:13:06,899 — INFO — gen9cap: 0 jugadores en top
+2025-05-29 20:13:07,852 — INFO — gen9randomdoublesbattle: 0 jugadores en top
+2025-05-29 20:13:08,598 — INFO — gen9doublesou: 0 jugadores en top
+2025-05-29 20:13:09,367 — INFO — gen9vgc2025regi: 0 jugadores en top
+2025-05-29 20:13:10,112 — INFO — gen9vgc2025regibo3: 0 jugadores en top
+2025-05-29 20:13:10,851 — INFO — gen9almostanyability: 0 jugadores en top
+2025-05-29 20:13:11,675 — INFO — gen9balancedhackmons: 0 jugadores en top
+2025-05-29 20:13:12,477 — INFO — gen9godlygift: 0 jugadores en top
+2025-05-29 20:13:13,162 — INFO — gen9inheritance: 0 jugadores en top
+2025-05-29 20:13:13,970 — INFO — gen9mixandmega: 0 jugadores en top
+2025-05-29 20:13:14,831 — INFO — gen9partnersincrime: 0 jugadores en top
+2025-05-29 20:13:15,612 — INFO — gen9sharedpower: 0 jugadores en top
+2025-05-29 20:13:16,519 — INFO — gen9stabmons: 0 jugadores en top
+2025-05-29 20:13:17,306 — INFO — gen9nationaldex: 0 jugadores en top
+2025-05-29 20:13:18,280 — INFO — gen9nationaldexubers: 0 jugadores en top
+2025-05-29 20:13:19,058 — INFO — gen9nationaldexuu: 0 jugadores en top
+2025-05-29 20:13:19,823 — INFO — gen9nationaldexmonotype: 0 jugadores en top
+2025-05-29 20:13:20,629 — INFO — gen9nationaldexdoubles: 0 jugadores en top
+2025-05-29 20:13:20,629 — INFO — Showdown: registros totales extraídos = 0
+2025-05-29 20:13:20,646 — INFO — Extracción de Showdown completada
+2025-05-29 20:13:20,646 — INFO — Extrayendo datos de HowLongToBeat API...
+2025-05-29 20:13:20,647 — ERROR — Error en fase de extracción: extract_all_hltb() missing 1 required positional argument: 'games_list'
+2025-05-29 20:13:20,649 — ERROR — Error crítico en el pipeline: extract_all_hltb() missing 1 required positional argument: 'games_list'
+2025-05-29 20:13:20,650 — ERROR — Pipeline terminado con errores
+2025-05-29 20:13:20,650 — INFO — Cerrando conexiones y limpiando recursos...
+2025-05-29 20:13:21,099 — INFO — Pipeline finalizado
+2025-05-30 19:27:26,971 — INFO — === INICIO DEL PIPELINE ETL VIDEOJUEGOS ===
+2025-05-30 19:27:26,971 — INFO — Tiempo de inicio: 2025-05-30 17:27:26.971722
+2025-05-30 19:27:26,973 — INFO — Inicializando base de datos y tabla de logs...
+2025-05-30 19:27:27,371 — INFO — Base de datos inicializada correctamente
+2025-05-30 19:27:27,371 — INFO — === FASE 1: EXTRACCIÓN DE DATOS ===
+2025-05-30 19:27:27,371 — INFO — Extrayendo datos de Twitch API...
+2025-05-30 19:27:27,372 — INFO — Twitch: iniciando extracción
+2025-05-30 19:27:29,475 — INFO — Twitch: obtenidos 200 juegos top
+2025-05-30 19:27:29,959 — INFO — Twitch: 50 streams para juego Just Chatting
+2025-05-30 19:27:30,507 — INFO — Twitch: 50 streams para juego Elden Ring: Nightreign
+2025-05-30 19:27:31,539 — INFO — Twitch: 50 streams para juego League of Legends
+2025-05-30 19:27:32,019 — INFO — Twitch: 50 streams para juego Grand Theft Auto V
+2025-05-30 19:27:32,515 — INFO — Twitch: 50 streams para juego Dota 2
+2025-05-30 19:27:33,079 — INFO — Twitch: 50 streams para juego IRL
+2025-05-30 19:27:34,055 — INFO — Twitch: 50 streams para juego Marvel Rivals
+2025-05-30 19:27:35,353 — INFO — Twitch: 50 streams para juego EA Sports FC 25
+2025-05-30 19:27:36,462 — INFO — Twitch: 50 streams para juego Counter-Strike
+2025-05-30 19:27:38,524 — INFO — Twitch: 50 streams para juego VALORANT
+2025-05-30 19:27:39,001 — INFO — Twitch: 50 streams para juego World of Warcraft
+2025-05-30 19:27:40,294 — INFO — Twitch: 50 streams para juego Call of Duty: Warzone
+2025-05-30 19:27:41,567 — INFO — Twitch: 50 streams para juego Fortnite
+2025-05-30 19:27:42,932 — INFO — Twitch: 50 streams para juego Minecraft
+2025-05-30 19:27:43,437 — INFO — Twitch: 50 streams para juego Old School RuneScape
+2025-05-30 19:27:44,696 — INFO — Twitch: 50 streams para juego REMATCH
+2025-05-30 19:27:46,553 — INFO — Twitch: 50 streams para juego Teamfight Tactics
+2025-05-30 19:27:47,825 — INFO — Twitch: 50 streams para juego Dead by Daylight
+2025-05-30 19:27:48,855 — INFO — Twitch: 50 streams para juego ELDEN RING
+2025-05-30 19:27:49,359 — INFO — Twitch: 50 streams para juego Overwatch 2
+2025-05-30 19:27:50,354 — INFO — Twitch: 50 streams para juego Street Fighter 6
+2025-05-30 19:27:51,623 — INFO — Twitch: 50 streams para juego Apex Legends
+2025-05-30 19:27:52,608 — INFO — Twitch: 50 streams para juego Hearthstone
+2025-05-30 19:27:53,138 — INFO — Twitch: 50 streams para juego Rust
+2025-05-30 19:27:54,162 — INFO — Twitch: 50 streams para juego Music
+2025-05-30 19:27:55,130 — INFO — Twitch: 50 streams para juego Slots
+2025-05-30 19:27:56,105 — INFO — Twitch: 50 streams para juego Age of Empires II
+2025-05-30 19:27:57,096 — INFO — Twitch: 50 streams para juego PUBG: BATTLEGROUNDS
+2025-05-30 19:27:57,658 — INFO — Twitch: 50 streams para juego Escape from Tarkov
+2025-05-30 19:27:58,977 — INFO — Twitch: 50 streams para juego Clair Obscur: Expedition 33
+2025-05-30 19:27:59,449 — INFO — Twitch: 50 streams para juego Sports
+2025-05-30 19:28:01,078 — INFO — Twitch: 50 streams para juego Art
+2025-05-30 19:28:01,591 — INFO — Twitch: 50 streams para juego DJs
+2025-05-30 19:28:02,367 — INFO — Twitch: 41 streams para juego Virtual Casino
+2025-05-30 19:28:02,852 — INFO — Twitch: 50 streams para juego Tibia
+2025-05-30 19:28:03,339 — INFO — Twitch: 50 streams para juego World of Tanks
+2025-05-30 19:28:04,309 — INFO — Twitch: 50 streams para juego Rocket League
+2025-05-30 19:28:05,307 — INFO — Twitch: 50 streams para juego Tom Clancy's Rainbow Six Siege
+2025-05-30 19:28:05,842 — INFO — Twitch: 50 streams para juego ASMR
+2025-05-30 19:28:06,799 — INFO — Twitch: 50 streams para juego Mobile Legends: Bang Bang
+2025-05-30 19:28:07,285 — INFO — Twitch: 50 streams para juego MapleStory Worlds
+2025-05-30 19:28:09,273 — INFO — Twitch: 50 streams para juego FANTASY LIFE i: The Girl Who Steals Time
+2025-05-30 19:28:10,319 — INFO — Twitch: 50 streams para juego Special Events
+2025-05-30 19:28:11,453 — INFO — Twitch: 50 streams para juego Talk Shows & Podcasts
+2025-05-30 19:28:11,926 — INFO — Twitch: 50 streams para juego F1 25
+2025-05-30 19:28:12,846 — INFO — Twitch: 50 streams para juego Tom Clancy's The Division 2
+2025-05-30 19:28:13,827 — INFO — Twitch: 50 streams para juego Black Desert
+2025-05-30 19:28:14,813 — INFO — Twitch: 50 streams para juego DayZ
+2025-05-30 19:28:15,280 — INFO — Twitch: 50 streams para juego Delta Force
+2025-05-30 19:28:15,798 — INFO — Twitch: 50 streams para juego Arena Breakout: Infinite
+2025-05-30 19:28:16,578 — INFO — Twitch: 2 streams para juego Fears to Fathom: Norwood Hitchhike
+2025-05-30 19:28:17,070 — INFO — Twitch: 50 streams para juego Tainted Grail: The Fall of Avalon
+2025-05-30 19:28:18,025 — INFO — Twitch: 50 streams para juego Destiny 2
+2025-05-30 19:28:18,956 — INFO — Twitch: 50 streams para juego Call of Duty: Black Ops 6
+2025-05-30 19:28:19,857 — INFO — Twitch: 50 streams para juego Retro
+2025-05-30 19:28:21,890 — INFO — Twitch: 50 streams para juego Albion Online
+2025-05-30 19:28:22,717 — INFO — Twitch: 50 streams para juego 7 Days to Die
+2025-05-30 19:28:23,187 — INFO — Twitch: 50 streams para juego Star Citizen
+2025-05-30 19:28:24,144 — INFO — Twitch: 50 streams para juego R.E.P.O.
+2025-05-30 19:28:25,104 — INFO — Twitch: 50 streams para juego Red Dead Redemption 2
+2025-05-30 19:28:25,647 — INFO — Twitch: 50 streams para juego Always On
+2025-05-30 19:28:27,156 — INFO — Twitch: 50 streams para juego Animals, Aquariums, and Zoos
+2025-05-30 19:28:28,185 — INFO — Twitch: 50 streams para juego FINAL FANTASY XIV ONLINE
+2025-05-30 19:28:29,192 — INFO — Twitch: 50 streams para juego Splitgate 2
+2025-05-30 19:28:29,661 — INFO — Twitch: 50 streams para juego RoadCraft
+2025-05-30 19:28:30,631 — INFO — Twitch: 50 streams para juego Pokémon Community Game
+2025-05-30 19:28:31,137 — INFO — Twitch: 50 streams para juego ROBLOX
+2025-05-30 19:28:32,116 — INFO — Twitch: 50 streams para juego Crystal of Atlan
+2025-05-30 19:28:32,576 — INFO — Twitch: 50 streams para juego Sea of Thieves
+2025-05-30 19:28:34,416 — INFO — Twitch: 29 streams para juego BULLET YEETERS
+2025-05-30 19:28:34,887 — INFO — Twitch: 50 streams para juego Genshin Impact
+2025-05-30 19:28:35,870 — INFO — Twitch: 50 streams para juego Ragnarok Online
+2025-05-30 19:28:36,840 — INFO — Twitch: 50 streams para juego Gray Zone Warfare
+2025-05-30 19:28:37,852 — INFO — Twitch: 35 streams para juego Car Dealer Simulator
+2025-05-30 19:28:39,649 — INFO — Twitch: 42 streams para juego Heroes of Might and Magic III: The Restoration of Erathia
+2025-05-30 19:28:40,652 — INFO — Twitch: 50 streams para juego GeoGuessr
+2025-05-30 19:28:41,687 — INFO — Twitch: 50 streams para juego Wuthering Waves
+2025-05-30 19:28:42,223 — INFO — Twitch: 50 streams para juego Games + Demos
+2025-05-30 19:28:42,672 — INFO — Twitch: 50 streams para juego Path of Exile
+2025-05-30 19:28:43,542 — INFO — Twitch: 7 streams para juego BOKURA: planet
+2025-05-30 19:28:44,055 — INFO — Twitch: 50 streams para juego Escape from Tarkov: Arena
+2025-05-30 19:28:46,120 — INFO — Twitch: 35 streams para juego The Legend of Zelda: Tears of the Kingdom
+2025-05-30 19:28:46,641 — INFO — Twitch: 50 streams para juego NBA 2K25
+2025-05-30 19:28:47,165 — INFO — Twitch: 50 streams para juego Poker
+2025-05-30 19:28:48,137 — INFO — Twitch: 50 streams para juego Call of Duty
+2025-05-30 19:28:48,884 — INFO — Twitch: 39 streams para juego Politics
+2025-05-30 19:28:49,353 — INFO — Twitch: 50 streams para juego RimWorld
+2025-05-30 19:28:49,862 — INFO — Twitch: 50 streams para juego Lost Ark
+2025-05-30 19:28:50,366 — INFO — Twitch: 50 streams para juego VRChat
+2025-05-30 19:28:51,101 — INFO — Twitch: 33 streams para juego Monster Train 2
+2025-05-30 19:28:52,000 — INFO — Twitch: 50 streams para juego Star Wars Battlefront II
+2025-05-30 19:28:52,927 — INFO — Twitch: 50 streams para juego Warhammer 40,000: Space Marine II
+2025-05-30 19:28:53,393 — INFO — Twitch: 50 streams para juego Hunt: Showdown 1896
+2025-05-30 19:28:55,166 — INFO — Twitch: 50 streams para juego Magic: The Gathering
+2025-05-30 19:28:55,637 — INFO — Twitch: 50 streams para juego Trackmania
+2025-05-30 19:28:56,618 — INFO — Twitch: 50 streams para juego War Thunder
+2025-05-30 19:28:57,322 — INFO — Twitch: 14 streams para juego SurrounDead
+2025-05-30 19:28:58,315 — INFO — Twitch: 50 streams para juego World of Warships
+2025-05-30 19:28:59,042 — INFO — Twitch: 22 streams para juego Tabletop RPGs
+2025-05-30 19:28:59,541 — INFO — Twitch: 50 streams para juego Crypto
+2025-05-30 19:29:00,502 — INFO — Twitch: 50 streams para juego Clash Royale
+2025-05-30 19:29:01,035 — INFO — Twitch: 50 streams para juego Marbles on Stream
+2025-05-30 19:29:01,798 — INFO — Twitch: 36 streams para juego EVE Online
+2025-05-30 19:29:02,533 — INFO — Twitch: 16 streams para juego Death Stranding
+2025-05-30 19:29:03,469 — INFO — Twitch: 50 streams para juego I'm Only Sleeping
+2025-05-30 19:29:04,434 — INFO — Twitch: 50 streams para juego Diablo IV
+2025-05-30 19:29:05,367 — INFO — Twitch: 50 streams para juego Software and Game Development
+2025-05-30 19:29:05,842 — INFO — Twitch: 50 streams para juego Baldur's Gate 3
+2025-05-30 19:29:06,870 — INFO — Twitch: 50 streams para juego Co-working & Studying
+2025-05-30 19:29:07,811 — INFO — Twitch: 50 streams para juego Pokémon Trading Card Game
+2025-05-30 19:29:08,582 — INFO — Twitch: 41 streams para juego Diablo II
+2025-05-30 19:29:09,059 — INFO — Twitch: 50 streams para juego Dark and Darker
+2025-05-30 19:29:09,516 — INFO — Twitch: 50 streams para juego The Elder Scrolls Online
+2025-05-30 19:29:10,326 — INFO — Twitch: 48 streams para juego Warcraft III
+2025-05-30 19:29:11,288 — INFO — Twitch: 50 streams para juego iRacing
+2025-05-30 19:29:11,993 — INFO — Twitch: 30 streams para juego Rise Online
+2025-05-30 19:29:12,512 — INFO — Twitch: 50 streams para juego Deadlock
+2025-05-30 19:29:12,978 — INFO — Twitch: 50 streams para juego The Sims 4
+2025-05-30 19:29:13,769 — INFO — Twitch: 21 streams para juego Slay the Spire
+2025-05-30 19:29:14,739 — INFO — Twitch: 50 streams para juego Brawl Stars
+2025-05-30 19:29:15,471 — INFO — Twitch: 1 streams para juego Casino Simulator
+2025-05-30 19:29:16,408 — INFO — Twitch: 50 streams para juego Throne and Liberty
+2025-05-30 19:29:16,923 — INFO — Twitch: 50 streams para juego Path of Exile 2
+2025-05-30 19:29:17,822 — INFO — Twitch: 50 streams para juego Phasmophobia
+2025-05-30 19:29:18,526 — INFO — Twitch: 28 streams para juego Wrap House Simulator
+2025-05-30 19:29:19,237 — INFO — Twitch: 38 streams para juego Off The Grid
+2025-05-30 19:29:20,166 — INFO — Twitch: 50 streams para juego Streamer University
+2025-05-30 19:29:20,974 — INFO — Twitch: 44 streams para juego Cuphead
+2025-05-30 19:29:21,450 — INFO — Twitch: 50 streams para juego DARK SOULS II: Scholar of the First Sin
+2025-05-30 19:29:21,926 — INFO — Twitch: 50 streams para juego PUBG Mobile
+2025-05-30 19:29:22,387 — INFO — Twitch: 50 streams para juego Warframe
+2025-05-30 19:29:23,075 — INFO — Twitch: 41 streams para juego Pokémon FireRed/LeafGreen
+2025-05-30 19:29:24,061 — INFO — Twitch: 50 streams para juego Honkai: Star Rail
+2025-05-30 19:29:24,759 — INFO — Twitch: 20 streams para juego Portal 2
+2025-05-30 19:29:25,701 — INFO — Twitch: 50 streams para juego MapleStory
+2025-05-30 19:29:26,210 — INFO — Twitch: 50 streams para juego Palia
+2025-05-30 19:29:27,222 — INFO — Twitch: 50 streams para juego Stardew Valley
+2025-05-30 19:29:28,551 — INFO — Twitch: 49 streams para juego Pokémon Trading Card Game Pocket
+2025-05-30 19:29:29,113 — INFO — Twitch: 50 streams para juego Perfect World
+2025-05-30 19:29:29,646 — INFO — Twitch: 50 streams para juego Zenless Zone Zero
+2025-05-30 19:29:30,391 — INFO — Twitch: 6 streams para juego Shakes and Fidget
+2025-05-30 19:29:30,910 — INFO — Twitch: 50 streams para juego SMITE 2
+2025-05-30 19:29:31,935 — INFO — Twitch: 50 streams para juego MLB The Show 25
+2025-05-30 19:29:32,440 — INFO — Twitch: 50 streams para juego DOOM: The Dark Ages
+2025-05-30 19:29:33,242 — INFO — Twitch: 19 streams para juego Marvel Snap
+2025-05-30 19:29:34,236 — INFO — Twitch: 50 streams para juego HELLDIVERS 2
+2025-05-30 19:29:34,998 — INFO — Twitch: 36 streams para juego Star Wars: The Old Republic
+2025-05-30 19:29:36,051 — INFO — Twitch: 50 streams para juego The Elder Scrolls IV: Oblivion Remastered
+2025-05-30 19:29:37,598 — INFO — Twitch: 32 streams para juego Knight Online
+2025-05-30 19:29:38,364 — INFO — Twitch: 35 streams para juego Pools, Hot Tubs, and Beaches
+2025-05-30 19:29:38,853 — INFO — Twitch: 50 streams para juego Pokémon Scarlet/Violet
+2025-05-30 19:29:39,860 — INFO — Twitch: 50 streams para juego Monster Hunter Wilds
+2025-05-30 19:29:41,093 — INFO — Twitch: 50 streams para juego Mir Tankov
+2025-05-30 19:29:42,071 — INFO — Twitch: 50 streams para juego Chess
+2025-05-30 19:29:42,540 — INFO — Twitch: 50 streams para juego Farming Simulator 25
+2025-05-30 19:29:43,552 — INFO — Twitch: 50 streams para juego Game of Thrones: Kingsroad
+2025-05-30 19:29:44,272 — INFO — Twitch: 34 streams para juego The Bazaar
+2025-05-30 19:29:45,293 — INFO — Twitch: 50 streams para juego Garry's Mod
+2025-05-30 19:29:46,062 — INFO — Twitch: 29 streams para juego Tournament Poker
+2025-05-30 19:29:46,543 — INFO — Twitch: 50 streams para juego Animal Crossing: New Horizons
+2025-05-30 19:29:47,516 — INFO — Twitch: 50 streams para juego osu!
+2025-05-30 19:29:49,270 — INFO — Twitch: 22 streams para juego Age of Empires IV
+2025-05-30 19:29:50,604 — INFO — Twitch: 50 streams para juego Standoff 2
+2025-05-30 19:29:51,704 — INFO — Twitch: 50 streams para juego Factorio
+2025-05-30 19:29:52,658 — INFO — Twitch: 50 streams para juego Madden NFL 25
+2025-05-30 19:29:53,441 — INFO — Twitch: 1 streams para juego Tomba! 2: The Evil Swine Return
+2025-05-30 19:29:54,489 — INFO — Twitch: 50 streams para juego TEKKEN 8
+2025-05-30 19:29:55,510 — INFO — Twitch: 23 streams para juego Dying Light
+2025-05-30 19:29:56,044 — INFO — Twitch: 50 streams para juego Dark Souls: Remastered
+2025-05-30 19:29:57,061 — INFO — Twitch: 50 streams para juego Subnautica
+2025-05-30 19:29:57,815 — INFO — Twitch: 4 streams para juego Paranormal Cleanup
+2025-05-30 19:29:58,340 — INFO — Twitch: 50 streams para juego Russian Fishing 4
+2025-05-30 19:29:59,122 — INFO — Twitch: 11 streams para juego BioShock Remastered
+2025-05-30 19:29:59,952 — INFO — Twitch: 27 streams para juego Dofus
+2025-05-30 19:30:01,196 — INFO — Twitch: 50 streams para juego ARK: Survival Ascended
+2025-05-30 19:30:01,978 — INFO — Twitch: 50 streams para juego The Last of Us Part II: Remastered
+2025-05-30 19:30:02,762 — INFO — Twitch: 6 streams para juego Ratopia
+2025-05-30 19:30:03,536 — INFO — Twitch: 39 streams para juego Super Mario 64
+2025-05-30 19:30:04,467 — INFO — Twitch: 50 streams para juego Once Human
+2025-05-30 19:30:06,750 — INFO — Twitch: 50 streams para juego The Witcher 3: Wild Hunt
+2025-05-30 19:30:07,206 — INFO — Twitch: 50 streams para juego Blue Prince
+2025-05-30 19:30:07,671 — INFO — Twitch: 50 streams para juego Satisfactory
+2025-05-30 19:30:08,406 — INFO — Twitch: 46 streams para juego Microsoft Flight Simulator 2024
+2025-05-30 19:30:08,859 — INFO — Twitch: 50 streams para juego Fall Guys
+2025-05-30 19:30:09,543 — INFO — Twitch: 3 streams para juego Kings League
+2025-05-30 19:30:10,284 — INFO — Twitch: 46 streams para juego Food & Drink
+2025-05-30 19:30:10,962 — INFO — Twitch: 6 streams para juego Danganronpa: Trigger Happy Havoc
+2025-05-30 19:30:11,890 — INFO — Twitch: 50 streams para juego Words On Stream
+2025-05-30 19:30:12,622 — INFO — Twitch: 24 streams para juego Anime Squad
+2025-05-30 19:30:13,082 — INFO — Twitch: 50 streams para juego League of Legends: Wild Rift
+2025-05-30 19:30:14,010 — INFO — Twitch: 50 streams para juego Project Zomboid
+2025-05-30 19:30:14,737 — INFO — Twitch: 45 streams para juego StarCraft II
+2025-05-30 19:30:15,457 — INFO — Twitch: 37 streams para juego Heroes of the Storm
+2025-05-30 19:30:16,216 — INFO — Twitch: 17 streams para juego Fatal Fury: City of the Wolves
+2025-05-30 19:30:16,920 — INFO — Twitch: 8 streams para juego RGG Checkers
+2025-05-30 19:30:17,493 — INFO — Twitch: 50 streams para juego MU Online
+2025-05-30 19:30:18,692 — INFO — Twitch: 49 streams para juego Police Simulator: Patrol Officers
+2025-05-30 19:30:19,154 — INFO — Twitch: 50 streams para juego V Rising
+2025-05-30 19:30:20,103 — INFO — Twitch: 50 streams para juego Mario Kart 8 Deluxe
+2025-05-30 19:30:20,587 — INFO — Twitch: 50 streams para juego Arma Reforger
+2025-05-30 19:30:20,587 — INFO — Twitch: total registros preparados 9067
+2025-05-30 19:30:20,965 — INFO — Twitch: RDD creado
+2025-05-30 19:30:32,039 — ERROR — Error en fase de extracción: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.runJob.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (DESKTOP-NSA2GPA.mshome.net executor driver): org.apache.spark.SparkException: Python worker failed to connect back.
+	at org.apache.spark.api.python.PythonWorkerFactory.createSimpleWorker(PythonWorkerFactory.scala:203)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:109)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:124)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:174)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.api.python.PairwiseRDD.compute(PythonRDD.scala:130)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Accept timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedAccept(NioSocketImpl.java:705)
+	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:749)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:673)
+	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:639)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:615)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:572)
+	at java.base/java.net.ServerSocket.accept(ServerSocket.java:530)
+	at org.apache.spark.api.python.PythonWorkerFactory.createSimpleWorker(PythonWorkerFactory.scala:190)
+	... 22 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2393)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2414)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2433)
+	at org.apache.spark.api.python.PythonRDD$.runJob(PythonRDD.scala:181)
+	at org.apache.spark.api.python.PythonRDD.runJob(PythonRDD.scala)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:76)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.spark.SparkException: Python worker failed to connect back.
+	at org.apache.spark.api.python.PythonWorkerFactory.createSimpleWorker(PythonWorkerFactory.scala:203)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:109)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:124)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:174)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.api.python.PairwiseRDD.compute(PythonRDD.scala:130)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	... 1 more
+Caused by: java.net.SocketTimeoutException: Accept timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedAccept(NioSocketImpl.java:705)
+	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:749)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:673)
+	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:639)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:615)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:572)
+	at java.base/java.net.ServerSocket.accept(ServerSocket.java:530)
+	at org.apache.spark.api.python.PythonWorkerFactory.createSimpleWorker(PythonWorkerFactory.scala:190)
+	... 22 more
+
+2025-05-30 19:30:32,042 — ERROR — Error crítico en el pipeline: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.runJob.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (DESKTOP-NSA2GPA.mshome.net executor driver): org.apache.spark.SparkException: Python worker failed to connect back.
+	at org.apache.spark.api.python.PythonWorkerFactory.createSimpleWorker(PythonWorkerFactory.scala:203)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:109)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:124)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:174)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.api.python.PairwiseRDD.compute(PythonRDD.scala:130)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Accept timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedAccept(NioSocketImpl.java:705)
+	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:749)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:673)
+	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:639)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:615)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:572)
+	at java.base/java.net.ServerSocket.accept(ServerSocket.java:530)
+	at org.apache.spark.api.python.PythonWorkerFactory.createSimpleWorker(PythonWorkerFactory.scala:190)
+	... 22 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2393)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2414)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2433)
+	at org.apache.spark.api.python.PythonRDD$.runJob(PythonRDD.scala:181)
+	at org.apache.spark.api.python.PythonRDD.runJob(PythonRDD.scala)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:76)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.spark.SparkException: Python worker failed to connect back.
+	at org.apache.spark.api.python.PythonWorkerFactory.createSimpleWorker(PythonWorkerFactory.scala:203)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:109)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:124)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:174)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.api.python.PairwiseRDD.compute(PythonRDD.scala:130)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	... 1 more
+Caused by: java.net.SocketTimeoutException: Accept timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedAccept(NioSocketImpl.java:705)
+	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:749)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:673)
+	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:639)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:615)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:572)
+	at java.base/java.net.ServerSocket.accept(ServerSocket.java:530)
+	at org.apache.spark.api.python.PythonWorkerFactory.createSimpleWorker(PythonWorkerFactory.scala:190)
+	... 22 more
+
+2025-05-30 19:30:32,043 — ERROR — Pipeline terminado con errores
+2025-05-30 19:30:32,043 — INFO — Cerrando conexiones y limpiando recursos...
+2025-05-30 19:30:32,521 — INFO — Pipeline finalizado
+2025-05-30 19:33:50,920 — INFO — === INICIO DEL PIPELINE ETL VIDEOJUEGOS ===
+2025-05-30 19:33:50,922 — INFO — Tiempo de inicio: 2025-05-30 17:33:50.920820
+2025-05-30 19:33:50,922 — INFO — Inicializando base de datos y tabla de logs...
+2025-05-30 19:33:51,087 — INFO — Base de datos inicializada correctamente
+2025-05-30 19:33:51,087 — INFO — === FASE 1: EXTRACCIÓN DE DATOS ===
+2025-05-30 19:33:51,087 — INFO — Extrayendo datos de Twitch API...
+2025-05-30 19:33:51,087 — INFO — Twitch: iniciando extracción
+2025-05-30 19:33:53,081 — INFO — Twitch: obtenidos 200 juegos top
+2025-05-30 19:33:54,016 — INFO — Twitch: 50 streams para juego Just Chatting
+2025-05-30 19:33:54,506 — INFO — Twitch: 50 streams para juego Elden Ring: Nightreign
+2025-05-30 19:33:54,976 — INFO — Twitch: 50 streams para juego Grand Theft Auto V
+2025-05-30 19:33:55,460 — INFO — Twitch: 50 streams para juego League of Legends
+2025-05-30 19:33:56,395 — INFO — Twitch: 50 streams para juego Dota 2
+2025-05-30 19:33:57,375 — INFO — Twitch: 50 streams para juego IRL
+2025-05-30 19:33:57,839 — INFO — Twitch: 50 streams para juego Marvel Rivals
+2025-05-30 19:33:58,758 — INFO — Twitch: 50 streams para juego EA Sports FC 25
+2025-05-30 19:33:59,248 — INFO — Twitch: 50 streams para juego VALORANT
+2025-05-30 19:34:00,180 — INFO — Twitch: 50 streams para juego Counter-Strike
+2025-05-30 19:34:00,651 — INFO — Twitch: 50 streams para juego World of Warcraft
+2025-05-30 19:34:01,625 — INFO — Twitch: 50 streams para juego Call of Duty: Warzone
+2025-05-30 19:34:02,543 — INFO — Twitch: 50 streams para juego Fortnite
+2025-05-30 19:34:03,018 — INFO — Twitch: 50 streams para juego Minecraft
+2025-05-30 19:34:03,477 — INFO — Twitch: 50 streams para juego Old School RuneScape
+2025-05-30 19:34:03,932 — INFO — Twitch: 50 streams para juego Teamfight Tactics
+2025-05-30 19:34:04,411 — INFO — Twitch: 50 streams para juego Dead by Daylight
+2025-05-30 19:34:04,870 — INFO — Twitch: 50 streams para juego REMATCH
+2025-05-30 19:34:05,334 — INFO — Twitch: 50 streams para juego ELDEN RING
+2025-05-30 19:34:06,290 — INFO — Twitch: 50 streams para juego Overwatch 2
+2025-05-30 19:34:07,250 — INFO — Twitch: 50 streams para juego Street Fighter 6
+2025-05-30 19:34:07,702 — INFO — Twitch: 50 streams para juego Apex Legends
+2025-05-30 19:34:08,176 — INFO — Twitch: 50 streams para juego Rust
+2025-05-30 19:34:09,143 — INFO — Twitch: 50 streams para juego Hearthstone
+2025-05-30 19:34:10,077 — INFO — Twitch: 50 streams para juego Music
+2025-05-30 19:34:10,535 — INFO — Twitch: 50 streams para juego Slots
+2025-05-30 19:34:11,007 — INFO — Twitch: 50 streams para juego Clair Obscur: Expedition 33
+2025-05-30 19:34:11,940 — INFO — Twitch: 50 streams para juego PUBG: BATTLEGROUNDS
+2025-05-30 19:34:12,413 — INFO — Twitch: 50 streams para juego Sports
+2025-05-30 19:34:13,336 — INFO — Twitch: 50 streams para juego Escape from Tarkov
+2025-05-30 19:34:14,275 — INFO — Twitch: 50 streams para juego Art
+2025-05-30 19:34:14,800 — INFO — Twitch: 50 streams para juego DJs
+2025-05-30 19:34:15,264 — INFO — Twitch: 50 streams para juego Age of Empires II
+2025-05-30 19:34:16,009 — INFO — Twitch: 39 streams para juego Virtual Casino
+2025-05-30 19:34:16,940 — INFO — Twitch: 50 streams para juego Tom Clancy's Rainbow Six Siege
+2025-05-30 19:34:17,412 — INFO — Twitch: 50 streams para juego World of Tanks
+2025-05-30 19:34:18,391 — INFO — Twitch: 50 streams para juego Rocket League
+2025-05-30 19:34:18,836 — INFO — Twitch: 50 streams para juego Tibia
+2025-05-30 19:34:19,816 — INFO — Twitch: 50 streams para juego Special Events
+2025-05-30 19:34:20,728 — INFO — Twitch: 50 streams para juego Mobile Legends: Bang Bang
+2025-05-30 19:34:21,714 — INFO — Twitch: 50 streams para juego FANTASY LIFE i: The Girl Who Steals Time
+2025-05-30 19:34:22,475 — INFO — Twitch: 4 streams para juego Corepunk
+2025-05-30 19:34:23,419 — INFO — Twitch: 50 streams para juego ASMR
+2025-05-30 19:34:24,353 — INFO — Twitch: 50 streams para juego F1 25
+2025-05-30 19:34:25,277 — INFO — Twitch: 50 streams para juego Talk Shows & Podcasts
+2025-05-30 19:34:25,735 — INFO — Twitch: 50 streams para juego Tainted Grail: The Fall of Avalon
+2025-05-30 19:34:26,686 — INFO — Twitch: 50 streams para juego MapleStory Worlds
+2025-05-30 19:34:27,176 — INFO — Twitch: 50 streams para juego Arena Breakout: Infinite
+2025-05-30 19:34:28,075 — INFO — Twitch: 50 streams para juego Call of Duty: Black Ops 6
+2025-05-30 19:34:28,548 — INFO — Twitch: 50 streams para juego DayZ
+2025-05-30 19:34:29,010 — INFO — Twitch: 50 streams para juego Black Desert
+2025-05-30 19:34:29,740 — INFO — Twitch: 2 streams para juego Fears to Fathom: Norwood Hitchhike
+2025-05-30 19:34:30,229 — INFO — Twitch: 50 streams para juego Tom Clancy's The Division 2
+2025-05-30 19:34:31,159 — INFO — Twitch: 50 streams para juego Destiny 2
+2025-05-30 19:34:31,612 — INFO — Twitch: 50 streams para juego Retro
+2025-05-30 19:34:32,532 — INFO — Twitch: 50 streams para juego Delta Force
+2025-05-30 19:34:32,996 — INFO — Twitch: 50 streams para juego Albion Online
+2025-05-30 19:34:33,976 — INFO — Twitch: 50 streams para juego Splitgate 2
+2025-05-30 19:34:34,436 — INFO — Twitch: 50 streams para juego Red Dead Redemption 2
+2025-05-30 19:34:34,895 — INFO — Twitch: 50 streams para juego R.E.P.O.
+2025-05-30 19:34:35,344 — INFO — Twitch: 50 streams para juego 7 Days to Die
+2025-05-30 19:34:35,826 — INFO — Twitch: 50 streams para juego Always On
+2025-05-30 19:34:36,777 — INFO — Twitch: 50 streams para juego Star Citizen
+2025-05-30 19:34:37,234 — INFO — Twitch: 50 streams para juego Animals, Aquariums, and Zoos
+2025-05-30 19:34:38,146 — INFO — Twitch: 50 streams para juego FINAL FANTASY XIV ONLINE
+2025-05-30 19:34:38,606 — INFO — Twitch: 50 streams para juego RoadCraft
+2025-05-30 19:34:39,059 — INFO — Twitch: 50 streams para juego Pokémon Community Game
+2025-05-30 19:34:40,012 — INFO — Twitch: 50 streams para juego ROBLOX
+2025-05-30 19:34:40,788 — INFO — Twitch: 38 streams para juego Car Dealer Simulator
+2025-05-30 19:34:41,239 — INFO — Twitch: 50 streams para juego Sea of Thieves
+2025-05-30 19:34:42,184 — INFO — Twitch: 50 streams para juego Games + Demos
+2025-05-30 19:34:43,125 — INFO — Twitch: 50 streams para juego Crystal of Atlan
+2025-05-30 19:34:44,075 — INFO — Twitch: 50 streams para juego Genshin Impact
+2025-05-30 19:34:44,583 — INFO — Twitch: 50 streams para juego Gray Zone Warfare
+2025-05-30 19:34:45,486 — INFO — Twitch: 50 streams para juego Ragnarok Online
+2025-05-30 19:34:46,440 — INFO — Twitch: 50 streams para juego Wuthering Waves
+2025-05-30 19:34:47,132 — INFO — Twitch: 43 streams para juego Heroes of Might and Magic III: The Restoration of Erathia
+2025-05-30 19:34:47,815 — INFO — Twitch: 28 streams para juego BULLET YEETERS
+2025-05-30 19:34:48,721 — INFO — Twitch: 50 streams para juego GeoGuessr
+2025-05-30 19:34:49,720 — INFO — Twitch: 50 streams para juego Escape from Tarkov: Arena
+2025-05-30 19:34:50,657 — INFO — Twitch: 50 streams para juego Path of Exile
+2025-05-30 19:34:51,396 — INFO — Twitch: 36 streams para juego The Legend of Zelda: Tears of the Kingdom
+2025-05-30 19:34:51,865 — INFO — Twitch: 50 streams para juego RimWorld
+2025-05-30 19:34:52,554 — INFO — Twitch: 5 streams para juego BOKURA: planet
+2025-05-30 19:34:53,460 — INFO — Twitch: 50 streams para juego NBA 2K25
+2025-05-30 19:34:54,417 — INFO — Twitch: 50 streams para juego Poker
+2025-05-30 19:34:55,114 — INFO — Twitch: 38 streams para juego Politics
+2025-05-30 19:34:55,571 — INFO — Twitch: 50 streams para juego Call of Duty
+2025-05-30 19:34:56,302 — INFO — Twitch: 33 streams para juego Monster Train 2
+2025-05-30 19:34:57,239 — INFO — Twitch: 50 streams para juego Hunt: Showdown 1896
+2025-05-30 19:34:57,726 — INFO — Twitch: 50 streams para juego Lost Ark
+2025-05-30 19:34:58,649 — INFO — Twitch: 50 streams para juego Trackmania
+2025-05-30 19:34:59,114 — INFO — Twitch: 50 streams para juego Warhammer 40,000: Space Marine II
+2025-05-30 19:35:00,069 — INFO — Twitch: 50 streams para juego Magic: The Gathering
+2025-05-30 19:35:00,527 — INFO — Twitch: 50 streams para juego VRChat
+2025-05-30 19:35:01,441 — INFO — Twitch: 50 streams para juego Star Wars Battlefront II
+2025-05-30 19:35:02,133 — INFO — Twitch: 13 streams para juego SurrounDead
+2025-05-30 19:35:03,038 — INFO — Twitch: 50 streams para juego War Thunder
+2025-05-30 19:35:03,513 — INFO — Twitch: 50 streams para juego World of Warships
+2025-05-30 19:35:04,217 — INFO — Twitch: 23 streams para juego Tabletop RPGs
+2025-05-30 19:35:04,687 — INFO — Twitch: 50 streams para juego Crypto
+2025-05-30 19:35:05,393 — INFO — Twitch: 6 streams para juego Shakes and Fidget
+2025-05-30 19:35:06,111 — INFO — Twitch: 36 streams para juego EVE Online
+2025-05-30 19:35:07,078 — INFO — Twitch: 50 streams para juego Marbles on Stream
+2025-05-30 19:35:07,762 — INFO — Twitch: 16 streams para juego Death Stranding
+2025-05-30 19:35:08,228 — INFO — Twitch: 50 streams para juego Software and Game Development
+2025-05-30 19:35:09,149 — INFO — Twitch: 50 streams para juego Diablo IV
+2025-05-30 19:35:09,628 — INFO — Twitch: 50 streams para juego Baldur's Gate 3
+2025-05-30 19:35:10,085 — INFO — Twitch: 50 streams para juego I'm Only Sleeping
+2025-05-30 19:35:10,611 — INFO — Twitch: 50 streams para juego Co-working & Studying
+2025-05-30 19:35:11,348 — INFO — Twitch: 42 streams para juego Diablo II
+2025-05-30 19:35:11,797 — INFO — Twitch: 50 streams para juego The Elder Scrolls Online
+2025-05-30 19:35:12,752 — INFO — Twitch: 50 streams para juego Pokémon Trading Card Game
+2025-05-30 19:35:13,696 — INFO — Twitch: 50 streams para juego Dark and Darker
+2025-05-30 19:35:14,644 — INFO — Twitch: 50 streams para juego iRacing
+2025-05-30 19:35:15,339 — INFO — Twitch: 31 streams para juego Rise Online
+2025-05-30 19:35:16,231 — INFO — Twitch: 50 streams para juego Throne and Liberty
+2025-05-30 19:35:16,907 — INFO — Twitch: 42 streams para juego Pokémon FireRed/LeafGreen
+2025-05-30 19:35:17,833 — INFO — Twitch: 50 streams para juego Deadlock
+2025-05-30 19:35:18,317 — INFO — Twitch: 50 streams para juego Warcraft III
+2025-05-30 19:35:19,024 — INFO — Twitch: 27 streams para juego Wrap House Simulator
+2025-05-30 19:35:20,000 — INFO — Twitch: 50 streams para juego Brawl Stars
+2025-05-30 19:35:20,928 — INFO — Twitch: 50 streams para juego The Sims 4
+2025-05-30 19:35:21,632 — INFO — Twitch: 26 streams para juego Slay the Spire
+2025-05-30 19:35:22,582 — INFO — Twitch: 50 streams para juego Zenless Zone Zero
+2025-05-30 19:35:23,546 — INFO — Twitch: 50 streams para juego Phasmophobia
+2025-05-30 19:35:23,793 — INFO — Twitch: 0 streams para juego Casino Simulator
+2025-05-30 19:35:24,262 — INFO — Twitch: 50 streams para juego Streamer University
+2025-05-30 19:35:25,205 — INFO — Twitch: 50 streams para juego Path of Exile 2
+2025-05-30 19:35:26,171 — INFO — Twitch: 50 streams para juego Clash Royale
+2025-05-30 19:35:26,963 — INFO — Twitch: 36 streams para juego Off The Grid
+2025-05-30 19:35:27,419 — INFO — Twitch: 50 streams para juego PUBG Mobile
+2025-05-30 19:35:27,873 — INFO — Twitch: 50 streams para juego Warframe
+2025-05-30 19:35:28,812 — INFO — Twitch: 50 streams para juego DARK SOULS II: Scholar of the First Sin
+2025-05-30 19:35:29,268 — INFO — Twitch: 50 streams para juego MapleStory
+2025-05-30 19:35:30,020 — INFO — Twitch: 43 streams para juego Cuphead
+2025-05-30 19:35:30,974 — INFO — Twitch: 50 streams para juego Honkai: Star Rail
+2025-05-30 19:35:31,435 — INFO — Twitch: 50 streams para juego Palia
+2025-05-30 19:35:32,405 — INFO — Twitch: 50 streams para juego Pokémon Trading Card Game Pocket
+2025-05-30 19:35:33,163 — INFO — Twitch: 20 streams para juego Portal 2
+2025-05-30 19:35:34,082 — INFO — Twitch: 50 streams para juego Mir Tankov
+2025-05-30 19:35:34,980 — INFO — Twitch: 50 streams para juego Stardew Valley
+2025-05-30 19:35:35,444 — INFO — Twitch: 50 streams para juego Perfect World
+2025-05-30 19:35:35,904 — INFO — Twitch: 50 streams para juego DOOM: The Dark Ages
+2025-05-30 19:35:36,814 — INFO — Twitch: 50 streams para juego MLB The Show 25
+2025-05-30 19:35:37,296 — INFO — Twitch: 50 streams para juego SMITE 2
+2025-05-30 19:35:38,222 — INFO — Twitch: 50 streams para juego HELLDIVERS 2
+2025-05-30 19:35:38,681 — INFO — Twitch: 50 streams para juego The Elder Scrolls IV: Oblivion Remastered
+2025-05-30 19:35:39,401 — INFO — Twitch: 37 streams para juego Star Wars: The Old Republic
+2025-05-30 19:35:39,875 — INFO — Twitch: 50 streams para juego Brawlhalla
+2025-05-30 19:35:40,624 — INFO — Twitch: 30 streams para juego Knight Online
+2025-05-30 19:35:41,087 — INFO — Twitch: 50 streams para juego Farming Simulator 25
+2025-05-30 19:35:42,022 — INFO — Twitch: 50 streams para juego Pokémon Scarlet/Violet
+2025-05-30 19:35:42,947 — INFO — Twitch: 50 streams para juego Game of Thrones: Kingsroad
+2025-05-30 19:35:43,398 — INFO — Twitch: 50 streams para juego Monster Hunter Wilds
+2025-05-30 19:35:44,147 — INFO — Twitch: 36 streams para juego Pools, Hot Tubs, and Beaches
+2025-05-30 19:35:45,090 — INFO — Twitch: 50 streams para juego Garry's Mod
+2025-05-30 19:35:45,818 — INFO — Twitch: 38 streams para juego The Bazaar
+2025-05-30 19:35:46,502 — INFO — Twitch: 30 streams para juego Tournament Poker
+2025-05-30 19:35:47,292 — INFO — Twitch: 16 streams para juego Marvel Snap
+2025-05-30 19:35:48,286 — INFO — Twitch: 21 streams para juego RavenQuest
+2025-05-30 19:35:49,184 — INFO — Twitch: 50 streams para juego Animal Crossing: New Horizons
+2025-05-30 19:35:49,675 — INFO — Twitch: 50 streams para juego osu!
+2025-05-30 19:35:50,628 — INFO — Twitch: 50 streams para juego Subnautica
+2025-05-30 19:35:51,325 — INFO — Twitch: 24 streams para juego Age of Empires IV
+2025-05-30 19:35:52,250 — INFO — Twitch: 50 streams para juego TEKKEN 8
+2025-05-30 19:35:54,182 — INFO — Twitch: 50 streams para juego Standoff 2
+2025-05-30 19:35:54,957 — INFO — Twitch: 23 streams para juego Dying Light
+2025-05-30 19:35:56,126 — INFO — Twitch: 48 streams para juego Factorio
+2025-05-30 19:35:56,825 — INFO — Twitch: 1 streams para juego Tomba! 2: The Evil Swine Return
+2025-05-30 19:35:57,755 — INFO — Twitch: 50 streams para juego Chess
+2025-05-30 19:35:58,460 — INFO — Twitch: 28 streams para juego Dofus
+2025-05-30 19:35:59,365 — INFO — Twitch: 50 streams para juego Madden NFL 25
+2025-05-30 19:36:00,345 — INFO — Twitch: 50 streams para juego Russian Fishing 4
+2025-05-30 19:36:01,249 — INFO — Twitch: 50 streams para juego ARK: Survival Ascended
+2025-05-30 19:36:01,933 — INFO — Twitch: 4 streams para juego Paranormal Cleanup
+2025-05-30 19:36:02,401 — INFO — Twitch: 50 streams para juego The Witcher 3: Wild Hunt
+2025-05-30 19:36:03,310 — INFO — Twitch: 50 streams para juego The Last of Us Part II: Remastered
+2025-05-30 19:36:04,009 — INFO — Twitch: 11 streams para juego BioShock Remastered
+2025-05-30 19:36:04,736 — INFO — Twitch: 39 streams para juego Super Mario 64
+2025-05-30 19:36:05,233 — INFO — Twitch: 50 streams para juego Once Human
+2025-05-30 19:36:05,934 — INFO — Twitch: 41 streams para juego Microsoft Flight Simulator 2024
+2025-05-30 19:36:06,387 — INFO — Twitch: 50 streams para juego League of Legends: Wild Rift
+2025-05-30 19:36:07,113 — INFO — Twitch: 6 streams para juego Ratopia
+2025-05-30 19:36:07,820 — INFO — Twitch: 46 streams para juego Food & Drink
+2025-05-30 19:36:08,752 — INFO — Twitch: 50 streams para juego Mario Kart 8 Deluxe
+2025-05-30 19:36:09,202 — INFO — Twitch: 50 streams para juego Satisfactory
+2025-05-30 19:36:09,934 — INFO — Twitch: 39 streams para juego Heroes of the Storm
+2025-05-30 19:36:11,010 — INFO — Twitch: 43 streams para juego StarCraft II
+2025-05-30 19:36:11,495 — INFO — Twitch: 50 streams para juego Project Zomboid
+2025-05-30 19:36:12,250 — INFO — Twitch: 8 streams para juego RGG Checkers
+2025-05-30 19:36:12,982 — INFO — Twitch: 26 streams para juego Anime Squad
+2025-05-30 19:36:13,918 — INFO — Twitch: 50 streams para juego Fall Guys
+2025-05-30 19:36:14,764 — INFO — Twitch: 3 streams para juego Kings League
+2025-05-30 19:36:15,757 — INFO — Twitch: 50 streams para juego Blue Prince
+2025-05-30 19:36:16,708 — INFO — Twitch: 50 streams para juego Euro Truck Simulator 2
+2025-05-30 19:36:17,645 — INFO — Twitch: 50 streams para juego Forza Horizon 5
+2025-05-30 19:36:18,556 — INFO — Twitch: 50 streams para juego MU Online
+2025-05-30 19:36:19,230 — INFO — Twitch: 17 streams para juego Fatal Fury: City of the Wolves
+2025-05-30 19:36:19,912 — INFO — Twitch: 6 streams para juego Danganronpa: Trigger Happy Havoc
+2025-05-30 19:36:19,914 — INFO — Twitch: total registros preparados 8998
+2025-05-30 19:36:20,333 — INFO — Twitch: RDD creado
+2025-05-30 19:36:32,130 — INFO — Extracción de Twitch completada
+2025-05-30 19:36:32,130 — INFO — Extrayendo datos de Pokémon Showdown API...
+2025-05-30 19:36:32,132 — INFO — Showdown: iniciando extracción de ladders y perfiles
+2025-05-30 19:36:32,132 — INFO — Showdown: usando 33 formatos Gen9 predefinidos
+2025-05-30 19:36:32,820 — INFO — gen9randombattle: 100 jugadores en top
+2025-05-30 19:36:33,740 — ERROR — Showdown: error en formato gen9randombattle: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Star%20Wheel.json
+2025-05-30 19:36:34,340 — INFO — gen9challengecup1v1: 100 jugadores en top
+2025-05-30 19:36:34,666 — ERROR — Showdown: error en formato gen9challengecup1v1: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Pac%20n%20cheese.json
+2025-05-30 19:36:35,254 — INFO — gen9hackmonscup: 100 jugadores en top
+2025-05-30 19:36:36,787 — ERROR — Showdown: error en formato gen9hackmonscup: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/cringe%20antidote.json
+2025-05-30 19:36:37,398 — INFO — gen9ou: 100 jugadores en top
+2025-05-30 19:36:38,281 — ERROR — Showdown: error en formato gen9ou: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Asia's%20Redemption.json
+2025-05-30 19:36:38,940 — INFO — gen9ubers: 100 jugadores en top
+2025-05-30 19:36:39,232 — ERROR — Showdown: error en formato gen9ubers: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Le%20Mur%20Du%20Son.json
+2025-05-30 19:36:39,874 — INFO — gen9uu: 100 jugadores en top
+2025-05-30 19:36:40,503 — ERROR — Showdown: error en formato gen9uu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Jim%20bucket.json
+2025-05-30 19:36:41,114 — INFO — gen9ru: 100 jugadores en top
+2025-05-30 19:36:41,722 — ERROR — Showdown: error en formato gen9ru: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/RULT85M%20Lime.json
+2025-05-30 19:36:42,305 — INFO — gen9nu: 100 jugadores en top
+2025-05-30 19:36:42,932 — ERROR — Showdown: error en formato gen9nu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/nujs%20p.json
+2025-05-30 19:36:43,557 — INFO — gen9pu: 100 jugadores en top
+2025-05-30 19:36:44,177 — ERROR — Showdown: error en formato gen9pu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Peter%20Mensi.json
+2025-05-30 19:36:44,862 — INFO — gen9lc: 100 jugadores en top
+2025-05-30 19:36:45,221 — ERROR — Showdown: error en formato gen9lc: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Arcanine%20Numbers.json
+2025-05-30 19:36:45,843 — INFO — gen9monotype: 100 jugadores en top
+2025-05-30 19:36:46,126 — ERROR — Showdown: error en formato gen9monotype: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Dieu%20Amphibien.json
+2025-05-30 19:36:46,744 — INFO — gen91v1: 100 jugadores en top
+2025-05-30 19:36:47,375 — ERROR — Showdown: error en formato gen91v1: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/T%20G%20O%201v1s.json
+2025-05-30 19:36:48,019 — INFO — gen9anythinggoes: 100 jugadores en top
+2025-05-30 19:36:48,579 — ERROR — Showdown: error en formato gen9anythinggoes: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Transparent%20World.json
+2025-05-30 19:36:49,171 — INFO — gen9zu: 100 jugadores en top
+2025-05-30 19:36:49,795 — ERROR — Showdown: error en formato gen9zu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Bubsy%2064.json
+2025-05-30 19:36:50,377 — INFO — gen9bssregi: 100 jugadores en top
+2025-05-30 19:36:50,961 — ERROR — Showdown: error en formato gen9bssregi: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Chase%20The%20Chance.json
+2025-05-30 19:36:51,525 — INFO — gen9cap: 100 jugadores en top
+2025-05-30 19:36:51,808 — ERROR — Showdown: error en formato gen9cap: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Drippy%20T%20IV.json
+2025-05-30 19:36:52,404 — INFO — gen9randomdoublesbattle: 100 jugadores en top
+2025-05-30 19:36:54,078 — ERROR — Showdown: error en formato gen9randomdoublesbattle: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Teres%20bahji.json
+2025-05-30 19:36:54,711 — INFO — gen9doublesou: 100 jugadores en top
+2025-05-30 19:36:55,319 — ERROR — Showdown: error en formato gen9doublesou: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Sakkuya%20Izayoi.json
+2025-05-30 19:36:55,928 — INFO — gen9vgc2025regi: 100 jugadores en top
+2025-05-30 19:36:56,535 — ERROR — Showdown: error en formato gen9vgc2025regi: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/i%20rly%20love%20latinas.json
+2025-05-30 19:36:57,145 — INFO — gen9vgc2025regibo3: 100 jugadores en top
+2025-05-30 19:36:57,434 — ERROR — Showdown: error en formato gen9vgc2025regibo3: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Klara%20and%20the%20Sun.json
+2025-05-30 19:36:58,040 — INFO — gen9almostanyability: 100 jugadores en top
+2025-05-30 19:36:58,775 — ERROR — Showdown: error en formato gen9almostanyability: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Betticus%20IV.json
+2025-05-30 19:36:59,371 — INFO — gen9balancedhackmons: 100 jugadores en top
+2025-05-30 19:37:00,286 — ERROR — Showdown: error en formato gen9balancedhackmons: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/uwu%20gay.json
+2025-05-30 19:37:01,065 — INFO — gen9godlygift: 100 jugadores en top
+2025-05-30 19:37:03,279 — ERROR — Showdown: error en formato gen9godlygift: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/30g%20of%20protein.json
+2025-05-30 19:37:04,473 — INFO — gen9inheritance: 100 jugadores en top
+2025-05-30 19:37:05,073 — ERROR — Showdown: error en formato gen9inheritance: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Goofin%20Aroun.json
+2025-05-30 19:37:05,706 — INFO — gen9mixandmega: 100 jugadores en top
+2025-05-30 19:37:05,981 — ERROR — Showdown: error en formato gen9mixandmega: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/om%20guru.json
+2025-05-30 19:37:06,609 — INFO — gen9partnersincrime: 100 jugadores en top
+2025-05-30 19:37:07,479 — ERROR — Showdown: error en formato gen9partnersincrime: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Cram%20Haut%20Rang.json
+2025-05-30 19:37:08,102 — INFO — gen9sharedpower: 100 jugadores en top
+2025-05-30 19:37:09,618 — ERROR — Showdown: error en formato gen9sharedpower: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Corrins%20Foot.json
+2025-05-30 19:37:10,233 — INFO — gen9stabmons: 100 jugadores en top
+2025-05-30 19:37:11,511 — ERROR — Showdown: error en formato gen9stabmons: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Harlem%20Aria.json
+2025-05-30 19:37:12,147 — INFO — gen9nationaldex: 100 jugadores en top
+2025-05-30 19:37:12,743 — ERROR — Showdown: error en formato gen9nationaldex: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Boonie%20Bears.json
+2025-05-30 19:37:13,365 — INFO — gen9nationaldexubers: 100 jugadores en top
+2025-05-30 19:37:14,508 — ERROR — Showdown: error en formato gen9nationaldexubers: 404 Client Error: Not Found for url: https://pokemonshowdown.com/users/85792195yyds.json
+2025-05-30 19:37:15,104 — INFO — gen9nationaldexuu: 100 jugadores en top
+2025-05-30 19:37:17,614 — ERROR — Showdown: error en formato gen9nationaldexuu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/i%20love%20smash%20mc.json
+2025-05-30 19:37:18,221 — INFO — gen9nationaldexmonotype: 100 jugadores en top
+2025-05-30 19:37:20,033 — ERROR — Showdown: error en formato gen9nationaldexmonotype: 404 Client Error: Not Found for url: https://pokemonshowdown.com/users/babounoulegrosbab.json
+2025-05-30 19:37:20,623 — INFO — gen9nationaldexdoubles: 100 jugadores en top
+2025-05-30 19:37:20,921 — ERROR — Showdown: error en formato gen9nationaldexdoubles: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Old%20McBruh.json
+2025-05-30 19:37:20,922 — INFO — Showdown: registros totales extraídos = 139
+2025-05-30 19:37:20,928 — INFO — Extracción de Showdown completada
+2025-05-30 19:37:20,928 — INFO — Extrayendo datos de HowLongToBeat API...
+2025-05-30 19:37:20,929 — INFO — HLTB: iniciando consultas de duración de juegos
+2025-05-30 19:37:24,438 — WARNING — HLTB: sin resultados para 'IRL'
+2025-05-30 19:37:28,288 — WARNING — HLTB: sin resultados para 'Special Events'
+2025-05-30 19:37:40,124 — WARNING — HLTB: sin resultados para 'Rise Online'
+2025-05-30 19:37:44,821 — WARNING — HLTB: sin resultados para 'TEKKEN 8'
+2025-05-30 19:37:46,263 — WARNING — HLTB: sin resultados para 'The Last of Us Part II: Remastered'
+2025-05-30 19:37:47,340 — WARNING — HLTB: sin resultados para 'Food & Drink'
+2025-05-30 19:37:56,822 — WARNING — HLTB: sin resultados para 'Talk Shows & Podcasts'
+2025-05-30 19:37:59,887 — WARNING — HLTB: sin resultados para 'Games + Demos'
+2025-05-30 19:38:30,080 — WARNING — HLTB: sin resultados para 'PUBG: BATTLEGROUNDS'
+2025-05-30 19:39:05,499 — WARNING — HLTB: sin resultados para 'VALORANT'
+2025-05-30 19:39:11,613 — WARNING — HLTB: sin resultados para 'Fears to Fathom: Norwood Hitchhike'
+2025-05-30 19:39:17,742 — WARNING — HLTB: sin resultados para 'Co-working & Studying'
+2025-05-30 19:39:34,045 — INFO — HLTB: consultas completadas, registros válidos=88
+2025-05-30 19:39:34,051 — INFO — Extracción de HowLongToBeat completada
+2025-05-30 19:39:34,053 — INFO — === GUARDANDO A PARQUET ===
+2025-05-30 19:39:34,053 — INFO — Guardando twitch a Parquet...
+2025-05-30 19:39:37,062 — INFO — [TWITCH] Iniciando guardado a Parquet: data/twitch.parquet
+2025-05-30 19:39:46,299 — ERROR — Error guardando twitch a Parquet: An error occurred while calling o102.parquet.
+: java.lang.UnsatisfiedLinkError: 'boolean org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(java.lang.String, int)'
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.fs.ChecksumFileSystem.listStatus(ChecksumFileSystem.java:761)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.getAllCommittedTaskPaths(FileOutputCommitter.java:334)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJobInternal(FileOutputCommitter.java:404)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJob(FileOutputCommitter.java:377)
+	at org.apache.parquet.hadoop.ParquetOutputCommitter.commitJob(ParquetOutputCommitter.java:48)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.commitJob(HadoopMapReduceCommitProtocol.scala:192)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$writeAndCommit$3(FileFormatWriter.scala:275)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:552)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:275)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:304)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:190)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:190)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:113)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:111)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:125)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:869)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:391)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:364)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:243)
+	at org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:802)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:76)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2025-05-30 19:39:46,301 — ERROR — Error crítico en el pipeline: An error occurred while calling o102.parquet.
+: java.lang.UnsatisfiedLinkError: 'boolean org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(java.lang.String, int)'
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.fs.ChecksumFileSystem.listStatus(ChecksumFileSystem.java:761)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.getAllCommittedTaskPaths(FileOutputCommitter.java:334)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJobInternal(FileOutputCommitter.java:404)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJob(FileOutputCommitter.java:377)
+	at org.apache.parquet.hadoop.ParquetOutputCommitter.commitJob(ParquetOutputCommitter.java:48)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.commitJob(HadoopMapReduceCommitProtocol.scala:192)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$writeAndCommit$3(FileFormatWriter.scala:275)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:552)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:275)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:304)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:190)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:190)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:113)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:111)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:125)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:869)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:391)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:364)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:243)
+	at org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:802)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:76)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2025-05-30 19:39:46,302 — ERROR — Pipeline terminado con errores
+2025-05-30 19:39:46,302 — INFO — Cerrando conexiones y limpiando recursos...
+2025-05-30 19:39:47,201 — INFO — Pipeline finalizado
+2025-06-05 19:50:50,919 — INFO — === INICIO DEL PIPELINE ETL VIDEOJUEGOS ===
+2025-06-05 19:50:50,919 — INFO — Tiempo de inicio: 2025-06-05 17:50:50.919673
+2025-06-05 19:50:50,921 — INFO — Inicializando base de datos y tabla de logs...
+2025-06-05 19:50:51,129 — INFO — Base de datos inicializada correctamente
+2025-06-05 19:50:51,129 — INFO — === FASE 1: EXTRACCIÓN DE DATOS ===
+2025-06-05 19:50:51,129 — INFO — Extrayendo datos de Twitch API...
+2025-06-05 19:50:51,129 — INFO — Twitch: iniciando extracción
+2025-06-05 19:50:53,042 — INFO — Twitch: obtenidos 200 juegos top
+2025-06-05 19:50:53,970 — INFO — Twitch: 50 streams para juego Just Chatting
+2025-06-05 19:50:54,909 — INFO — Twitch: 50 streams para juego Counter-Strike
+2025-06-05 19:50:55,379 — INFO — Twitch: 50 streams para juego Mario Kart World
+2025-06-05 19:50:56,305 — INFO — Twitch: 50 streams para juego Grand Theft Auto V
+2025-06-05 19:50:56,768 — INFO — Twitch: 50 streams para juego Dune: Awakening
+2025-06-05 19:50:57,242 — INFO — Twitch: 50 streams para juego League of Legends
+2025-06-05 19:50:57,952 — INFO — Twitch: 39 streams para juego Kings League
+2025-06-05 19:50:59,319 — INFO — Twitch: 50 streams para juego Dota 2
+2025-06-05 19:51:00,237 — INFO — Twitch: 50 streams para juego VALORANT
+2025-06-05 19:51:00,715 — INFO — Twitch: 50 streams para juego Call of Duty: Warzone
+2025-06-05 19:51:01,413 — INFO — Twitch: 39 streams para juego Guilty as Sock!
+2025-06-05 19:51:02,339 — INFO — Twitch: 50 streams para juego Fortnite
+2025-06-05 19:51:03,298 — INFO — Twitch: 50 streams para juego Elden Ring: Nightreign
+2025-06-05 19:51:03,763 — INFO — Twitch: 50 streams para juego World of Warcraft
+2025-06-05 19:51:04,226 — INFO — Twitch: 50 streams para juego Sports
+2025-06-05 19:51:04,708 — INFO — Twitch: 50 streams para juego Minecraft
+2025-06-05 19:51:05,651 — INFO — Twitch: 50 streams para juego IRL
+2025-06-05 19:51:06,115 — INFO — Twitch: 50 streams para juego Teamfight Tactics
+2025-06-05 19:51:07,018 — INFO — Twitch: 50 streams para juego Music
+2025-06-05 19:51:07,932 — INFO — Twitch: 50 streams para juego Dead by Daylight
+2025-06-05 19:51:08,384 — INFO — Twitch: 50 streams para juego Marvel Rivals
+2025-06-05 19:51:09,307 — INFO — Twitch: 50 streams para juego EA Sports FC 25
+2025-06-05 19:51:09,771 — INFO — Twitch: 50 streams para juego Old School RuneScape
+2025-06-05 19:51:10,697 — INFO — Twitch: 50 streams para juego Hearthstone
+2025-06-05 19:51:11,154 — INFO — Twitch: 50 streams para juego Path of Exile
+2025-06-05 19:51:12,082 — INFO — Twitch: 50 streams para juego Apex Legends
+2025-06-05 19:51:13,035 — INFO — Twitch: 50 streams para juego Special Events
+2025-06-05 19:51:13,943 — INFO — Twitch: 50 streams para juego R.E.P.O.
+2025-06-05 19:51:14,861 — INFO — Twitch: 50 streams para juego Clair Obscur: Expedition 33
+2025-06-05 19:51:15,779 — INFO — Twitch: 50 streams para juego Street Fighter 6
+2025-06-05 19:51:16,250 — INFO — Twitch: 50 streams para juego World of Tanks
+2025-06-05 19:51:17,157 — INFO — Twitch: 50 streams para juego Chess
+2025-06-05 19:51:18,561 — INFO — Twitch: 50 streams para juego Rust
+2025-06-05 19:51:19,035 — INFO — Twitch: 50 streams para juego DJs
+2025-06-05 19:51:19,723 — INFO — Twitch: 50 streams para juego Slots
+2025-06-05 19:51:20,197 — INFO — Twitch: 50 streams para juego Art
+2025-06-05 19:51:21,119 — INFO — Twitch: 50 streams para juego Talk Shows & Podcasts
+2025-06-05 19:51:21,892 — INFO — Twitch: 50 streams para juego PUBG: BATTLEGROUNDS
+2025-06-05 19:51:22,597 — INFO — Twitch: 1 streams para juego The Royal Writ
+2025-06-05 19:51:23,514 — INFO — Twitch: 50 streams para juego Etheria: Restart
+2025-06-05 19:51:24,455 — INFO — Twitch: 50 streams para juego Overwatch 2
+2025-06-05 19:51:24,919 — INFO — Twitch: 50 streams para juego Escape from Tarkov
+2025-06-05 19:51:25,833 — INFO — Twitch: 50 streams para juego Rocket League
+2025-06-05 19:51:26,300 — INFO — Twitch: 50 streams para juego Tom Clancy's Rainbow Six Siege
+2025-06-05 19:51:27,207 — INFO — Twitch: 50 streams para juego ASMR
+2025-06-05 19:51:28,151 — INFO — Twitch: 50 streams para juego World of Warships
+2025-06-05 19:51:28,612 — INFO — Twitch: 50 streams para juego MapleStory Worlds
+2025-06-05 19:51:29,557 — INFO — Twitch: 50 streams para juego Lost Ark
+2025-06-05 19:51:30,487 — INFO — Twitch: 50 streams para juego Arena Breakout: Infinite
+2025-06-05 19:51:31,172 — INFO — Twitch: 43 streams para juego Among Us
+2025-06-05 19:51:31,866 — INFO — Twitch: 10 streams para juego Hell is Us
+2025-06-05 19:51:32,585 — INFO — Twitch: 35 streams para juego Virtual Casino
+2025-06-05 19:51:33,516 — INFO — Twitch: 50 streams para juego DayZ
+2025-06-05 19:51:34,215 — INFO — Twitch: 1 streams para juego Parasocial
+2025-06-05 19:51:34,931 — INFO — Twitch: 1 streams para juego Shine Post: Be Your Idol!
+2025-06-05 19:51:35,398 — INFO — Twitch: 50 streams para juego Tibia
+2025-06-05 19:51:37,353 — INFO — Twitch: 50 streams para juego Albion Online
+2025-06-05 19:51:37,818 — INFO — Twitch: 50 streams para juego Crypto
+2025-06-05 19:51:38,738 — INFO — Twitch: 50 streams para juego I'm Only Sleeping
+2025-06-05 19:51:39,203 — INFO — Twitch: 50 streams para juego Always On
+2025-06-05 19:51:40,133 — INFO — Twitch: 50 streams para juego Trackmania
+2025-06-05 19:51:41,049 — INFO — Twitch: 50 streams para juego F1 25
+2025-06-05 19:51:41,984 — INFO — Twitch: 50 streams para juego GeoGuessr
+2025-06-05 19:51:42,445 — INFO — Twitch: 50 streams para juego ROBLOX
+2025-06-05 19:51:43,365 — INFO — Twitch: 50 streams para juego Warcraft III
+2025-06-05 19:51:43,819 — INFO — Twitch: 50 streams para juego Red Dead Redemption 2
+2025-06-05 19:51:44,733 — INFO — Twitch: 50 streams para juego Guild Wars 2
+2025-06-05 19:51:45,671 — INFO — Twitch: 50 streams para juego Deltarune
+2025-06-05 19:51:46,123 — INFO — Twitch: 50 streams para juego Animals, Aquariums, and Zoos
+2025-06-05 19:51:47,030 — INFO — Twitch: 50 streams para juego Black Desert
+2025-06-05 19:51:47,974 — INFO — Twitch: 50 streams para juego Lethal Company
+2025-06-05 19:51:48,916 — INFO — Twitch: 50 streams para juego Black Myth: Wukong
+2025-06-05 19:51:49,381 — INFO — Twitch: 50 streams para juego Poker
+2025-06-05 19:51:49,850 — INFO — Twitch: 50 streams para juego Call of Duty: Black Ops 6
+2025-06-05 19:51:50,317 — INFO — Twitch: 50 streams para juego ELDEN RING
+2025-06-05 19:51:51,027 — INFO — Twitch: 1 streams para juego The Lord of the Rings: The Fellowship of the Ring
+2025-06-05 19:51:51,938 — INFO — Twitch: 50 streams para juego Tom Clancy's The Division 2
+2025-06-05 19:51:52,414 — INFO — Twitch: 50 streams para juego Destiny 2
+2025-06-05 19:51:52,872 — INFO — Twitch: 50 streams para juego Mobile Legends: Bang Bang
+2025-06-05 19:51:53,330 — INFO — Twitch: 50 streams para juego Retro
+2025-06-05 19:51:54,052 — INFO — Twitch: 44 streams para juego The Bazaar
+2025-06-05 19:51:56,014 — INFO — Twitch: 50 streams para juego The Elder Scrolls Online
+2025-06-05 19:51:56,487 — INFO — Twitch: 50 streams para juego Star Citizen
+2025-06-05 19:51:56,956 — INFO — Twitch: 50 streams para juego VRChat
+2025-06-05 19:51:57,899 — INFO — Twitch: 50 streams para juego Clash Royale
+2025-06-05 19:51:58,823 — INFO — Twitch: 50 streams para juego Call of Duty
+2025-06-05 19:51:59,286 — INFO — Twitch: 50 streams para juego The Elder Scrolls IV: Oblivion Remastered
+2025-06-05 19:52:00,208 — INFO — Twitch: 50 streams para juego Games + Demos
+2025-06-05 19:52:01,138 — INFO — Twitch: 50 streams para juego FragPunk
+2025-06-05 19:52:01,598 — INFO — Twitch: 50 streams para juego Enshrouded
+2025-06-05 19:52:02,064 — INFO — Twitch: 50 streams para juego Nioh 3
+2025-06-05 19:52:03,033 — INFO — Twitch: 50 streams para juego Sea of Thieves
+2025-06-05 19:52:03,497 — INFO — Twitch: 50 streams para juego Pokémon Scarlet/Violet
+2025-06-05 19:52:03,952 — INFO — Twitch: 50 streams para juego Heroes of Might and Magic III: The Restoration of Erathia
+2025-06-05 19:52:04,879 — INFO — Twitch: 50 streams para juego NBA 2K25
+2025-06-05 19:52:05,361 — INFO — Twitch: 50 streams para juego DARK SOULS III
+2025-06-05 19:52:05,837 — INFO — Twitch: 50 streams para juego Gray Zone Warfare
+2025-06-05 19:52:06,300 — INFO — Twitch: 50 streams para juego Garry's Mod
+2025-06-05 19:52:07,003 — INFO — Twitch: 2 streams para juego ALL WILL FALL
+2025-06-05 19:52:07,707 — INFO — Twitch: 34 streams para juego Pokémon FireRed/LeafGreen
+2025-06-05 19:52:08,174 — INFO — Twitch: 50 streams para juego FINAL FANTASY XIV ONLINE
+2025-06-05 19:52:09,424 — INFO — Twitch: 50 streams para juego Splitgate 2
+2025-06-05 19:52:10,353 — INFO — Twitch: 50 streams para juego Magic: The Gathering
+2025-06-05 19:52:10,829 — INFO — Twitch: 50 streams para juego Baldur's Gate 3
+2025-06-05 19:52:11,779 — INFO — Twitch: 50 streams para juego Software and Game Development
+2025-06-05 19:52:12,482 — INFO — Twitch: 25 streams para juego Politics
+2025-06-05 19:52:13,399 — INFO — Twitch: 50 streams para juego Cyberpunk 2077
+2025-06-05 19:52:14,311 — INFO — Twitch: 50 streams para juego Genshin Impact
+2025-06-05 19:52:15,219 — INFO — Twitch: 50 streams para juego ARK: Survival Ascended
+2025-06-05 19:52:15,670 — INFO — Twitch: 50 streams para juego TEKKEN 8
+2025-06-05 19:52:16,622 — INFO — Twitch: 50 streams para juego Co-working & Studying
+2025-06-05 19:52:17,094 — INFO — Twitch: 50 streams para juego Delta Force
+2025-06-05 19:52:18,005 — INFO — Twitch: 50 streams para juego The Sims 4
+2025-06-05 19:52:19,994 — INFO — Twitch: 50 streams para juego Marbles on Stream
+2025-06-05 19:52:20,939 — INFO — Twitch: 50 streams para juego Dark Souls: Remastered
+2025-06-05 19:52:21,408 — INFO — Twitch: 50 streams para juego Euro Truck Simulator 2
+2025-06-05 19:52:22,338 — INFO — Twitch: 50 streams para juego Deadlock
+2025-06-05 19:52:23,271 — INFO — Twitch: 50 streams para juego Hunt: Showdown 1896
+2025-06-05 19:52:24,188 — INFO — Twitch: 50 streams para juego Phasmophobia
+2025-06-05 19:52:24,908 — INFO — Twitch: 39 streams para juego Nintendo Switch 2 Welcome Tour
+2025-06-05 19:52:25,842 — INFO — Twitch: 50 streams para juego Brawl Stars
+2025-06-05 19:52:26,547 — INFO — Twitch: 30 streams para juego EVE Online
+2025-06-05 19:52:27,009 — INFO — Twitch: 50 streams para juego iRacing
+2025-06-05 19:52:27,945 — INFO — Twitch: 50 streams para juego War Thunder
+2025-06-05 19:52:28,629 — INFO — Twitch: 40 streams para juego Age of Empires II
+2025-06-05 19:52:29,337 — INFO — Twitch: 15 streams para juego Half Sword
+2025-06-05 19:52:30,049 — INFO — Twitch: 35 streams para juego Off The Grid
+2025-06-05 19:52:31,978 — INFO — Twitch: 50 streams para juego The First Descendant
+2025-06-05 19:52:32,947 — INFO — Twitch: 50 streams para juego Dark and Darker
+2025-06-05 19:52:33,867 — INFO — Twitch: 50 streams para juego Path of Exile 2
+2025-06-05 19:52:34,831 — INFO — Twitch: 47 streams para juego Death Stranding: Director's Cut
+2025-06-05 19:52:35,763 — INFO — Twitch: 50 streams para juego Madden NFL 25
+2025-06-05 19:52:36,237 — INFO — Twitch: 50 streams para juego Stardew Valley
+2025-06-05 19:52:36,955 — INFO — Twitch: 41 streams para juego Drive Beyond Horizons
+2025-06-05 19:52:37,660 — INFO — Twitch: 27 streams para juego Crossout
+2025-06-05 19:52:38,341 — INFO — Twitch: 5 streams para juego Escape from Duckov
+2025-06-05 19:52:39,248 — INFO — Twitch: 50 streams para juego Wuthering Waves
+2025-06-05 19:52:39,952 — INFO — Twitch: 34 streams para juego Dofus
+2025-06-05 19:52:40,661 — INFO — Twitch: 28 streams para juego Rise Online
+2025-06-05 19:52:41,135 — INFO — Twitch: 50 streams para juego PUBG Mobile
+2025-06-05 19:52:41,825 — INFO — Twitch: 7 streams para juego Void War
+2025-06-05 19:52:42,298 — INFO — Twitch: 50 streams para juego Farming Simulator 25
+2025-06-05 19:52:43,224 — INFO — Twitch: 50 streams para juego Ragnarok Online
+2025-06-05 19:52:44,158 — INFO — Twitch: 50 streams para juego Lies of P
+2025-06-05 19:52:44,854 — INFO — Twitch: 17 streams para juego Slay the Spire
+2025-06-05 19:52:45,556 — INFO — Twitch: 6 streams para juego LOCKDOWN Protocol
+2025-06-05 19:52:46,484 — INFO — Twitch: 50 streams para juego SMITE 2
+2025-06-05 19:52:47,182 — INFO — Twitch: 11 streams para juego Quarantine Zone: The Last Check
+2025-06-05 19:52:48,104 — INFO — Twitch: 50 streams para juego Blue Prince
+2025-06-05 19:52:49,035 — INFO — Twitch: 50 streams para juego Standoff 2
+2025-06-05 19:52:49,951 — INFO — Twitch: 50 streams para juego DARK SOULS II: Scholar of the First Sin
+2025-06-05 19:52:50,879 — INFO — Twitch: 50 streams para juego Honkai: Star Rail
+2025-06-05 19:52:51,802 — INFO — Twitch: 50 streams para juego Palia
+2025-06-05 19:52:52,264 — INFO — Twitch: 50 streams para juego RoadCraft
+2025-06-05 19:52:52,981 — INFO — Twitch: 10 streams para juego Pokémon
+2025-06-05 19:52:53,677 — INFO — Twitch: 47 streams para juego Heroes of the Storm
+2025-06-05 19:52:54,388 — INFO — Twitch: 30 streams para juego Knight Online
+2025-06-05 19:52:55,088 — INFO — Twitch: 36 streams para juego Pools, Hot Tubs, and Beaches
+2025-06-05 19:52:55,999 — INFO — Twitch: 50 streams para juego Zenless Zone Zero
+2025-06-05 19:52:56,702 — INFO — Twitch: 2 streams para juego Resident Evil: Revelations 2
+2025-06-05 19:52:57,705 — INFO — Twitch: 2 streams para juego The Last Visit: 98th
+2025-06-05 19:52:58,186 — INFO — Twitch: 50 streams para juego Perfect World
+2025-06-05 19:52:58,880 — INFO — Twitch: 21 streams para juego Marvel Snap
+2025-06-05 19:52:59,584 — INFO — Twitch: 8 streams para juego Shakes and Fidget
+2025-06-05 19:53:00,286 — INFO — Twitch: 2 streams para juego Heavenly Bodies
+2025-06-05 19:53:01,222 — INFO — Twitch: 50 streams para juego Mir Tankov
+2025-06-05 19:53:01,931 — INFO — Twitch: 43 streams para juego MapleStory
+2025-06-05 19:53:02,865 — INFO — Twitch: 50 streams para juego osu!
+2025-06-05 19:53:03,564 — INFO — Twitch: 15 streams para juego The Legend of Zelda: The Wind Waker
+2025-06-05 19:53:04,267 — INFO — Twitch: 46 streams para juego Le Mans Ultimate
+2025-06-05 19:53:04,963 — INFO — Twitch: 40 streams para juego Resident Evil Village
+2025-06-05 19:53:05,428 — INFO — Twitch: 50 streams para juego HELLDIVERS 2
+2025-06-05 19:53:06,120 — INFO — Twitch: 20 streams para juego Tournament Poker
+2025-06-05 19:53:06,606 — INFO — Twitch: 50 streams para juego DOOM: The Dark Ages
+2025-06-05 19:53:07,295 — INFO — Twitch: 22 streams para juego Super Mario Odyssey
+2025-06-05 19:53:07,988 — INFO — Twitch: 16 streams para juego Black Russia
+2025-06-05 19:53:08,909 — INFO — Twitch: 50 streams para juego FANTASY LIFE i: The Girl Who Steals Time
+2025-06-05 19:53:09,623 — INFO — Twitch: 16 streams para juego The Slormancer
+2025-06-05 19:53:10,547 — INFO — Twitch: 50 streams para juego RimWorld
+2025-06-05 19:53:11,489 — INFO — Twitch: 50 streams para juego Pokémon Community Game
+2025-06-05 19:53:12,221 — INFO — Twitch: 25 streams para juego Hearts of Iron IV
+2025-06-05 19:53:12,679 — INFO — Twitch: 50 streams para juego THE FINALS
+2025-06-05 19:53:13,373 — INFO — Twitch: 28 streams para juego Mafia II: Definitive Edition
+2025-06-05 19:53:14,089 — INFO — Twitch: 11 streams para juego Diablo III
+2025-06-05 19:53:14,781 — INFO — Twitch: 1 streams para juego Vegas Infinite by PokerStars
+2025-06-05 19:53:15,489 — INFO — Twitch: 31 streams para juego Fitness & Health
+2025-06-05 19:53:16,417 — INFO — Twitch: 50 streams para juego Monster Hunter Wilds
+2025-06-05 19:53:16,882 — INFO — Twitch: 50 streams para juego STALCRAFT: X
+2025-06-05 19:53:17,611 — INFO — Twitch: 42 streams para juego Dying Light
+2025-06-05 19:53:18,325 — INFO — Twitch: 49 streams para juego Animal Crossing: New Horizons
+2025-06-05 19:53:18,797 — INFO — Twitch: 50 streams para juego Warframe
+2025-06-05 19:53:19,517 — INFO — Twitch: 31 streams para juego Anime Squad
+2025-06-05 19:53:20,224 — INFO — Twitch: 9 streams para juego Need for Speed: Underground 2
+2025-06-05 19:53:21,201 — INFO — Twitch: 2 streams para juego UBOAT
+2025-06-05 19:53:22,108 — INFO — Twitch: 50 streams para juego Tainted Grail: The Fall of Avalon
+2025-06-05 19:53:23,054 — INFO — Twitch: 50 streams para juego MU Online
+2025-06-05 19:53:23,771 — INFO — Twitch: 39 streams para juego StarCraft II
+2025-06-05 19:53:25,040 — INFO — Twitch: 50 streams para juego League of Legends: Wild Rift
+2025-06-05 19:53:25,756 — INFO — Twitch: 48 streams para juego The Legend of Zelda: Tears of the Kingdom
+2025-06-05 19:53:26,216 — INFO — Twitch: 50 streams para juego Makers & Crafting
+2025-06-05 19:53:26,218 — INFO — Twitch: total registros preparados 8699
+2025-06-05 19:53:26,535 — INFO — Twitch: RDD creado
+2025-06-05 19:53:35,599 — INFO — Extracción de Twitch completada
+2025-06-05 19:53:35,599 — INFO — Extrayendo datos de Pokémon Showdown API...
+2025-06-05 19:53:35,599 — INFO — Showdown: iniciando extracción de ladders y perfiles
+2025-06-05 19:53:35,600 — INFO — Showdown: usando 33 formatos Gen9 predefinidos
+2025-06-05 19:53:36,232 — INFO — gen9randombattle: 100 jugadores en top
+2025-06-05 19:53:36,828 — ERROR — Showdown: error en formato gen9randombattle: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/rep%20israel.json
+2025-06-05 19:53:37,458 — INFO — gen9challengecup1v1: 100 jugadores en top
+2025-06-05 19:53:38,064 — ERROR — Showdown: error en formato gen9challengecup1v1: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Sou%20Boku.json
+2025-06-05 19:53:38,698 — INFO — gen9hackmonscup: 100 jugadores en top
+2025-06-05 19:53:40,437 — ERROR — Showdown: error en formato gen9hackmonscup: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/cringe%20antidote.json
+2025-06-05 19:53:41,053 — INFO — gen9ou: 100 jugadores en top
+2025-06-05 19:53:41,699 — ERROR — Showdown: error en formato gen9ou: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/saw%20war%20newnew.json
+2025-06-05 19:53:42,339 — INFO — gen9ubers: 100 jugadores en top
+2025-06-05 19:53:42,958 — ERROR — Showdown: error en formato gen9ubers: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Le%20Mur%20Du%20Son.json
+2025-06-05 19:53:43,570 — INFO — gen9uu: 100 jugadores en top
+2025-06-05 19:53:43,859 — ERROR — Showdown: error en formato gen9uu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/1024%20hello.json
+2025-06-05 19:53:44,494 — INFO — gen9ru: 100 jugadores en top
+2025-06-05 19:53:45,094 — ERROR — Showdown: error en formato gen9ru: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/RULT85M%20Lime.json
+2025-06-05 19:53:45,884 — INFO — gen9nu: 100 jugadores en top
+2025-06-05 19:53:46,220 — ERROR — Showdown: error en formato gen9nu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Jeromy%20gride.json
+2025-06-05 19:53:46,869 — INFO — gen9pu: 100 jugadores en top
+2025-06-05 19:53:47,455 — ERROR — Showdown: error en formato gen9pu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Peter%20Mensi.json
+2025-06-05 19:53:48,062 — INFO — gen9lc: 100 jugadores en top
+2025-06-05 19:53:48,371 — ERROR — Showdown: error en formato gen9lc: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/the%20great%20demon.json
+2025-06-05 19:53:48,984 — INFO — gen9monotype: 100 jugadores en top
+2025-06-05 19:53:49,277 — ERROR — Showdown: error en formato gen9monotype: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Dieu%20Amphibien.json
+2025-06-05 19:53:49,935 — INFO — gen91v1: 100 jugadores en top
+2025-06-05 19:53:50,234 — ERROR — Showdown: error en formato gen91v1: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/T%20G%20O%201v1s.json
+2025-06-05 19:53:50,842 — INFO — gen9anythinggoes: 100 jugadores en top
+2025-06-05 19:53:51,476 — ERROR — Showdown: error en formato gen9anythinggoes: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Helllllllo%20glhf.json
+2025-06-05 19:53:52,086 — INFO — gen9zu: 100 jugadores en top
+2025-06-05 19:53:53,361 — ERROR — Showdown: error en formato gen9zu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Bubsy%2064.json
+2025-06-05 19:53:53,968 — INFO — gen9bssregi: 100 jugadores en top
+2025-06-05 19:53:54,261 — ERROR — Showdown: error en formato gen9bssregi: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Codename%20Sherlock.json
+2025-06-05 19:53:55,748 — INFO — gen9cap: 100 jugadores en top
+2025-06-05 19:53:56,044 — ERROR — Showdown: error en formato gen9cap: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Drippy%20T%20IV.json
+2025-06-05 19:53:56,645 — INFO — gen9randomdoublesbattle: 100 jugadores en top
+2025-06-05 19:53:57,886 — ERROR — Showdown: error en formato gen9randomdoublesbattle: 404 Client Error: Not Found for url: https://pokemonshowdown.com/users/Doritorai.json
+2025-06-05 19:53:58,481 — INFO — gen9doublesou: 100 jugadores en top
+2025-06-05 19:53:59,090 — ERROR — Showdown: error en formato gen9doublesou: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Sakkuya%20Izayoi.json
+2025-06-05 19:53:59,714 — INFO — gen9vgc2025regi: 100 jugadores en top
+2025-06-05 19:54:00,008 — ERROR — Showdown: error en formato gen9vgc2025regi: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/pagos%20promax.json
+2025-06-05 19:54:00,601 — INFO — gen9vgc2025regibo3: 100 jugadores en top
+2025-06-05 19:54:00,904 — ERROR — Showdown: error en formato gen9vgc2025regibo3: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/blurred%20eyes.json
+2025-06-05 19:54:01,533 — INFO — gen9almostanyability: 100 jugadores en top
+2025-06-05 19:54:01,837 — ERROR — Showdown: error en formato gen9almostanyability: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/habib%20galbi.json
+2025-06-05 19:54:02,444 — INFO — gen9balancedhackmons: 100 jugadores en top
+2025-06-05 19:54:03,421 — ERROR — Showdown: error en formato gen9balancedhackmons: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Storm%20Eagle%200288.json
+2025-06-05 19:54:04,141 — INFO — gen9godlygift: 100 jugadores en top
+2025-06-05 19:54:06,411 — ERROR — Showdown: error en formato gen9godlygift: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/30g%20of%20protein.json
+2025-06-05 19:54:07,033 — INFO — gen9inheritance: 100 jugadores en top
+2025-06-05 19:54:07,648 — ERROR — Showdown: error en formato gen9inheritance: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Goofin%20Aroun.json
+2025-06-05 19:54:08,283 — INFO — gen9mixandmega: 100 jugadores en top
+2025-06-05 19:54:08,574 — ERROR — Showdown: error en formato gen9mixandmega: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/om%20guru.json
+2025-06-05 19:54:09,238 — INFO — gen9partnersincrime: 100 jugadores en top
+2025-06-05 19:54:10,813 — ERROR — Showdown: error en formato gen9partnersincrime: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Nurdy%20Burdy.json
+2025-06-05 19:54:11,430 — INFO — gen9sharedpower: 100 jugadores en top
+2025-06-05 19:54:11,721 — ERROR — Showdown: error en formato gen9sharedpower: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Corrins%20Foot.json
+2025-06-05 19:54:12,538 — INFO — gen9stabmons: 100 jugadores en top
+2025-06-05 19:54:13,426 — ERROR — Showdown: error en formato gen9stabmons: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Harlem%20Aria.json
+2025-06-05 19:54:14,048 — INFO — gen9nationaldex: 100 jugadores en top
+2025-06-05 19:54:14,651 — ERROR — Showdown: error en formato gen9nationaldex: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Boonie%20Bears.json
+2025-06-05 19:54:15,268 — INFO — gen9nationaldexubers: 100 jugadores en top
+2025-06-05 19:54:15,889 — ERROR — Showdown: error en formato gen9nationaldexubers: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Ghost%20igris.json
+2025-06-05 19:54:16,560 — INFO — gen9nationaldexuu: 100 jugadores en top
+2025-06-05 19:54:18,051 — ERROR — Showdown: error en formato gen9nationaldexuu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/i%20love%20smash%20mc.json
+2025-06-05 19:54:18,686 — INFO — gen9nationaldexmonotype: 100 jugadores en top
+2025-06-05 19:54:19,867 — ERROR — Showdown: error en formato gen9nationaldexmonotype: 404 Client Error: Not Found for url: https://pokemonshowdown.com/users/babounoulegrosbab.json
+2025-06-05 19:54:20,476 — INFO — gen9nationaldexdoubles: 100 jugadores en top
+2025-06-05 19:54:21,365 — ERROR — Showdown: error en formato gen9nationaldexdoubles: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Old%20McBruh.json
+2025-06-05 19:54:21,367 — INFO — Showdown: registros totales extraídos = 119
+2025-06-05 19:54:21,378 — INFO — Extracción de Showdown completada
+2025-06-05 19:54:21,378 — INFO — Extrayendo datos de HowLongToBeat API...
+2025-06-05 19:54:21,378 — INFO — HLTB: iniciando consultas de duración de juegos
+2025-06-05 19:54:26,759 — WARNING — HLTB: sin resultados para 'IRL'
+2025-06-05 19:54:29,126 — WARNING — HLTB: sin resultados para 'Special Events'
+2025-06-05 19:54:38,362 — WARNING — HLTB: sin resultados para 'TEKKEN 8'
+2025-06-05 19:54:44,322 — WARNING — HLTB: sin resultados para 'Rise Online'
+2025-06-05 19:54:54,224 — WARNING — HLTB: sin resultados para 'Talk Shows & Podcasts'
+2025-06-05 19:55:04,718 — WARNING — HLTB: sin resultados para 'Games + Demos'
+2025-06-05 19:55:28,181 — WARNING — HLTB: sin resultados para 'PUBG: BATTLEGROUNDS'
+2025-06-05 19:55:46,769 — WARNING — HLTB: sin resultados para 'Escape from Duckov'
+2025-06-05 19:55:49,581 — WARNING — HLTB: sin resultados para 'Quarantine Zone: The Last Check'
+2025-06-05 19:55:52,257 — WARNING — HLTB: sin resultados para 'The Last Visit: 98th'
+2025-06-05 19:56:07,117 — WARNING — HLTB: sin resultados para 'VALORANT'
+2025-06-05 19:56:14,446 — WARNING — HLTB: sin resultados para 'Etheria: Restart'
+2025-06-05 19:56:25,495 — WARNING — HLTB: sin resultados para 'Co-working & Studying'
+2025-06-05 19:56:29,865 — INFO — HLTB: consultas completadas, registros válidos=87
+2025-06-05 19:56:29,883 — INFO — Extracción de HowLongToBeat completada
+2025-06-05 19:56:29,884 — INFO — === GUARDANDO A PARQUET ===
+2025-06-05 19:56:29,886 — INFO — Guardando twitch a Parquet...
+2025-06-05 19:56:32,169 — INFO — [TWITCH] Iniciando guardado a Parquet: data/twitch.parquet
+2025-06-05 19:56:39,835 — ERROR — Error guardando twitch a Parquet: An error occurred while calling o102.parquet.
+: java.lang.UnsatisfiedLinkError: 'boolean org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(java.lang.String, int)'
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.fs.ChecksumFileSystem.listStatus(ChecksumFileSystem.java:761)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.getAllCommittedTaskPaths(FileOutputCommitter.java:334)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJobInternal(FileOutputCommitter.java:404)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJob(FileOutputCommitter.java:377)
+	at org.apache.parquet.hadoop.ParquetOutputCommitter.commitJob(ParquetOutputCommitter.java:48)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.commitJob(HadoopMapReduceCommitProtocol.scala:192)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$writeAndCommit$3(FileFormatWriter.scala:275)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:552)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:275)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:304)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:190)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:190)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:113)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:111)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:125)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:869)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:391)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:364)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:243)
+	at org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:802)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:76)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2025-06-05 19:56:39,836 — ERROR — Error crítico en el pipeline: An error occurred while calling o102.parquet.
+: java.lang.UnsatisfiedLinkError: 'boolean org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(java.lang.String, int)'
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.fs.ChecksumFileSystem.listStatus(ChecksumFileSystem.java:761)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.getAllCommittedTaskPaths(FileOutputCommitter.java:334)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJobInternal(FileOutputCommitter.java:404)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJob(FileOutputCommitter.java:377)
+	at org.apache.parquet.hadoop.ParquetOutputCommitter.commitJob(ParquetOutputCommitter.java:48)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.commitJob(HadoopMapReduceCommitProtocol.scala:192)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$writeAndCommit$3(FileFormatWriter.scala:275)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:552)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:275)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:304)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:190)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:190)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:113)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:111)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:125)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:869)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:391)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:364)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:243)
+	at org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:802)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:76)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2025-06-05 19:56:39,838 — ERROR — Pipeline terminado con errores
+2025-06-05 19:56:39,838 — INFO — Cerrando conexiones y limpiando recursos...
+2025-06-05 19:56:40,754 — INFO — Pipeline finalizado
+2025-06-06 19:33:24,217 — INFO — === INICIO DEL PIPELINE ETL VIDEOJUEGOS ===
+2025-06-06 19:33:24,217 — INFO — Tiempo de inicio: 2025-06-06 17:33:24.217442
+2025-06-06 19:33:24,218 — INFO — Inicializando base de datos y tabla de logs...
+2025-06-06 19:33:24,493 — INFO — Base de datos inicializada correctamente
+2025-06-06 19:33:24,493 — INFO — === FASE 1: EXTRACCIÓN DE DATOS ===
+2025-06-06 19:33:24,495 — INFO — Extrayendo datos de Twitch API...
+2025-06-06 19:33:24,495 — INFO — Twitch: iniciando extracción
+2025-06-06 19:33:26,421 — INFO — Twitch: obtenidos 200 juegos top
+2025-06-06 19:33:26,902 — INFO — Twitch: 50 streams para juego Just Chatting
+2025-06-06 19:33:27,431 — INFO — Twitch: 50 streams para juego Counter-Strike
+2025-06-06 19:33:27,967 — INFO — Twitch: 50 streams para juego Grand Theft Auto V
+2025-06-06 19:33:28,423 — INFO — Twitch: 50 streams para juego League of Legends
+2025-06-06 19:33:29,357 — INFO — Twitch: 50 streams para juego Dota 2
+2025-06-06 19:33:29,834 — INFO — Twitch: 50 streams para juego Mario Kart World
+2025-06-06 19:33:30,347 — INFO — Twitch: 50 streams para juego EA Sports FC 25
+2025-06-06 19:33:31,244 — INFO — Twitch: 32 streams para juego Kings League
+2025-06-06 19:33:31,862 — INFO — Twitch: 50 streams para juego VALORANT
+2025-06-06 19:33:32,384 — INFO — Twitch: 50 streams para juego Dune: Awakening
+2025-06-06 19:33:33,305 — INFO — Twitch: 50 streams para juego IRL
+2025-06-06 19:33:34,244 — INFO — Twitch: 50 streams para juego Elden Ring: Nightreign
+2025-06-06 19:33:35,182 — INFO — Twitch: 50 streams para juego Call of Duty: Warzone
+2025-06-06 19:33:35,641 — INFO — Twitch: 50 streams para juego Fortnite
+2025-06-06 19:33:36,564 — INFO — Twitch: 50 streams para juego World of Tanks
+2025-06-06 19:33:37,035 — INFO — Twitch: 50 streams para juego Hearthstone
+2025-06-06 19:33:37,958 — INFO — Twitch: 50 streams para juego Marvel Rivals
+2025-06-06 19:33:38,481 — INFO — Twitch: 50 streams para juego World of Warcraft
+2025-06-06 19:33:38,942 — INFO — Twitch: 50 streams para juego Minecraft
+2025-06-06 19:33:39,643 — INFO — Twitch: 15 streams para juego Summer Game Fest
+2025-06-06 19:33:40,716 — INFO — Twitch: 50 streams para juego Dead by Daylight
+2025-06-06 19:33:41,625 — INFO — Twitch: 50 streams para juego Path of Exile
+2025-06-06 19:33:42,556 — INFO — Twitch: 50 streams para juego Teamfight Tactics
+2025-06-06 19:33:43,475 — INFO — Twitch: 50 streams para juego Special Events
+2025-06-06 19:33:43,933 — INFO — Twitch: 50 streams para juego Apex Legends
+2025-06-06 19:33:44,951 — INFO — Twitch: 50 streams para juego Old School RuneScape
+2025-06-06 19:33:45,405 — INFO — Twitch: 50 streams para juego Standoff 2
+2025-06-06 19:33:45,876 — INFO — Twitch: 50 streams para juego ELDEN RING
+2025-06-06 19:33:46,823 — INFO — Twitch: 50 streams para juego Chess
+2025-06-06 19:33:47,289 — INFO — Twitch: 50 streams para juego Rust
+2025-06-06 19:33:48,055 — INFO — Twitch: 49 streams para juego Music
+2025-06-06 19:33:48,955 — INFO — Twitch: 50 streams para juego Zenless Zone Zero
+2025-06-06 19:33:49,426 — INFO — Twitch: 50 streams para juego Escape from Tarkov
+2025-06-06 19:33:50,394 — INFO — Twitch: 50 streams para juego Clair Obscur: Expedition 33
+2025-06-06 19:33:51,337 — INFO — Twitch: 50 streams para juego DJs
+2025-06-06 19:33:52,278 — INFO — Twitch: 50 streams para juego Rocket League
+2025-06-06 19:33:53,221 — INFO — Twitch: 50 streams para juego Slots
+2025-06-06 19:33:53,914 — INFO — Twitch: 6 streams para juego Pokémon Black/White Version 2
+2025-06-06 19:33:54,391 — INFO — Twitch: 50 streams para juego PUBG: BATTLEGROUNDS
+2025-06-06 19:33:54,858 — INFO — Twitch: 50 streams para juego Street Fighter 6
+2025-06-06 19:33:55,339 — INFO — Twitch: 50 streams para juego Destiny 2
+2025-06-06 19:33:55,798 — INFO — Twitch: 50 streams para juego Art
+2025-06-06 19:33:56,733 — INFO — Twitch: 50 streams para juego Overwatch 2
+2025-06-06 19:33:57,644 — INFO — Twitch: 50 streams para juego ASMR
+2025-06-06 19:33:58,585 — INFO — Twitch: 50 streams para juego MapleStory Worlds
+2025-06-06 19:33:59,353 — INFO — Twitch: 50 streams para juego The Binding of Isaac: Repentance
+2025-06-06 19:33:59,851 — INFO — Twitch: 50 streams para juego Talk Shows & Podcasts
+2025-06-06 19:34:00,539 — INFO — Twitch: 43 streams para juego Car Dealer Simulator
+2025-06-06 19:34:01,005 — INFO — Twitch: 50 streams para juego Lost Ark
+2025-06-06 19:34:01,898 — INFO — Twitch: 50 streams para juego Tibia
+2025-06-06 19:34:02,838 — INFO — Twitch: 50 streams para juego R.E.P.O.
+2025-06-06 19:34:03,757 — INFO — Twitch: 50 streams para juego Warcraft III
+2025-06-06 19:34:04,458 — INFO — Twitch: 4 streams para juego Stranger of Paradise: Final Fantasy Origin
+2025-06-06 19:34:05,134 — INFO — Twitch: 38 streams para juego Virtual Casino
+2025-06-06 19:34:05,586 — INFO — Twitch: 50 streams para juego Albion Online
+2025-06-06 19:34:06,055 — INFO — Twitch: 50 streams para juego Arena Breakout: Infinite
+2025-06-06 19:34:06,523 — INFO — Twitch: 50 streams para juego I'm Only Sleeping
+2025-06-06 19:34:07,221 — INFO — Twitch: 5 streams para juego West Hunt
+2025-06-06 19:34:07,902 — INFO — Twitch: 42 streams para juego Pools, Hot Tubs, and Beaches
+2025-06-06 19:34:08,375 — INFO — Twitch: 50 streams para juego Tom Clancy's Rainbow Six Siege
+2025-06-06 19:34:08,862 — INFO — Twitch: 50 streams para juego Always On
+2025-06-06 19:34:09,312 — INFO — Twitch: 50 streams para juego DayZ
+2025-06-06 19:34:10,216 — INFO — Twitch: 50 streams para juego Sports
+2025-06-06 19:34:10,684 — INFO — Twitch: 50 streams para juego Call of Duty: Black Ops 6
+2025-06-06 19:34:11,386 — INFO — Twitch: 35 streams para juego StarCraft II
+2025-06-06 19:34:11,833 — INFO — Twitch: 50 streams para juego Diablo III
+2025-06-06 19:34:12,785 — INFO — Twitch: 50 streams para juego NBA 2K25
+2025-06-06 19:34:13,240 — INFO — Twitch: 50 streams para juego Animals, Aquariums, and Zoos
+2025-06-06 19:34:13,693 — INFO — Twitch: 50 streams para juego Red Dead Redemption 2
+2025-06-06 19:34:14,173 — INFO — Twitch: 50 streams para juego Phasmophobia
+2025-06-06 19:34:14,863 — INFO — Twitch: 8 streams para juego Pokémon Ultra Sun/Ultra Moon
+2025-06-06 19:34:15,781 — INFO — Twitch: 50 streams para juego ROBLOX
+2025-06-06 19:34:16,712 — INFO — Twitch: 50 streams para juego F1 25
+2025-06-06 19:34:17,188 — INFO — Twitch: 50 streams para juego Etheria: Restart
+2025-06-06 19:34:18,117 — INFO — Twitch: 50 streams para juego Deltarune
+2025-06-06 19:34:19,046 — INFO — Twitch: 50 streams para juego Crypto
+2025-06-06 19:34:20,049 — INFO — Twitch: 50 streams para juego Retro
+2025-06-06 19:34:20,538 — INFO — Twitch: 50 streams para juego Project Zomboid
+2025-06-06 19:34:21,022 — INFO — Twitch: 50 streams para juego Magic: The Gathering
+2025-06-06 19:34:21,606 — INFO — Twitch: 50 streams para juego FINAL FANTASY XIV ONLINE
+2025-06-06 19:34:22,534 — INFO — Twitch: 50 streams para juego Delta Force
+2025-06-06 19:34:23,034 — INFO — Twitch: 50 streams para juego Rune Factory: Guardians of Azuma
+2025-06-06 19:34:23,486 — INFO — Twitch: 50 streams para juego Black Desert
+2025-06-06 19:34:23,954 — INFO — Twitch: 50 streams para juego VRChat
+2025-06-06 19:34:24,440 — INFO — Twitch: 50 streams para juego Star Citizen
+2025-06-06 19:34:25,358 — INFO — Twitch: 50 streams para juego Guild Wars 2
+2025-06-06 19:34:26,288 — INFO — Twitch: 50 streams para juego Dark Souls: Remastered
+2025-06-06 19:34:27,034 — INFO — Twitch: 8 streams para juego Shakes and Fidget
+2025-06-06 19:34:27,740 — INFO — Twitch: 48 streams para juego Age of Empires II
+2025-06-06 19:34:28,432 — INFO — Twitch: 47 streams para juego Heroes of Might and Magic III: The Restoration of Erathia
+2025-06-06 19:34:28,987 — INFO — Twitch: 50 streams para juego Sea of Thieves
+2025-06-06 19:34:29,451 — INFO — Twitch: 50 streams para juego The Elder Scrolls Online
+2025-06-06 19:34:30,383 — INFO — Twitch: 50 streams para juego Marbles on Stream
+2025-06-06 19:34:31,102 — INFO — Twitch: 42 streams para juego The Bazaar
+2025-06-06 19:34:32,033 — INFO — Twitch: 50 streams para juego Call of Duty
+2025-06-06 19:34:32,480 — INFO — Twitch: 50 streams para juego Hero Siege
+2025-06-06 19:34:32,928 — INFO — Twitch: 50 streams para juego Hunt: Showdown 1896
+2025-06-06 19:34:33,910 — INFO — Twitch: 50 streams para juego Poker
+2025-06-06 19:34:34,822 — INFO — Twitch: 50 streams para juego Gray Zone Warfare
+2025-06-06 19:34:35,737 — INFO — Twitch: 50 streams para juego Genshin Impact
+2025-06-06 19:34:36,201 — INFO — Twitch: 50 streams para juego Mobile Legends: Bang Bang
+2025-06-06 19:34:36,897 — INFO — Twitch: 1 streams para juego The Black Vault
+2025-06-06 19:34:37,801 — INFO — Twitch: 50 streams para juego Games + Demos
+2025-06-06 19:34:38,737 — INFO — Twitch: 50 streams para juego Clash Royale
+2025-06-06 19:34:39,658 — INFO — Twitch: 50 streams para juego Tom Clancy's The Division 2
+2025-06-06 19:34:40,344 — INFO — Twitch: 19 streams para juego Guilty as Sock!
+2025-06-06 19:34:41,027 — INFO — Twitch: 26 streams para juego The Quarry
+2025-06-06 19:34:41,510 — INFO — Twitch: 50 streams para juego World of Warships
+2025-06-06 19:34:42,297 — INFO — Twitch: 1 streams para juego It Has My Face
+2025-06-06 19:34:42,980 — INFO — Twitch: 23 streams para juego Assetto Corsa
+2025-06-06 19:34:43,694 — INFO — Twitch: 45 streams para juego Bloodborne
+2025-06-06 19:34:44,164 — INFO — Twitch: 50 streams para juego Baldur's Gate 3
+2025-06-06 19:34:45,069 — INFO — Twitch: 50 streams para juego Software and Game Development
+2025-06-06 19:34:45,759 — INFO — Twitch: 17 streams para juego Tormented Souls II
+2025-06-06 19:34:46,714 — INFO — Twitch: 50 streams para juego FragPunk
+2025-06-06 19:34:47,413 — INFO — Twitch: 15 streams para juego Mir Korabley
+2025-06-06 19:34:47,879 — INFO — Twitch: 50 streams para juego Throne and Liberty
+2025-06-06 19:34:48,816 — INFO — Twitch: 50 streams para juego Pokémon Scarlet/Violet
+2025-06-06 19:34:49,522 — INFO — Twitch: 44 streams para juego Factorio
+2025-06-06 19:34:50,438 — INFO — Twitch: 50 streams para juego iRacing
+2025-06-06 19:34:51,219 — INFO — Twitch: 32 streams para juego Pokémon FireRed/LeafGreen
+2025-06-06 19:34:52,181 — INFO — Twitch: 50 streams para juego Brawl Stars
+2025-06-06 19:34:53,144 — INFO — Twitch: 50 streams para juego MLB The Show 25
+2025-06-06 19:34:54,308 — INFO — Twitch: 48 streams para juego GeoGuessr
+2025-06-06 19:34:55,082 — INFO — Twitch: 3 streams para juego Spyfall
+2025-06-06 19:34:55,556 — INFO — Twitch: 50 streams para juego Co-working & Studying
+2025-06-06 19:34:56,289 — INFO — Twitch: 29 streams para juego EVE Online
+2025-06-06 19:34:57,013 — INFO — Twitch: 35 streams para juego Splitgate 2
+2025-06-06 19:34:57,798 — INFO — Twitch: 19 streams para juego Slay the Spire
+2025-06-06 19:34:58,274 — INFO — Twitch: 50 streams para juego TEKKEN 8
+2025-06-06 19:34:58,970 — INFO — Twitch: 6 streams para juego Far Cry 3
+2025-06-06 19:34:59,904 — INFO — Twitch: 50 streams para juego Wuthering Waves
+2025-06-06 19:35:00,597 — INFO — Twitch: 2 streams para juego Section 13
+2025-06-06 19:35:01,511 — INFO — Twitch: 50 streams para juego MapleStory
+2025-06-06 19:35:01,987 — INFO — Twitch: 50 streams para juego Path of Exile 2
+2025-06-06 19:35:02,459 — INFO — Twitch: 50 streams para juego Deadlock
+2025-06-06 19:35:03,382 — INFO — Twitch: 50 streams para juego The Sims 4
+2025-06-06 19:35:04,300 — INFO — Twitch: 50 streams para juego RoadCraft
+2025-06-06 19:35:05,016 — INFO — Twitch: 18 streams para juego The Legend of Zelda: Tears of the Kingdom - Nintendo Switch 2 Edition
+2025-06-06 19:35:05,724 — INFO — Twitch: 17 streams para juego Tabletop RPGs
+2025-06-06 19:35:06,445 — INFO — Twitch: 30 streams para juego Wrap House Simulator
+2025-06-06 19:35:06,923 — INFO — Twitch: 50 streams para juego Dark and Darker
+2025-06-06 19:35:07,629 — INFO — Twitch: 15 streams para juego Pokémon
+2025-06-06 19:35:08,101 — INFO — Twitch: 50 streams para juego Palia
+2025-06-06 19:35:09,048 — INFO — Twitch: 50 streams para juego Yu-Gi-Oh! Master Duel
+2025-06-06 19:35:09,598 — INFO — Twitch: 50 streams para juego War Thunder
+2025-06-06 19:35:10,516 — INFO — Twitch: 50 streams para juego Ragnarok Online
+2025-06-06 19:35:10,973 — INFO — Twitch: 50 streams para juego Warframe
+2025-06-06 19:35:11,887 — INFO — Twitch: 50 streams para juego Honkai: Star Rail
+2025-06-06 19:35:12,642 — INFO — Twitch: 20 streams para juego Marvel Snap
+2025-06-06 19:35:13,355 — INFO — Twitch: 32 streams para juego Hearts of Iron IV
+2025-06-06 19:35:14,029 — INFO — Twitch: 8 streams para juego Void War
+2025-06-06 19:35:14,808 — INFO — Twitch: 50 streams para juego SMITE 2
+2025-06-06 19:35:15,722 — INFO — Twitch: 50 streams para juego Stardew Valley
+2025-06-06 19:35:16,739 — INFO — Twitch: 21 streams para juego Noita
+2025-06-06 19:35:17,494 — INFO — Twitch: 34 streams para juego Age of Empires IV
+2025-06-06 19:35:17,966 — INFO — Twitch: 50 streams para juego Farming Simulator 25
+2025-06-06 19:35:18,646 — INFO — Twitch: 35 streams para juego The Legend of Zelda: Ocarina of Time
+2025-06-06 19:35:19,109 — INFO — Twitch: 50 streams para juego 7 Days to Die
+2025-06-06 19:35:19,822 — INFO — Twitch: 21 streams para juego Rise Online
+2025-06-06 19:35:20,805 — INFO — Twitch: 50 streams para juego RimWorld
+2025-06-06 19:35:21,737 — INFO — Twitch: 50 streams para juego FANTASY LIFE i: The Girl Who Steals Time
+2025-06-06 19:35:22,689 — INFO — Twitch: 50 streams para juego Mir Tankov
+2025-06-06 19:35:23,497 — INFO — Twitch: 1 streams para juego Commander Keen: Goodbye Galaxy!
+2025-06-06 19:35:23,955 — INFO — Twitch: 50 streams para juego Perfect World
+2025-06-06 19:35:24,648 — INFO — Twitch: 32 streams para juego Off The Grid
+2025-06-06 19:35:25,138 — INFO — Twitch: 50 streams para juego The Last of Us Part II: Remastered
+2025-06-06 19:35:26,099 — INFO — Twitch: 50 streams para juego Madden NFL 25
+2025-06-06 19:35:26,795 — INFO — Twitch: 25 streams para juego MIR 4
+2025-06-06 19:35:27,721 — INFO — Twitch: 50 streams para juego Trackmania
+2025-06-06 19:35:28,645 — INFO — Twitch: 50 streams para juego PUBG Mobile
+2025-06-06 19:35:29,399 — INFO — Twitch: 50 streams para juego DOOM: The Dark Ages
+2025-06-06 19:35:30,299 — INFO — Twitch: 50 streams para juego ARK: Survival Ascended
+2025-06-06 19:35:30,997 — INFO — Twitch: 15 streams para juego Crossout
+2025-06-06 19:35:31,965 — INFO — Twitch: 50 streams para juego Crystal of Atlan
+2025-06-06 19:35:32,700 — INFO — Twitch: 30 streams para juego Politics
+2025-06-06 19:35:33,173 — INFO — Twitch: 50 streams para juego DARK SOULS II: Scholar of the First Sin
+2025-06-06 19:35:33,850 — INFO — Twitch: 2 streams para juego Burgie's cozy kitchen
+2025-06-06 19:35:34,553 — INFO — Twitch: 42 streams para juego Goose Goose Duck
+2025-06-06 19:35:35,246 — INFO — Twitch: 6 streams para juego Hotline Miami
+2025-06-06 19:35:35,974 — INFO — Twitch: 12 streams para juego Casino Simulator 2024
+2025-06-06 19:35:36,925 — INFO — Twitch: 50 streams para juego Blue Prince
+2025-06-06 19:35:37,666 — INFO — Twitch: 40 streams para juego Gartic Phone
+2025-06-06 19:35:38,680 — INFO — Twitch: 50 streams para juego MU Online
+2025-06-06 19:35:39,385 — INFO — Twitch: 49 streams para juego Pokémon Trading Card Game
+2025-06-06 19:35:40,590 — INFO — Twitch: 50 streams para juego The First Descendant
+2025-06-06 19:35:41,279 — INFO — Twitch: 18 streams para juego Tournament Poker
+2025-06-06 19:35:41,981 — INFO — Twitch: 33 streams para juego Pokémon GO
+2025-06-06 19:35:42,691 — INFO — Twitch: 42 streams para juego Animal Crossing: New Horizons
+2025-06-06 19:35:43,619 — INFO — Twitch: 50 streams para juego HELLDIVERS 2
+2025-06-06 19:35:44,551 — INFO — Twitch: 50 streams para juego STALCRAFT: X
+2025-06-06 19:35:45,261 — INFO — Twitch: 18 streams para juego Darts
+2025-06-06 19:35:45,975 — INFO — Twitch: 29 streams para juego Super Mario Odyssey
+2025-06-06 19:35:46,678 — INFO — Twitch: 32 streams para juego Dofus
+2025-06-06 19:35:47,401 — INFO — Twitch: 1 streams para juego Coin Push RPG
+2025-06-06 19:35:48,120 — INFO — Twitch: 42 streams para juego Le Mans Ultimate
+2025-06-06 19:35:48,574 — INFO — Twitch: 50 streams para juego Split Fiction
+2025-06-06 19:35:49,030 — INFO — Twitch: 50 streams para juego Makers & Crafting
+2025-06-06 19:35:49,732 — INFO — Twitch: 41 streams para juego Garry's Mod
+2025-06-06 19:35:50,416 — INFO — Twitch: 27 streams para juego Anime Squad
+2025-06-06 19:35:50,417 — INFO — Twitch: total registros preparados 8575
+2025-06-06 19:35:50,752 — INFO — Twitch: RDD creado
+2025-06-06 19:36:00,463 — INFO — Extracción de Twitch completada
+2025-06-06 19:36:00,464 — INFO — Extrayendo datos de Pokémon Showdown API...
+2025-06-06 19:36:00,464 — INFO — Showdown: iniciando extracción de ladders y perfiles
+2025-06-06 19:36:00,464 — INFO — Showdown: usando 33 formatos Gen9 predefinidos
+2025-06-06 19:36:01,085 — INFO — gen9randombattle: 100 jugadores en top
+2025-06-06 19:36:01,656 — ERROR — Showdown: error en formato gen9randombattle: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Star%20Wheel.json
+2025-06-06 19:36:02,294 — INFO — gen9challengecup1v1: 100 jugadores en top
+2025-06-06 19:36:02,907 — ERROR — Showdown: error en formato gen9challengecup1v1: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Sou%20Boku.json
+2025-06-06 19:36:03,558 — INFO — gen9hackmonscup: 100 jugadores en top
+2025-06-06 19:36:05,457 — ERROR — Showdown: error en formato gen9hackmonscup: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/cringe%20antidote.json
+2025-06-06 19:36:06,095 — INFO — gen9ou: 100 jugadores en top
+2025-06-06 19:36:06,422 — ERROR — Showdown: error en formato gen9ou: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/saw%20war%20newnew.json
+2025-06-06 19:36:07,043 — INFO — gen9ubers: 100 jugadores en top
+2025-06-06 19:36:08,005 — ERROR — Showdown: error en formato gen9ubers: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Le%20Mur%20Du%20Son.json
+2025-06-06 19:36:08,634 — INFO — gen9uu: 100 jugadores en top
+2025-06-06 19:36:08,934 — ERROR — Showdown: error en formato gen9uu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/1024%20hello.json
+2025-06-06 19:36:09,557 — INFO — gen9ru: 100 jugadores en top
+2025-06-06 19:36:10,199 — ERROR — Showdown: error en formato gen9ru: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/RULT85M%20Lime.json
+2025-06-06 19:36:10,783 — INFO — gen9nu: 100 jugadores en top
+2025-06-06 19:36:12,049 — ERROR — Showdown: error en formato gen9nu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Jeromy%20gride.json
+2025-06-06 19:36:12,709 — INFO — gen9pu: 100 jugadores en top
+2025-06-06 19:36:13,307 — ERROR — Showdown: error en formato gen9pu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Peter%20Mensi.json
+2025-06-06 19:36:13,900 — INFO — gen9lc: 100 jugadores en top
+2025-06-06 19:36:14,186 — ERROR — Showdown: error en formato gen9lc: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/the%20great%20demon.json
+2025-06-06 19:36:14,774 — INFO — gen9monotype: 100 jugadores en top
+2025-06-06 19:36:15,057 — ERROR — Showdown: error en formato gen9monotype: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Dieu%20Amphibien.json
+2025-06-06 19:36:15,680 — INFO — gen91v1: 100 jugadores en top
+2025-06-06 19:36:16,015 — ERROR — Showdown: error en formato gen91v1: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/T%20G%20O%201v1s.json
+2025-06-06 19:36:16,684 — INFO — gen9anythinggoes: 100 jugadores en top
+2025-06-06 19:36:16,986 — ERROR — Showdown: error en formato gen9anythinggoes: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Helllllllo%20glhf.json
+2025-06-06 19:36:17,604 — INFO — gen9zu: 100 jugadores en top
+2025-06-06 19:36:18,843 — ERROR — Showdown: error en formato gen9zu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Bubsy%2064.json
+2025-06-06 19:36:19,701 — INFO — gen9bssregi: 100 jugadores en top
+2025-06-06 19:36:19,996 — ERROR — Showdown: error en formato gen9bssregi: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Codename%20Sherlock.json
+2025-06-06 19:36:20,689 — INFO — gen9cap: 100 jugadores en top
+2025-06-06 19:36:21,040 — ERROR — Showdown: error en formato gen9cap: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Drippy%20T%20IV.json
+2025-06-06 19:36:21,624 — INFO — gen9randomdoublesbattle: 100 jugadores en top
+2025-06-06 19:36:23,780 — ERROR — Showdown: error en formato gen9randomdoublesbattle: 404 Client Error: Not Found for url: https://pokemonshowdown.com/users/Doritorai.json
+2025-06-06 19:36:24,377 — INFO — gen9doublesou: 100 jugadores en top
+2025-06-06 19:36:25,306 — ERROR — Showdown: error en formato gen9doublesou: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Sakkuya%20Izayoi.json
+2025-06-06 19:36:26,146 — INFO — gen9vgc2025regi: 100 jugadores en top
+2025-06-06 19:36:26,441 — ERROR — Showdown: error en formato gen9vgc2025regi: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/pagos%20promax.json
+2025-06-06 19:36:27,483 — INFO — gen9vgc2025regibo3: 100 jugadores en top
+2025-06-06 19:36:27,886 — ERROR — Showdown: error en formato gen9vgc2025regibo3: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/blurred%20eyes.json
+2025-06-06 19:36:28,480 — INFO — gen9almostanyability: 100 jugadores en top
+2025-06-06 19:36:28,783 — ERROR — Showdown: error en formato gen9almostanyability: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/habib%20galbi.json
+2025-06-06 19:36:29,370 — INFO — gen9balancedhackmons: 100 jugadores en top
+2025-06-06 19:36:29,661 — ERROR — Showdown: error en formato gen9balancedhackmons: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Scavenger%20Eagle.json
+2025-06-06 19:36:30,316 — INFO — gen9godlygift: 100 jugadores en top
+2025-06-06 19:36:33,885 — ERROR — Showdown: error en formato gen9godlygift: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/30g%20of%20protein.json
+2025-06-06 19:36:35,599 — INFO — gen9inheritance: 100 jugadores en top
+2025-06-06 19:36:36,583 — ERROR — Showdown: error en formato gen9inheritance: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Goofin%20Aroun.json
+2025-06-06 19:36:37,175 — INFO — gen9mixandmega: 100 jugadores en top
+2025-06-06 19:36:37,473 — ERROR — Showdown: error en formato gen9mixandmega: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/om%20guru.json
+2025-06-06 19:36:38,469 — INFO — gen9partnersincrime: 100 jugadores en top
+2025-06-06 19:36:39,974 — ERROR — Showdown: error en formato gen9partnersincrime: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Nurdy%20Burdy.json
+2025-06-06 19:36:40,603 — INFO — gen9sharedpower: 100 jugadores en top
+2025-06-06 19:36:40,899 — ERROR — Showdown: error en formato gen9sharedpower: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/zdzd%20zdzd.json
+2025-06-06 19:36:41,632 — INFO — gen9stabmons: 100 jugadores en top
+2025-06-06 19:36:42,537 — ERROR — Showdown: error en formato gen9stabmons: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Harlem%20Aria.json
+2025-06-06 19:36:43,163 — INFO — gen9nationaldex: 100 jugadores en top
+2025-06-06 19:36:44,081 — ERROR — Showdown: error en formato gen9nationaldex: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/ND1LT3A%20Forever.json
+2025-06-06 19:36:44,684 — INFO — gen9nationaldexubers: 100 jugadores en top
+2025-06-06 19:36:46,178 — ERROR — Showdown: error en formato gen9nationaldexubers: 404 Client Error: Not Found for url: https://pokemonshowdown.com/users/85792195yyds.json
+2025-06-06 19:36:46,826 — INFO — gen9nationaldexuu: 100 jugadores en top
+2025-06-06 19:36:48,396 — ERROR — Showdown: error en formato gen9nationaldexuu: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/i%20love%20smash%20mc.json
+2025-06-06 19:36:49,008 — INFO — gen9nationaldexmonotype: 100 jugadores en top
+2025-06-06 19:36:50,212 — ERROR — Showdown: error en formato gen9nationaldexmonotype: 404 Client Error: Not Found for url: https://pokemonshowdown.com/users/babounoulegrosbab.json
+2025-06-06 19:36:50,818 — INFO — gen9nationaldexdoubles: 100 jugadores en top
+2025-06-06 19:36:51,395 — ERROR — Showdown: error en formato gen9nationaldexdoubles: 403 Client Error: Forbidden for url: https://pokemonshowdown.com/users/Old%20McBruh.json
+2025-06-06 19:36:51,395 — INFO — Showdown: registros totales extraídos = 137
+2025-06-06 19:36:51,403 — INFO — Extracción de Showdown completada
+2025-06-06 19:36:51,403 — INFO — Extrayendo datos de HowLongToBeat API...
+2025-06-06 19:36:51,403 — INFO — HLTB: iniciando consultas de duración de juegos
+2025-06-06 19:36:55,492 — WARNING — HLTB: sin resultados para 'IRL'
+2025-06-06 19:36:59,132 — WARNING — HLTB: sin resultados para 'Special Events'
+2025-06-06 19:37:16,314 — WARNING — HLTB: sin resultados para 'TEKKEN 8'
+2025-06-06 19:37:18,970 — WARNING — HLTB: sin resultados para 'Rise Online'
+2025-06-06 19:37:21,672 — WARNING — HLTB: sin resultados para 'The Last of Us Part II: Remastered'
+2025-06-06 19:37:23,178 — WARNING — HLTB: sin resultados para 'Casino Simulator 2024'
+2025-06-06 19:37:30,737 — WARNING — HLTB: sin resultados para 'Talk Shows & Podcasts'
+2025-06-06 19:37:41,603 — WARNING — HLTB: sin resultados para 'Games + Demos'
+2025-06-06 19:38:00,393 — WARNING — HLTB: sin resultados para 'PUBG: BATTLEGROUNDS'
+2025-06-06 19:38:19,388 — WARNING — HLTB: sin resultados para 'The Legend of Zelda: Tears of the Kingdom - Nintendo Switch 2 Edition'
+2025-06-06 19:38:31,056 — WARNING — HLTB: sin resultados para 'Coin Push RPG'
+2025-06-06 19:38:34,545 — WARNING — HLTB: sin resultados para 'VALORANT'
+2025-06-06 19:38:40,659 — WARNING — HLTB: sin resultados para 'Pokémon Black/White Version 2'
+2025-06-06 19:38:49,107 — WARNING — HLTB: sin resultados para 'Etheria: Restart'
+2025-06-06 19:38:53,801 — WARNING — HLTB: sin resultados para 'The Black Vault'
+2025-06-06 19:38:57,730 — WARNING — HLTB: sin resultados para 'Co-working & Studying'
+2025-06-06 19:39:03,218 — INFO — HLTB: consultas completadas, registros válidos=84
+2025-06-06 19:39:03,223 — INFO — Extracción de HowLongToBeat completada
+2025-06-06 19:39:03,224 — INFO — === GUARDANDO A PARQUET ===
+2025-06-06 19:39:03,224 — INFO — Guardando twitch a Parquet...
+2025-06-06 19:39:05,593 — INFO — [TWITCH] Iniciando guardado a Parquet: data/twitch.parquet
+2025-06-06 19:39:13,106 — ERROR — Error guardando twitch a Parquet: An error occurred while calling o102.parquet.
+: java.lang.UnsatisfiedLinkError: 'boolean org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(java.lang.String, int)'
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.fs.ChecksumFileSystem.listStatus(ChecksumFileSystem.java:761)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.getAllCommittedTaskPaths(FileOutputCommitter.java:334)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJobInternal(FileOutputCommitter.java:404)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJob(FileOutputCommitter.java:377)
+	at org.apache.parquet.hadoop.ParquetOutputCommitter.commitJob(ParquetOutputCommitter.java:48)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.commitJob(HadoopMapReduceCommitProtocol.scala:192)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$writeAndCommit$3(FileFormatWriter.scala:275)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:552)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:275)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:304)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:190)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:190)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:113)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:111)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:125)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:869)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:391)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:364)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:243)
+	at org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:802)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:76)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2025-06-06 19:39:13,108 — ERROR — Error crítico en el pipeline: An error occurred while calling o102.parquet.
+: java.lang.UnsatisfiedLinkError: 'boolean org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(java.lang.String, int)'
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.fs.ChecksumFileSystem.listStatus(ChecksumFileSystem.java:761)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.getAllCommittedTaskPaths(FileOutputCommitter.java:334)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJobInternal(FileOutputCommitter.java:404)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJob(FileOutputCommitter.java:377)
+	at org.apache.parquet.hadoop.ParquetOutputCommitter.commitJob(ParquetOutputCommitter.java:48)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.commitJob(HadoopMapReduceCommitProtocol.scala:192)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$writeAndCommit$3(FileFormatWriter.scala:275)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:552)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:275)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:304)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:190)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:190)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:113)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:111)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:125)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:869)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:391)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:364)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:243)
+	at org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:802)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:76)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2025-06-06 19:39:13,109 — ERROR — Pipeline terminado con errores
+2025-06-06 19:39:13,109 — INFO — Cerrando conexiones y limpiando recursos...
+2025-06-06 19:39:14,025 — INFO — Pipeline finalizado

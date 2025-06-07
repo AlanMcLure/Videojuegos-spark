@@ -1,0 +1,8 @@
+pyspark
+requests
+sqlalchemy
+psycopg2-binary     # si usas PostgreSQL para tu core schema y log table
+parquet            # (opcional: fastparquet o pyarrow)
+python-dotenv
+howlongtobeatpy
+psutil

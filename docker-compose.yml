@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: vg_core_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: vg_etl_user
+      POSTGRES_PASSWORD: YourStrongPass
+      POSTGRES_DB: vg_core
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
