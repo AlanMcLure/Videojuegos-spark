@@ -1,8 +1,3 @@
-# Cambios principales:
-# - init_log_table() ahora solo devuelve engine, no logs_tbl
-# - insert_log() sigue funcionando igual
-# - El resto del pipeline no necesita cambio porque la lógica de carga ya fue ajustada en to_db.py
-
 import sys
 import io
 from pyspark import SparkConf, SparkContext
@@ -26,7 +21,6 @@ from carga.to_parquet import save_rdd_to_parquet
 from carga.to_db import init_log_table, insert_log, load_to_core_schema
 from transform.clean import clean_and_transform_data
 
-# Variables globales de estado
 extracted_data = {}
 transformed_data = {}
 parquet_metadata = {}
@@ -164,7 +158,8 @@ def load_to_db_phase(logger, engine):
             logger.info(f"Cargando {source} a base de datos...")
             source_base = source.split("_")[0]
             load_meta = load_to_core_schema(df_clean, source_base, engine, logger)
-            insert_log(engine, load_meta)
+            log_id = insert_log(engine, load_meta)
+            logger.info(f"Carga completada para {source}. ID de log: {log_id}")
         logger.info("Fase de carga completada con éxito.")
     except Exception as e:
         logger.error(f"Error en fase de carga: {str(e)}")
@@ -192,39 +187,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# Pruebas de ejecución manual
-# if __name__ == "__main__":
-#     phase = sys.argv[1] if len(sys.argv) > 1 else "all"
-
-#     if phase == "all":
-#         main()
-#     else:
-#         logger = setup_logger()
-#         engine, logs_tbl = init_log_table(DB_URI)
-
-#         try:
-#             if phase == "extract":
-#                 sc, spark = setup_spark()
-#                 extract_phase(sc, logger)
-#                 sc.stop()
-
-#             elif phase == "parquet":
-#                 load_to_parquet_phase(logger, engine, logs_tbl)
-
-#             elif phase == "transform":
-#                 sc, spark = setup_spark()
-#                 transform_phase(spark, logger, engine, logs_tbl)
-#                 sc.stop()
-
-#             elif phase == "load":
-#                 sc, spark = setup_spark()
-#                 transform_phase(spark, logger, engine, logs_tbl)
-#                 load_to_db_phase(logger, engine, logs_tbl)
-#                 sc.stop()
-
-#             else:
-#                 logger.error(f"Fase no reconocida: {phase}")
-#                 raise ValueError(f"Fase no reconocida: {phase}")
-#         except Exception as e:
-#             logger.error(f"Error en fase {phase}: {str(e)}")

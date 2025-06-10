@@ -1,3 +1,4 @@
+from pyspark.sql.functions import lit
 from sqlalchemy import create_engine, text
 from datetime import datetime
 import logging
@@ -63,19 +64,30 @@ def insert_log(engine, log_data: dict):
 
 def load_to_core_schema(df, source: str, engine, logger):
     """
-    Cargar DataFrame limpio al schema core de la base de datos
+    Cargar DataFrame limpio al schema core de la base de datos,
+    añadiendo columnas técnicas necesarias.
     """
     start_time = datetime.utcnow()
 
     try:
         total_records = 0
+        source_upper = source.upper()
+        endpoint = f"load/core_{source.lower()}"
+        output_file = f"core.{source.lower()}_tables"
 
-        if source.lower() == "twitch":
+        if source == "twitch":
             games_df = df.filter(df.record_type == "game")
             streams_df = df.filter(df.record_type == "stream")
 
             if games_df.count() > 0:
                 logger.info(f"Cargando {games_df.count()} juegos de Twitch...")
+
+                games_df = (
+                    games_df.withColumn("dw_id_carga", lit(None))
+                    .withColumn("dw_endpoint", lit(endpoint))
+                    .withColumn("dw_source", lit(source_upper))
+                )
+
                 games_df.write.format("jdbc").option(
                     "url", engine.url.render_as_string(hide_password=False)
                 ).option("dbtable", "core.twitch_games").option(
@@ -86,6 +98,13 @@ def load_to_core_schema(df, source: str, engine, logger):
 
             if streams_df.count() > 0:
                 logger.info(f"Cargando {streams_df.count()} streams de Twitch...")
+
+                streams_df = (
+                    streams_df.withColumn("dw_id_carga", lit(None))
+                    .withColumn("dw_endpoint", lit(endpoint))
+                    .withColumn("dw_source", lit(source_upper))
+                )
+
                 streams_df.write.format("jdbc").option(
                     "url", engine.url.render_as_string(hide_password=False)
                 ).option("dbtable", "core.twitch_streams").option(
@@ -96,7 +115,7 @@ def load_to_core_schema(df, source: str, engine, logger):
 
             total_records = games_df.count() + streams_df.count()
 
-        elif source.lower() == "showdown":
+        elif source == "showdown":
             ladder_df = df.filter(df.record_type == "ladder")
             profiles_df = df.filter(df.record_type == "profile")
 
@@ -104,6 +123,13 @@ def load_to_core_schema(df, source: str, engine, logger):
                 logger.info(
                     f"Cargando {ladder_df.count()} registros de ladder de Showdown..."
                 )
+
+                ladder_df = (
+                    ladder_df.withColumn("dw_id_carga", lit(None))
+                    .withColumn("dw_endpoint", lit(endpoint))
+                    .withColumn("dw_source", lit(source_upper))
+                )
+
                 ladder_df.write.format("jdbc").option(
                     "url", engine.url.render_as_string(hide_password=False)
                 ).option("dbtable", "core.showdown_ladder").option(
@@ -114,6 +140,13 @@ def load_to_core_schema(df, source: str, engine, logger):
 
             if profiles_df.count() > 0:
                 logger.info(f"Cargando {profiles_df.count()} perfiles de Showdown...")
+
+                profiles_df = (
+                    profiles_df.withColumn("dw_id_carga", lit(None))
+                    .withColumn("dw_endpoint", lit(endpoint))
+                    .withColumn("dw_source", lit(source_upper))
+                )
+
                 profiles_df.write.format("jdbc").option(
                     "url", engine.url.render_as_string(hide_password=False)
                 ).option("dbtable", "core.showdown_profiles").option(
@@ -124,8 +157,15 @@ def load_to_core_schema(df, source: str, engine, logger):
 
             total_records = ladder_df.count() + profiles_df.count()
 
-        elif source.lower() == "howlongtobeat":
+        elif source == "howlongtobeat":
             logger.info(f"Cargando {df.count()} juegos de HowLongToBeat...")
+
+            df = (
+                df.withColumn("dw_id_carga", lit(None))
+                .withColumn("dw_endpoint", lit(endpoint))
+                .withColumn("dw_source", lit(source_upper))
+            )
+
             df.write.format("jdbc").option(
                 "url", engine.url.render_as_string(hide_password=False)
             ).option("dbtable", "core.hltb_games").option(
@@ -145,9 +185,9 @@ def load_to_core_schema(df, source: str, engine, logger):
             "load_start_time": start_time,
             "load_end_time": end_time,
             "records_count": total_records,
-            "source": source.upper(),
-            "endpoint": f"load/core_{source.lower()}",
-            "output_file": f"core.{source.lower()}_tables",
+            "source": source_upper,
+            "endpoint": endpoint,
+            "output_file": output_file,
             "status": "SUCCESS",
         }
 
@@ -157,9 +197,9 @@ def load_to_core_schema(df, source: str, engine, logger):
             "load_start_time": start_time,
             "load_end_time": end_time,
             "records_count": 0,
-            "source": source.upper(),
-            "endpoint": f"load/core_{source.lower()}",
-            "output_file": f"core.{source.lower()}_tables",
+            "source": source_upper,
+            "endpoint": endpoint,
+            "output_file": output_file,
             "status": "ERROR",
             "error_message": str(e),
         }

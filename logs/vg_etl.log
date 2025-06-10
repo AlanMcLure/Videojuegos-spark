@@ -16953,3 +16953,1656 @@ LINE 1: INSERT INTO logs.etl_logs (load_start_time, load_end_time, r...
 2025-06-09 22:19:53,041 — INFO — Cargando 75 juegos de HowLongToBeat...
 2025-06-09 22:19:53,125 — INFO — Fase de carga completada con éxito.
 2025-06-09 22:19:54,266 — INFO — Pipeline finalizado
+2025-06-10 17:23:02,793 — INFO — === INICIO DEL PIPELINE ===
+2025-06-10 17:23:02,794 — INFO — Configurando conexión a la base de datos...
+2025-06-10 17:23:03,104 — INFO — === FASE 1: EXTRACCIÓN DE DATOS ===
+2025-06-10 17:23:03,105 — INFO — Extrayendo datos de Twitch...
+2025-06-10 17:23:03,106 — INFO — Twitch: iniciando extracción
+2025-06-10 17:23:05,467 — INFO — Twitch: obtenidos 200 juegos top
+2025-06-10 17:23:06,654 — INFO — Twitch: 50 streams para juego Just Chatting
+2025-06-10 17:23:07,690 — INFO — Twitch: 50 streams para juego Counter-Strike
+2025-06-10 17:23:08,218 — INFO — Twitch: 50 streams para juego VALORANT
+2025-06-10 17:23:08,702 — INFO — Twitch: 50 streams para juego Tom Clancy's Rainbow Six Siege
+2025-06-10 17:23:09,370 — INFO — Twitch: 50 streams para juego Grand Theft Auto V
+2025-06-10 17:23:10,595 — INFO — Twitch: 50 streams para juego Dune: Awakening
+2025-06-10 17:23:11,129 — INFO — Twitch: 50 streams para juego League of Legends
+2025-06-10 17:23:11,610 — INFO — Twitch: 50 streams para juego Fortnite
+2025-06-10 17:23:12,110 — INFO — Twitch: 50 streams para juego MindsEye
+2025-06-10 17:23:12,841 — INFO — Twitch: 40 streams para juego Kings League
+2025-06-10 17:23:13,794 — INFO — Twitch: 50 streams para juego Special Events
+2025-06-10 17:23:14,774 — INFO — Twitch: 50 streams para juego IRL
+2025-06-10 17:23:15,313 — INFO — Twitch: 50 streams para juego Dota 2
+2025-06-10 17:23:16,321 — INFO — Twitch: 50 streams para juego Minecraft
+2025-06-10 17:23:17,274 — INFO — Twitch: 50 streams para juego Call of Duty: Warzone
+2025-06-10 17:23:18,264 — INFO — Twitch: 50 streams para juego EA Sports FC 25
+2025-06-10 17:23:18,753 — INFO — Twitch: 50 streams para juego Mario Kart World
+2025-06-10 17:23:20,281 — INFO — Twitch: 50 streams para juego World of Warcraft
+2025-06-10 17:23:20,821 — INFO — Twitch: 50 streams para juego Hearthstone
+2025-06-10 17:23:21,832 — INFO — Twitch: 50 streams para juego Marvel Rivals
+2025-06-10 17:23:22,602 — INFO — Twitch: 24 streams para juego Super Mario Maker 2
+2025-06-10 17:23:23,097 — INFO — Twitch: 50 streams para juego Dead by Daylight
+2025-06-10 17:23:24,179 — INFO — Twitch: 50 streams para juego Elden Ring: Nightreign
+2025-06-10 17:23:25,198 — INFO — Twitch: 50 streams para juego Apex Legends
+2025-06-10 17:23:26,333 — INFO — Twitch: 50 streams para juego Teamfight Tactics
+2025-06-10 17:23:27,346 — INFO — Twitch: 50 streams para juego DJs
+2025-06-10 17:23:28,326 — INFO — Twitch: 50 streams para juego Lies of P
+2025-06-10 17:23:29,295 — INFO — Twitch: 50 streams para juego Path of Exile
+2025-06-10 17:23:30,343 — INFO — Twitch: 50 streams para juego Clair Obscur: Expedition 33
+2025-06-10 17:23:30,822 — INFO — Twitch: 50 streams para juego World of Tanks
+2025-06-10 17:23:31,596 — INFO — Twitch: 1 streams para juego Maestro VR
+2025-06-10 17:23:32,647 — INFO — Twitch: 50 streams para juego Slots
+2025-06-10 17:23:33,145 — INFO — Twitch: 50 streams para juego Magic: The Gathering
+2025-06-10 17:23:33,617 — INFO — Twitch: 50 streams para juego Rust
+2025-06-10 17:23:34,641 — INFO — Twitch: 50 streams para juego Art
+2025-06-10 17:23:35,482 — INFO — Twitch: 7 streams para juego Super Mario Party Jamboree
+2025-06-10 17:23:36,013 — INFO — Twitch: 50 streams para juego Old School RuneScape
+2025-06-10 17:23:36,968 — INFO — Twitch: 50 streams para juego Escape from Tarkov
+2025-06-10 17:23:37,447 — INFO — Twitch: 50 streams para juego ROBLOX
+2025-06-10 17:23:38,439 — INFO — Twitch: 50 streams para juego Talk Shows & Podcasts
+2025-06-10 17:23:39,447 — INFO — Twitch: 50 streams para juego PUBG: BATTLEGROUNDS
+2025-06-10 17:23:40,452 — INFO — Twitch: 50 streams para juego Overwatch 2
+2025-06-10 17:23:41,219 — INFO — Twitch: 32 streams para juego Virtual Casino
+2025-06-10 17:23:41,974 — INFO — Twitch: 1 streams para juego Backrooms Rec.
+2025-06-10 17:23:43,033 — INFO — Twitch: 50 streams para juego Games + Demos
+2025-06-10 17:23:43,798 — INFO — Twitch: 35 streams para juego Pools, Hot Tubs, and Beaches
+2025-06-10 17:23:44,267 — INFO — Twitch: 50 streams para juego Destiny 2
+2025-06-10 17:23:45,240 — INFO — Twitch: 50 streams para juego Street Fighter 6
+2025-06-10 17:23:45,718 — INFO — Twitch: 50 streams para juego MapleStory Worlds
+2025-06-10 17:23:46,181 — INFO — Twitch: 50 streams para juego I'm Only Sleeping
+2025-06-10 17:23:46,672 — INFO — Twitch: 50 streams para juego Etheria: Restart
+2025-06-10 17:23:47,188 — INFO — Twitch: 50 streams para juego Sports
+2025-06-10 17:23:47,943 — INFO — Twitch: 31 streams para juego No, I'm Not A Human
+2025-06-10 17:23:48,437 — INFO — Twitch: 50 streams para juego ASMR
+2025-06-10 17:23:49,387 — INFO — Twitch: 50 streams para juego Music
+2025-06-10 17:23:50,416 — INFO — Twitch: 50 streams para juego ELDEN RING
+2025-06-10 17:23:50,921 — INFO — Twitch: 50 streams para juego DayZ
+2025-06-10 17:23:51,417 — INFO — Twitch: 50 streams para juego Tibia
+2025-06-10 17:23:51,893 — INFO — Twitch: 50 streams para juego Red Dead Redemption 2
+2025-06-10 17:23:52,369 — INFO — Twitch: 50 streams para juego Heroes of Might and Magic III: The Restoration of Erathia
+2025-06-10 17:23:52,864 — INFO — Twitch: 50 streams para juego Always On
+2025-06-10 17:23:53,381 — INFO — Twitch: 50 streams para juego Albion Online
+2025-06-10 17:23:53,853 — INFO — Twitch: 50 streams para juego F1 25
+2025-06-10 17:23:54,830 — INFO — Twitch: 50 streams para juego Black Desert
+2025-06-10 17:23:55,336 — INFO — Twitch: 50 streams para juego Rocket League
+2025-06-10 17:23:56,157 — INFO — Twitch: 37 streams para juego Warface
+2025-06-10 17:23:58,178 — INFO — Twitch: 50 streams para juego Software and Game Development
+2025-06-10 17:23:58,665 — INFO — Twitch: 50 streams para juego 7 Days to Die
+2025-06-10 17:23:59,176 — INFO — Twitch: 50 streams para juego Arena Breakout: Infinite
+2025-06-10 17:23:59,709 — INFO — Twitch: 50 streams para juego Crypto
+2025-06-10 17:24:00,784 — INFO — Twitch: 50 streams para juego Gray Zone Warfare
+2025-06-10 17:24:01,722 — INFO — Twitch: 50 streams para juego Chess
+2025-06-10 17:24:02,219 — INFO — Twitch: 50 streams para juego Retro
+2025-06-10 17:24:03,191 — INFO — Twitch: 50 streams para juego NBA 2K25
+2025-06-10 17:24:03,710 — INFO — Twitch: 50 streams para juego Pokémon Scarlet/Violet
+2025-06-10 17:24:04,693 — INFO — Twitch: 50 streams para juego Mir Tankov
+2025-06-10 17:24:05,249 — INFO — Twitch: 50 streams para juego DARK SOULS II: Scholar of the First Sin
+2025-06-10 17:24:06,219 — INFO — Twitch: 50 streams para juego Trackmania
+2025-06-10 17:24:06,990 — INFO — Twitch: 17 streams para juego BULLET YEETERS
+2025-06-10 17:24:07,978 — INFO — Twitch: 50 streams para juego Splitgate 2
+2025-06-10 17:24:08,753 — INFO — Twitch: 3 streams para juego Streamer Life Simulator 2
+2025-06-10 17:24:09,239 — INFO — Twitch: 50 streams para juego Animals, Aquariums, and Zoos
+2025-06-10 17:24:09,789 — INFO — Twitch: 50 streams para juego Hunt: Showdown 1896
+2025-06-10 17:24:10,787 — INFO — Twitch: 50 streams para juego Poker
+2025-06-10 17:24:11,317 — INFO — Twitch: 50 streams para juego Call of Duty
+2025-06-10 17:24:12,121 — INFO — Twitch: 49 streams para juego World of Warships
+2025-06-10 17:24:12,928 — INFO — Twitch: 7 streams para juego Zombie Graveyard Simulator
+2025-06-10 17:24:13,907 — INFO — Twitch: 50 streams para juego Sea of Thieves
+2025-06-10 17:24:14,695 — INFO — Twitch: 33 streams para juego Death Stranding
+2025-06-10 17:24:15,195 — INFO — Twitch: 50 streams para juego Mobile Legends: Bang Bang
+2025-06-10 17:24:15,972 — INFO — Twitch: 6 streams para juego Escape from Duckov
+2025-06-10 17:24:16,974 — INFO — Twitch: 50 streams para juego Clash Royale
+2025-06-10 17:24:17,702 — INFO — Twitch: 12 streams para juego The Legend of Zelda: Majora's Mask
+2025-06-10 17:24:18,671 — INFO — Twitch: 50 streams para juego Wuthering Waves
+2025-06-10 17:24:19,178 — INFO — Twitch: 50 streams para juego Lost Ark
+2025-06-10 17:24:20,201 — INFO — Twitch: 50 streams para juego Call of Duty: Black Ops 6
+2025-06-10 17:24:21,015 — INFO — Twitch: 9 streams para juego Tinkerlands
+2025-06-10 17:24:22,028 — INFO — Twitch: 50 streams para juego Genshin Impact
+2025-06-10 17:24:22,524 — INFO — Twitch: 50 streams para juego Co-working & Studying
+2025-06-10 17:24:23,001 — INFO — Twitch: 50 streams para juego Zenless Zone Zero
+2025-06-10 17:24:23,769 — INFO — Twitch: 37 streams para juego Age of Empires II
+2025-06-10 17:24:24,249 — INFO — Twitch: 50 streams para juego FINAL FANTASY XIV ONLINE
+2025-06-10 17:24:25,121 — INFO — Twitch: 9 streams para juego Tormented Souls II
+2025-06-10 17:24:25,865 — INFO — Twitch: 21 streams para juego Warborne: Above Ashes
+2025-06-10 17:24:26,900 — INFO — Twitch: 50 streams para juego VRChat
+2025-06-10 17:24:27,967 — INFO — Twitch: 50 streams para juego Tom Clancy's The Division 2
+2025-06-10 17:24:28,447 — INFO — Twitch: 50 streams para juego R.E.P.O.
+2025-06-10 17:24:29,266 — INFO — Twitch: 8 streams para juego Cloverpit
+2025-06-10 17:24:29,777 — INFO — Twitch: 50 streams para juego Star Citizen
+2025-06-10 17:24:30,797 — INFO — Twitch: 50 streams para juego Deltarune
+2025-06-10 17:24:31,554 — INFO — Twitch: 35 streams para juego Garry's Mod
+2025-06-10 17:24:32,633 — INFO — Twitch: 50 streams para juego Wildgate
+2025-06-10 17:24:33,787 — INFO — Twitch: 50 streams para juego Brawl Stars
+2025-06-10 17:24:35,084 — INFO — Twitch: 50 streams para juego Delta Force
+2025-06-10 17:24:35,847 — INFO — Twitch: 2 streams para juego Papa's Freezeria Deluxe
+2025-06-10 17:24:36,362 — INFO — Twitch: 50 streams para juego War Thunder
+2025-06-10 17:24:37,343 — INFO — Twitch: 50 streams para juego Marbles on Stream
+2025-06-10 17:24:37,854 — INFO — Twitch: 50 streams para juego Rune Factory: Guardians of Azuma
+2025-06-10 17:24:38,383 — INFO — Twitch: 50 streams para juego osu!
+2025-06-10 17:24:39,174 — INFO — Twitch: 6 streams para juego Resident Evil Outbreak
+2025-06-10 17:24:40,208 — INFO — Twitch: 50 streams para juego Phasmophobia
+2025-06-10 17:24:40,969 — INFO — Twitch: 46 streams para juego iRacing
+2025-06-10 17:24:41,745 — INFO — Twitch: 33 streams para juego Vintage Story
+2025-06-10 17:24:42,488 — INFO — Twitch: 18 streams para juego Slay the Spire
+2025-06-10 17:24:43,583 — INFO — Twitch: 50 streams para juego Deadlock
+2025-06-10 17:24:44,386 — INFO — Twitch: 38 streams para juego Rise Online
+2025-06-10 17:24:45,204 — INFO — Twitch: 41 streams para juego Pokémon FireRed/LeafGreen
+2025-06-10 17:24:45,730 — INFO — Twitch: 50 streams para juego Diablo III
+2025-06-10 17:24:46,546 — INFO — Twitch: 18 streams para juego Anno 1800
+2025-06-10 17:24:47,468 — INFO — Twitch: 50 streams para juego Le Mans Ultimate
+2025-06-10 17:24:47,943 — INFO — Twitch: 50 streams para juego The Legend of Zelda: Breath of the Wild
+2025-06-10 17:24:48,449 — INFO — Twitch: 50 streams para juego PUBG Mobile
+2025-06-10 17:24:48,932 — INFO — Twitch: 50 streams para juego Satisfactory
+2025-06-10 17:24:49,963 — INFO — Twitch: 50 streams para juego MLB The Show 25
+2025-06-10 17:24:50,737 — INFO — Twitch: 36 streams para juego MapleStory
+2025-06-10 17:24:51,523 — INFO — Twitch: 50 streams para juego Makers & Crafting
+2025-06-10 17:24:51,993 — INFO — Twitch: 50 streams para juego Farming Simulator 25
+2025-06-10 17:24:52,461 — INFO — Twitch: 50 streams para juego Predecessor
+2025-06-10 17:24:52,929 — INFO — Twitch: 50 streams para juego The Elder Scrolls Online
+2025-06-10 17:24:53,658 — INFO — Twitch: 12 streams para juego Pokémon
+2025-06-10 17:24:54,418 — INFO — Twitch: 39 streams para juego UNDERTALE
+2025-06-10 17:24:55,265 — INFO — Twitch: 11 streams para juego Demon's Souls
+2025-06-10 17:24:56,192 — INFO — Twitch: 50 streams para juego Stardew Valley
+2025-06-10 17:24:56,981 — INFO — Twitch: 8 streams para juego Shakes and Fidget
+2025-06-10 17:24:57,465 — INFO — Twitch: 50 streams para juego The Sims 4
+2025-06-10 17:24:58,217 — INFO — Twitch: 19 streams para juego Marvel Snap
+2025-06-10 17:24:58,938 — INFO — Twitch: 1 streams para juego PoPoLoCrois Monogatari
+2025-06-10 17:24:59,408 — INFO — Twitch: 50 streams para juego The First Descendant
+2025-06-10 17:24:59,951 — INFO — Twitch: 50 streams para juego Project Zomboid
+2025-06-10 17:25:00,719 — INFO — Twitch: 11 streams para juego Baby Steps
+2025-06-10 17:25:01,695 — INFO — Twitch: 50 streams para juego Baldur's Gate 3
+2025-06-10 17:25:02,849 — INFO — Twitch: 50 streams para juego Throne and Liberty
+2025-06-10 17:25:03,356 — INFO — Twitch: 50 streams para juego DOOM: The Dark Ages
+2025-06-10 17:25:04,340 — INFO — Twitch: 50 streams para juego Dark and Darker
+2025-06-10 17:25:04,863 — INFO — Twitch: 50 streams para juego Path of Exile 2
+2025-06-10 17:25:05,634 — INFO — Twitch: 43 streams para juego GeoGuessr
+2025-06-10 17:25:06,146 — INFO — Twitch: 50 streams para juego TEKKEN 8
+2025-06-10 17:25:06,910 — INFO — Twitch: 1 streams para juego Slots
+2025-06-10 17:25:07,376 — INFO — Twitch: 50 streams para juego Honkai: Star Rail
+2025-06-10 17:25:08,148 — INFO — Twitch: 36 streams para juego Off The Grid
+2025-06-10 17:25:09,128 — INFO — Twitch: 50 streams para juego Madden NFL 25
+2025-06-10 17:25:10,125 — INFO — Twitch: 50 streams para juego FANTASY LIFE i: The Girl Who Steals Time
+2025-06-10 17:25:11,096 — INFO — Twitch: 50 streams para juego Monster Hunter Wilds
+2025-06-10 17:25:11,842 — INFO — Twitch: 49 streams para juego RimWorld
+2025-06-10 17:25:12,570 — INFO — Twitch: 33 streams para juego Hero Siege
+2025-06-10 17:25:13,048 — INFO — Twitch: 50 streams para juego Warframe
+2025-06-10 17:25:13,843 — INFO — Twitch: 12 streams para juego Black Russia
+2025-06-10 17:25:14,345 — INFO — Twitch: 50 streams para juego Animal Crossing: New Horizons
+2025-06-10 17:25:15,353 — INFO — Twitch: 50 streams para juego Yu-Gi-Oh! Master Duel
+2025-06-10 17:25:15,613 — INFO — Twitch: 0 streams para juego Superhero Recruitment Simulator
+2025-06-10 17:25:16,346 — INFO — Twitch: 27 streams para juego EVE Online
+2025-06-10 17:25:16,836 — INFO — Twitch: 50 streams para juego DARK SOULS III
+2025-06-10 17:25:17,800 — INFO — Twitch: 50 streams para juego ARK: Survival Ascended
+2025-06-10 17:25:18,640 — INFO — Twitch: 32 streams para juego StarCraft II
+2025-06-10 17:25:19,434 — INFO — Twitch: 4 streams para juego Backseat Drivers
+2025-06-10 17:25:19,954 — INFO — Twitch: 50 streams para juego Standoff 2
+2025-06-10 17:25:20,667 — INFO — Twitch: 4 streams para juego The Witcher 2: Assassins of Kings
+2025-06-10 17:25:21,670 — INFO — Twitch: 50 streams para juego The Elder Scrolls IV: Oblivion Remastered
+2025-06-10 17:25:22,627 — INFO — Twitch: 50 streams para juego League of Legends: Wild Rift
+2025-06-10 17:25:23,598 — INFO — Twitch: 50 streams para juego Fallout 76
+2025-06-10 17:25:24,599 — INFO — Twitch: 50 streams para juego Gran Turismo 7
+2025-06-10 17:25:25,428 — INFO — Twitch: 39 streams para juego Food & Drink
+2025-06-10 17:25:26,182 — INFO — Twitch: 9 streams para juego POPUCOM
+2025-06-10 17:25:26,948 — INFO — Twitch: 1 streams para juego Clustertruck
+2025-06-10 17:25:27,465 — INFO — Twitch: 50 streams para juego SMITE 2
+2025-06-10 17:25:27,956 — INFO — Twitch: 50 streams para juego MU Online
+2025-06-10 17:25:28,733 — INFO — Twitch: 44 streams para juego The Last of Us Part II
+2025-06-10 17:25:29,202 — INFO — Twitch: 50 streams para juego Halo Infinite
+2025-06-10 17:25:30,034 — INFO — Twitch: 17 streams para juego Tournament Poker
+2025-06-10 17:25:30,830 — INFO — Twitch: 39 streams para juego Anime Squad
+2025-06-10 17:25:31,334 — INFO — Twitch: 50 streams para juego Palia
+2025-06-10 17:25:32,145 — INFO — Twitch: 39 streams para juego Politics
+2025-06-10 17:25:32,627 — INFO — Twitch: 50 streams para juego Death Stranding: Director's Cut
+2025-06-10 17:25:33,101 — INFO — Twitch: 50 streams para juego Dark Souls: Remastered
+2025-06-10 17:25:33,588 — INFO — Twitch: 50 streams para juego Vindictus: Defying Fate
+2025-06-10 17:25:34,091 — INFO — Twitch: 50 streams para juego HELLDIVERS 2
+2025-06-10 17:25:35,086 — INFO — Twitch: 50 streams para juego Fall Guys
+2025-06-10 17:25:35,875 — INFO — Twitch: 20 streams para juego Age of Empires IV
+2025-06-10 17:25:36,350 — INFO — Twitch: 50 streams para juego Perfect World
+2025-06-10 17:25:37,119 — INFO — Twitch: 42 streams para juego Metin2
+2025-06-10 17:25:37,120 — INFO — Twitch: total juegos = 200, total streams = 8384
+2025-06-10 17:25:41,916 — INFO — Extrayendo datos de Showdown...
+2025-06-10 17:25:41,917 — INFO — Showdown: iniciando extracción de ladders y perfiles
+2025-06-10 17:25:41,918 — INFO — Showdown: usando 6 formatos Gen9 predefinidos
+2025-06-10 17:25:42,733 — INFO — gen9ou: 100 jugadores en top
+2025-06-10 17:25:43,053 — WARNING — [gen9ou] 403 Forbidden para SOUTH STATION
+2025-06-10 17:25:43,350 — WARNING — [gen9ou] 403 Forbidden para saw war newnew
+2025-06-10 17:25:43,698 — WARNING — [gen9ou] 403 Forbidden para sunflora wukong
+2025-06-10 17:25:43,994 — WARNING — [gen9ou] 403 Forbidden para BANH MI DU MA
+2025-06-10 17:25:44,932 — WARNING — [gen9ou] 403 Forbidden para free solo artist
+2025-06-10 17:25:45,876 — WARNING — [gen9ou] 403 Forbidden para she wants me 4l
+2025-06-10 17:25:46,181 — WARNING — [gen9ou] 403 Forbidden para Well That DOES IT
+2025-06-10 17:25:48,508 — WARNING — [gen9ou] 403 Forbidden para Malk Tyme
+2025-06-10 17:25:48,830 — WARNING — [gen9ou] 403 Forbidden para mommy buzzwole
+2025-06-10 17:25:49,806 — WARNING — [gen9ou] 403 Forbidden para you best not miss
+2025-06-10 17:25:50,130 — WARNING — [gen9ou] 403 Forbidden para Snake Prairie
+2025-06-10 17:25:51,737 — WARNING — [gen9ou] 403 Forbidden para a trip to paris
+2025-06-10 17:25:52,696 — WARNING — [gen9ou] 403 Forbidden para Lancer Medusa
+2025-06-10 17:25:53,051 — WARNING — [gen9ou] 403 Forbidden para okidogi bro
+2025-06-10 17:25:55,984 — WARNING — [gen9ou] 403 Forbidden para Doue MVP
+2025-06-10 17:25:56,290 — WARNING — [gen9ou] 403 Forbidden para Braised Snorlax
+2025-06-10 17:25:59,823 — WARNING — [gen9ou] 403 Forbidden para Linzi the Great
+2025-06-10 17:26:00,809 — WARNING — [gen9ou] 403 Forbidden para La mere a Bachira
+2025-06-10 17:26:01,215 — WARNING — [gen9ou] 403 Forbidden para i hug my bitch
+2025-06-10 17:26:03,488 — WARNING — [gen9ou] 403 Forbidden para FRATTE REGNA
+2025-06-10 17:26:05,186 — WARNING — [gen9ou] 403 Forbidden para bombobini gusini
+2025-06-10 17:26:05,543 — WARNING — [gen9ou] 403 Forbidden para fat bastard
+2025-06-10 17:26:07,160 — WARNING — [gen9ou] 403 Forbidden para Auburn Hills
+2025-06-10 17:26:08,125 — WARNING — [gen9ou] 403 Forbidden para this bullshit
+2025-06-10 17:26:08,506 — WARNING — [gen9ou] 403 Forbidden para Light WeirdTests
+2025-06-10 17:26:10,438 — WARNING — [gen9ou] 403 Forbidden para Saz 0619
+2025-06-10 17:26:11,198 — WARNING — [gen9ou] 403 Forbidden para Floor 99
+2025-06-10 17:26:11,598 — WARNING — [gen9ou] 403 Forbidden para boy dinner
+2025-06-10 17:26:12,043 — WARNING — [gen9ou] 403 Forbidden para the bluest blues
+2025-06-10 17:26:12,341 — WARNING — [gen9ou] 403 Forbidden para Zentrox Boost
+2025-06-10 17:26:14,714 — WARNING — [gen9ou] 403 Forbidden para skiing in japan
+2025-06-10 17:26:15,072 — WARNING — [gen9ou] 403 Forbidden para chen qt
+2025-06-10 17:26:15,417 — WARNING — [gen9ou] 403 Forbidden para Free P&lestine
+2025-06-10 17:26:16,378 — WARNING — [gen9ou] 403 Forbidden para Washed Gamer
+2025-06-10 17:26:18,090 — WARNING — [gen9ou] 403 Forbidden para Asia's Redemption
+2025-06-10 17:26:18,414 — WARNING — [gen9ou] 403 Forbidden para its for me ma
+2025-06-10 17:26:19,402 — WARNING — [gen9ou] 403 Forbidden para heat is heatin
+2025-06-10 17:26:19,759 — WARNING — [gen9ou] 403 Forbidden para art of positioning
+2025-06-10 17:26:20,231 — WARNING — [gen9ou] 403 Forbidden para KTM Adam 1
+2025-06-10 17:26:22,132 — WARNING — [gen9ou] 403 Forbidden para toy soulja
+2025-06-10 17:26:25,055 — WARNING — [gen9ou] 403 Forbidden para Justified AU
+2025-06-10 17:26:25,446 — WARNING — [gen9ou] 403 Forbidden para OUZ Quavo
+2025-06-10 17:26:27,924 — WARNING — [gen9ou] 403 Forbidden para SNOWY HELL
+2025-06-10 17:26:28,240 — WARNING — [gen9ou] 403 Forbidden para limitless dreams
+2025-06-10 17:26:28,568 — WARNING — [gen9ou] 403 Forbidden para rare artist pyrex
+2025-06-10 17:26:28,909 — WARNING — [gen9ou] 403 Forbidden para Pudistor Black
+2025-06-10 17:26:29,255 — WARNING — [gen9ou] 403 Forbidden para chansey and lulu
+2025-06-10 17:26:31,535 — WARNING — [gen9ou] 403 Forbidden para 1400s main
+2025-06-10 17:26:32,574 — WARNING — [gen9ou] 403 Forbidden para ough bliss
+2025-06-10 17:26:32,927 — WARNING — [gen9ou] 403 Forbidden para dawn dreams
+2025-06-10 17:26:34,229 — INFO — gen9ubers: 100 jugadores en top
+2025-06-10 17:26:34,548 — WARNING — [gen9ubers] 403 Forbidden para BK new 维亚内拉
+2025-06-10 17:26:36,128 — WARNING — [gen9ubers] 404 Not Found: usuario CarvioFlaskier
+2025-06-10 17:26:37,882 — WARNING — [gen9ubers] 403 Forbidden para Le Mur Du Son
+2025-06-10 17:26:42,120 — WARNING — [gen9ubers] 403 Forbidden para penrose district
+2025-06-10 17:26:44,353 — WARNING — [gen9ubers] 403 Forbidden para Fc ❤
+2025-06-10 17:26:45,956 — WARNING — [gen9ubers] 403 Forbidden para We Go 2gether
+2025-06-10 17:26:46,978 — WARNING — [gen9ubers] 403 Forbidden para L'isola perduta
+2025-06-10 17:26:48,940 — WARNING — [gen9ubers] 403 Forbidden para Tyrant's Scorn
+2025-06-10 17:26:53,274 — WARNING — [gen9ubers] 403 Forbidden para juno girl
+2025-06-10 17:26:54,288 — WARNING — [gen9ubers] 403 Forbidden para EDG Green
+2025-06-10 17:26:55,870 — WARNING — [gen9ubers] 403 Forbidden para Guizmo 1
+2025-06-10 17:26:56,896 — WARNING — [gen9ubers] 403 Forbidden para Sleigh Beggy
+2025-06-10 17:26:58,583 — WARNING — [gen9ubers] 403 Forbidden para Laila Frizz
+2025-06-10 17:27:01,559 — WARNING — [gen9ubers] 403 Forbidden para Song of Creation
+2025-06-10 17:27:02,588 — WARNING — [gen9ubers] 403 Forbidden para cby Tocause
+2025-06-10 17:27:04,233 — WARNING — [gen9ubers] 403 Forbidden para i ❤️ gangu
+2025-06-10 17:27:07,199 — WARNING — [gen9ubers] 403 Forbidden para always predicted
+2025-06-10 17:27:07,502 — WARNING — [gen9ubers] 403 Forbidden para UBDG POURQUOI
+2025-06-10 17:27:09,119 — WARNING — [gen9ubers] 403 Forbidden para Heure Joyeuse
+2025-06-10 17:27:10,051 — WARNING — [gen9ubers] 403 Forbidden para dog mendigoso
+2025-06-10 17:27:13,629 — WARNING — [gen9ubers] 403 Forbidden para tiktok rizzler
+2025-06-10 17:27:13,992 — WARNING — [gen9ubers] 403 Forbidden para Future king of ou
+2025-06-10 17:27:15,575 — WARNING — [gen9ubers] 403 Forbidden para 4nim0sity 99.9999%
+2025-06-10 17:27:17,903 — WARNING — [gen9ubers] 403 Forbidden para Hack Walters
+2025-06-10 17:27:18,239 — WARNING — [gen9ubers] 403 Forbidden para S3ight of the sun
+2025-06-10 17:27:19,824 — WARNING — [gen9ubers] 403 Forbidden para Dark Aria
+2025-06-10 17:27:22,360 — WARNING — [gen9ubers] 403 Forbidden para Ralsei Hatty ^°^
+2025-06-10 17:27:24,049 — WARNING — [gen9ubers] 403 Forbidden para ishbosheth iv
+2025-06-10 17:27:26,318 — WARNING — [gen9ubers] 403 Forbidden para Taxi Jo
+2025-06-10 17:27:28,577 — WARNING — [gen9ubers] 403 Forbidden para Acting Male
+2025-06-10 17:27:28,920 — WARNING — [gen9ubers] 403 Forbidden para Von mjrn
+2025-06-10 17:27:30,552 — WARNING — [gen9ubers] 403 Forbidden para for time changes
+2025-06-10 17:27:31,247 — INFO — gen9uu: 100 jugadores en top
+2025-06-10 17:27:31,601 — WARNING — [gen9uu] 403 Forbidden para 1024 hello
+2025-06-10 17:27:31,980 — WARNING — [gen9uu] 403 Forbidden para Jim bucket
+2025-06-10 17:27:32,932 — WARNING — [gen9uu] 403 Forbidden para isn't pokemon fun
+2025-06-10 17:27:33,284 — WARNING — [gen9uu] 403 Forbidden para UU25BA beamz
+2025-06-10 17:27:33,645 — WARNING — [gen9uu] 403 Forbidden para UU25BA Jv
+2025-06-10 17:27:34,005 — WARNING — [gen9uu] 403 Forbidden para UU25BA Zephyri
+2025-06-10 17:27:34,355 — WARNING — [gen9uu] 403 Forbidden para UU25BA HTC
+2025-06-10 17:27:34,697 — WARNING — [gen9uu] 403 Forbidden para uu25py peum
+2025-06-10 17:27:35,682 — WARNING — [gen9uu] 403 Forbidden para uu25ba ynd
+2025-06-10 17:27:36,017 — WARNING — [gen9uu] 403 Forbidden para uu25py jf
+2025-06-10 17:27:36,409 — WARNING — [gen9uu] 403 Forbidden para UU25BA Petros
+2025-06-10 17:27:36,791 — WARNING — [gen9uu] 403 Forbidden para UU25KE yiyue
+2025-06-10 17:27:37,151 — WARNING — [gen9uu] 403 Forbidden para UU25BA Fpg
+2025-06-10 17:27:37,489 — WARNING — [gen9uu] 403 Forbidden para UU25XI pet the cat
+2025-06-10 17:27:37,804 — WARNING — [gen9uu] 403 Forbidden para Hydreigon > Latias
+2025-06-10 17:27:38,140 — WARNING — [gen9uu] 403 Forbidden para UU25XI Laro
+2025-06-10 17:27:39,132 — WARNING — [gen9uu] 403 Forbidden para uu25ba coffy
+2025-06-10 17:27:39,475 — WARNING — [gen9uu] 403 Forbidden para uu25py mossy
+2025-06-10 17:27:39,819 — WARNING — [gen9uu] 403 Forbidden para uu25py hi
+2025-06-10 17:27:40,136 — WARNING — [gen9uu] 403 Forbidden para UU25XI mrk
+2025-06-10 17:27:40,475 — WARNING — [gen9uu] 403 Forbidden para UU25XI zugu
+2025-06-10 17:27:40,827 — WARNING — [gen9uu] 403 Forbidden para UU25PY qob
+2025-06-10 17:27:41,194 — WARNING — [gen9uu] 403 Forbidden para Malk Tyme
+2025-06-10 17:27:41,493 — WARNING — [gen9uu] 403 Forbidden para UU25PY wing
+2025-06-10 17:27:41,879 — WARNING — [gen9uu] 403 Forbidden para uu25py winter
+2025-06-10 17:27:42,204 — WARNING — [gen9uu] 403 Forbidden para UU25XI Apple
+2025-06-10 17:27:42,510 — WARNING — [gen9uu] 403 Forbidden para UU25XI 691
+2025-06-10 17:27:42,862 — WARNING — [gen9uu] 403 Forbidden para UU25PY Tree
+2025-06-10 17:27:43,196 — WARNING — [gen9uu] 403 Forbidden para UU25XI seraph
+2025-06-10 17:27:43,522 — WARNING — [gen9uu] 403 Forbidden para UU25XI Lily
+2025-06-10 17:27:43,870 — WARNING — [gen9uu] 403 Forbidden para UU25XI Sbs
+2025-06-10 17:27:44,838 — WARNING — [gen9uu] 403 Forbidden para UU25BA Sab
+2025-06-10 17:27:46,512 — WARNING — [gen9uu] 403 Forbidden para uu25ke lizzie
+2025-06-10 17:27:46,893 — WARNING — [gen9uu] 403 Forbidden para UU25PY Jv
+2025-06-10 17:27:48,478 — WARNING — [gen9uu] 403 Forbidden para UU25KE Gray
+2025-06-10 17:27:48,786 — WARNING — [gen9uu] 403 Forbidden para Midnight rain 30
+2025-06-10 17:27:49,779 — WARNING — [gen9uu] 403 Forbidden para uu25ke dnb
+2025-06-10 17:27:52,160 — WARNING — [gen9uu] 403 Forbidden para uu25ba corp n
+2025-06-10 17:27:52,515 — WARNING — [gen9uu] 403 Forbidden para Goro Yagami 54
+2025-06-10 17:27:52,853 — WARNING — [gen9uu] 403 Forbidden para DKD Of Salvation
+2025-06-10 17:27:53,183 — WARNING — [gen9uu] 403 Forbidden para UU25KE m
+2025-06-10 17:27:53,637 — WARNING — [gen9uu] 403 Forbidden para Stardust Fall
+2025-06-10 17:27:54,068 — WARNING — [gen9uu] 403 Forbidden para Monotype Kiki
+2025-06-10 17:27:54,384 — WARNING — [gen9uu] 403 Forbidden para UU25KE Cans
+2025-06-10 17:27:57,946 — WARNING — [gen9uu] 403 Forbidden para uu thinks
+2025-06-10 17:28:00,188 — WARNING — [gen9uu] 403 Forbidden para steelix is glass
+2025-06-10 17:28:01,200 — WARNING — [gen9uu] 403 Forbidden para the bestie
+2025-06-10 17:28:01,541 — WARNING — [gen9uu] 403 Forbidden para dog mendigoso
+2025-06-10 17:28:03,196 — WARNING — [gen9uu] 403 Forbidden para Round 63
+2025-06-10 17:28:04,138 — WARNING — [gen9uu] 403 Forbidden para UU25XI FFuob
+2025-06-10 17:28:05,073 — WARNING — [gen9uu] 403 Forbidden para UU25KE lulu
+2025-06-10 17:28:05,387 — WARNING — [gen9uu] 403 Forbidden para Sophia waseda
+2025-06-10 17:28:09,528 — WARNING — [gen9uu] 403 Forbidden para uu25ba sharoomba
+2025-06-10 17:28:09,992 — WARNING — [gen9uu] 403 Forbidden para lanturn dance
+2025-06-10 17:28:11,279 — WARNING — [gen9uu] 403 Forbidden para UU25XI Lyc
+2025-06-10 17:28:12,239 — WARNING — [gen9uu] 403 Forbidden para asahi 3
+2025-06-10 17:28:13,226 — WARNING — [gen9uu] 403 Forbidden para Carrie's Room
+2025-06-10 17:28:13,588 — WARNING — [gen9uu] 403 Forbidden para bungee moon 0
+2025-06-10 17:28:13,932 — WARNING — [gen9uu] 403 Forbidden para uu training arc
+2025-06-10 17:28:17,495 — WARNING — [gen9uu] 403 Forbidden para Memories of them
+2025-06-10 17:28:18,796 — INFO — gen9ru: 100 jugadores en top
+2025-06-10 17:28:19,770 — WARNING — [gen9ru] 403 Forbidden para RULT85M Lime
+2025-06-10 17:28:20,075 — WARNING — [gen9ru] 403 Forbidden para rult85r coops
+2025-06-10 17:28:20,409 — WARNING — [gen9ru] 403 Forbidden para rult85f rank o)
+2025-06-10 17:28:20,747 — WARNING — [gen9ru] 403 Forbidden para volc with fo types
+2025-06-10 17:28:21,127 — WARNING — [gen9ru] 403 Forbidden para RULT85A ming
+2025-06-10 17:28:22,870 — WARNING — [gen9ru] 403 Forbidden para RULT85S ak
+2025-06-10 17:28:23,215 — WARNING — [gen9ru] 403 Forbidden para RULT85A arce
+2025-06-10 17:28:23,564 — WARNING — [gen9ru] 403 Forbidden para RULT50W Sbs
+2025-06-10 17:28:23,932 — WARNING — [gen9ru] 403 Forbidden para RULT85D aHareng
+2025-06-10 17:28:24,292 — WARNING — [gen9ru] 403 Forbidden para ca$h hit
+2025-06-10 17:28:24,619 — WARNING — [gen9ru] 403 Forbidden para RULT50y Ryu
+2025-06-10 17:28:26,258 — WARNING — [gen9ru] 403 Forbidden para bug is dangerous
+2025-06-10 17:28:26,619 — WARNING — [gen9ru] 403 Forbidden para its ok to judge
+2025-06-10 17:28:26,979 — WARNING — [gen9ru] 403 Forbidden para ruok mommy
+2025-06-10 17:28:28,543 — WARNING — [gen9ru] 403 Forbidden para RULT50W PCD
+2025-06-10 17:28:29,531 — WARNING — [gen9ru] 403 Forbidden para RULT50W LBN
+2025-06-10 17:28:33,817 — WARNING — [gen9ru] 403 Forbidden para RULT85H helix
+2025-06-10 17:28:34,774 — WARNING — [gen9ru] 403 Forbidden para Nutri Choice
+2025-06-10 17:28:35,125 — WARNING — [gen9ru] 403 Forbidden para RULT85N Nemosse
+2025-06-10 17:28:35,464 — WARNING — [gen9ru] 403 Forbidden para RU's ACE
+2025-06-10 17:28:37,108 — WARNING — [gen9ru] 403 Forbidden para Afole Yo
+2025-06-10 17:28:37,454 — WARNING — [gen9ru] 403 Forbidden para DDD Reveal
+2025-06-10 17:28:39,328 — WARNING — [gen9ru] 403 Forbidden para RULT81 win
+2025-06-10 17:28:39,653 — WARNING — [gen9ru] 403 Forbidden para Quag Lover
+2025-06-10 17:28:40,002 — WARNING — [gen9ru] 403 Forbidden para valea cerbului
+2025-06-10 17:28:41,613 — WARNING — [gen9ru] 403 Forbidden para RULT85S slik
+2025-06-10 17:28:41,959 — WARNING — [gen9ru] 403 Forbidden para rult50l naem
+2025-06-10 17:28:42,302 — WARNING — [gen9ru] 403 Forbidden para Arce9 but worse
+2025-06-10 17:28:43,334 — WARNING — [gen9ru] 403 Forbidden para RULT50D Hareng
+2025-06-10 17:28:44,445 — WARNING — [gen9ru] 403 Forbidden para pls play scl loser
+2025-06-10 17:28:46,753 — WARNING — [gen9ru] 403 Forbidden para duck deluxe
+2025-06-10 17:28:47,777 — WARNING — [gen9ru] 403 Forbidden para Panorama Fiesta
+2025-06-10 17:28:48,110 — WARNING — [gen9ru] 403 Forbidden para RULT85A hjkhj
+2025-06-10 17:28:48,496 — WARNING — [gen9ru] 403 Forbidden para bee lamp
+2025-06-10 17:28:53,348 — WARNING — [gen9ru] 403 Forbidden para plz come back time
+2025-06-10 17:28:54,288 — WARNING — [gen9ru] 403 Forbidden para Sir Altr
+2025-06-10 17:28:55,288 — WARNING — [gen9ru] 403 Forbidden para deez nuzt
+2025-06-10 17:28:56,949 — WARNING — [gen9ru] 403 Forbidden para RU leaving
+2025-06-10 17:28:58,567 — WARNING — [gen9ru] 403 Forbidden para da hareng
+2025-06-10 17:29:03,756 — WARNING — [gen9ru] 403 Forbidden para Umbra Soul
+2025-06-10 17:29:04,090 — WARNING — [gen9ru] 403 Forbidden para creature comforts
+2025-06-10 17:29:05,694 — WARNING — [gen9ru] 403 Forbidden para au revoir soshanna
+2025-06-10 17:29:07,387 — WARNING — [gen9ru] 403 Forbidden para stale regi
+2025-06-10 17:29:09,012 — WARNING — [gen9ru] 403 Forbidden para no fun no life
+2025-06-10 17:29:10,008 — WARNING — [gen9ru] 403 Forbidden para rblt ryo
+2025-06-10 17:29:10,306 — WARNING — [gen9ru] 403 Forbidden para yanmega gaming
+2025-06-10 17:29:11,012 — INFO — gen9nu: 100 jugadores en top
+2025-06-10 17:29:13,307 — WARNING — [gen9nu] 403 Forbidden para Jeromy gride
+2025-06-10 17:29:14,259 — WARNING — [gen9nu] 403 Forbidden para nujs p
+2025-06-10 17:29:17,910 — WARNING — [gen9nu] 403 Forbidden para urusai baaka
+2025-06-10 17:29:18,224 — WARNING — [gen9nu] 403 Forbidden para EMT EMILIA TAN
+2025-06-10 17:29:19,839 — WARNING — [gen9nu] 403 Forbidden para NBA HOOPA
+2025-06-10 17:29:22,062 — WARNING — [gen9nu] 403 Forbidden para FOR DEMACIAAAAA
+2025-06-10 17:29:23,678 — WARNING — [gen9nu] 403 Forbidden para mustard ui goku
+2025-06-10 17:29:25,667 — WARNING — [gen9nu] 403 Forbidden para the walker of time
+2025-06-10 17:29:29,593 — WARNING — [gen9nu] 403 Forbidden para brickasaurus rex
+2025-06-10 17:29:32,526 — WARNING — [gen9nu] 403 Forbidden para ellaine kay!!
+2025-06-10 17:29:35,475 — WARNING — [gen9nu] 403 Forbidden para pult1mg brick
+2025-06-10 17:29:39,104 — WARNING — [gen9nu] 403 Forbidden para second blast
+2025-06-10 17:29:43,896 — WARNING — [gen9nu] 403 Forbidden para NBT Victim
+2025-06-10 17:29:44,866 — WARNING — [gen9nu] 403 Forbidden para bae fakemon
+2025-06-10 17:29:48,204 — WARNING — [gen9nu] 403 Forbidden para battling professor
+2025-06-10 17:29:49,802 — WARNING — [gen9nu] 403 Forbidden para Suuuuper Craig
+2025-06-10 17:29:50,825 — WARNING — [gen9nu] 403 Forbidden para still in luv
+2025-06-10 17:29:51,861 — WARNING — [gen9nu] 403 Forbidden para The Bog Body
+2025-06-10 17:29:58,721 — WARNING — [gen9nu] 403 Forbidden para le monke gal
+2025-06-10 17:29:59,063 — WARNING — [gen9nu] 403 Forbidden para Bramble Scramble
+2025-06-10 17:30:02,012 — WARNING — [gen9nu] 403 Forbidden para wamko is balls
+2025-06-10 17:30:02,362 — WARNING — [gen9nu] 403 Forbidden para Justice CarDozo
+2025-06-10 17:30:08,048 — WARNING — [gen9nu] 403 Forbidden para DDD Reveal
+2025-06-10 17:30:08,384 — WARNING — [gen9nu] 403 Forbidden para unown user 73
+2025-06-10 17:30:10,344 — INFO — gen9monotype: 100 jugadores en top
+2025-06-10 17:30:10,703 — WARNING — [gen9monotype] 403 Forbidden para Dieu Amphibien
+2025-06-10 17:30:11,715 — WARNING — [gen9monotype] 403 Forbidden para Miyabi Cute Ears
+2025-06-10 17:30:12,040 — WARNING — [gen9monotype] 403 Forbidden para MLTSD r2yal
+2025-06-10 17:30:13,041 — WARNING — [gen9monotype] 403 Forbidden para MLTSD pyrmd
+2025-06-10 17:30:13,354 — WARNING — [gen9monotype] 403 Forbidden para MLTSD ThWvrnKng
+2025-06-10 17:30:13,714 — WARNING — [gen9monotype] 403 Forbidden para Miami Mimikyu
+2025-06-10 17:30:14,074 — WARNING — [gen9monotype] 403 Forbidden para Alabama girls
+2025-06-10 17:30:14,413 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 az
+2025-06-10 17:30:14,744 — WARNING — [gen9monotype] 403 Forbidden para mltsd rio
+2025-06-10 17:30:15,705 — WARNING — [gen9monotype] 403 Forbidden para mltsd j
+2025-06-10 17:30:16,031 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Showl
+2025-06-10 17:30:17,027 — WARNING — [gen9monotype] 403 Forbidden para mltza1 mind
+2025-06-10 17:30:18,059 — WARNING — [gen9monotype] 403 Forbidden para FLO3 SussyBaka
+2025-06-10 17:30:18,436 — WARNING — [gen9monotype] 403 Forbidden para Rainbow Chrome
+2025-06-10 17:30:18,754 — WARNING — [gen9monotype] 403 Forbidden para ting luther
+2025-06-10 17:30:19,765 — WARNING — [gen9monotype] 403 Forbidden para FLO3 Tiara
+2025-06-10 17:30:20,107 — WARNING — [gen9monotype] 403 Forbidden para Ranger 0
+2025-06-10 17:30:20,500 — WARNING — [gen9monotype] 403 Forbidden para Cee u-u 2
+2025-06-10 17:30:21,852 — WARNING — [gen9monotype] 403 Forbidden para MLTSD Memphis
+2025-06-10 17:30:22,224 — WARNING — [gen9monotype] 403 Forbidden para Iron Michael 66
+2025-06-10 17:30:23,982 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Memphis
+2025-06-10 17:30:24,440 — WARNING — [gen9monotype] 403 Forbidden para MLTSD hammy
+2025-06-10 17:30:24,773 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Juleo
+2025-06-10 17:30:25,107 — WARNING — [gen9monotype] 403 Forbidden para Gym Leader Kune
+2025-06-10 17:30:26,067 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Dieu
+2025-06-10 17:30:26,397 — WARNING — [gen9monotype] 403 Forbidden para ABNH Showl
+2025-06-10 17:30:27,487 — WARNING — [gen9monotype] 403 Forbidden para Rocket grunt KB
+2025-06-10 17:30:27,826 — WARNING — [gen9monotype] 403 Forbidden para Joe Bureau
+2025-06-10 17:30:28,811 — WARNING — [gen9monotype] 403 Forbidden para what about meeeee
+2025-06-10 17:30:29,134 — WARNING — [gen9monotype] 403 Forbidden para art of building
+2025-06-10 17:30:29,495 — WARNING — [gen9monotype] 403 Forbidden para SAW ☾ 乂SC
+2025-06-10 17:30:30,437 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 pyr
+2025-06-10 17:30:31,370 — WARNING — [gen9monotype] 403 Forbidden para Papercut Massacre
+2025-06-10 17:30:32,309 — WARNING — [gen9monotype] 403 Forbidden para Dorron ☆
+2025-06-10 17:30:33,896 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 PD
+2025-06-10 17:30:34,220 — WARNING — [gen9monotype] 403 Forbidden para MLTSD L
+2025-06-10 17:30:34,511 — WARNING — [gen9monotype] 403 Forbidden para londi g
+2025-06-10 17:30:34,831 — WARNING — [gen9monotype] 403 Forbidden para Cee o-o
+2025-06-10 17:30:37,763 — WARNING — [gen9monotype] 403 Forbidden para La teknology
+2025-06-10 17:30:38,084 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Dorron
+2025-06-10 17:30:38,392 — WARNING — [gen9monotype] 403 Forbidden para king choco
+2025-06-10 17:30:39,394 — WARNING — [gen9monotype] 403 Forbidden para ESDBDA kraken
+2025-06-10 17:30:40,391 — WARNING — [gen9monotype] 403 Forbidden para ESDBDA kawaii
+2025-06-10 17:30:42,576 — WARNING — [gen9monotype] 403 Forbidden para Flood 7
+2025-06-10 17:30:43,798 — WARNING — [gen9monotype] 403 Forbidden para BXR8 CLOWNUTA
+2025-06-10 17:30:44,751 — WARNING — [gen9monotype] 403 Forbidden para konjiki2525 毒
+2025-06-10 17:30:46,322 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 aaaaa
+2025-06-10 17:30:47,304 — WARNING — [gen9monotype] 403 Forbidden para Birbs arent real
+2025-06-10 17:30:47,623 — WARNING — [gen9monotype] 403 Forbidden para mltla3 vapo
+2025-06-10 17:30:53,584 — WARNING — [gen9monotype] 403 Forbidden para MLTSD uzzler
+2025-06-10 17:30:53,908 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Maverick
+2025-06-10 17:30:54,372 — WARNING — [gen9monotype] 403 Forbidden para FLO3 Fent
+2025-06-10 17:30:55,579 — WARNING — [gen9monotype] 403 Forbidden para MLTLA3 Arquero
+2025-06-10 17:30:55,901 — WARNING — [gen9monotype] 403 Forbidden para carbink rae jepsen
+2025-06-10 17:30:56,897 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Flood
+2025-06-10 17:30:57,220 — WARNING — [gen9monotype] 403 Forbidden para Max E Verstappen
+2025-06-10 17:30:57,560 — WARNING — [gen9monotype] 403 Forbidden para Quag lover
+2025-06-10 17:30:57,875 — WARNING — [gen9monotype] 403 Forbidden para ESDBDA stan APRIL
+2025-06-10 17:30:58,385 — WARNING — [gen9monotype] 403 Forbidden para funa uta
+2025-06-10 17:30:58,388 — INFO — Showdown: registros ladder = 600, perfiles = 329
+2025-06-10 17:30:58,530 — INFO — Extrayendo datos de HowLongToBeat...
+2025-06-10 17:30:58,531 — INFO — HLTB: iniciando consultas de duración de juegos
+2025-06-10 17:31:10,325 — WARNING — HLTB: sin resultados para 'Mir Tankov'
+2025-06-10 17:31:13,537 — WARNING — HLTB: sin resultados para 'Escape from Duckov'
+2025-06-10 17:31:15,053 — WARNING — HLTB: sin resultados para 'FINAL FANTASY XIV ONLINE'
+2025-06-10 17:31:17,925 — WARNING — HLTB: sin resultados para 'Rise Online'
+2025-06-10 17:31:24,099 — WARNING — HLTB: sin resultados para 'Food & Drink'
+2025-06-10 17:31:28,093 — WARNING — HLTB: sin resultados para 'Just Chatting'
+2025-06-10 17:31:29,730 — WARNING — HLTB: sin resultados para 'IRL'
+2025-06-10 17:31:41,294 — WARNING — HLTB: sin resultados para 'Pokémon Scarlet/Violet'
+2025-06-10 17:31:45,579 — WARNING — HLTB: sin resultados para 'Zombie Graveyard Simulator'
+2025-06-10 17:31:48,901 — WARNING — HLTB: sin resultados para 'Co-working & Studying'
+2025-06-10 17:31:52,553 — WARNING — HLTB: sin resultados para 'Pokémon FireRed/LeafGreen'
+2025-06-10 17:32:01,133 — WARNING — HLTB: sin resultados para 'Black Russia'
+2025-06-10 17:32:33,970 — WARNING — HLTB: sin resultados para 'Special Events'
+2025-06-10 17:32:36,311 — WARNING — HLTB: sin resultados para 'Talk Shows & Podcasts'
+2025-06-10 17:32:40,262 — WARNING — HLTB: sin resultados para 'Software and Game Development'
+2025-06-10 17:32:46,434 — WARNING — HLTB: sin resultados para 'Warborne: Above Ashes'
+2025-06-10 17:32:52,664 — WARNING — HLTB: sin resultados para 'Makers & Crafting'
+2025-06-10 17:33:05,481 — WARNING — HLTB: sin resultados para 'PUBG: BATTLEGROUNDS'
+2025-06-10 17:33:06,992 — WARNING — HLTB: sin resultados para 'I'm Only Sleeping'
+2025-06-10 17:33:15,493 — INFO — HLTB: consultas completadas, registros válidos=81
+2025-06-10 17:33:15,501 — INFO — Muestra de datos extraídos para TWITCH_GAMES:
+2025-06-10 17:33:16,390 — INFO — [twitch_games] Ejemplo 1: {'record_type': 'game', 'game_id': '509658', 'game_name': 'Just Chatting', 'box_art_url': 'https://static-cdn.jtvnw.net/ttv-boxart/509658-{width}x{height}.jpg', 'extraction_time': '2025-06-10T17:23:05.468621', 'source': 'twitch', 'endpoint': 'games/top'}
+2025-06-10 17:33:16,391 — INFO — [twitch_games] Ejemplo 2: {'record_type': 'game', 'game_id': '32399', 'game_name': 'Counter-Strike', 'box_art_url': 'https://static-cdn.jtvnw.net/ttv-boxart/32399-{width}x{height}.jpg', 'extraction_time': '2025-06-10T17:23:05.468621', 'source': 'twitch', 'endpoint': 'games/top'}
+2025-06-10 17:33:16,391 — INFO — [twitch_games] Ejemplo 3: {'record_type': 'game', 'game_id': '516575', 'game_name': 'VALORANT', 'box_art_url': 'https://static-cdn.jtvnw.net/ttv-boxart/516575-{width}x{height}.jpg', 'extraction_time': '2025-06-10T17:23:05.468621', 'source': 'twitch', 'endpoint': 'games/top'}
+2025-06-10 17:33:16,391 — INFO — [twitch_games] Ejemplo 4: {'record_type': 'game', 'game_id': '460630', 'game_name': "Tom Clancy's Rainbow Six Siege", 'box_art_url': 'https://static-cdn.jtvnw.net/ttv-boxart/460630-{width}x{height}.jpg', 'extraction_time': '2025-06-10T17:23:05.468621', 'source': 'twitch', 'endpoint': 'games/top'}
+2025-06-10 17:33:16,392 — INFO — [twitch_games] Ejemplo 5: {'record_type': 'game', 'game_id': '32982', 'game_name': 'Grand Theft Auto V', 'box_art_url': 'https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-{width}x{height}.jpg', 'extraction_time': '2025-06-10T17:23:05.468621', 'source': 'twitch', 'endpoint': 'games/top'}
+2025-06-10 17:33:16,393 — INFO — Muestra de datos extraídos para TWITCH_STREAMS:
+2025-06-10 17:33:16,723 — INFO — [twitch_streams] Ejemplo 1: {'record_type': 'stream', 'stream_id': '322428823036', 'game_id': '509658', 'game_name': 'Just Chatting', 'user_id': '36926489', 'user_name': 'yourragegaming', 'viewer_count': 26529, 'started_at': '2025-06-10T16:39:06Z', 'language': 'en', 'extraction_time': '2025-06-10T17:23:05.468621', 'source': 'twitch', 'endpoint': 'streams'}
+2025-06-10 17:33:16,724 — INFO — [twitch_streams] Ejemplo 2: {'record_type': 'stream', 'stream_id': '325999165309', 'game_id': '509658', 'game_name': 'Just Chatting', 'user_id': '135385636', 'user_name': 'deepins02', 'viewer_count': 14485, 'started_at': '2025-06-10T16:02:08Z', 'language': 'ru', 'extraction_time': '2025-06-10T17:23:05.468621', 'source': 'twitch', 'endpoint': 'streams'}
+2025-06-10 17:33:16,724 — INFO — [twitch_streams] Ejemplo 3: {'record_type': 'stream', 'stream_id': '321511052921', 'game_id': '509658', 'game_name': 'Just Chatting', 'user_id': '922408450', 'user_name': 'anarabdullaev', 'viewer_count': 13624, 'started_at': '2025-06-10T16:27:24Z', 'language': 'ru', 'extraction_time': '2025-06-10T17:23:05.468621', 'source': 'twitch', 'endpoint': 'streams'}
+2025-06-10 17:33:16,725 — INFO — [twitch_streams] Ejemplo 4: {'record_type': 'stream', 'stream_id': '325999144701', 'game_id': '509658', 'game_name': 'Just Chatting', 'user_id': '64342766', 'user_name': 'Trymacs', 'viewer_count': 12182, 'started_at': '2025-06-10T16:01:59Z', 'language': 'de', 'extraction_time': '2025-06-10T17:23:05.468621', 'source': 'twitch', 'endpoint': 'streams'}
+2025-06-10 17:33:16,725 — INFO — [twitch_streams] Ejemplo 5: {'record_type': 'stream', 'stream_id': '325999083773', 'game_id': '509658', 'game_name': 'Just Chatting', 'user_id': '28141853', 'user_name': 'YoungMulti', 'viewer_count': 11076, 'started_at': '2025-06-10T16:01:34Z', 'language': 'pl', 'extraction_time': '2025-06-10T17:23:05.468621', 'source': 'twitch', 'endpoint': 'streams'}
+2025-06-10 17:33:16,726 — INFO — Muestra de datos extraídos para SHOWDOWN_LADDER:
+2025-06-10 17:33:17,004 — INFO — [showdown_ladder] Ejemplo 1: {'record_type': 'ladder', 'format': 'gen9ou', 'username': 'SOUTH STATION', 'rating': None, 'gxe': 85.8, 'pr': None, 'extraction_time': '2025-06-10T17:25:41.919704', 'source': 'showdown', 'endpoint': 'ladder/gen9ou'}
+2025-06-10 17:33:17,005 — INFO — [showdown_ladder] Ejemplo 2: {'record_type': 'ladder', 'format': 'gen9ou', 'username': 'saw war newnew', 'rating': None, 'gxe': 88.7, 'pr': None, 'extraction_time': '2025-06-10T17:25:41.919704', 'source': 'showdown', 'endpoint': 'ladder/gen9ou'}
+2025-06-10 17:33:17,005 — INFO — [showdown_ladder] Ejemplo 3: {'record_type': 'ladder', 'format': 'gen9ou', 'username': 'sunflora wukong', 'rating': None, 'gxe': 85.3, 'pr': None, 'extraction_time': '2025-06-10T17:25:41.919704', 'source': 'showdown', 'endpoint': 'ladder/gen9ou'}
+2025-06-10 17:33:17,006 — INFO — [showdown_ladder] Ejemplo 4: {'record_type': 'ladder', 'format': 'gen9ou', 'username': 'BANH MI DU MA', 'rating': None, 'gxe': 86.3, 'pr': None, 'extraction_time': '2025-06-10T17:25:41.919704', 'source': 'showdown', 'endpoint': 'ladder/gen9ou'}
+2025-06-10 17:33:17,007 — INFO — [showdown_ladder] Ejemplo 5: {'record_type': 'ladder', 'format': 'gen9ou', 'username': '8wKzDBm3nT4L1TyxQu', 'rating': None, 'gxe': 87.5, 'pr': None, 'extraction_time': '2025-06-10T17:25:41.919704', 'source': 'showdown', 'endpoint': 'ladder/gen9ou'}
+2025-06-10 17:33:17,007 — INFO — Muestra de datos extraídos para SHOWDOWN_PROFILES:
+2025-06-10 17:33:17,323 — INFO — [showdown_profiles] Ejemplo 1: {'record_type': 'profile', 'username': '8wKzDBm3nT4L1TyxQu', 'format': 'gen9ou', 'gxe': None, 'rating': None, 'levels': None, 'extraction_time': '2025-06-10T17:25:41.919704', 'source': 'showdown', 'endpoint': 'profile/8wKzDBm3nT4L1TyxQu'}
+2025-06-10 17:33:17,323 — INFO — [showdown_profiles] Ejemplo 2: {'record_type': 'profile', 'username': 'xorete', 'format': 'gen9ou', 'gxe': None, 'rating': None, 'levels': None, 'extraction_time': '2025-06-10T17:25:41.919704', 'source': 'showdown', 'endpoint': 'profile/xorete'}
+2025-06-10 17:33:17,324 — INFO — [showdown_profiles] Ejemplo 3: {'record_type': 'profile', 'username': 'Encadio', 'format': 'gen9ou', 'gxe': None, 'rating': None, 'levels': None, 'extraction_time': '2025-06-10T17:25:41.919704', 'source': 'showdown', 'endpoint': 'profile/Encadio'}
+2025-06-10 17:33:17,324 — INFO — [showdown_profiles] Ejemplo 4: {'record_type': 'profile', 'username': 'OnSayuzeNem', 'format': 'gen9ou', 'gxe': None, 'rating': None, 'levels': None, 'extraction_time': '2025-06-10T17:25:41.919704', 'source': 'showdown', 'endpoint': 'profile/OnSayuzeNem'}
+2025-06-10 17:33:17,325 — INFO — [showdown_profiles] Ejemplo 5: {'record_type': 'profile', 'username': 'Moodclues', 'format': 'gen9ou', 'gxe': None, 'rating': None, 'levels': None, 'extraction_time': '2025-06-10T17:25:41.919704', 'source': 'showdown', 'endpoint': 'profile/Moodclues'}
+2025-06-10 17:33:17,325 — INFO — Muestra de datos extraídos para HOWLONGTOBEAT:
+2025-06-10 17:33:17,606 — INFO — [howlongtobeat] Ejemplo 1: {'record_type': 'hl_tb_time', 'game_name': 'Counter-Strike', 'main_story': 25.99, 'main_extra': 99.67, 'completionist': 508.11, 'extraction_time': '2025-06-10T17:30:58.537630', 'source': 'howlongtobeat', 'endpoint': 'hltb_search'}
+2025-06-10 17:33:17,606 — INFO — [howlongtobeat] Ejemplo 2: {'record_type': 'hl_tb_time', 'game_name': 'League of Legends', 'main_story': 1118.74, 'main_extra': 1732.34, 'completionist': 3225.02, 'extraction_time': '2025-06-10T17:30:58.537630', 'source': 'howlongtobeat', 'endpoint': 'hltb_search'}
+2025-06-10 17:33:17,607 — INFO — [howlongtobeat] Ejemplo 3: {'record_type': 'hl_tb_time', 'game_name': 'Mario Kart World', 'main_story': 3.19, 'main_extra': 8.6, 'completionist': 23.17, 'extraction_time': '2025-06-10T17:30:58.537630', 'source': 'howlongtobeat', 'endpoint': 'hltb_search'}
+2025-06-10 17:33:17,608 — INFO — [howlongtobeat] Ejemplo 4: {'record_type': 'hl_tb_time', 'game_name': 'Maestro VR', 'main_story': 0.0, 'main_extra': 0.0, 'completionist': 0.0, 'extraction_time': '2025-06-10T17:30:58.537630', 'source': 'howlongtobeat', 'endpoint': 'hltb_search'}
+2025-06-10 17:33:17,608 — INFO — [howlongtobeat] Ejemplo 5: {'record_type': 'hl_tb_time', 'game_name': 'Escape from Tarkov', 'main_story': 189.38, 'main_extra': 258.53, 'completionist': 555.88, 'extraction_time': '2025-06-10T17:30:58.537630', 'source': 'howlongtobeat', 'endpoint': 'hltb_search'}
+2025-06-10 17:33:17,609 — INFO — Fase de extracción completada con éxito.
+2025-06-10 17:33:17,610 — INFO — === GUARDANDO A PARQUET ===
+2025-06-10 17:33:17,613 — INFO — Guardando twitch_games a Parquet...
+2025-06-10 17:33:17,630 — INFO — [TWITCH_GAMES] Iniciando guardado a Parquet: data/twitch_games.parquet
+2025-06-10 17:33:17,631 — INFO — [TWITCH_GAMES] Aplicando esquema inferido (datos limpios)
+2025-06-10 17:33:28,867 — INFO — [TWITCH_GAMES] Parquet guardado: registros=200, tiempo=9.23s
+2025-06-10 17:33:29,074 — INFO — Guardado de twitch_games completado
+2025-06-10 17:33:29,075 — INFO — Guardando twitch_streams a Parquet...
+2025-06-10 17:33:29,078 — INFO — [TWITCH_STREAMS] Iniciando guardado a Parquet: data/twitch_streams.parquet
+2025-06-10 17:33:29,079 — INFO — [TWITCH_STREAMS] Aplicando esquema inferido (datos limpios)
+2025-06-10 17:33:33,228 — INFO — [TWITCH_STREAMS] Parquet guardado: registros=8384, tiempo=3.27s
+2025-06-10 17:33:33,236 — INFO — Guardado de twitch_streams completado
+2025-06-10 17:33:33,236 — INFO — Guardando showdown_ladder a Parquet...
+2025-06-10 17:33:33,240 — INFO — [SHOWDOWN_LADDER] Iniciando guardado a Parquet: data/showdown_ladder.parquet
+2025-06-10 17:33:33,240 — INFO — [SHOWDOWN_LADDER] Aplicando esquema fijo para evitar errores de tipo
+2025-06-10 17:33:36,600 — INFO — [SHOWDOWN_LADDER] Parquet guardado: registros=600, tiempo=2.40s
+2025-06-10 17:33:36,606 — INFO — Guardado de showdown_ladder completado
+2025-06-10 17:33:36,607 — INFO — Guardando showdown_profiles a Parquet...
+2025-06-10 17:33:36,610 — INFO — [SHOWDOWN_PROFILES] Iniciando guardado a Parquet: data/showdown_profiles.parquet
+2025-06-10 17:33:36,610 — INFO — [SHOWDOWN_PROFILES] Aplicando esquema fijo para evitar errores de inferencia
+2025-06-10 17:33:40,087 — INFO — [SHOWDOWN_PROFILES] Parquet guardado: registros=329, tiempo=2.74s
+2025-06-10 17:33:40,093 — INFO — Guardado de showdown_profiles completado
+2025-06-10 17:33:40,094 — INFO — Guardando howlongtobeat a Parquet...
+2025-06-10 17:33:40,096 — INFO — [HOWLONGTOBEAT] Iniciando guardado a Parquet: data/howlongtobeat.parquet
+2025-06-10 17:33:40,097 — WARNING — [HOWLONGTOBEAT] Fuente sin esquema específico, usando inferencia
+2025-06-10 17:33:43,267 — INFO — [HOWLONGTOBEAT] Parquet guardado: registros=81, tiempo=2.44s
+2025-06-10 17:33:43,274 — INFO — Guardado de howlongtobeat completado
+2025-06-10 17:33:43,275 — INFO — === FASE 2: TRANSFORMACIÓN ===
+2025-06-10 17:33:43,276 — INFO — Limpieza de twitch_games...
+2025-06-10 17:33:43,782 — INFO — Iniciando limpieza para fuente: twitch
+2025-06-10 17:33:43,783 — INFO — Iniciando limpieza de datos de Twitch...
+2025-06-10 17:33:43,787 — INFO — Columnas recibidas: ['record_type', 'game_id', 'game_name', 'box_art_url', 'extraction_time', 'source', 'endpoint']
+2025-06-10 17:33:45,781 — INFO — Limpieza específica para twitch_games
+2025-06-10 17:33:50,121 — INFO — Limpieza Twitch: 200 -> 200 registros
+2025-06-10 17:33:50,639 — INFO — Limpieza de twitch_streams...
+2025-06-10 17:33:50,952 — INFO — Iniciando limpieza para fuente: twitch
+2025-06-10 17:33:50,952 — INFO — Iniciando limpieza de datos de Twitch...
+2025-06-10 17:33:50,954 — INFO — Columnas recibidas: ['record_type', 'stream_id', 'game_id', 'game_name', 'user_id', 'user_name', 'viewer_count', 'started_at', 'language', 'extraction_time', 'source', 'endpoint']
+2025-06-10 17:33:54,110 — INFO — Limpieza específica para twitch_streams
+2025-06-10 17:33:56,980 — INFO — Limpieza Twitch: 8384 -> 8358 registros
+2025-06-10 17:33:58,247 — INFO — Limpieza de showdown_ladder...
+2025-06-10 17:33:58,886 — INFO — Iniciando limpieza para fuente: showdown
+2025-06-10 17:33:58,886 — INFO — Iniciando limpieza de datos de Showdown...
+2025-06-10 17:33:58,888 — INFO — Columnas recibidas: ['record_type', 'format', 'username', 'rating', 'gxe', 'pr', 'levels', 'extraction_time', 'source', 'endpoint']
+2025-06-10 17:34:03,658 — INFO — Limpieza Showdown: 600 -> 600 registros
+2025-06-10 17:34:04,105 — INFO — Limpieza de showdown_profiles...
+2025-06-10 17:34:04,414 — INFO — Iniciando limpieza para fuente: showdown
+2025-06-10 17:34:04,414 — INFO — Iniciando limpieza de datos de Showdown...
+2025-06-10 17:34:04,416 — INFO — Columnas recibidas: ['record_type', 'username', 'format', 'gxe', 'rating', 'levels', 'extraction_time', 'source', 'endpoint']
+2025-06-10 17:34:09,089 — INFO — Limpieza Showdown: 329 -> 329 registros
+2025-06-10 17:34:09,415 — INFO — Limpieza de howlongtobeat...
+2025-06-10 17:34:09,691 — INFO — Iniciando limpieza para fuente: howlongtobeat
+2025-06-10 17:34:09,691 — INFO — Iniciando limpieza de datos de HowLongToBeat...
+2025-06-10 17:34:09,692 — INFO — Columnas recibidas: ['record_type', 'game_name', 'main_story', 'main_extra', 'completionist', 'extraction_time', 'source', 'endpoint']
+2025-06-10 17:34:10,349 — INFO — Limpieza HLTB: 81 -> 81 registros
+2025-06-10 17:34:10,615 — INFO — Fase de transformación completada con éxito.
+2025-06-10 17:34:10,616 — INFO — === FASE 3: CARGA A BD ===
+2025-06-10 17:34:10,616 — INFO — Cargando twitch_games a base de datos...
+2025-06-10 17:34:11,331 — INFO — Cargando 200 juegos de Twitch...
+2025-06-10 17:34:11,525 — INFO — Carga completada para twitch_games. ID de log: 15
+2025-06-10 17:34:11,526 — INFO — Cargando twitch_streams a base de datos...
+2025-06-10 17:34:13,073 — INFO — Cargando 8358 streams de Twitch...
+2025-06-10 17:34:13,182 — INFO — Carga completada para twitch_streams. ID de log: 16
+2025-06-10 17:34:13,183 — INFO — Cargando showdown_ladder a base de datos...
+2025-06-10 17:34:13,978 — INFO — Cargando 600 registros de ladder de Showdown...
+2025-06-10 17:34:14,092 — INFO — Carga completada para showdown_ladder. ID de log: 17
+2025-06-10 17:34:14,092 — INFO — Cargando showdown_profiles a base de datos...
+2025-06-10 17:34:15,126 — INFO — Cargando 329 perfiles de Showdown...
+2025-06-10 17:34:15,245 — INFO — Carga completada para showdown_profiles. ID de log: 18
+2025-06-10 17:34:15,246 — INFO — Cargando howlongtobeat a base de datos...
+2025-06-10 17:34:15,469 — INFO — Cargando 81 juegos de HowLongToBeat...
+2025-06-10 17:34:15,563 — INFO — Carga completada para howlongtobeat. ID de log: 19
+2025-06-10 17:34:15,563 — INFO — Fase de carga completada con éxito.
+2025-06-10 17:34:16,435 — INFO — Pipeline finalizado
+2025-06-10 17:46:42,513 — INFO — === INICIO DEL PIPELINE ===
+2025-06-10 17:46:42,515 — INFO — Configurando conexión a la base de datos...
+2025-06-10 17:46:42,732 — INFO — === FASE 1: EXTRACCIÓN DE DATOS ===
+2025-06-10 17:46:42,733 — INFO — Extrayendo datos de Twitch...
+2025-06-10 17:46:42,734 — INFO — Twitch: iniciando extracción
+2025-06-10 17:46:44,810 — INFO — Twitch: obtenidos 200 juegos top
+2025-06-10 17:46:45,822 — INFO — Twitch: 50 streams para juego Just Chatting
+2025-06-10 17:46:46,883 — INFO — Twitch: 50 streams para juego Counter-Strike
+2025-06-10 17:46:47,368 — INFO — Twitch: 50 streams para juego VALORANT
+2025-06-10 17:46:47,839 — INFO — Twitch: 50 streams para juego Tom Clancy's Rainbow Six Siege
+2025-06-10 17:46:48,370 — INFO — Twitch: 50 streams para juego Grand Theft Auto V
+2025-06-10 17:46:48,901 — INFO — Twitch: 50 streams para juego Dune: Awakening
+2025-06-10 17:46:49,391 — INFO — Twitch: 50 streams para juego League of Legends
+2025-06-10 17:46:50,128 — INFO — Twitch: 37 streams para juego Kings League
+2025-06-10 17:46:50,690 — INFO — Twitch: 50 streams para juego MindsEye
+2025-06-10 17:46:51,193 — INFO — Twitch: 50 streams para juego Special Events
+2025-06-10 17:46:51,696 — INFO — Twitch: 50 streams para juego Fortnite
+2025-06-10 17:46:52,694 — INFO — Twitch: 50 streams para juego Mario Kart World
+2025-06-10 17:46:53,468 — INFO — Twitch: 49 streams para juego IRL
+2025-06-10 17:46:54,480 — INFO — Twitch: 50 streams para juego Dota 2
+2025-06-10 17:46:54,981 — INFO — Twitch: 50 streams para juego Minecraft
+2025-06-10 17:46:55,788 — INFO — Twitch: 50 streams para juego Call of Duty: Warzone
+2025-06-10 17:46:56,803 — INFO — Twitch: 50 streams para juego EA Sports FC 25
+2025-06-10 17:46:57,742 — INFO — Twitch: 50 streams para juego World of Warcraft
+2025-06-10 17:46:58,271 — INFO — Twitch: 50 streams para juego Hearthstone
+2025-06-10 17:46:59,304 — INFO — Twitch: 50 streams para juego Marvel Rivals
+2025-06-10 17:47:00,291 — INFO — Twitch: 50 streams para juego Elden Ring: Nightreign
+2025-06-10 17:47:00,758 — INFO — Twitch: 50 streams para juego Dead by Daylight
+2025-06-10 17:47:01,706 — INFO — Twitch: 50 streams para juego Teamfight Tactics
+2025-06-10 17:47:02,175 — INFO — Twitch: 50 streams para juego Old School RuneScape
+2025-06-10 17:47:03,190 — INFO — Twitch: 50 streams para juego Apex Legends
+2025-06-10 17:47:03,668 — INFO — Twitch: 50 streams para juego Path of Exile
+2025-06-10 17:47:04,198 — INFO — Twitch: 50 streams para juego DJs
+2025-06-10 17:47:05,227 — INFO — Twitch: 50 streams para juego Lies of P
+2025-06-10 17:47:05,769 — INFO — Twitch: 50 streams para juego World of Tanks
+2025-06-10 17:47:06,259 — INFO — Twitch: 50 streams para juego Clair Obscur: Expedition 33
+2025-06-10 17:47:07,012 — INFO — Twitch: 1 streams para juego Maestro VR
+2025-06-10 17:47:07,482 — INFO — Twitch: 50 streams para juego Rust
+2025-06-10 17:47:08,424 — INFO — Twitch: 50 streams para juego Slots
+2025-06-10 17:47:08,944 — INFO — Twitch: 50 streams para juego Magic: The Gathering
+2025-06-10 17:47:09,434 — INFO — Twitch: 50 streams para juego PUBG: BATTLEGROUNDS
+2025-06-10 17:47:10,188 — INFO — Twitch: 8 streams para juego Super Mario Party Jamboree
+2025-06-10 17:47:11,127 — INFO — Twitch: 50 streams para juego Art
+2025-06-10 17:47:11,731 — INFO — Twitch: 50 streams para juego Escape from Tarkov
+2025-06-10 17:47:12,217 — INFO — Twitch: 50 streams para juego Overwatch 2
+2025-06-10 17:47:12,953 — INFO — Twitch: 33 streams para juego Virtual Casino
+2025-06-10 17:47:13,731 — INFO — Twitch: 1 streams para juego Backrooms Rec.
+2025-06-10 17:47:14,270 — INFO — Twitch: 50 streams para juego Talk Shows & Podcasts
+2025-06-10 17:47:14,745 — INFO — Twitch: 50 streams para juego Games + Demos
+2025-06-10 17:47:15,222 — INFO — Twitch: 50 streams para juego ASMR
+2025-06-10 17:47:16,029 — INFO — Twitch: 33 streams para juego Pools, Hot Tubs, and Beaches
+2025-06-10 17:47:16,510 — INFO — Twitch: 50 streams para juego Destiny 2
+2025-06-10 17:47:17,014 — INFO — Twitch: 50 streams para juego I'm Only Sleeping
+2025-06-10 17:47:17,496 — INFO — Twitch: 50 streams para juego ELDEN RING
+2025-06-10 17:47:18,466 — INFO — Twitch: 50 streams para juego Street Fighter 6
+2025-06-10 17:47:18,990 — INFO — Twitch: 50 streams para juego Etheria: Restart
+2025-06-10 17:47:20,537 — INFO — Twitch: 50 streams para juego DayZ
+2025-06-10 17:47:21,629 — INFO — Twitch: 50 streams para juego MapleStory Worlds
+2025-06-10 17:47:22,576 — INFO — Twitch: 50 streams para juego Sports
+2025-06-10 17:47:23,057 — INFO — Twitch: 50 streams para juego Heroes of Might and Magic III: The Restoration of Erathia
+2025-06-10 17:47:24,588 — INFO — Twitch: 50 streams para juego Music
+2025-06-10 17:47:26,136 — INFO — Twitch: 50 streams para juego Red Dead Redemption 2
+2025-06-10 17:47:26,609 — INFO — Twitch: 50 streams para juego Tibia
+2025-06-10 17:47:27,449 — INFO — Twitch: 18 streams para juego BULLET YEETERS
+2025-06-10 17:47:27,919 — INFO — Twitch: 50 streams para juego Always On
+2025-06-10 17:47:28,943 — INFO — Twitch: 50 streams para juego Rocket League
+2025-06-10 17:47:29,452 — INFO — Twitch: 50 streams para juego Albion Online
+2025-06-10 17:47:30,387 — INFO — Twitch: 50 streams para juego Black Desert
+2025-06-10 17:47:31,209 — INFO — Twitch: 29 streams para juego No, I'm Not A Human
+2025-06-10 17:47:31,736 — INFO — Twitch: 50 streams para juego 7 Days to Die
+2025-06-10 17:47:32,763 — INFO — Twitch: 50 streams para juego Software and Game Development
+2025-06-10 17:47:33,572 — INFO — Twitch: 3 streams para juego Streamer Life Simulator 2
+2025-06-10 17:47:34,305 — INFO — Twitch: 12 streams para juego Baby Steps
+2025-06-10 17:47:35,248 — INFO — Twitch: 50 streams para juego ROBLOX
+2025-06-10 17:47:36,176 — INFO — Twitch: 50 streams para juego F1 25
+2025-06-10 17:47:36,648 — INFO — Twitch: 50 streams para juego Crypto
+2025-06-10 17:47:37,584 — INFO — Twitch: 50 streams para juego Pokémon Scarlet/Violet
+2025-06-10 17:47:38,514 — INFO — Twitch: 50 streams para juego Trackmania
+2025-06-10 17:47:39,496 — INFO — Twitch: 50 streams para juego Retro
+2025-06-10 17:47:40,748 — INFO — Twitch: 50 streams para juego Mir Tankov
+2025-06-10 17:47:41,237 — INFO — Twitch: 50 streams para juego NBA 2K25
+2025-06-10 17:47:41,774 — INFO — Twitch: 50 streams para juego DARK SOULS II: Scholar of the First Sin
+2025-06-10 17:47:42,241 — INFO — Twitch: 50 streams para juego Poker
+2025-06-10 17:47:42,979 — INFO — Twitch: 8 streams para juego Zombie Graveyard Simulator
+2025-06-10 17:47:43,518 — INFO — Twitch: 50 streams para juego Hunt: Showdown 1896
+2025-06-10 17:47:44,039 — INFO — Twitch: 50 streams para juego Splitgate 2
+2025-06-10 17:47:44,522 — INFO — Twitch: 50 streams para juego Animals, Aquariums, and Zoos
+2025-06-10 17:47:45,477 — INFO — Twitch: 50 streams para juego Call of Duty
+2025-06-10 17:47:45,946 — INFO — Twitch: 50 streams para juego Mobile Legends: Bang Bang
+2025-06-10 17:47:46,420 — INFO — Twitch: 50 streams para juego Chess
+2025-06-10 17:47:46,932 — INFO — Twitch: 50 streams para juego Wuthering Waves
+2025-06-10 17:47:47,882 — INFO — Twitch: 50 streams para juego Clash Royale
+2025-06-10 17:47:48,669 — INFO — Twitch: 5 streams para juego Escape from Duckov
+2025-06-10 17:47:49,602 — INFO — Twitch: 50 streams para juego Call of Duty: Black Ops 6
+2025-06-10 17:47:50,323 — INFO — Twitch: 33 streams para juego Death Stranding
+2025-06-10 17:47:51,047 — INFO — Twitch: 49 streams para juego World of Warships
+2025-06-10 17:47:51,805 — INFO — Twitch: 40 streams para juego Warface
+2025-06-10 17:47:52,273 — INFO — Twitch: 50 streams para juego Arena Breakout: Infinite
+2025-06-10 17:47:52,748 — INFO — Twitch: 50 streams para juego Zenless Zone Zero
+2025-06-10 17:47:53,207 — INFO — Twitch: 50 streams para juego Genshin Impact
+2025-06-10 17:47:54,167 — INFO — Twitch: 50 streams para juego Lost Ark
+2025-06-10 17:47:54,925 — INFO — Twitch: 13 streams para juego The Legend of Zelda: Majora's Mask
+2025-06-10 17:47:55,402 — INFO — Twitch: 50 streams para juego Sea of Thieves
+2025-06-10 17:47:56,316 — INFO — Twitch: 50 streams para juego Gray Zone Warfare
+2025-06-10 17:47:57,644 — INFO — Twitch: 50 streams para juego FINAL FANTASY XIV ONLINE
+2025-06-10 17:47:58,349 — INFO — Twitch: 1 streams para juego Primal Planet
+2025-06-10 17:47:59,135 — INFO — Twitch: 12 streams para juego Tinkerlands
+2025-06-10 17:47:59,623 — INFO — Twitch: 50 streams para juego Co-working & Studying
+2025-06-10 17:48:00,445 — INFO — Twitch: 8 streams para juego Tormented Souls II
+2025-06-10 17:48:01,259 — INFO — Twitch: 34 streams para juego Age of Empires II
+2025-06-10 17:48:02,203 — INFO — Twitch: 50 streams para juego VRChat
+2025-06-10 17:48:02,667 — INFO — Twitch: 50 streams para juego Tom Clancy's The Division 2
+2025-06-10 17:48:03,154 — INFO — Twitch: 50 streams para juego Star Citizen
+2025-06-10 17:48:03,639 — INFO — Twitch: 50 streams para juego R.E.P.O.
+2025-06-10 17:48:04,448 — INFO — Twitch: 47 streams para juego Garry's Mod
+2025-06-10 17:48:05,397 — INFO — Twitch: 50 streams para juego Delta Force
+2025-06-10 17:48:06,185 — INFO — Twitch: 21 streams para juego Warborne: Above Ashes
+2025-06-10 17:48:06,683 — INFO — Twitch: 50 streams para juego Wildgate
+2025-06-10 17:48:07,206 — INFO — Twitch: 50 streams para juego Rune Factory: Guardians of Azuma
+2025-06-10 17:48:07,679 — INFO — Twitch: 50 streams para juego Deltarune
+2025-06-10 17:48:08,387 — INFO — Twitch: 34 streams para juego MapleStory
+2025-06-10 17:48:09,357 — INFO — Twitch: 50 streams para juego War Thunder
+2025-06-10 17:48:10,101 — INFO — Twitch: 24 streams para juego Slay the Spire
+2025-06-10 17:48:10,580 — INFO — Twitch: 50 streams para juego Brawl Stars
+2025-06-10 17:48:11,740 — INFO — Twitch: 50 streams para juego Phasmophobia
+2025-06-10 17:48:12,671 — INFO — Twitch: 50 streams para juego Marbles on Stream
+2025-06-10 17:48:13,397 — INFO — Twitch: 6 streams para juego Resident Evil Outbreak
+2025-06-10 17:48:14,164 — INFO — Twitch: 39 streams para juego Rise Online
+2025-06-10 17:48:14,631 — INFO — Twitch: 50 streams para juego osu!
+2025-06-10 17:48:15,397 — INFO — Twitch: 47 streams para juego iRacing
+2025-06-10 17:48:16,136 — INFO — Twitch: 2 streams para juego Papa's Freezeria Deluxe
+2025-06-10 17:48:17,074 — INFO — Twitch: 50 streams para juego PUBG Mobile
+2025-06-10 17:48:18,061 — INFO — Twitch: 12 streams para juego Pokémon
+2025-06-10 17:48:18,865 — INFO — Twitch: 40 streams para juego Pokémon FireRed/LeafGreen
+2025-06-10 17:48:19,600 — INFO — Twitch: 37 streams para juego Vintage Story
+2025-06-10 17:48:20,094 — INFO — Twitch: 50 streams para juego Satisfactory
+2025-06-10 17:48:21,086 — INFO — Twitch: 50 streams para juego Throne and Liberty
+2025-06-10 17:48:21,828 — INFO — Twitch: 17 streams para juego Anno 1800
+2025-06-10 17:48:22,311 — INFO — Twitch: 50 streams para juego Diablo III
+2025-06-10 17:48:22,834 — INFO — Twitch: 50 streams para juego Makers & Crafting
+2025-06-10 17:48:23,310 — INFO — Twitch: 50 streams para juego Le Mans Ultimate
+2025-06-10 17:48:24,297 — INFO — Twitch: 50 streams para juego Predecessor
+2025-06-10 17:48:25,026 — INFO — Twitch: 10 streams para juego Demon's Souls
+2025-06-10 17:48:25,503 — INFO — Twitch: 50 streams para juego Stardew Valley
+2025-06-10 17:48:25,972 — INFO — Twitch: 50 streams para juego UNDERTALE
+2025-06-10 17:48:26,445 — INFO — Twitch: 50 streams para juego The Sims 4
+2025-06-10 17:48:26,971 — INFO — Twitch: 50 streams para juego Deadlock
+2025-06-10 17:48:27,721 — INFO — Twitch: 34 streams para juego Streamer University
+2025-06-10 17:48:28,662 — INFO — Twitch: 50 streams para juego The First Descendant
+2025-06-10 17:48:29,246 — INFO — Twitch: 50 streams para juego TEKKEN 8
+2025-06-10 17:48:29,726 — INFO — Twitch: 50 streams para juego Baldur's Gate 3
+2025-06-10 17:48:30,229 — INFO — Twitch: 50 streams para juego Farming Simulator 25
+2025-06-10 17:48:30,750 — INFO — Twitch: 50 streams para juego Project Zomboid
+2025-06-10 17:48:31,492 — INFO — Twitch: 10 streams para juego Backrooms: Escape Together
+2025-06-10 17:48:32,238 — INFO — Twitch: 19 streams para juego Marvel Snap
+2025-06-10 17:48:32,763 — INFO — Twitch: 50 streams para juego RimWorld
+2025-06-10 17:48:33,249 — INFO — Twitch: 50 streams para juego The Elder Scrolls Online
+2025-06-10 17:48:33,813 — INFO — Twitch: 50 streams para juego Dark and Darker
+2025-06-10 17:48:34,740 — INFO — Twitch: 50 streams para juego Madden NFL 25
+2025-06-10 17:48:35,511 — INFO — Twitch: 1 streams para juego PoPoLoCrois Monogatari
+2025-06-10 17:48:36,256 — INFO — Twitch: 36 streams para juego Off The Grid
+2025-06-10 17:48:37,120 — INFO — Twitch: 3 streams para juego Starlight Re:Volver
+2025-06-10 17:48:38,061 — INFO — Twitch: 50 streams para juego PIONER
+2025-06-10 17:48:38,601 — INFO — Twitch: 50 streams para juego Warframe
+2025-06-10 17:48:39,128 — INFO — Twitch: 50 streams para juego Path of Exile 2
+2025-06-10 17:48:40,078 — INFO — Twitch: 50 streams para juego FANTASY LIFE i: The Girl Who Steals Time
+2025-06-10 17:48:40,843 — INFO — Twitch: 36 streams para juego Hero Siege
+2025-06-10 17:48:41,830 — INFO — Twitch: 50 streams para juego Gran Turismo 7
+2025-06-10 17:48:42,319 — INFO — Twitch: 50 streams para juego Monster Hunter Wilds
+2025-06-10 17:48:42,795 — INFO — Twitch: 50 streams para juego Honkai: Star Rail
+2025-06-10 17:48:43,262 — INFO — Twitch: 50 streams para juego ARK: Survival Ascended
+2025-06-10 17:48:43,789 — INFO — Twitch: 50 streams para juego Animal Crossing: New Horizons
+2025-06-10 17:48:44,578 — INFO — Twitch: 2 streams para juego Lorelei and the Laser Eyes
+2025-06-10 17:48:45,292 — INFO — Twitch: 22 streams para juego Age of Empires IV
+2025-06-10 17:48:46,227 — INFO — Twitch: 13 streams para juego Black Russia
+2025-06-10 17:48:47,030 — INFO — Twitch: 29 streams para juego Fitness & Health
+2025-06-10 17:48:47,987 — INFO — Twitch: 50 streams para juego DARK SOULS III
+2025-06-10 17:48:48,475 — INFO — Twitch: 50 streams para juego SMITE 2
+2025-06-10 17:48:48,997 — INFO — Twitch: 50 streams para juego The Last of Us Part II
+2025-06-10 17:48:49,747 — INFO — Twitch: 25 streams para juego EVE Online
+2025-06-10 17:48:50,529 — INFO — Twitch: 1 streams para juego Handstand Hank
+2025-06-10 17:48:51,500 — INFO — Twitch: 50 streams para juego League of Legends: Wild Rift
+2025-06-10 17:48:52,337 — INFO — Twitch: 7 streams para juego Shakes and Fidget
+2025-06-10 17:48:53,122 — INFO — Twitch: 32 streams para juego StarCraft II
+2025-06-10 17:48:53,607 — INFO — Twitch: 50 streams para juego Halo Infinite
+2025-06-10 17:48:54,132 — INFO — Twitch: 50 streams para juego Standoff 2
+2025-06-10 17:48:54,892 — INFO — Twitch: 6 streams para juego Backseat Drivers
+2025-06-10 17:48:55,903 — INFO — Twitch: 50 streams para juego Fallout 76
+2025-06-10 17:48:56,437 — INFO — Twitch: 50 streams para juego The Elder Scrolls IV: Oblivion Remastered
+2025-06-10 17:48:57,194 — INFO — Twitch: 49 streams para juego Metin2
+2025-06-10 17:48:57,920 — INFO — Twitch: 40 streams para juego Anime Squad
+2025-06-10 17:48:58,670 — INFO — Twitch: 40 streams para juego Food & Drink
+2025-06-10 17:48:59,182 — INFO — Twitch: 50 streams para juego MU Online
+2025-06-10 17:49:00,000 — INFO — Twitch: 5 streams para juego The Witcher 2: Assassins of Kings
+2025-06-10 17:49:00,786 — INFO — Twitch: 33 streams para juego Knight Online
+2025-06-10 17:49:01,551 — INFO — Twitch: 1 streams para juego Stories to Tell: Greyville Stay
+2025-06-10 17:49:02,356 — INFO — Twitch: 32 streams para juego Politics
+2025-06-10 17:49:03,116 — INFO — Twitch: 40 streams para juego GeoGuessr
+2025-06-10 17:49:03,916 — INFO — Twitch: 1 streams para juego Clustertruck
+2025-06-10 17:49:04,401 — INFO — Twitch: 50 streams para juego Palia
+2025-06-10 17:49:04,900 — INFO — Twitch: 50 streams para juego Dark Souls: Remastered
+2025-06-10 17:49:05,389 — INFO — Twitch: 50 streams para juego Perfect World
+2025-06-10 17:49:06,361 — INFO — Twitch: 50 streams para juego Death Stranding: Director's Cut
+2025-06-10 17:49:07,098 — INFO — Twitch: 9 streams para juego POPUCOM
+2025-06-10 17:49:07,570 — INFO — Twitch: 50 streams para juego Fall Guys
+2025-06-10 17:49:08,321 — INFO — Twitch: 43 streams para juego Warcraft III
+2025-06-10 17:49:08,322 — INFO — Twitch: total juegos = 200, total streams = 8282
+2025-06-10 17:49:11,902 — INFO — Extrayendo datos de Showdown...
+2025-06-10 17:49:11,903 — INFO — Showdown: iniciando extracción de ladders y perfiles
+2025-06-10 17:49:11,905 — INFO — Showdown: usando 6 formatos Gen9 predefinidos
+2025-06-10 17:49:12,651 — INFO — gen9ou: 100 jugadores en top
+2025-06-10 17:49:12,969 — WARNING — [gen9ou] 403 Forbidden para SOUTH STATION
+2025-06-10 17:49:13,292 — WARNING — [gen9ou] 403 Forbidden para saw war newnew
+2025-06-10 17:49:13,601 — WARNING — [gen9ou] 403 Forbidden para sunflora wukong
+2025-06-10 17:49:13,931 — WARNING — [gen9ou] 403 Forbidden para BANH MI DU MA
+2025-06-10 17:49:14,928 — WARNING — [gen9ou] 403 Forbidden para free solo artist
+2025-06-10 17:49:15,887 — WARNING — [gen9ou] 403 Forbidden para she wants me 4l
+2025-06-10 17:49:16,200 — WARNING — [gen9ou] 403 Forbidden para Well That DOES IT
+2025-06-10 17:49:18,619 — WARNING — [gen9ou] 403 Forbidden para Malk Tyme
+2025-06-10 17:49:18,965 — WARNING — [gen9ou] 403 Forbidden para mommy buzzwole
+2025-06-10 17:49:19,974 — WARNING — [gen9ou] 403 Forbidden para you best not miss
+2025-06-10 17:49:20,317 — WARNING — [gen9ou] 403 Forbidden para Snake Prairie
+2025-06-10 17:49:22,963 — WARNING — [gen9ou] 403 Forbidden para a trip to paris
+2025-06-10 17:49:23,932 — WARNING — [gen9ou] 403 Forbidden para Lancer Medusa
+2025-06-10 17:49:24,286 — WARNING — [gen9ou] 403 Forbidden para okidogi bro
+2025-06-10 17:49:26,640 — WARNING — [gen9ou] 403 Forbidden para bombobini gusini
+2025-06-10 17:49:26,956 — WARNING — [gen9ou] 403 Forbidden para Doue MVP
+2025-06-10 17:49:27,292 — WARNING — [gen9ou] 403 Forbidden para Braised Snorlax
+2025-06-10 17:49:28,784 — WARNING — [gen9ou] 403 Forbidden para chen qt
+2025-06-10 17:49:32,947 — WARNING — [gen9ou] 403 Forbidden para Linzi the Great
+2025-06-10 17:49:34,090 — WARNING — [gen9ou] 403 Forbidden para La mere a Bachira
+2025-06-10 17:49:34,498 — WARNING — [gen9ou] 403 Forbidden para i hug my bitch
+2025-06-10 17:49:36,145 — WARNING — [gen9ou] 403 Forbidden para art of positioning
+2025-06-10 17:49:37,100 — WARNING — [gen9ou] 403 Forbidden para FRATTE REGNA
+2025-06-10 17:49:38,722 — WARNING — [gen9ou] 403 Forbidden para fat bastard
+2025-06-10 17:49:40,331 — WARNING — [gen9ou] 403 Forbidden para Auburn Hills
+2025-06-10 17:49:41,330 — WARNING — [gen9ou] 403 Forbidden para this bullshit
+2025-06-10 17:49:41,694 — WARNING — [gen9ou] 403 Forbidden para Light WeirdTests
+2025-06-10 17:49:43,294 — WARNING — [gen9ou] 403 Forbidden para Floor 99
+2025-06-10 17:49:43,675 — WARNING — [gen9ou] 403 Forbidden para boy dinner
+2025-06-10 17:49:44,011 — WARNING — [gen9ou] 403 Forbidden para the bluest blues
+2025-06-10 17:49:46,989 — WARNING — [gen9ou] 403 Forbidden para Free P&lestine
+2025-06-10 17:49:47,946 — WARNING — [gen9ou] 403 Forbidden para Washed Gamer
+2025-06-10 17:49:48,956 — WARNING — [gen9ou] 403 Forbidden para Asia's Redemption
+2025-06-10 17:49:49,267 — WARNING — [gen9ou] 403 Forbidden para its for me ma
+2025-06-10 17:49:50,311 — WARNING — [gen9ou] 403 Forbidden para heat is heatin
+2025-06-10 17:49:50,662 — WARNING — [gen9ou] 403 Forbidden para KTM Adam 1
+2025-06-10 17:49:53,061 — WARNING — [gen9ou] 403 Forbidden para toy soulja
+2025-06-10 17:49:54,680 — WARNING — [gen9ou] 403 Forbidden para Light SV
+2025-06-10 17:49:56,284 — WARNING — [gen9ou] 403 Forbidden para Justified AU
+2025-06-10 17:49:56,602 — WARNING — [gen9ou] 403 Forbidden para OUZ Quavo
+2025-06-10 17:49:58,275 — WARNING — [gen9ou] 403 Forbidden para SNOWY HELL
+2025-06-10 17:49:58,611 — WARNING — [gen9ou] 403 Forbidden para limitless dreams
+2025-06-10 17:49:58,943 — WARNING — [gen9ou] 403 Forbidden para rare artist pyrex
+2025-06-10 17:49:59,268 — WARNING — [gen9ou] 403 Forbidden para Pudistor Black
+2025-06-10 17:49:59,636 — WARNING — [gen9ou] 403 Forbidden para chansey and lulu
+2025-06-10 17:50:01,859 — WARNING — [gen9ou] 403 Forbidden para 1400s main
+2025-06-10 17:50:02,865 — WARNING — [gen9ou] 403 Forbidden para ough bliss
+2025-06-10 17:50:03,184 — WARNING — [gen9ou] 403 Forbidden para skiing in japan
+2025-06-10 17:50:03,527 — WARNING — [gen9ou] 403 Forbidden para dawn dreams
+2025-06-10 17:50:04,867 — INFO — gen9ubers: 100 jugadores en top
+2025-06-10 17:50:05,230 — WARNING — [gen9ubers] 403 Forbidden para BK new 维亚内拉
+2025-06-10 17:50:07,059 — WARNING — [gen9ubers] 404 Not Found: usuario CarvioFlaskier
+2025-06-10 17:50:08,088 — WARNING — [gen9ubers] 403 Forbidden para Le Mur Du Son
+2025-06-10 17:50:13,244 — WARNING — [gen9ubers] 403 Forbidden para penrose district
+2025-06-10 17:50:15,515 — WARNING — [gen9ubers] 403 Forbidden para Fc ❤
+2025-06-10 17:50:17,190 — WARNING — [gen9ubers] 403 Forbidden para We Go 2gether
+2025-06-10 17:50:18,199 — WARNING — [gen9ubers] 403 Forbidden para L'isola perduta
+2025-06-10 17:50:19,219 — WARNING — [gen9ubers] 403 Forbidden para Tyrant's Scorn
+2025-06-10 17:50:24,013 — WARNING — [gen9ubers] 403 Forbidden para juno girl
+2025-06-10 17:50:25,015 — WARNING — [gen9ubers] 403 Forbidden para EDG Green
+2025-06-10 17:50:26,661 — WARNING — [gen9ubers] 403 Forbidden para Guizmo 1
+2025-06-10 17:50:28,331 — WARNING — [gen9ubers] 403 Forbidden para Sleigh Beggy
+2025-06-10 17:50:29,913 — WARNING — [gen9ubers] 403 Forbidden para Laila Frizz
+2025-06-10 17:50:32,774 — WARNING — [gen9ubers] 403 Forbidden para Song of Creation
+2025-06-10 17:50:33,695 — WARNING — [gen9ubers] 403 Forbidden para cby Tocause
+2025-06-10 17:50:34,676 — WARNING — [gen9ubers] 403 Forbidden para i ❤️ gangu
+2025-06-10 17:50:37,751 — WARNING — [gen9ubers] 403 Forbidden para always predicted
+2025-06-10 17:50:38,083 — WARNING — [gen9ubers] 403 Forbidden para UBDG POURQUOI
+2025-06-10 17:50:40,124 — WARNING — [gen9ubers] 403 Forbidden para Heure Joyeuse
+2025-06-10 17:50:41,149 — WARNING — [gen9ubers] 403 Forbidden para dog mendigoso
+2025-06-10 17:50:44,805 — WARNING — [gen9ubers] 403 Forbidden para tiktok rizzler
+2025-06-10 17:50:45,121 — WARNING — [gen9ubers] 403 Forbidden para Future king of ou
+2025-06-10 17:50:46,661 — WARNING — [gen9ubers] 403 Forbidden para 4nim0sity 99.9999%
+2025-06-10 17:50:48,885 — WARNING — [gen9ubers] 403 Forbidden para Hack Walters
+2025-06-10 17:50:49,196 — WARNING — [gen9ubers] 403 Forbidden para S3ight of the sun
+2025-06-10 17:50:50,828 — WARNING — [gen9ubers] 403 Forbidden para Dark Aria
+2025-06-10 17:50:53,088 — WARNING — [gen9ubers] 403 Forbidden para Ralsei Hatty ^°^
+2025-06-10 17:50:54,705 — WARNING — [gen9ubers] 403 Forbidden para ishbosheth iv
+2025-06-10 17:50:56,985 — WARNING — [gen9ubers] 403 Forbidden para Taxi Jo
+2025-06-10 17:50:59,296 — WARNING — [gen9ubers] 403 Forbidden para Acting Male
+2025-06-10 17:51:00,624 — WARNING — [gen9ubers] 403 Forbidden para Von mjrn
+2025-06-10 17:51:02,371 — WARNING — [gen9ubers] 403 Forbidden para for time changes
+2025-06-10 17:51:03,085 — INFO — gen9uu: 100 jugadores en top
+2025-06-10 17:51:03,400 — WARNING — [gen9uu] 403 Forbidden para 1024 hello
+2025-06-10 17:51:03,767 — WARNING — [gen9uu] 403 Forbidden para Jim bucket
+2025-06-10 17:51:04,701 — WARNING — [gen9uu] 403 Forbidden para isn't pokemon fun
+2025-06-10 17:51:05,022 — WARNING — [gen9uu] 403 Forbidden para UU25BA beamz
+2025-06-10 17:51:05,348 — WARNING — [gen9uu] 403 Forbidden para UU25BA Jv
+2025-06-10 17:51:05,661 — WARNING — [gen9uu] 403 Forbidden para UU25BA Zephyri
+2025-06-10 17:51:05,992 — WARNING — [gen9uu] 403 Forbidden para UU25BA HTC
+2025-06-10 17:51:06,350 — WARNING — [gen9uu] 403 Forbidden para uu25py peum
+2025-06-10 17:51:07,312 — WARNING — [gen9uu] 403 Forbidden para uu25ba ynd
+2025-06-10 17:51:07,708 — WARNING — [gen9uu] 403 Forbidden para uu25py jf
+2025-06-10 17:51:08,026 — WARNING — [gen9uu] 403 Forbidden para UU25BA Petros
+2025-06-10 17:51:08,349 — WARNING — [gen9uu] 403 Forbidden para UU25KE yiyue
+2025-06-10 17:51:08,662 — WARNING — [gen9uu] 403 Forbidden para UU25BA Fpg
+2025-06-10 17:51:08,988 — WARNING — [gen9uu] 403 Forbidden para UU25XI pet the cat
+2025-06-10 17:51:09,306 — WARNING — [gen9uu] 403 Forbidden para Hydreigon > Latias
+2025-06-10 17:51:09,691 — WARNING — [gen9uu] 403 Forbidden para UU25XI Laro
+2025-06-10 17:51:11,728 — WARNING — [gen9uu] 403 Forbidden para uu25ba coffy
+2025-06-10 17:51:12,127 — WARNING — [gen9uu] 403 Forbidden para uu25py mossy
+2025-06-10 17:51:12,493 — WARNING — [gen9uu] 403 Forbidden para uu25py hi
+2025-06-10 17:51:12,860 — WARNING — [gen9uu] 403 Forbidden para UU25XI mrk
+2025-06-10 17:51:13,514 — WARNING — [gen9uu] 403 Forbidden para UU25XI zugu
+2025-06-10 17:51:13,959 — WARNING — [gen9uu] 403 Forbidden para UU25PY qob
+2025-06-10 17:51:14,312 — WARNING — [gen9uu] 403 Forbidden para Malk Tyme
+2025-06-10 17:51:14,637 — WARNING — [gen9uu] 403 Forbidden para UU25PY wing
+2025-06-10 17:51:14,982 — WARNING — [gen9uu] 403 Forbidden para uu25py winter
+2025-06-10 17:51:15,293 — WARNING — [gen9uu] 403 Forbidden para UU25XI Apple
+2025-06-10 17:51:15,623 — WARNING — [gen9uu] 403 Forbidden para UU25XI 691
+2025-06-10 17:51:15,994 — WARNING — [gen9uu] 403 Forbidden para UU25PY Tree
+2025-06-10 17:51:16,289 — WARNING — [gen9uu] 403 Forbidden para UU25XI seraph
+2025-06-10 17:51:16,630 — WARNING — [gen9uu] 403 Forbidden para UU25XI Lily
+2025-06-10 17:51:16,996 — WARNING — [gen9uu] 403 Forbidden para UU25XI Sbs
+2025-06-10 17:51:17,975 — WARNING — [gen9uu] 403 Forbidden para UU25BA Sab
+2025-06-10 17:51:19,672 — WARNING — [gen9uu] 403 Forbidden para uu25ke lizzie
+2025-06-10 17:51:19,989 — WARNING — [gen9uu] 403 Forbidden para UU25PY Jv
+2025-06-10 17:51:21,616 — WARNING — [gen9uu] 403 Forbidden para UU25KE Gray
+2025-06-10 17:51:21,965 — WARNING — [gen9uu] 403 Forbidden para Midnight rain 30
+2025-06-10 17:51:23,042 — WARNING — [gen9uu] 403 Forbidden para uu25ke dnb
+2025-06-10 17:51:25,228 — WARNING — [gen9uu] 403 Forbidden para uu25ba corp n
+2025-06-10 17:51:25,539 — WARNING — [gen9uu] 403 Forbidden para Goro Yagami 54
+2025-06-10 17:51:25,884 — WARNING — [gen9uu] 403 Forbidden para DKD Of Salvation
+2025-06-10 17:51:26,197 — WARNING — [gen9uu] 403 Forbidden para UU25KE m
+2025-06-10 17:51:26,503 — WARNING — [gen9uu] 403 Forbidden para Stardust Fall
+2025-06-10 17:51:26,847 — WARNING — [gen9uu] 403 Forbidden para Monotype Kiki
+2025-06-10 17:51:27,190 — WARNING — [gen9uu] 403 Forbidden para UU25KE Cans
+2025-06-10 17:51:30,627 — WARNING — [gen9uu] 403 Forbidden para uu thinks
+2025-06-10 17:51:32,834 — WARNING — [gen9uu] 403 Forbidden para steelix is glass
+2025-06-10 17:51:33,798 — WARNING — [gen9uu] 403 Forbidden para the bestie
+2025-06-10 17:51:34,096 — WARNING — [gen9uu] 403 Forbidden para dog mendigoso
+2025-06-10 17:51:35,652 — WARNING — [gen9uu] 403 Forbidden para Round 63
+2025-06-10 17:51:36,849 — WARNING — [gen9uu] 403 Forbidden para UU25XI FFuob
+2025-06-10 17:51:37,827 — WARNING — [gen9uu] 403 Forbidden para UU25KE lulu
+2025-06-10 17:51:38,126 — WARNING — [gen9uu] 403 Forbidden para Sophia waseda
+2025-06-10 17:51:42,312 — WARNING — [gen9uu] 403 Forbidden para uu25ba sharoomba
+2025-06-10 17:51:42,679 — WARNING — [gen9uu] 403 Forbidden para lanturn dance
+2025-06-10 17:51:43,966 — WARNING — [gen9uu] 403 Forbidden para UU25XI Lyc
+2025-06-10 17:51:44,909 — WARNING — [gen9uu] 403 Forbidden para asahi 3
+2025-06-10 17:51:45,838 — WARNING — [gen9uu] 403 Forbidden para Carrie's Room
+2025-06-10 17:51:46,160 — WARNING — [gen9uu] 403 Forbidden para bungee moon 0
+2025-06-10 17:51:46,484 — WARNING — [gen9uu] 403 Forbidden para uu training arc
+2025-06-10 17:51:50,034 — WARNING — [gen9uu] 403 Forbidden para Memories of them
+2025-06-10 17:51:51,373 — INFO — gen9ru: 100 jugadores en top
+2025-06-10 17:51:52,390 — WARNING — [gen9ru] 403 Forbidden para RULT85M Lime
+2025-06-10 17:51:52,749 — WARNING — [gen9ru] 403 Forbidden para rult85r coops
+2025-06-10 17:51:53,088 — WARNING — [gen9ru] 403 Forbidden para rult85f rank o)
+2025-06-10 17:51:53,401 — WARNING — [gen9ru] 403 Forbidden para volc with fo types
+2025-06-10 17:51:53,727 — WARNING — [gen9ru] 403 Forbidden para RULT85A ming
+2025-06-10 17:51:55,286 — WARNING — [gen9ru] 403 Forbidden para RULT85S ak
+2025-06-10 17:51:55,605 — WARNING — [gen9ru] 403 Forbidden para RULT85A arce
+2025-06-10 17:51:55,924 — WARNING — [gen9ru] 403 Forbidden para RULT50W Sbs
+2025-06-10 17:51:56,240 — WARNING — [gen9ru] 403 Forbidden para RULT85D aHareng
+2025-06-10 17:51:56,569 — WARNING — [gen9ru] 403 Forbidden para ca$h hit
+2025-06-10 17:51:56,896 — WARNING — [gen9ru] 403 Forbidden para RULT50y Ryu
+2025-06-10 17:51:58,520 — WARNING — [gen9ru] 403 Forbidden para bug is dangerous
+2025-06-10 17:51:58,842 — WARNING — [gen9ru] 403 Forbidden para its ok to judge
+2025-06-10 17:51:59,143 — WARNING — [gen9ru] 403 Forbidden para ruok mommy
+2025-06-10 17:52:00,737 — WARNING — [gen9ru] 403 Forbidden para RULT50W PCD
+2025-06-10 17:52:01,668 — WARNING — [gen9ru] 403 Forbidden para RULT50W LBN
+2025-06-10 17:52:05,774 — WARNING — [gen9ru] 403 Forbidden para RULT85H helix
+2025-06-10 17:52:06,769 — WARNING — [gen9ru] 403 Forbidden para Nutri Choice
+2025-06-10 17:52:07,134 — WARNING — [gen9ru] 403 Forbidden para RULT85N Nemosse
+2025-06-10 17:52:07,467 — WARNING — [gen9ru] 403 Forbidden para RU's ACE
+2025-06-10 17:52:09,053 — WARNING — [gen9ru] 403 Forbidden para Afole Yo
+2025-06-10 17:52:09,389 — WARNING — [gen9ru] 403 Forbidden para DDD Reveal
+2025-06-10 17:52:10,990 — WARNING — [gen9ru] 403 Forbidden para RULT81 win
+2025-06-10 17:52:11,308 — WARNING — [gen9ru] 403 Forbidden para Quag Lover
+2025-06-10 17:52:11,655 — WARNING — [gen9ru] 403 Forbidden para valea cerbului
+2025-06-10 17:52:13,303 — WARNING — [gen9ru] 403 Forbidden para RULT85S slik
+2025-06-10 17:52:13,634 — WARNING — [gen9ru] 403 Forbidden para Panorama Fiesta
+2025-06-10 17:52:13,951 — WARNING — [gen9ru] 403 Forbidden para rult50l naem
+2025-06-10 17:52:14,275 — WARNING — [gen9ru] 403 Forbidden para Arce9 but worse
+2025-06-10 17:52:15,238 — WARNING — [gen9ru] 403 Forbidden para RULT50D Hareng
+2025-06-10 17:52:16,299 — WARNING — [gen9ru] 403 Forbidden para pls play scl loser
+2025-06-10 17:52:18,623 — WARNING — [gen9ru] 403 Forbidden para duck deluxe
+2025-06-10 17:52:19,548 — WARNING — [gen9ru] 403 Forbidden para RULT85A hjkhj
+2025-06-10 17:52:19,890 — WARNING — [gen9ru] 403 Forbidden para bee lamp
+2025-06-10 17:52:24,735 — WARNING — [gen9ru] 403 Forbidden para plz come back time
+2025-06-10 17:52:25,738 — WARNING — [gen9ru] 403 Forbidden para Sir Altr
+2025-06-10 17:52:26,838 — WARNING — [gen9ru] 403 Forbidden para deez nuzt
+2025-06-10 17:52:28,448 — WARNING — [gen9ru] 403 Forbidden para RU leaving
+2025-06-10 17:52:30,059 — WARNING — [gen9ru] 403 Forbidden para da hareng
+2025-06-10 17:52:34,899 — WARNING — [gen9ru] 403 Forbidden para Umbra Soul
+2025-06-10 17:52:35,214 — WARNING — [gen9ru] 403 Forbidden para creature comforts
+2025-06-10 17:52:36,907 — WARNING — [gen9ru] 403 Forbidden para au revoir soshanna
+2025-06-10 17:52:38,880 — WARNING — [gen9ru] 403 Forbidden para stale regi
+2025-06-10 17:52:40,605 — WARNING — [gen9ru] 403 Forbidden para no fun no life
+2025-06-10 17:52:41,587 — WARNING — [gen9ru] 403 Forbidden para rblt ryo
+2025-06-10 17:52:41,960 — WARNING — [gen9ru] 403 Forbidden para yanmega gaming
+2025-06-10 17:52:42,652 — INFO — gen9nu: 100 jugadores en top
+2025-06-10 17:52:44,887 — WARNING — [gen9nu] 403 Forbidden para Jeromy gride
+2025-06-10 17:52:46,119 — WARNING — [gen9nu] 403 Forbidden para nujs p
+2025-06-10 17:52:49,770 — WARNING — [gen9nu] 403 Forbidden para urusai baaka
+2025-06-10 17:52:50,139 — WARNING — [gen9nu] 403 Forbidden para EMT EMILIA TAN
+2025-06-10 17:52:51,778 — WARNING — [gen9nu] 403 Forbidden para NBA HOOPA
+2025-06-10 17:52:54,077 — WARNING — [gen9nu] 403 Forbidden para FOR DEMACIAAAAA
+2025-06-10 17:52:55,702 — WARNING — [gen9nu] 403 Forbidden para mustard ui goku
+2025-06-10 17:52:57,338 — WARNING — [gen9nu] 403 Forbidden para the walker of time
+2025-06-10 17:53:01,062 — WARNING — [gen9nu] 403 Forbidden para brickasaurus rex
+2025-06-10 17:53:04,003 — WARNING — [gen9nu] 403 Forbidden para ellaine kay!!
+2025-06-10 17:53:07,010 — WARNING — [gen9nu] 403 Forbidden para pult1mg brick
+2025-06-10 17:53:11,283 — WARNING — [gen9nu] 403 Forbidden para second blast
+2025-06-10 17:53:16,386 — WARNING — [gen9nu] 403 Forbidden para NBT Victim
+2025-06-10 17:53:17,356 — WARNING — [gen9nu] 403 Forbidden para bae fakemon
+2025-06-10 17:53:21,398 — WARNING — [gen9nu] 403 Forbidden para battling professor
+2025-06-10 17:53:23,028 — WARNING — [gen9nu] 403 Forbidden para Suuuuper Craig
+2025-06-10 17:53:23,987 — WARNING — [gen9nu] 403 Forbidden para still in luv
+2025-06-10 17:53:24,947 — WARNING — [gen9nu] 403 Forbidden para The Bog Body
+2025-06-10 17:53:32,647 — WARNING — [gen9nu] 403 Forbidden para le monke gal
+2025-06-10 17:53:32,971 — WARNING — [gen9nu] 403 Forbidden para Bramble Scramble
+2025-06-10 17:55:56,852 — INFO — === INICIO DEL PIPELINE ===
+2025-06-10 17:55:56,853 — INFO — Configurando conexión a la base de datos...
+2025-06-10 17:55:57,112 — INFO — === FASE 1: EXTRACCIÓN DE DATOS ===
+2025-06-10 17:55:57,113 — INFO — Extrayendo datos de Twitch...
+2025-06-10 17:55:57,113 — INFO — Twitch: iniciando extracción
+2025-06-10 17:55:59,234 — INFO — Twitch: obtenidos 200 juegos top
+2025-06-10 17:56:00,206 — INFO — Twitch: 50 streams para juego Just Chatting
+2025-06-10 17:56:01,174 — INFO — Twitch: 50 streams para juego Counter-Strike
+2025-06-10 17:56:02,147 — INFO — Twitch: 50 streams para juego VALORANT
+2025-06-10 17:56:02,652 — INFO — Twitch: 50 streams para juego Tom Clancy's Rainbow Six Siege
+2025-06-10 17:56:03,182 — INFO — Twitch: 50 streams para juego Grand Theft Auto V
+2025-06-10 17:56:04,467 — INFO — Twitch: 50 streams para juego Dune: Awakening
+2025-06-10 17:56:04,993 — INFO — Twitch: 50 streams para juego League of Legends
+2025-06-10 17:56:05,830 — INFO — Twitch: 36 streams para juego Kings League
+2025-06-10 17:56:06,294 — INFO — Twitch: 50 streams para juego MindsEye
+2025-06-10 17:56:06,779 — INFO — Twitch: 50 streams para juego Fortnite
+2025-06-10 17:56:07,818 — INFO — Twitch: 50 streams para juego Special Events
+2025-06-10 17:56:08,377 — INFO — Twitch: 50 streams para juego Mario Kart World
+2025-06-10 17:56:08,855 — INFO — Twitch: 50 streams para juego IRL
+2025-06-10 17:56:09,339 — INFO — Twitch: 50 streams para juego Dota 2
+2025-06-10 17:56:09,859 — INFO — Twitch: 50 streams para juego Call of Duty: Warzone
+2025-06-10 17:56:10,858 — INFO — Twitch: 50 streams para juego Minecraft
+2025-06-10 17:56:11,861 — INFO — Twitch: 50 streams para juego EA Sports FC 25
+2025-06-10 17:56:12,342 — INFO — Twitch: 50 streams para juego Old School RuneScape
+2025-06-10 17:56:13,424 — INFO — Twitch: 50 streams para juego World of Warcraft
+2025-06-10 17:56:13,939 — INFO — Twitch: 50 streams para juego Hearthstone
+2025-06-10 17:56:14,931 — INFO — Twitch: 50 streams para juego Marvel Rivals
+2025-06-10 17:56:15,925 — INFO — Twitch: 50 streams para juego Elden Ring: Nightreign
+2025-06-10 17:56:16,931 — INFO — Twitch: 50 streams para juego Dead by Daylight
+2025-06-10 17:56:17,996 — INFO — Twitch: 50 streams para juego Teamfight Tactics
+2025-06-10 17:56:19,046 — INFO — Twitch: 50 streams para juego Apex Legends
+2025-06-10 17:56:20,042 — INFO — Twitch: 50 streams para juego Path of Exile
+2025-06-10 17:56:21,018 — INFO — Twitch: 50 streams para juego DJs
+2025-06-10 17:56:21,973 — INFO — Twitch: 50 streams para juego Lies of P
+2025-06-10 17:56:22,480 — INFO — Twitch: 50 streams para juego World of Tanks
+2025-06-10 17:56:23,447 — INFO — Twitch: 50 streams para juego Clair Obscur: Expedition 33
+2025-06-10 17:56:23,941 — INFO — Twitch: 50 streams para juego Rust
+2025-06-10 17:56:24,739 — INFO — Twitch: 1 streams para juego Maestro VR
+2025-06-10 17:56:25,714 — INFO — Twitch: 50 streams para juego Magic: The Gathering
+2025-06-10 17:56:26,208 — INFO — Twitch: 50 streams para juego Slots
+2025-06-10 17:56:26,712 — INFO — Twitch: 50 streams para juego Art
+2025-06-10 17:56:27,481 — INFO — Twitch: 8 streams para juego Super Mario Party Jamboree
+2025-06-10 17:56:28,023 — INFO — Twitch: 50 streams para juego PUBG: BATTLEGROUNDS
+2025-06-10 17:56:28,509 — INFO — Twitch: 50 streams para juego Escape from Tarkov
+2025-06-10 17:56:29,550 — INFO — Twitch: 50 streams para juego Overwatch 2
+2025-06-10 17:56:30,299 — INFO — Twitch: 36 streams para juego Virtual Casino
+2025-06-10 17:56:30,819 — INFO — Twitch: 50 streams para juego Talk Shows & Podcasts
+2025-06-10 17:56:31,633 — INFO — Twitch: 1 streams para juego Backrooms Rec.
+2025-06-10 17:56:32,130 — INFO — Twitch: 50 streams para juego Marbles on Stream
+2025-06-10 17:56:33,193 — INFO — Twitch: 50 streams para juego Games + Demos
+2025-06-10 17:56:33,981 — INFO — Twitch: 34 streams para juego Pools, Hot Tubs, and Beaches
+2025-06-10 17:56:34,914 — INFO — Twitch: 50 streams para juego I'm Only Sleeping
+2025-06-10 17:56:35,413 — INFO — Twitch: 50 streams para juego ASMR
+2025-06-10 17:56:36,916 — INFO — Twitch: 50 streams para juego ELDEN RING
+2025-06-10 17:56:37,431 — INFO — Twitch: 50 streams para juego Destiny 2
+2025-06-10 17:56:37,943 — INFO — Twitch: 50 streams para juego Etheria: Restart
+2025-06-10 17:56:38,491 — INFO — Twitch: 50 streams para juego Red Dead Redemption 2
+2025-06-10 17:56:38,982 — INFO — Twitch: 50 streams para juego DayZ
+2025-06-10 17:56:39,451 — INFO — Twitch: 50 streams para juego Street Fighter 6
+2025-06-10 17:56:39,965 — INFO — Twitch: 50 streams para juego MapleStory Worlds
+2025-06-10 17:56:40,444 — INFO — Twitch: 50 streams para juego Heroes of Might and Magic III: The Restoration of Erathia
+2025-06-10 17:56:41,450 — INFO — Twitch: 50 streams para juego Music
+2025-06-10 17:56:41,956 — INFO — Twitch: 50 streams para juego Sports
+2025-06-10 17:56:42,461 — INFO — Twitch: 50 streams para juego Tibia
+2025-06-10 17:56:43,220 — INFO — Twitch: 19 streams para juego BULLET YEETERS
+2025-06-10 17:56:43,710 — INFO — Twitch: 50 streams para juego Albion Online
+2025-06-10 17:56:44,681 — INFO — Twitch: 50 streams para juego Rocket League
+2025-06-10 17:56:45,656 — INFO — Twitch: 50 streams para juego Black Desert
+2025-06-10 17:56:46,124 — INFO — Twitch: 50 streams para juego Always On
+2025-06-10 17:56:46,608 — INFO — Twitch: 50 streams para juego F1 25
+2025-06-10 17:56:47,394 — INFO — Twitch: 29 streams para juego No, I'm Not A Human
+2025-06-10 17:56:48,436 — INFO — Twitch: 50 streams para juego 7 Days to Die
+2025-06-10 17:56:49,233 — INFO — Twitch: 4 streams para juego Streamer Life Simulator 2
+2025-06-10 17:56:51,310 — INFO — Twitch: 50 streams para juego Software and Game Development
+2025-06-10 17:56:52,076 — INFO — Twitch: 14 streams para juego Baby Steps
+2025-06-10 17:56:52,549 — INFO — Twitch: 50 streams para juego Retro
+2025-06-10 17:56:53,118 — INFO — Twitch: 50 streams para juego Crypto
+2025-06-10 17:56:53,608 — INFO — Twitch: 50 streams para juego ROBLOX
+2025-06-10 17:56:54,402 — INFO — Twitch: 7 streams para juego Zombie Graveyard Simulator
+2025-06-10 17:56:55,406 — INFO — Twitch: 50 streams para juego Clash Royale
+2025-06-10 17:56:55,898 — INFO — Twitch: 50 streams para juego Poker
+2025-06-10 17:56:56,372 — INFO — Twitch: 50 streams para juego DARK SOULS II: Scholar of the First Sin
+2025-06-10 17:56:57,370 — INFO — Twitch: 50 streams para juego Pokémon Scarlet/Violet
+2025-06-10 17:56:57,881 — INFO — Twitch: 50 streams para juego Mir Tankov
+2025-06-10 17:56:58,379 — INFO — Twitch: 50 streams para juego Hunt: Showdown 1896
+2025-06-10 17:56:58,870 — INFO — Twitch: 50 streams para juego Call of Duty
+2025-06-10 17:56:59,360 — INFO — Twitch: 50 streams para juego Animals, Aquariums, and Zoos
+2025-06-10 17:56:59,852 — INFO — Twitch: 50 streams para juego Splitgate 2
+2025-06-10 17:57:00,351 — INFO — Twitch: 50 streams para juego Chess
+2025-06-10 17:57:01,850 — INFO — Twitch: 50 streams para juego NBA 2K25
+2025-06-10 17:57:02,365 — INFO — Twitch: 50 streams para juego Arena Breakout: Infinite
+2025-06-10 17:57:03,426 — INFO — Twitch: 50 streams para juego Wuthering Waves
+2025-06-10 17:57:03,926 — INFO — Twitch: 50 streams para juego Call of Duty: Black Ops 6
+2025-06-10 17:57:04,751 — INFO — Twitch: 30 streams para juego Death Stranding
+2025-06-10 17:57:05,481 — INFO — Twitch: 4 streams para juego Abyssus
+2025-06-10 17:57:06,500 — INFO — Twitch: 50 streams para juego Zenless Zone Zero
+2025-06-10 17:57:07,001 — INFO — Twitch: 50 streams para juego Mobile Legends: Bang Bang
+2025-06-10 17:57:07,531 — INFO — Twitch: 50 streams para juego World of Warships
+2025-06-10 17:57:08,394 — INFO — Twitch: 39 streams para juego Warface
+2025-06-10 17:57:08,916 — INFO — Twitch: 50 streams para juego Gray Zone Warfare
+2025-06-10 17:57:09,436 — INFO — Twitch: 50 streams para juego Sea of Thieves
+2025-06-10 17:57:09,921 — INFO — Twitch: 50 streams para juego Genshin Impact
+2025-06-10 17:57:10,387 — INFO — Twitch: 50 streams para juego Lost Ark
+2025-06-10 17:57:10,910 — INFO — Twitch: 50 streams para juego FINAL FANTASY XIV ONLINE
+2025-06-10 17:57:11,716 — INFO — Twitch: 13 streams para juego The Legend of Zelda: Majora's Mask
+2025-06-10 17:57:12,475 — INFO — Twitch: 13 streams para juego Tinkerlands
+2025-06-10 17:57:13,297 — INFO — Twitch: 2 streams para juego Primal Planet
+2025-06-10 17:57:14,055 — INFO — Twitch: 8 streams para juego Tormented Souls II
+2025-06-10 17:57:14,517 — INFO — Twitch: 50 streams para juego Wildgate
+2025-06-10 17:57:14,989 — INFO — Twitch: 50 streams para juego VRChat
+2025-06-10 17:57:15,725 — INFO — Twitch: 36 streams para juego Age of Empires II
+2025-06-10 17:57:16,193 — INFO — Twitch: 50 streams para juego Co-working & Studying
+2025-06-10 17:57:17,233 — INFO — Twitch: 50 streams para juego Star Citizen
+2025-06-10 17:57:18,067 — INFO — Twitch: 40 streams para juego Pokémon FireRed/LeafGreen
+2025-06-10 17:57:18,570 — INFO — Twitch: 50 streams para juego Tom Clancy's The Division 2
+2025-06-10 17:57:19,552 — INFO — Twitch: 50 streams para juego R.E.P.O.
+2025-06-10 17:57:20,534 — INFO — Twitch: 50 streams para juego Delta Force
+2025-06-10 17:57:21,284 — INFO — Twitch: 46 streams para juego Garry's Mod
+2025-06-10 17:57:22,002 — INFO — Twitch: 21 streams para juego Warborne: Above Ashes
+2025-06-10 17:57:22,513 — INFO — Twitch: 50 streams para juego Deltarune
+2025-06-10 17:57:23,507 — INFO — Twitch: 50 streams para juego Phasmophobia
+2025-06-10 17:57:24,582 — INFO — Twitch: 50 streams para juego War Thunder
+2025-06-10 17:57:26,393 — INFO — Twitch: 23 streams para juego Slay the Spire
+2025-06-10 17:57:27,335 — INFO — Twitch: 50 streams para juego Brawl Stars
+2025-06-10 17:57:28,104 — INFO — Twitch: 13 streams para juego Pokémon
+2025-06-10 17:57:29,195 — INFO — Twitch: 36 streams para juego Rise Online
+2025-06-10 17:57:29,928 — INFO — Twitch: 7 streams para juego Resident Evil Outbreak
+2025-06-10 17:57:30,654 — INFO — Twitch: 34 streams para juego MapleStory
+2025-06-10 17:57:31,131 — INFO — Twitch: 50 streams para juego Rune Factory: Guardians of Azuma
+2025-06-10 17:57:32,061 — INFO — Twitch: 50 streams para juego PUBG Mobile
+2025-06-10 17:57:32,822 — INFO — Twitch: 44 streams para juego iRacing
+2025-06-10 17:57:33,542 — INFO — Twitch: 1 streams para juego Papa's Freezeria Deluxe
+2025-06-10 17:57:34,022 — INFO — Twitch: 50 streams para juego osu!
+2025-06-10 17:57:34,753 — INFO — Twitch: 43 streams para juego Vintage Story
+2025-06-10 17:57:35,699 — INFO — Twitch: 50 streams para juego Makers & Crafting
+2025-06-10 17:57:36,204 — INFO — Twitch: 50 streams para juego Diablo III
+2025-06-10 17:57:37,224 — INFO — Twitch: 50 streams para juego Le Mans Ultimate
+2025-06-10 17:57:37,698 — INFO — Twitch: 50 streams para juego Satisfactory
+2025-06-10 17:57:38,545 — INFO — Twitch: 42 streams para juego Food & Drink
+2025-06-10 17:57:39,017 — INFO — Twitch: 50 streams para juego PIONER
+2025-06-10 17:57:39,741 — INFO — Twitch: 17 streams para juego Anno 1800
+2025-06-10 17:57:40,209 — INFO — Twitch: 50 streams para juego Throne and Liberty
+2025-06-10 17:57:40,692 — INFO — Twitch: 50 streams para juego Predecessor
+2025-06-10 17:57:41,170 — INFO — Twitch: 50 streams para juego Deadlock
+2025-06-10 17:57:41,892 — INFO — Twitch: 10 streams para juego Demon's Souls
+2025-06-10 17:57:42,359 — INFO — Twitch: 50 streams para juego Trackmania
+2025-06-10 17:57:43,351 — INFO — Twitch: 50 streams para juego Stardew Valley
+2025-06-10 17:57:44,331 — INFO — Twitch: 50 streams para juego UNDERTALE
+2025-06-10 17:57:45,088 — INFO — Twitch: 40 streams para juego Pokémon Emerald Version
+2025-06-10 17:57:45,578 — INFO — Twitch: 50 streams para juego The Sims 4
+2025-06-10 17:57:46,076 — INFO — Twitch: 50 streams para juego Project Zomboid
+2025-06-10 17:57:47,035 — INFO — Twitch: 50 streams para juego Baldur's Gate 3
+2025-06-10 17:57:48,036 — INFO — Twitch: 50 streams para juego TEKKEN 8
+2025-06-10 17:57:48,786 — INFO — Twitch: 34 streams para juego Streamer University
+2025-06-10 17:57:49,273 — INFO — Twitch: 50 streams para juego The First Descendant
+2025-06-10 17:57:50,001 — INFO — Twitch: 19 streams para juego Marvel Snap
+2025-06-10 17:57:50,945 — INFO — Twitch: 50 streams para juego Madden NFL 25
+2025-06-10 17:57:51,446 — INFO — Twitch: 50 streams para juego Farming Simulator 25
+2025-06-10 17:57:52,411 — INFO — Twitch: 50 streams para juego Dark and Darker
+2025-06-10 17:57:53,209 — INFO — Twitch: 15 streams para juego Backrooms: Escape Together
+2025-06-10 17:57:53,707 — INFO — Twitch: 50 streams para juego RimWorld
+2025-06-10 17:57:54,435 — INFO — Twitch: 14 streams para juego Black Russia
+2025-06-10 17:57:54,908 — INFO — Twitch: 50 streams para juego Warframe
+2025-06-10 17:57:55,678 — INFO — Twitch: 1 streams para juego PoPoLoCrois Monogatari
+2025-06-10 17:57:56,461 — INFO — Twitch: 35 streams para juego Off The Grid
+2025-06-10 17:57:57,414 — INFO — Twitch: 50 streams para juego The Elder Scrolls Online
+2025-06-10 17:57:57,956 — INFO — Twitch: 50 streams para juego Path of Exile 2
+2025-06-10 17:57:58,704 — INFO — Twitch: 35 streams para juego Hero Siege
+2025-06-10 17:57:59,665 — INFO — Twitch: 50 streams para juego FANTASY LIFE i: The Girl Who Steals Time
+2025-06-10 17:58:00,404 — INFO — Twitch: 6 streams para juego Starlight Re:Volver
+2025-06-10 17:58:00,881 — INFO — Twitch: 50 streams para juego Honkai: Star Rail
+2025-06-10 17:58:01,368 — INFO — Twitch: 50 streams para juego SMITE 2
+2025-06-10 17:58:02,142 — INFO — Twitch: 36 streams para juego Politics
+2025-06-10 17:58:02,647 — INFO — Twitch: 50 streams para juego ARK: Survival Ascended
+2025-06-10 17:58:03,413 — INFO — Twitch: 25 streams para juego Age of Empires IV
+2025-06-10 17:58:03,909 — INFO — Twitch: 50 streams para juego Animal Crossing: New Horizons
+2025-06-10 17:58:04,846 — INFO — Twitch: 50 streams para juego DARK SOULS III
+2025-06-10 17:58:05,567 — INFO — Twitch: 2 streams para juego Lorelei and the Laser Eyes
+2025-06-10 17:58:06,513 — INFO — Twitch: 50 streams para juego Monster Hunter Wilds
+2025-06-10 17:58:07,258 — INFO — Twitch: 6 streams para juego Shakes and Fidget
+2025-06-10 17:58:08,039 — INFO — Twitch: 24 streams para juego EVE Online
+2025-06-10 17:58:08,818 — INFO — Twitch: 1 streams para juego Handstand Hank
+2025-06-10 17:58:09,281 — INFO — Twitch: 50 streams para juego Fallout 76
+2025-06-10 17:58:10,213 — INFO — Twitch: 50 streams para juego Gran Turismo 7
+2025-06-10 17:58:11,150 — INFO — Twitch: 50 streams para juego League of Legends: Wild Rift
+2025-06-10 17:58:12,108 — INFO — Twitch: 50 streams para juego The Last of Us Part II
+2025-06-10 17:58:13,004 — INFO — Twitch: 47 streams para juego Metin2
+2025-06-10 17:58:13,751 — INFO — Twitch: 32 streams para juego Knight Online
+2025-06-10 17:58:14,805 — INFO — Twitch: 50 streams para juego Fall Guys
+2025-06-10 17:58:15,539 — INFO — Twitch: 42 streams para juego Anime Squad
+2025-06-10 17:58:16,035 — INFO — Twitch: 50 streams para juego MU Online
+2025-06-10 17:58:16,799 — INFO — Twitch: 1 streams para juego Stories to Tell: Greyville Stay
+2025-06-10 17:58:17,591 — INFO — Twitch: 36 streams para juego StarCraft II
+2025-06-10 17:58:18,349 — INFO — Twitch: 6 streams para juego Backseat Drivers
+2025-06-10 17:58:19,137 — INFO — Twitch: 4 streams para juego The Witcher 2: Assassins of Kings
+2025-06-10 17:58:20,093 — INFO — Twitch: 50 streams para juego Halo Infinite
+2025-06-10 17:58:21,051 — INFO — Twitch: 50 streams para juego Fallout 4
+2025-06-10 17:58:21,981 — INFO — Twitch: 50 streams para juego Palia
+2025-06-10 17:58:22,753 — INFO — Twitch: 36 streams para juego GeoGuessr
+2025-06-10 17:58:23,826 — INFO — Twitch: 50 streams para juego The Elder Scrolls IV: Oblivion Remastered
+2025-06-10 17:58:24,593 — INFO — Twitch: 17 streams para juego The Legend of Zelda: The Wind Waker
+2025-06-10 17:58:26,113 — INFO — Twitch: 50 streams para juego Russian Fishing 4
+2025-06-10 17:58:26,623 — INFO — Twitch: 50 streams para juego Perfect World
+2025-06-10 17:58:27,350 — INFO — Twitch: 44 streams para juego Warcraft III
+2025-06-10 17:58:28,140 — INFO — Twitch: 1 streams para juego Clustertruck
+2025-06-10 17:58:29,027 — INFO — Twitch: 22 streams para juego The Bazaar
+2025-06-10 17:58:29,028 — INFO — Twitch: total juegos = 200, total streams = 8292
+2025-06-10 17:58:38,637 — INFO — Extrayendo datos de Showdown...
+2025-06-10 17:58:38,638 — INFO — Showdown: iniciando extracción de ladders y perfiles
+2025-06-10 17:58:38,639 — INFO — Showdown: usando 6 formatos Gen9 predefinidos
+2025-06-10 17:58:39,415 — INFO — gen9ou: 100 jugadores en top
+2025-06-10 17:58:39,758 — WARNING — [gen9ou] 403 Forbidden para SOUTH STATION
+2025-06-10 17:58:40,085 — WARNING — [gen9ou] 403 Forbidden para saw war newnew
+2025-06-10 17:58:40,403 — WARNING — [gen9ou] 403 Forbidden para sunflora wukong
+2025-06-10 17:58:40,714 — WARNING — [gen9ou] 403 Forbidden para BANH MI DU MA
+2025-06-10 17:58:41,663 — WARNING — [gen9ou] 403 Forbidden para free solo artist
+2025-06-10 17:58:42,637 — WARNING — [gen9ou] 403 Forbidden para she wants me 4l
+2025-06-10 17:58:42,951 — WARNING — [gen9ou] 403 Forbidden para Well That DOES IT
+2025-06-10 17:58:45,299 — WARNING — [gen9ou] 403 Forbidden para Malk Tyme
+2025-06-10 17:58:45,630 — WARNING — [gen9ou] 403 Forbidden para mommy buzzwole
+2025-06-10 17:58:46,656 — WARNING — [gen9ou] 403 Forbidden para you best not miss
+2025-06-10 17:58:47,004 — WARNING — [gen9ou] 403 Forbidden para Snake Prairie
+2025-06-10 17:58:48,631 — WARNING — [gen9ou] 403 Forbidden para a trip to paris
+2025-06-10 17:58:49,630 — WARNING — [gen9ou] 403 Forbidden para Lancer Medusa
+2025-06-10 17:58:49,950 — WARNING — [gen9ou] 403 Forbidden para bombobini gusini
+2025-06-10 17:58:50,252 — WARNING — [gen9ou] 403 Forbidden para okidogi bro
+2025-06-10 17:58:52,462 — WARNING — [gen9ou] 403 Forbidden para Doue MVP
+2025-06-10 17:58:52,835 — WARNING — [gen9ou] 403 Forbidden para Braised Snorlax
+2025-06-10 17:58:53,777 — WARNING — [gen9ou] 403 Forbidden para chen qt
+2025-06-10 17:58:57,264 — WARNING — [gen9ou] 403 Forbidden para Linzi the Great
+2025-06-10 17:58:58,207 — WARNING — [gen9ou] 403 Forbidden para La mere a Bachira
+2025-06-10 17:58:58,530 — WARNING — [gen9ou] 403 Forbidden para i hug my bitch
+2025-06-10 17:59:00,134 — WARNING — [gen9ou] 403 Forbidden para art of positioning
+2025-06-10 17:59:01,040 — WARNING — [gen9ou] 403 Forbidden para FRATTE REGNA
+2025-06-10 17:59:02,649 — WARNING — [gen9ou] 403 Forbidden para fat bastard
+2025-06-10 17:59:18,385 — ERROR — [gen9ou] Error inesperado para nagoL40spaz: HTTPSConnectionPool(host='pokemonshowdown.com', port=443): Max retries exceeded with url: /users/nagoL40spaz.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-06-10 17:59:19,418 — WARNING — [gen9ou] 403 Forbidden para Auburn Hills
+2025-06-10 17:59:20,674 — WARNING — [gen9ou] 403 Forbidden para this bullshit
+2025-06-10 17:59:21,006 — WARNING — [gen9ou] 403 Forbidden para skiing in japan
+2025-06-10 17:59:21,584 — WARNING — [gen9ou] 403 Forbidden para Light WeirdTests
+2025-06-10 17:59:23,402 — WARNING — [gen9ou] 403 Forbidden para Floor 99
+2025-06-10 17:59:23,791 — WARNING — [gen9ou] 403 Forbidden para boy dinner
+2025-06-10 17:59:24,154 — WARNING — [gen9ou] 403 Forbidden para the bluest blues
+2025-06-10 17:59:26,478 — WARNING — [gen9ou] 403 Forbidden para Free P&lestine
+2025-06-10 17:59:27,417 — WARNING — [gen9ou] 403 Forbidden para Washed Gamer
+2025-06-10 17:59:28,336 — WARNING — [gen9ou] 403 Forbidden para Asia's Redemption
+2025-06-10 17:59:28,731 — WARNING — [gen9ou] 403 Forbidden para its for me ma
+2025-06-10 17:59:29,772 — WARNING — [gen9ou] 403 Forbidden para heat is heatin
+2025-06-10 17:59:30,094 — WARNING — [gen9ou] 403 Forbidden para KTM Adam 1
+2025-06-10 17:59:32,302 — WARNING — [gen9ou] 403 Forbidden para toy soulja
+2025-06-10 17:59:34,157 — WARNING — [gen9ou] 403 Forbidden para Light SV
+2025-06-10 17:59:35,750 — WARNING — [gen9ou] 403 Forbidden para Justified AU
+2025-06-10 17:59:36,083 — WARNING — [gen9ou] 403 Forbidden para OUZ Quavo
+2025-06-10 17:59:37,717 — WARNING — [gen9ou] 403 Forbidden para SNOWY HELL
+2025-06-10 17:59:38,075 — WARNING — [gen9ou] 403 Forbidden para limitless dreams
+2025-06-10 17:59:38,403 — WARNING — [gen9ou] 403 Forbidden para rare artist pyrex
+2025-06-10 17:59:39,363 — WARNING — [gen9ou] 403 Forbidden para Pudistor Black
+2025-06-10 17:59:39,715 — WARNING — [gen9ou] 403 Forbidden para chansey and lulu
+2025-06-10 17:59:41,997 — WARNING — [gen9ou] 403 Forbidden para 1400s main
+2025-06-10 17:59:43,077 — WARNING — [gen9ou] 403 Forbidden para ough bliss
+2025-06-10 17:59:43,460 — WARNING — [gen9ou] 403 Forbidden para dawn dreams
+2025-06-10 17:59:44,843 — INFO — gen9ubers: 100 jugadores en top
+2025-06-10 17:59:45,154 — WARNING — [gen9ubers] 403 Forbidden para BK new 维亚内拉
+2025-06-10 17:59:46,819 — WARNING — [gen9ubers] 404 Not Found: usuario CarvioFlaskier
+2025-06-10 17:59:47,776 — WARNING — [gen9ubers] 403 Forbidden para Le Mur Du Son
+2025-06-10 17:59:52,660 — WARNING — [gen9ubers] 403 Forbidden para penrose district
+2025-06-10 17:59:54,903 — WARNING — [gen9ubers] 403 Forbidden para Fc ❤
+2025-06-10 17:59:56,501 — WARNING — [gen9ubers] 403 Forbidden para We Go 2gether
+2025-06-10 17:59:57,457 — WARNING — [gen9ubers] 403 Forbidden para L'isola perduta
+2025-06-10 17:59:58,406 — WARNING — [gen9ubers] 403 Forbidden para Tyrant's Scorn
+2025-06-10 18:00:05,632 — WARNING — [gen9ubers] 403 Forbidden para juno girl
+2025-06-10 18:00:06,628 — WARNING — [gen9ubers] 403 Forbidden para EDG Green
+2025-06-10 18:00:08,251 — WARNING — [gen9ubers] 403 Forbidden para Guizmo 1
+2025-06-10 18:00:09,188 — WARNING — [gen9ubers] 403 Forbidden para Sleigh Beggy
+2025-06-10 18:00:10,786 — WARNING — [gen9ubers] 403 Forbidden para Laila Frizz
+2025-06-10 18:00:13,728 — WARNING — [gen9ubers] 403 Forbidden para Song of Creation
+2025-06-10 18:00:14,696 — WARNING — [gen9ubers] 403 Forbidden para cby Tocause
+2025-06-10 18:00:15,681 — WARNING — [gen9ubers] 403 Forbidden para i ❤️ gangu
+2025-06-10 18:00:18,622 — WARNING — [gen9ubers] 403 Forbidden para always predicted
+2025-06-10 18:00:18,989 — WARNING — [gen9ubers] 403 Forbidden para UBDG POURQUOI
+2025-06-10 18:00:20,658 — WARNING — [gen9ubers] 403 Forbidden para Heure Joyeuse
+2025-06-10 18:00:21,649 — WARNING — [gen9ubers] 403 Forbidden para dog mendigoso
+2025-06-10 18:00:25,267 — WARNING — [gen9ubers] 403 Forbidden para tiktok rizzler
+2025-06-10 18:00:25,627 — WARNING — [gen9ubers] 403 Forbidden para Future king of ou
+2025-06-10 18:00:27,225 — WARNING — [gen9ubers] 403 Forbidden para 4nim0sity 99.9999%
+2025-06-10 18:00:29,507 — WARNING — [gen9ubers] 403 Forbidden para Hack Walters
+2025-06-10 18:00:29,876 — WARNING — [gen9ubers] 403 Forbidden para S3ight of the sun
+2025-06-10 18:00:31,537 — WARNING — [gen9ubers] 403 Forbidden para Dark Aria
+2025-06-10 18:00:33,841 — WARNING — [gen9ubers] 403 Forbidden para Ralsei Hatty ^°^
+2025-06-10 18:00:35,585 — WARNING — [gen9ubers] 403 Forbidden para ishbosheth iv
+2025-06-10 18:00:37,839 — WARNING — [gen9ubers] 403 Forbidden para Taxi Jo
+2025-06-10 18:00:40,202 — WARNING — [gen9ubers] 403 Forbidden para Acting Male
+2025-06-10 18:00:40,672 — WARNING — [gen9ubers] 403 Forbidden para Von mjrn
+2025-06-10 18:00:42,351 — WARNING — [gen9ubers] 403 Forbidden para for time changes
+2025-06-10 18:00:43,000 — INFO — gen9uu: 100 jugadores en top
+2025-06-10 18:00:43,353 — WARNING — [gen9uu] 403 Forbidden para 1024 hello
+2025-06-10 18:00:43,709 — WARNING — [gen9uu] 403 Forbidden para Jim bucket
+2025-06-10 18:00:44,754 — WARNING — [gen9uu] 403 Forbidden para isn't pokemon fun
+2025-06-10 18:00:45,129 — WARNING — [gen9uu] 403 Forbidden para UU25BA beamz
+2025-06-10 18:00:45,480 — WARNING — [gen9uu] 403 Forbidden para UU25BA Jv
+2025-06-10 18:00:45,817 — WARNING — [gen9uu] 403 Forbidden para UU25BA Zephyri
+2025-06-10 18:00:46,146 — WARNING — [gen9uu] 403 Forbidden para UU25BA HTC
+2025-06-10 18:00:46,456 — WARNING — [gen9uu] 403 Forbidden para uu25py peum
+2025-06-10 18:00:47,378 — WARNING — [gen9uu] 403 Forbidden para uu25ba ynd
+2025-06-10 18:00:47,689 — WARNING — [gen9uu] 403 Forbidden para uu25py jf
+2025-06-10 18:00:48,036 — WARNING — [gen9uu] 403 Forbidden para UU25BA Petros
+2025-06-10 18:00:48,436 — WARNING — [gen9uu] 403 Forbidden para UU25KE yiyue
+2025-06-10 18:00:48,771 — WARNING — [gen9uu] 403 Forbidden para UU25BA Fpg
+2025-06-10 18:00:49,101 — WARNING — [gen9uu] 403 Forbidden para UU25XI pet the cat
+2025-06-10 18:00:49,426 — WARNING — [gen9uu] 403 Forbidden para Hydreigon > Latias
+2025-06-10 18:00:49,818 — WARNING — [gen9uu] 403 Forbidden para UU25XI Laro
+2025-06-10 18:00:50,834 — WARNING — [gen9uu] 403 Forbidden para uu25ba coffy
+2025-06-10 18:00:51,136 — WARNING — [gen9uu] 403 Forbidden para uu25py mossy
+2025-06-10 18:00:51,503 — WARNING — [gen9uu] 403 Forbidden para uu25py hi
+2025-06-10 18:00:51,843 — WARNING — [gen9uu] 403 Forbidden para UU25XI mrk
+2025-06-10 18:00:52,155 — WARNING — [gen9uu] 403 Forbidden para UU25XI zugu
+2025-06-10 18:00:52,478 — WARNING — [gen9uu] 403 Forbidden para UU25PY qob
+2025-06-10 18:00:52,797 — WARNING — [gen9uu] 403 Forbidden para Malk Tyme
+2025-06-10 18:00:53,131 — WARNING — [gen9uu] 403 Forbidden para UU25PY wing
+2025-06-10 18:00:53,463 — WARNING — [gen9uu] 403 Forbidden para uu25py winter
+2025-06-10 18:00:53,797 — WARNING — [gen9uu] 403 Forbidden para UU25XI Apple
+2025-06-10 18:00:54,163 — WARNING — [gen9uu] 403 Forbidden para UU25XI 691
+2025-06-10 18:00:54,538 — WARNING — [gen9uu] 403 Forbidden para UU25PY Tree
+2025-06-10 18:00:54,912 — WARNING — [gen9uu] 403 Forbidden para UU25XI seraph
+2025-06-10 18:00:55,257 — WARNING — [gen9uu] 403 Forbidden para UU25XI Lily
+2025-06-10 18:00:55,612 — WARNING — [gen9uu] 403 Forbidden para UU25XI Sbs
+2025-06-10 18:00:56,577 — WARNING — [gen9uu] 403 Forbidden para UU25BA Sab
+2025-06-10 18:00:58,169 — WARNING — [gen9uu] 403 Forbidden para uu25ke lizzie
+2025-06-10 18:00:58,519 — WARNING — [gen9uu] 403 Forbidden para UU25PY Jv
+2025-06-10 18:01:00,278 — WARNING — [gen9uu] 403 Forbidden para UU25KE Gray
+2025-06-10 18:01:00,611 — WARNING — [gen9uu] 403 Forbidden para Midnight rain 30
+2025-06-10 18:01:01,585 — WARNING — [gen9uu] 403 Forbidden para uu25ke dnb
+2025-06-10 18:01:04,940 — WARNING — [gen9uu] 403 Forbidden para uu25ba corp n
+2025-06-10 18:01:05,288 — WARNING — [gen9uu] 403 Forbidden para Goro Yagami 54
+2025-06-10 18:01:05,634 — WARNING — [gen9uu] 403 Forbidden para DKD Of Salvation
+2025-06-10 18:01:05,972 — WARNING — [gen9uu] 403 Forbidden para UU25KE m
+2025-06-10 18:01:06,333 — WARNING — [gen9uu] 403 Forbidden para Stardust Fall
+2025-06-10 18:01:06,679 — WARNING — [gen9uu] 403 Forbidden para Monotype Kiki
+2025-06-10 18:01:07,019 — WARNING — [gen9uu] 403 Forbidden para UU25KE Cans
+2025-06-10 18:01:10,553 — WARNING — [gen9uu] 403 Forbidden para uu thinks
+2025-06-10 18:01:13,153 — WARNING — [gen9uu] 403 Forbidden para steelix is glass
+2025-06-10 18:01:14,153 — WARNING — [gen9uu] 403 Forbidden para the bestie
+2025-06-10 18:01:14,508 — WARNING — [gen9uu] 403 Forbidden para dog mendigoso
+2025-06-10 18:01:16,131 — WARNING — [gen9uu] 403 Forbidden para Round 63
+2025-06-10 18:01:17,123 — WARNING — [gen9uu] 403 Forbidden para UU25XI FFuob
+2025-06-10 18:01:18,043 — WARNING — [gen9uu] 403 Forbidden para UU25KE lulu
+2025-06-10 18:01:18,359 — WARNING — [gen9uu] 403 Forbidden para Sophia waseda
+2025-06-10 18:01:22,689 — WARNING — [gen9uu] 403 Forbidden para uu25ba sharoomba
+2025-06-10 18:01:23,000 — WARNING — [gen9uu] 403 Forbidden para lanturn dance
+2025-06-10 18:01:23,938 — WARNING — [gen9uu] 403 Forbidden para UU25XI Lyc
+2025-06-10 18:01:24,966 — WARNING — [gen9uu] 403 Forbidden para asahi 3
+2025-06-10 18:01:25,990 — WARNING — [gen9uu] 403 Forbidden para Carrie's Room
+2025-06-10 18:01:26,312 — WARNING — [gen9uu] 403 Forbidden para bungee moon 0
+2025-06-10 18:01:27,288 — WARNING — [gen9uu] 403 Forbidden para uu training arc
+2025-06-10 18:01:30,882 — WARNING — [gen9uu] 403 Forbidden para Memories of them
+2025-06-10 18:01:31,535 — INFO — gen9ru: 100 jugadores en top
+2025-06-10 18:01:32,584 — WARNING — [gen9ru] 403 Forbidden para RULT85M Lime
+2025-06-10 18:01:32,919 — WARNING — [gen9ru] 403 Forbidden para rult85r coops
+2025-06-10 18:01:33,258 — WARNING — [gen9ru] 403 Forbidden para rult85f rank o)
+2025-06-10 18:01:33,610 — WARNING — [gen9ru] 403 Forbidden para volc with fo types
+2025-06-10 18:01:33,962 — WARNING — [gen9ru] 403 Forbidden para RULT85A ming
+2025-06-10 18:01:34,979 — WARNING — [gen9ru] 403 Forbidden para RULT85S ak
+2025-06-10 18:01:35,312 — WARNING — [gen9ru] 403 Forbidden para RULT85A arce
+2025-06-10 18:01:35,653 — WARNING — [gen9ru] 403 Forbidden para RULT50W Sbs
+2025-06-10 18:01:36,033 — WARNING — [gen9ru] 403 Forbidden para RULT85D aHareng
+2025-06-10 18:01:36,417 — WARNING — [gen9ru] 403 Forbidden para ca$h hit
+2025-06-10 18:01:36,777 — WARNING — [gen9ru] 403 Forbidden para RULT50y Ryu
+2025-06-10 18:01:39,034 — WARNING — [gen9ru] 403 Forbidden para bug is dangerous
+2025-06-10 18:01:39,342 — WARNING — [gen9ru] 403 Forbidden para its ok to judge
+2025-06-10 18:01:40,079 — WARNING — [gen9ru] 403 Forbidden para ruok mommy
+2025-06-10 18:01:43,537 — WARNING — [gen9ru] 403 Forbidden para RULT50W PCD
+2025-06-10 18:01:44,584 — WARNING — [gen9ru] 403 Forbidden para RULT50W LBN
+2025-06-10 18:01:48,849 — WARNING — [gen9ru] 403 Forbidden para RULT85H helix
+2025-06-10 18:01:49,825 — WARNING — [gen9ru] 403 Forbidden para Nutri Choice
+2025-06-10 18:01:50,211 — WARNING — [gen9ru] 403 Forbidden para RULT85N Nemosse
+2025-06-10 18:01:50,558 — WARNING — [gen9ru] 403 Forbidden para RU's ACE
+2025-06-10 18:01:52,208 — WARNING — [gen9ru] 403 Forbidden para Afole Yo
+2025-06-10 18:01:52,515 — WARNING — [gen9ru] 403 Forbidden para DDD Reveal
+2025-06-10 18:01:54,108 — WARNING — [gen9ru] 403 Forbidden para RULT81 win
+2025-06-10 18:01:54,420 — WARNING — [gen9ru] 403 Forbidden para Quag Lover
+2025-06-10 18:01:54,790 — WARNING — [gen9ru] 403 Forbidden para valea cerbului
+2025-06-10 18:01:56,438 — WARNING — [gen9ru] 403 Forbidden para RULT85S slik
+2025-06-10 18:01:56,781 — WARNING — [gen9ru] 403 Forbidden para Panorama Fiesta
+2025-06-10 18:01:57,118 — WARNING — [gen9ru] 403 Forbidden para rult50l naem
+2025-06-10 18:01:57,593 — WARNING — [gen9ru] 403 Forbidden para Arce9 but worse
+2025-06-10 18:01:58,745 — WARNING — [gen9ru] 403 Forbidden para RULT50D Hareng
+2025-06-10 18:01:59,889 — WARNING — [gen9ru] 403 Forbidden para pls play scl loser
+2025-06-10 18:02:02,211 — WARNING — [gen9ru] 403 Forbidden para duck deluxe
+2025-06-10 18:02:03,204 — WARNING — [gen9ru] 403 Forbidden para RULT85A hjkhj
+2025-06-10 18:02:03,542 — WARNING — [gen9ru] 403 Forbidden para bee lamp
+2025-06-10 18:02:08,566 — WARNING — [gen9ru] 403 Forbidden para plz come back time
+2025-06-10 18:02:09,981 — WARNING — [gen9ru] 403 Forbidden para Sir Altr
+2025-06-10 18:02:11,084 — WARNING — [gen9ru] 403 Forbidden para deez nuzt
+2025-06-10 18:02:12,702 — WARNING — [gen9ru] 403 Forbidden para RU leaving
+2025-06-10 18:02:14,331 — WARNING — [gen9ru] 403 Forbidden para da hareng
+2025-06-10 18:02:20,259 — WARNING — [gen9ru] 403 Forbidden para Umbra Soul
+2025-06-10 18:02:20,612 — WARNING — [gen9ru] 403 Forbidden para creature comforts
+2025-06-10 18:02:22,563 — WARNING — [gen9ru] 403 Forbidden para au revoir soshanna
+2025-06-10 18:02:24,167 — WARNING — [gen9ru] 403 Forbidden para stale regi
+2025-06-10 18:02:25,840 — WARNING — [gen9ru] 403 Forbidden para no fun no life
+2025-06-10 18:02:26,823 — WARNING — [gen9ru] 403 Forbidden para rblt ryo
+2025-06-10 18:02:27,143 — WARNING — [gen9ru] 403 Forbidden para yanmega gaming
+2025-06-10 18:02:27,868 — INFO — gen9nu: 100 jugadores en top
+2025-06-10 18:02:30,165 — WARNING — [gen9nu] 403 Forbidden para Jeromy gride
+2025-06-10 18:02:31,193 — WARNING — [gen9nu] 403 Forbidden para nujs p
+2025-06-10 18:02:34,748 — WARNING — [gen9nu] 403 Forbidden para urusai baaka
+2025-06-10 18:02:35,122 — WARNING — [gen9nu] 403 Forbidden para EMT EMILIA TAN
+2025-06-10 18:02:36,756 — WARNING — [gen9nu] 403 Forbidden para NBA HOOPA
+2025-06-10 18:02:38,979 — WARNING — [gen9nu] 403 Forbidden para FOR DEMACIAAAAA
+2025-06-10 18:02:40,608 — WARNING — [gen9nu] 403 Forbidden para mustard ui goku
+2025-06-10 18:02:42,246 — WARNING — [gen9nu] 403 Forbidden para the walker of time
+2025-06-10 18:02:45,880 — WARNING — [gen9nu] 403 Forbidden para brickasaurus rex
+2025-06-10 18:02:48,775 — WARNING — [gen9nu] 403 Forbidden para ellaine kay!!
+2025-06-10 18:02:51,792 — WARNING — [gen9nu] 403 Forbidden para pult1mg brick
+2025-06-10 18:02:55,393 — WARNING — [gen9nu] 403 Forbidden para second blast
+2025-06-10 18:03:00,529 — WARNING — [gen9nu] 403 Forbidden para NBT Victim
+2025-06-10 18:03:01,499 — WARNING — [gen9nu] 403 Forbidden para bae fakemon
+2025-06-10 18:03:04,419 — WARNING — [gen9nu] 403 Forbidden para battling professor
+2025-06-10 18:03:06,079 — WARNING — [gen9nu] 403 Forbidden para Suuuuper Craig
+2025-06-10 18:03:07,033 — WARNING — [gen9nu] 403 Forbidden para still in luv
+2025-06-10 18:03:07,996 — WARNING — [gen9nu] 403 Forbidden para The Bog Body
+2025-06-10 18:03:14,975 — WARNING — [gen9nu] 403 Forbidden para le monke gal
+2025-06-10 18:03:15,295 — WARNING — [gen9nu] 403 Forbidden para Bramble Scramble
+2025-06-10 18:03:18,236 — WARNING — [gen9nu] 403 Forbidden para wamko is balls
+2025-06-10 18:03:18,578 — WARNING — [gen9nu] 403 Forbidden para Justice CarDozo
+2025-06-10 18:03:24,135 — WARNING — [gen9nu] 403 Forbidden para DDD Reveal
+2025-06-10 18:03:24,474 — WARNING — [gen9nu] 403 Forbidden para unown user 73
+2025-06-10 18:03:26,481 — INFO — gen9monotype: 100 jugadores en top
+2025-06-10 18:03:26,824 — WARNING — [gen9monotype] 403 Forbidden para Dieu Amphibien
+2025-06-10 18:03:27,821 — WARNING — [gen9monotype] 403 Forbidden para Miyabi Cute Ears
+2025-06-10 18:03:28,166 — WARNING — [gen9monotype] 403 Forbidden para MLTSD r2yal
+2025-06-10 18:03:29,096 — WARNING — [gen9monotype] 403 Forbidden para MLTSD pyrmd
+2025-06-10 18:03:29,404 — WARNING — [gen9monotype] 403 Forbidden para MLTSD ThWvrnKng
+2025-06-10 18:03:29,787 — WARNING — [gen9monotype] 403 Forbidden para Miami Mimikyu
+2025-06-10 18:03:30,178 — WARNING — [gen9monotype] 403 Forbidden para Alabama girls
+2025-06-10 18:03:30,552 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 az
+2025-06-10 18:03:30,895 — WARNING — [gen9monotype] 403 Forbidden para mltsd rio
+2025-06-10 18:03:31,910 — WARNING — [gen9monotype] 403 Forbidden para mltsd j
+2025-06-10 18:03:32,227 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Showl
+2025-06-10 18:03:33,209 — WARNING — [gen9monotype] 403 Forbidden para mltza1 mind
+2025-06-10 18:03:34,142 — WARNING — [gen9monotype] 403 Forbidden para FLO3 SussyBaka
+2025-06-10 18:03:34,491 — WARNING — [gen9monotype] 403 Forbidden para Rainbow Chrome
+2025-06-10 18:03:34,870 — WARNING — [gen9monotype] 403 Forbidden para ting luther
+2025-06-10 18:03:35,885 — WARNING — [gen9monotype] 403 Forbidden para FLO3 Tiara
+2025-06-10 18:03:36,278 — WARNING — [gen9monotype] 403 Forbidden para Ranger 0
+2025-06-10 18:03:36,593 — WARNING — [gen9monotype] 403 Forbidden para Cee u-u 2
+2025-06-10 18:03:36,977 — WARNING — [gen9monotype] 403 Forbidden para MLTSD Memphis
+2025-06-10 18:03:37,277 — WARNING — [gen9monotype] 403 Forbidden para Iron Michael 66
+2025-06-10 18:03:38,973 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Memphis
+2025-06-10 18:03:39,310 — WARNING — [gen9monotype] 403 Forbidden para MLTSD hammy
+2025-06-10 18:03:39,677 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Juleo
+2025-06-10 18:03:40,043 — WARNING — [gen9monotype] 403 Forbidden para Gym Leader Kune
+2025-06-10 18:03:41,027 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Dieu
+2025-06-10 18:03:41,359 — WARNING — [gen9monotype] 403 Forbidden para ABNH Showl
+2025-06-10 18:03:41,690 — WARNING — [gen9monotype] 403 Forbidden para Rocket grunt KB
+2025-06-10 18:03:42,042 — WARNING — [gen9monotype] 403 Forbidden para Joe Bureau
+2025-06-10 18:03:43,038 — WARNING — [gen9monotype] 403 Forbidden para what about meeeee
+2025-06-10 18:03:43,351 — WARNING — [gen9monotype] 403 Forbidden para art of building
+2025-06-10 18:03:43,654 — WARNING — [gen9monotype] 403 Forbidden para SAW ☾ 乂SC
+2025-06-10 18:03:44,638 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 pyr
+2025-06-10 18:03:45,556 — WARNING — [gen9monotype] 403 Forbidden para Papercut Massacre
+2025-06-10 18:03:46,501 — WARNING — [gen9monotype] 403 Forbidden para Dorron ☆
+2025-06-10 18:03:48,681 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 PD
+2025-06-10 18:03:49,007 — WARNING — [gen9monotype] 403 Forbidden para MLTSD L
+2025-06-10 18:03:49,328 — WARNING — [gen9monotype] 403 Forbidden para londi g
+2025-06-10 18:03:49,659 — WARNING — [gen9monotype] 403 Forbidden para Cee o-o
+2025-06-10 18:03:52,749 — WARNING — [gen9monotype] 403 Forbidden para La teknology
+2025-06-10 18:03:53,095 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Dorron
+2025-06-10 18:03:53,457 — WARNING — [gen9monotype] 403 Forbidden para king choco
+2025-06-10 18:03:54,428 — WARNING — [gen9monotype] 403 Forbidden para ESDBDA kraken
+2025-06-10 18:03:55,620 — WARNING — [gen9monotype] 403 Forbidden para ESDBDA kawaii
+2025-06-10 18:03:57,882 — WARNING — [gen9monotype] 403 Forbidden para Flood 7
+2025-06-10 18:03:58,866 — WARNING — [gen9monotype] 403 Forbidden para BXR8 CLOWNUTA
+2025-06-10 18:03:59,935 — WARNING — [gen9monotype] 403 Forbidden para konjiki2525 毒
+2025-06-10 18:04:01,627 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 aaaaa
+2025-06-10 18:04:02,607 — WARNING — [gen9monotype] 403 Forbidden para Birbs arent real
+2025-06-10 18:04:02,951 — WARNING — [gen9monotype] 403 Forbidden para mltla3 vapo
+2025-06-10 18:04:09,948 — WARNING — [gen9monotype] 403 Forbidden para MLTSD uzzler
+2025-06-10 18:04:10,262 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Maverick
+2025-06-10 18:04:10,618 — WARNING — [gen9monotype] 403 Forbidden para FLO3 Fent
+2025-06-10 18:04:11,624 — WARNING — [gen9monotype] 403 Forbidden para MLTLA3 Arquero
+2025-06-10 18:04:11,977 — WARNING — [gen9monotype] 403 Forbidden para carbink rae jepsen
+2025-06-10 18:04:12,974 — WARNING — [gen9monotype] 403 Forbidden para MLTZA1 Flood
+2025-06-10 18:04:13,328 — WARNING — [gen9monotype] 403 Forbidden para Max E Verstappen
+2025-06-10 18:04:13,745 — WARNING — [gen9monotype] 403 Forbidden para Quag lover
+2025-06-10 18:04:14,081 — WARNING — [gen9monotype] 403 Forbidden para ESDBDA stan APRIL
+2025-06-10 18:04:14,438 — WARNING — [gen9monotype] 403 Forbidden para funa uta
+2025-06-10 18:04:14,439 — INFO — Showdown: registros ladder = 600, perfiles = 329
+2025-06-10 18:04:14,478 — INFO — Extrayendo datos de HowLongToBeat...
+2025-06-10 18:04:14,479 — INFO — HLTB: iniciando consultas de duración de juegos
+2025-06-10 18:04:28,686 — WARNING — HLTB: sin resultados para 'Mir Tankov'
+2025-06-10 18:04:29,991 — WARNING — HLTB: sin resultados para 'FINAL FANTASY XIV ONLINE'
+2025-06-10 18:04:33,050 — WARNING — HLTB: sin resultados para 'Rise Online'
+2025-06-10 18:04:34,569 — WARNING — HLTB: sin resultados para 'Food & Drink'
+2025-06-10 18:04:43,258 — WARNING — HLTB: sin resultados para 'Just Chatting'
+2025-06-10 18:04:45,229 — WARNING — HLTB: sin resultados para 'IRL'
+2025-06-10 18:04:52,616 — WARNING — HLTB: sin resultados para 'Zombie Graveyard Simulator'
+2025-06-10 18:04:55,387 — WARNING — HLTB: sin resultados para 'Pokémon Scarlet/Violet'
+2025-06-10 18:05:03,656 — WARNING — HLTB: sin resultados para 'Co-working & Studying'
+2025-06-10 18:05:04,998 — WARNING — HLTB: sin resultados para 'Pokémon FireRed/LeafGreen'
+2025-06-10 18:05:08,463 — WARNING — HLTB: sin resultados para 'PIONER'
+2025-06-10 18:05:12,178 — WARNING — HLTB: sin resultados para 'Black Russia'
+2025-06-10 18:05:40,879 — WARNING — HLTB: sin resultados para 'Handstand Hank'
+2025-06-10 18:05:43,520 — WARNING — HLTB: sin resultados para 'Stories to Tell: Greyville Stay'
+2025-06-10 18:05:48,053 — WARNING — HLTB: sin resultados para 'Special Events'
+2025-06-10 18:05:50,657 — WARNING — HLTB: sin resultados para 'Talk Shows & Podcasts'
+2025-06-10 18:05:52,398 — WARNING — HLTB: sin resultados para 'Software and Game Development'
+2025-06-10 18:06:01,435 — WARNING — HLTB: sin resultados para 'Warborne: Above Ashes'
+2025-06-10 18:06:05,233 — WARNING — HLTB: sin resultados para 'Makers & Crafting'
+2025-06-10 18:06:09,306 — WARNING — HLTB: sin resultados para 'Streamer University'
+2025-06-10 18:06:23,679 — WARNING — HLTB: sin resultados para 'PUBG: BATTLEGROUNDS'
+2025-06-10 18:06:24,728 — WARNING — HLTB: sin resultados para 'I'm Only Sleeping'
+2025-06-10 18:06:27,636 — INFO — HLTB: consultas completadas, registros válidos=78
+2025-06-10 18:06:27,646 — INFO — Muestra de datos extraídos para TWITCH_GAMES:
+2025-06-10 18:06:28,318 — INFO — [twitch_games] Ejemplo 1: {'record_type': 'game', 'game_id': '509658', 'game_name': 'Just Chatting', 'box_art_url': 'https://static-cdn.jtvnw.net/ttv-boxart/509658-{width}x{height}.jpg', 'extraction_time': '2025-06-10T17:55:59.235129', 'source': 'twitch', 'endpoint': 'games/top'}
+2025-06-10 18:06:28,319 — INFO — [twitch_games] Ejemplo 2: {'record_type': 'game', 'game_id': '32399', 'game_name': 'Counter-Strike', 'box_art_url': 'https://static-cdn.jtvnw.net/ttv-boxart/32399-{width}x{height}.jpg', 'extraction_time': '2025-06-10T17:55:59.235129', 'source': 'twitch', 'endpoint': 'games/top'}
+2025-06-10 18:06:28,319 — INFO — [twitch_games] Ejemplo 3: {'record_type': 'game', 'game_id': '516575', 'game_name': 'VALORANT', 'box_art_url': 'https://static-cdn.jtvnw.net/ttv-boxart/516575-{width}x{height}.jpg', 'extraction_time': '2025-06-10T17:55:59.235129', 'source': 'twitch', 'endpoint': 'games/top'}
+2025-06-10 18:06:28,320 — INFO — [twitch_games] Ejemplo 4: {'record_type': 'game', 'game_id': '460630', 'game_name': "Tom Clancy's Rainbow Six Siege", 'box_art_url': 'https://static-cdn.jtvnw.net/ttv-boxart/460630-{width}x{height}.jpg', 'extraction_time': '2025-06-10T17:55:59.235129', 'source': 'twitch', 'endpoint': 'games/top'}
+2025-06-10 18:06:28,320 — INFO — [twitch_games] Ejemplo 5: {'record_type': 'game', 'game_id': '32982', 'game_name': 'Grand Theft Auto V', 'box_art_url': 'https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-{width}x{height}.jpg', 'extraction_time': '2025-06-10T17:55:59.235129', 'source': 'twitch', 'endpoint': 'games/top'}
+2025-06-10 18:06:28,321 — INFO — Muestra de datos extraídos para TWITCH_STREAMS:
+2025-06-10 18:06:28,709 — INFO — [twitch_streams] Ejemplo 1: {'record_type': 'stream', 'stream_id': '322428823036', 'game_id': '509658', 'game_name': 'Just Chatting', 'user_id': '36926489', 'user_name': 'yourragegaming', 'viewer_count': 26536, 'started_at': '2025-06-10T16:39:06Z', 'language': 'en', 'extraction_time': '2025-06-10T17:55:59.235129', 'source': 'twitch', 'endpoint': 'streams'}
+2025-06-10 18:06:28,710 — INFO — [twitch_streams] Ejemplo 2: {'record_type': 'stream', 'stream_id': '325999165309', 'game_id': '509658', 'game_name': 'Just Chatting', 'user_id': '135385636', 'user_name': 'deepins02', 'viewer_count': 15564, 'started_at': '2025-06-10T16:02:08Z', 'language': 'ru', 'extraction_time': '2025-06-10T17:55:59.235129', 'source': 'twitch', 'endpoint': 'streams'}
+2025-06-10 18:06:28,711 — INFO — [twitch_streams] Ejemplo 3: {'record_type': 'stream', 'stream_id': '321511052921', 'game_id': '509658', 'game_name': 'Just Chatting', 'user_id': '922408450', 'user_name': 'anarabdullaev', 'viewer_count': 15104, 'started_at': '2025-06-10T16:27:24Z', 'language': 'ru', 'extraction_time': '2025-06-10T17:55:59.235129', 'source': 'twitch', 'endpoint': 'streams'}
+2025-06-10 18:06:28,711 — INFO — [twitch_streams] Ejemplo 4: {'record_type': 'stream', 'stream_id': '325999144701', 'game_id': '509658', 'game_name': 'Just Chatting', 'user_id': '64342766', 'user_name': 'Trymacs', 'viewer_count': 13341, 'started_at': '2025-06-10T16:01:59Z', 'language': 'de', 'extraction_time': '2025-06-10T17:55:59.235129', 'source': 'twitch', 'endpoint': 'streams'}
+2025-06-10 18:06:28,712 — INFO — [twitch_streams] Ejemplo 5: {'record_type': 'stream', 'stream_id': '325997319165', 'game_id': '509658', 'game_name': 'Just Chatting', 'user_id': '87184624', 'user_name': 'zacknani', 'viewer_count': 12916, 'started_at': '2025-06-10T15:43:03Z', 'language': 'fr', 'extraction_time': '2025-06-10T17:55:59.235129', 'source': 'twitch', 'endpoint': 'streams'}
+2025-06-10 18:06:28,713 — INFO — Muestra de datos extraídos para SHOWDOWN_LADDER:
+2025-06-10 18:06:29,014 — INFO — [showdown_ladder] Ejemplo 1: {'record_type': 'ladder', 'format': 'gen9ou', 'username': 'SOUTH STATION', 'rating': None, 'gxe': 85.8, 'pr': None, 'extraction_time': '2025-06-10T17:58:38.641669', 'source': 'showdown', 'endpoint': 'ladder/gen9ou'}
+2025-06-10 18:06:29,015 — INFO — [showdown_ladder] Ejemplo 2: {'record_type': 'ladder', 'format': 'gen9ou', 'username': 'saw war newnew', 'rating': None, 'gxe': 88.7, 'pr': None, 'extraction_time': '2025-06-10T17:58:38.641669', 'source': 'showdown', 'endpoint': 'ladder/gen9ou'}
+2025-06-10 18:06:29,015 — INFO — [showdown_ladder] Ejemplo 3: {'record_type': 'ladder', 'format': 'gen9ou', 'username': 'sunflora wukong', 'rating': None, 'gxe': 85.3, 'pr': None, 'extraction_time': '2025-06-10T17:58:38.641669', 'source': 'showdown', 'endpoint': 'ladder/gen9ou'}
+2025-06-10 18:06:29,016 — INFO — [showdown_ladder] Ejemplo 4: {'record_type': 'ladder', 'format': 'gen9ou', 'username': 'BANH MI DU MA', 'rating': None, 'gxe': 86.3, 'pr': None, 'extraction_time': '2025-06-10T17:58:38.641669', 'source': 'showdown', 'endpoint': 'ladder/gen9ou'}
+2025-06-10 18:06:29,017 — INFO — [showdown_ladder] Ejemplo 5: {'record_type': 'ladder', 'format': 'gen9ou', 'username': '8wKzDBm3nT4L1TyxQu', 'rating': None, 'gxe': 87.5, 'pr': None, 'extraction_time': '2025-06-10T17:58:38.641669', 'source': 'showdown', 'endpoint': 'ladder/gen9ou'}
+2025-06-10 18:06:29,017 — INFO — Muestra de datos extraídos para SHOWDOWN_PROFILES:
+2025-06-10 18:06:29,417 — INFO — [showdown_profiles] Ejemplo 1: {'record_type': 'profile', 'username': '8wKzDBm3nT4L1TyxQu', 'format': 'gen9ou', 'gxe': None, 'rating': None, 'levels': None, 'extraction_time': '2025-06-10T17:58:38.641669', 'source': 'showdown', 'endpoint': 'profile/8wKzDBm3nT4L1TyxQu'}
+2025-06-10 18:06:29,418 — INFO — [showdown_profiles] Ejemplo 2: {'record_type': 'profile', 'username': 'xorete', 'format': 'gen9ou', 'gxe': None, 'rating': None, 'levels': None, 'extraction_time': '2025-06-10T17:58:38.641669', 'source': 'showdown', 'endpoint': 'profile/xorete'}
+2025-06-10 18:06:29,418 — INFO — [showdown_profiles] Ejemplo 3: {'record_type': 'profile', 'username': 'Encadio', 'format': 'gen9ou', 'gxe': None, 'rating': None, 'levels': None, 'extraction_time': '2025-06-10T17:58:38.641669', 'source': 'showdown', 'endpoint': 'profile/Encadio'}
+2025-06-10 18:06:29,419 — INFO — [showdown_profiles] Ejemplo 4: {'record_type': 'profile', 'username': 'OnSayuzeNem', 'format': 'gen9ou', 'gxe': None, 'rating': None, 'levels': None, 'extraction_time': '2025-06-10T17:58:38.641669', 'source': 'showdown', 'endpoint': 'profile/OnSayuzeNem'}
+2025-06-10 18:06:29,419 — INFO — [showdown_profiles] Ejemplo 5: {'record_type': 'profile', 'username': 'Moodclues', 'format': 'gen9ou', 'gxe': None, 'rating': None, 'levels': None, 'extraction_time': '2025-06-10T17:58:38.641669', 'source': 'showdown', 'endpoint': 'profile/Moodclues'}
+2025-06-10 18:06:29,420 — INFO — Muestra de datos extraídos para HOWLONGTOBEAT:
+2025-06-10 18:06:29,692 — INFO — [howlongtobeat] Ejemplo 1: {'record_type': 'hl_tb_time', 'game_name': 'Counter-Strike', 'main_story': 25.99, 'main_extra': 99.67, 'completionist': 508.11, 'extraction_time': '2025-06-10T18:04:14.482396', 'source': 'howlongtobeat', 'endpoint': 'hltb_search'}
+2025-06-10 18:06:29,692 — INFO — [howlongtobeat] Ejemplo 2: {'record_type': 'hl_tb_time', 'game_name': 'League of Legends', 'main_story': 1118.74, 'main_extra': 1732.34, 'completionist': 3225.02, 'extraction_time': '2025-06-10T18:04:14.482396', 'source': 'howlongtobeat', 'endpoint': 'hltb_search'}
+2025-06-10 18:06:29,693 — INFO — [howlongtobeat] Ejemplo 3: {'record_type': 'hl_tb_time', 'game_name': 'Mario Kart World', 'main_story': 3.19, 'main_extra': 9.19, 'completionist': 23.17, 'extraction_time': '2025-06-10T18:04:14.482396', 'source': 'howlongtobeat', 'endpoint': 'hltb_search'}
+2025-06-10 18:06:29,693 — INFO — [howlongtobeat] Ejemplo 4: {'record_type': 'hl_tb_time', 'game_name': 'Maestro VR', 'main_story': 0.0, 'main_extra': 0.0, 'completionist': 0.0, 'extraction_time': '2025-06-10T18:04:14.482396', 'source': 'howlongtobeat', 'endpoint': 'hltb_search'}
+2025-06-10 18:06:29,694 — INFO — [howlongtobeat] Ejemplo 5: {'record_type': 'hl_tb_time', 'game_name': 'Escape from Tarkov', 'main_story': 189.38, 'main_extra': 258.53, 'completionist': 555.88, 'extraction_time': '2025-06-10T18:04:14.482396', 'source': 'howlongtobeat', 'endpoint': 'hltb_search'}
+2025-06-10 18:06:29,694 — INFO — Fase de extracción completada con éxito.
+2025-06-10 18:06:29,695 — INFO — === GUARDANDO A PARQUET ===
+2025-06-10 18:06:29,698 — INFO — Guardando twitch_games a Parquet...
+2025-06-10 18:06:29,732 — INFO — [TWITCH_GAMES] Iniciando guardado a Parquet: data/twitch_games.parquet
+2025-06-10 18:06:29,732 — INFO — [TWITCH_GAMES] Aplicando esquema inferido (datos limpios)
+2025-06-10 18:06:40,141 — INFO — [TWITCH_GAMES] Parquet guardado: registros=200, tiempo=8.54s
+2025-06-10 18:06:40,284 — INFO — Guardado de twitch_games completado
+2025-06-10 18:06:40,285 — INFO — Guardando twitch_streams a Parquet...
+2025-06-10 18:06:40,288 — INFO — [TWITCH_STREAMS] Iniciando guardado a Parquet: data/twitch_streams.parquet
+2025-06-10 18:06:40,289 — INFO — [TWITCH_STREAMS] Aplicando esquema inferido (datos limpios)
+2025-06-10 18:06:44,021 — INFO — [TWITCH_STREAMS] Parquet guardado: registros=8292, tiempo=2.83s
+2025-06-10 18:06:44,025 — INFO — Guardado de twitch_streams completado
+2025-06-10 18:06:44,026 — INFO — Guardando showdown_ladder a Parquet...
+2025-06-10 18:06:44,032 — INFO — [SHOWDOWN_LADDER] Iniciando guardado a Parquet: data/showdown_ladder.parquet
+2025-06-10 18:06:44,032 — INFO — [SHOWDOWN_LADDER] Aplicando esquema fijo para evitar errores de tipo
+2025-06-10 18:06:48,521 — INFO — [SHOWDOWN_LADDER] Parquet guardado: registros=600, tiempo=3.49s
+2025-06-10 18:06:48,526 — INFO — Guardado de showdown_ladder completado
+2025-06-10 18:06:48,527 — INFO — Guardando showdown_profiles a Parquet...
+2025-06-10 18:06:48,530 — INFO — [SHOWDOWN_PROFILES] Iniciando guardado a Parquet: data/showdown_profiles.parquet
+2025-06-10 18:06:48,531 — INFO — [SHOWDOWN_PROFILES] Aplicando esquema fijo para evitar errores de inferencia
+2025-06-10 18:06:52,031 — INFO — [SHOWDOWN_PROFILES] Parquet guardado: registros=329, tiempo=2.64s
+2025-06-10 18:06:52,038 — INFO — Guardado de showdown_profiles completado
+2025-06-10 18:06:52,039 — INFO — Guardando howlongtobeat a Parquet...
+2025-06-10 18:06:52,042 — INFO — [HOWLONGTOBEAT] Iniciando guardado a Parquet: data/howlongtobeat.parquet
+2025-06-10 18:06:52,043 — WARNING — [HOWLONGTOBEAT] Fuente sin esquema específico, usando inferencia
+2025-06-10 18:06:55,560 — INFO — [HOWLONGTOBEAT] Parquet guardado: registros=78, tiempo=2.84s
+2025-06-10 18:06:55,565 — INFO — Guardado de howlongtobeat completado
+2025-06-10 18:06:55,566 — INFO — === FASE 2: TRANSFORMACIÓN ===
+2025-06-10 18:06:55,566 — INFO — Limpieza de twitch_games...
+2025-06-10 18:06:56,166 — INFO — Iniciando limpieza para fuente: twitch
+2025-06-10 18:06:56,167 — INFO — Iniciando limpieza de datos de Twitch...
+2025-06-10 18:06:56,171 — INFO — Columnas recibidas: ['record_type', 'game_id', 'game_name', 'box_art_url', 'extraction_time', 'source', 'endpoint']
+2025-06-10 18:06:57,958 — INFO — Limpieza específica para twitch_games
+2025-06-10 18:07:02,932 — INFO — Limpieza Twitch: 200 -> 200 registros
+2025-06-10 18:07:03,491 — INFO — Limpieza de twitch_streams...
+2025-06-10 18:07:03,750 — INFO — Iniciando limpieza para fuente: twitch
+2025-06-10 18:07:03,750 — INFO — Iniciando limpieza de datos de Twitch...
+2025-06-10 18:07:03,752 — INFO — Columnas recibidas: ['record_type', 'stream_id', 'game_id', 'game_name', 'user_id', 'user_name', 'viewer_count', 'started_at', 'language', 'extraction_time', 'source', 'endpoint']
+2025-06-10 18:07:07,294 — INFO — Limpieza específica para twitch_streams
+2025-06-10 18:07:11,080 — INFO — Limpieza Twitch: 8292 -> 8276 registros
+2025-06-10 18:07:11,863 — INFO — Limpieza de showdown_ladder...
+2025-06-10 18:07:12,258 — INFO — Iniciando limpieza para fuente: showdown
+2025-06-10 18:07:12,259 — INFO — Iniciando limpieza de datos de Showdown...
+2025-06-10 18:07:12,262 — INFO — Columnas recibidas: ['record_type', 'format', 'username', 'rating', 'gxe', 'pr', 'levels', 'extraction_time', 'source', 'endpoint']
+2025-06-10 18:07:16,841 — INFO — Limpieza Showdown: 600 -> 600 registros
+2025-06-10 18:07:17,195 — INFO — Limpieza de showdown_profiles...
+2025-06-10 18:07:17,471 — INFO — Iniciando limpieza para fuente: showdown
+2025-06-10 18:07:17,471 — INFO — Iniciando limpieza de datos de Showdown...
+2025-06-10 18:07:17,474 — INFO — Columnas recibidas: ['record_type', 'username', 'format', 'gxe', 'rating', 'levels', 'extraction_time', 'source', 'endpoint']
+2025-06-10 18:07:21,729 — INFO — Limpieza Showdown: 329 -> 329 registros
+2025-06-10 18:07:22,073 — INFO — Limpieza de howlongtobeat...
+2025-06-10 18:07:22,360 — INFO — Iniciando limpieza para fuente: howlongtobeat
+2025-06-10 18:07:22,360 — INFO — Iniciando limpieza de datos de HowLongToBeat...
+2025-06-10 18:07:22,362 — INFO — Columnas recibidas: ['record_type', 'game_name', 'main_story', 'main_extra', 'completionist', 'extraction_time', 'source', 'endpoint']
+2025-06-10 18:07:23,010 — INFO — Limpieza HLTB: 78 -> 78 registros
+2025-06-10 18:07:23,288 — INFO — Fase de transformación completada con éxito.
+2025-06-10 18:07:23,288 — INFO — === FASE 3: CARGA A BD ===
+2025-06-10 18:07:23,289 — INFO — Cargando twitch_games a base de datos...
+2025-06-10 18:07:24,116 — INFO — Cargando 200 juegos de Twitch...
+2025-06-10 18:07:24,327 — INFO — Carga completada para twitch_games. ID de log: 15
+2025-06-10 18:07:24,328 — INFO — Cargando twitch_streams a base de datos...
+2025-06-10 18:07:26,327 — INFO — Cargando 8276 streams de Twitch...
+2025-06-10 18:07:26,454 — INFO — Carga completada para twitch_streams. ID de log: 16
+2025-06-10 18:07:26,454 — INFO — Cargando showdown_ladder a base de datos...
+2025-06-10 18:07:27,356 — INFO — Cargando 600 registros de ladder de Showdown...
+2025-06-10 18:07:27,468 — INFO — Carga completada para showdown_ladder. ID de log: 17
+2025-06-10 18:07:27,469 — INFO — Cargando showdown_profiles a base de datos...
+2025-06-10 18:07:28,560 — INFO — Cargando 329 perfiles de Showdown...
+2025-06-10 18:07:28,715 — INFO — Carga completada para showdown_profiles. ID de log: 18
+2025-06-10 18:07:28,715 — INFO — Cargando howlongtobeat a base de datos...
+2025-06-10 18:07:28,976 — INFO — Cargando 78 juegos de HowLongToBeat...
+2025-06-10 18:07:29,084 — INFO — Carga completada para howlongtobeat. ID de log: 19
+2025-06-10 18:07:29,085 — INFO — Fase de carga completada con éxito.
+2025-06-10 18:07:29,329 — INFO — Pipeline finalizado
