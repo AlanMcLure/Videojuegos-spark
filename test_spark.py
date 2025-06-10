@@ -1,16 +1,17 @@
+# test_spark.py
 from pyspark.sql import SparkSession
+import os
 
-spark = (
-    SparkSession.builder.appName("TestParquet")
-    .config("spark.hadoop.io.native.lib.available", "false")
-    .getOrCreate()
-)
+# Crear directorio data si no existe
+os.makedirs("data", exist_ok=True)
 
-df = spark.createDataFrame([(1, "test"), (2, "ok")], ["id", "value"])
+# Crear sesión de Spark
+spark = SparkSession.builder.appName("TestParquet").getOrCreate()
 
-# Ruta absoluta con esquema file:///
-df.write.mode("overwrite").parquet(
-    "file:///C:/Users/alanm/Desktop/IABD/Sistemas-Big-Data/Proyecto-final/test_output.parquet"
-)
+# Crear un DataFrame de prueba
+df = spark.createDataFrame([(1, "hola"), (2, "mundo")], ["id", "mensaje"])
 
-print("✅ Guardado correcto.")
+# Guardar como Parquet
+df.write.mode("overwrite").parquet("data/test_output.parquet")
+
+print("✅ Guardado correctamente en Parquet.")

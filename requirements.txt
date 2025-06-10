@@ -1,8 +1,10 @@
 pyspark
 requests
 sqlalchemy
-psycopg2-binary     # si usas PostgreSQL para tu core schema y log table
-parquet            # (opcional: fastparquet o pyarrow)
+psycopg2-binary
 python-dotenv
 howlongtobeatpy
 psutil
+# Optional: for reading Parquet outside Spark
+# pyarrow
+# fastparquet

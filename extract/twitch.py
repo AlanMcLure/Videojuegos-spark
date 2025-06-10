@@ -3,7 +3,7 @@ import os
 import time
 import requests
 from datetime import datetime
-from typing import List, Dict
+from typing import List, Dict, Tuple
 from dotenv import load_dotenv
 from pyspark.rdd import RDD
 
@@ -88,26 +88,27 @@ class TwitchAPIExtractor:
 
 def extract_all_twitch(
     sc, logger, top_game_limit: int = 200, streams_per_game: int = 50
-) -> RDD:
+) -> Tuple[RDD, RDD]:
     """
     Extrae datos de Twitch:
       - Top juegos (limit top_game_limit)
       - Streams activos por cada juego (streams_per_game)
-    Devuelve un RDD de dicts con campos minimalistas para KPIs.
+    Devuelve dos RDDs:
+      - Uno con juegos
+      - Otro con streams
     """
     logger.info("Twitch: iniciando extracción")
     extractor = TwitchAPIExtractor(CLIENT_ID, CLIENT_SECRET)
 
-    # 1) Top juegos
     top_games = extractor.get_top_games(limit=top_game_limit)
     logger.info(f"Twitch: obtenidos {len(top_games)} juegos top")
 
     current_time = datetime.utcnow().isoformat()
-    records: List[Dict] = []
+    games_records: List[Dict] = []
+    stream_records: List[Dict] = []
 
-    # Procesar juegos
     for g in top_games:
-        records.append(
+        games_records.append(
             {
                 "record_type": "game",
                 "game_id": g["id"],
@@ -119,13 +120,12 @@ def extract_all_twitch(
             }
         )
 
-    # 2) Streams por juego
-    for g in top_games:
         game_id = g["id"]
         streams = extractor.get_streams_by_game(game_id, limit=streams_per_game)
         logger.info(f"Twitch: {len(streams)} streams para juego {g['name']}")
+
         for s in streams:
-            records.append(
+            stream_records.append(
                 {
                     "record_type": "stream",
                     "stream_id": s["id"],
@@ -142,8 +142,8 @@ def extract_all_twitch(
                 }
             )
 
-    logger.info(f"Twitch: total registros preparados {len(records)}")
+    logger.info(
+        f"Twitch: total juegos = {len(games_records)}, total streams = {len(stream_records)}"
+    )
 
-    rdd: RDD = sc.parallelize(records)
-    logger.info("Twitch: RDD creado")
-    return rdd
+    return sc.parallelize(games_records), sc.parallelize(stream_records)

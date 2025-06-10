@@ -39,10 +39,14 @@ def add_technical_columns(
 
 def clean_twitch_data(df: DataFrame, logger) -> DataFrame:
     """
-    Limpiar y transformar datos de Twitch
+    Limpiar y transformar datos de Twitch (games y streams)
     """
     logger.info("Iniciando limpieza de datos de Twitch...")
+
     df = normalize_column_names(df)
+    logger.info(f"Columnas recibidas: {df.columns}")
+    df.show(5, truncate=False)
+
     initial_count = df.count()
 
     games_df = df.filter(col("record_type") == "game")
@@ -53,46 +57,71 @@ def clean_twitch_data(df: DataFrame, logger) -> DataFrame:
         return df
 
     if not games_df.rdd.isEmpty():
-        games_df = (
-            games_df.dropDuplicates(["id"])
-            .filter(col("name").isNotNull() & (col("name") != ""))
-            .withColumn("name", trim(col("name")))
-            .withColumn(
+        logger.info("Limpieza específica para twitch_games")
+        games_df = games_df.dropDuplicates(["game_id"])
+
+        if "game_name" in games_df.columns:
+            games_df = games_df.filter(
+                col("game_name").isNotNull() & (col("game_name") != "")
+            )
+            games_df = games_df.withColumn("game_name", trim(col("game_name")))
+
+        if "box_art_url" in games_df.columns:
+            games_df = games_df.withColumn(
                 "box_art_url",
                 when(
                     col("box_art_url").isNull() | (col("box_art_url") == ""), None
                 ).otherwise(col("box_art_url")),
             )
-            .withColumn(
+
+        if "igdb_id" in games_df.columns:
+            games_df = games_df.withColumn(
                 "igdb_id",
                 when(col("igdb_id").isNull() | (col("igdb_id") == ""), None).otherwise(
                     col("igdb_id")
                 ),
             )
-        )
+
     if not streams_df.rdd.isEmpty():
-        streams_df = (
-            streams_df.dropDuplicates(["stream_id"])
-            .filter(col("user_name").isNotNull() & (col("user_name") != ""))
-            .withColumn("title", trim(col("title")))
-            .withColumn(
+        logger.info("Limpieza específica para twitch_streams")
+        streams_df = streams_df.dropDuplicates(["stream_id"])
+
+        if "user_name" in streams_df.columns:
+            streams_df = streams_df.filter(
+                col("user_name").isNotNull() & (col("user_name") != "")
+            )
+
+        if "title" in streams_df.columns:
+            streams_df = streams_df.withColumn("title", trim(col("title")))
+
+        if "viewer_count" in streams_df.columns:
+            streams_df = streams_df.withColumn(
                 "viewer_count",
                 when(col("viewer_count").isNull(), 0).otherwise(
                     col("viewer_count").cast(IntegerType())
                 ),
             )
-            .withColumn(
+
+        if "started_at" in streams_df.columns:
+            streams_df = streams_df.withColumn(
                 "started_at",
                 to_timestamp(col("started_at"), "yyyy-MM-dd'T'HH:mm:ss'Z'"),
             )
-            .withColumn(
+
+        if "language" in streams_df.columns:
+            streams_df = streams_df.withColumn(
                 "language",
                 when(
                     col("language").isNull() | (col("language") == ""), "unknown"
                 ).otherwise(col("language")),
             )
-            .withColumn("is_mature", col("is_mature").cast(BooleanType()))
-        )
+
+        if "is_mature" in streams_df.columns:
+            streams_df = streams_df.withColumn(
+                "is_mature", col("is_mature").cast(BooleanType())
+            )
+
+    # Unir ambos DataFrames si hay datos
     clean_df = (
         games_df.unionByName(streams_df, allowMissingColumns=True)
         if not games_df.rdd.isEmpty() and not streams_df.rdd.isEmpty()
@@ -100,75 +129,63 @@ def clean_twitch_data(df: DataFrame, logger) -> DataFrame:
         if not games_df.rdd.isEmpty()
         else streams_df
     )
+
     clean_df = add_technical_columns(clean_df, "TWITCH", "twitch_api")
     final_count = clean_df.count()
     logger.info(f"Limpieza Twitch: {initial_count} -> {final_count} registros")
+
     return clean_df
 
 
 def clean_showdown_data(df: DataFrame, logger) -> DataFrame:
     """
-    Limpiar y transformar datos de Pokémon Showdown
+    Limpiar y transformar datos de Pokémon Showdown (tipos: ladder y profile)
     """
     logger.info("Iniciando limpieza de datos de Showdown...")
     df = normalize_column_names(df)
+    logger.info(f"Columnas recibidas: {df.columns}")
+    df.show(5, truncate=False)
     initial_count = df.count()
 
-    battles_df = df.filter(col("record_type") == "battle")
-    usage_df = df.filter(col("record_type") == "pokemon_usage")
+    ladder_df = df.filter(col("record_type") == "ladder")
+    profile_df = df.filter(col("record_type") == "profile")
 
-    if not battles_df.rdd.isEmpty():
-        battles_df = (
-            battles_df.dropDuplicates(["battle_id"])
-            .filter(col("battle_id").isNotNull() & (col("battle_id") != ""))
+    if not ladder_df.rdd.isEmpty():
+        ladder_df = (
+            ladder_df.dropDuplicates(["username", "format"])
+            .filter(col("username").isNotNull() & (col("username") != ""))
             .withColumn(
                 "format",
                 when(col("format").isNull(), "unknown").otherwise(trim(col("format"))),
             )
-            .withColumn("player1_rating", col("player1_rating").cast(IntegerType()))
-            .withColumn("player2_rating", col("player2_rating").cast(IntegerType()))
-            .withColumn(
-                "turns_count",
-                when(col("turns_count").isNull(), 0).otherwise(
-                    col("turns_count").cast(IntegerType())
-                ),
-            )
-            .withColumn(
-                "duration_seconds",
-                when(col("duration_seconds").isNull(), 0).otherwise(
-                    col("duration_seconds").cast(IntegerType())
-                ),
-            )
+            .withColumn("gxe", col("gxe").cast(DoubleType()))
+            .withColumn("rating", col("rating").cast(DoubleType()))
+            .withColumn("pr", col("pr").cast(DoubleType()))
         )
-    if not usage_df.rdd.isEmpty():
-        usage_df = (
-            usage_df.dropDuplicates(["pokemon_name", "format", "month_year"])
-            .filter(col("pokemon_name").isNotNull() & (col("pokemon_name") != ""))
-            .withColumn("pokemon_name", trim(col("pokemon_name")))
+
+    if not profile_df.rdd.isEmpty():
+        profile_df = (
+            profile_df.dropDuplicates(["username", "format"])
+            .filter(col("username").isNotNull() & (col("username") != ""))
             .withColumn(
                 "format",
                 when(col("format").isNull(), "unknown").otherwise(trim(col("format"))),
             )
+            .withColumn("gxe", col("gxe").cast(DoubleType()))
+            .withColumn("rating", col("rating").cast(DoubleType()))
             .withColumn(
-                "usage_percentage", col("usage_percentage").cast(DecimalType(5, 2))
+                "levels", col("levels").cast(MapType(StringType(), IntegerType()))
             )
-            .withColumn(
-                "raw_usage_percentage",
-                col("raw_usage_percentage").cast(DecimalType(5, 2)),
-            )
-            .withColumn(
-                "real_usage_percentage",
-                col("real_usage_percentage").cast(DecimalType(5, 2)),
-            )
-            .filter(col("usage_percentage") > 0)
         )
+
     clean_df = (
-        battles_df.unionByName(usage_df, allowMissingColumns=True)
-        if not battles_df.rdd.isEmpty() and not usage_df.rdd.isEmpty()
-        else battles_df
-        if not battles_df.rdd.isEmpty()
-        else usage_df
+        ladder_df.unionByName(profile_df, allowMissingColumns=True)
+        if not ladder_df.rdd.isEmpty() and not profile_df.rdd.isEmpty()
+        else ladder_df
+        if not ladder_df.rdd.isEmpty()
+        else profile_df
     )
+
     clean_df = add_technical_columns(clean_df, "SHOWDOWN", "showdown_api")
     final_count = clean_df.count()
     logger.info(f"Limpieza Showdown: {initial_count} -> {final_count} registros")
@@ -180,64 +197,71 @@ def clean_hltb_data(df: DataFrame, logger) -> DataFrame:
     Limpiar y transformar datos de HowLongToBeat
     """
     logger.info("Iniciando limpieza de datos de HowLongToBeat...")
+
     df = normalize_column_names(df)
+    logger.info(f"Columnas recibidas: {df.columns}")
+    df.show(5, truncate=False)
     initial_count = df.count()
 
-    clean_df = (
-        df.dropDuplicates(["game_id"])
-        .filter(col("game_title").isNotNull() & (col("game_title") != ""))
-        .withColumn("game_title", trim(col("game_title")))
-        .withColumn(
+    # Drop duplicates si existe 'game_title'
+    if "game_title" in df.columns:
+        df = df.dropDuplicates(["game_title"])
+
+    # Filtrado por título no vacío
+    if "game_title" in df.columns:
+        df = df.filter(col("game_title").isNotNull() & (col("game_title") != ""))
+        df = df.withColumn("game_title", trim(col("game_title")))
+
+    # Limpieza de alias
+    if "game_alias" in df.columns:
+        df = df.withColumn(
             "game_alias",
             when(
                 col("game_alias").isNull() | (col("game_alias") == ""), None
             ).otherwise(trim(col("game_alias"))),
         )
-        .withColumn(
-            "comp_main",
-            when(col("comp_main").isNull() | (col("comp_main") <= 0), None).otherwise(
-                col("comp_main").cast(DecimalType(6, 2))
-            ),
-        )
-        .withColumn(
-            "comp_plus",
-            when(col("comp_plus").isNull() | (col("comp_plus") <= 0), None).otherwise(
-                col("comp_plus").cast(DecimalType(6, 2))
-            ),
-        )
-        .withColumn(
-            "comp_100",
-            when(col("comp_100").isNull() | (col("comp_100") <= 0), None).otherwise(
-                col("comp_100").cast(DecimalType(6, 2))
-            ),
-        )
-        .withColumn(
+
+    # Tiempos
+    for colname in ["comp_main", "comp_plus", "comp_100"]:
+        if colname in df.columns:
+            df = df.withColumn(
+                colname,
+                when(col(colname).isNull() | (col(colname) <= 0), None).otherwise(
+                    col(colname).cast(DecimalType(6, 2))
+                ),
+            )
+
+    # Puntuaciones
+    if "review_score" in df.columns:
+        df = df.withColumn(
             "review_score",
             when(
                 col("review_score").isNull() | (col("review_score") <= 0), None
             ).otherwise(col("review_score").cast(DecimalType(3, 1))),
         )
-        .withColumn(
-            "count_comp",
-            when(col("count_comp").isNull(), 0).otherwise(
-                col("count_comp").cast(IntegerType())
-            ),
+
+    # Conteos
+    for colname in ["count_comp", "count_review"]:
+        if colname in df.columns:
+            df = df.withColumn(
+                colname,
+                when(col(colname).isNull(), 0).otherwise(
+                    col(colname).cast(IntegerType())
+                ),
+            )
+
+    # Filtro: al menos uno de los tiempos debe existir
+    if all(c in df.columns for c in ["comp_main", "comp_plus", "comp_100"]):
+        df = df.filter(
+            col("comp_main").isNotNull()
+            | col("comp_plus").isNotNull()
+            | col("comp_100").isNotNull()
         )
-        .withColumn(
-            "count_review",
-            when(col("count_review").isNull(), 0).otherwise(
-                col("count_review").cast(IntegerType())
-            ),
-        )
-    )
-    clean_df = clean_df.filter(
-        col("comp_main").isNotNull()
-        | col("comp_plus").isNotNull()
-        | col("comp_100").isNotNull()
-    )
-    clean_df = add_technical_columns(clean_df, "HLTB", "howlongtobeat_api")
+
+    clean_df = add_technical_columns(df, "HLTB", "howlongtobeat_api")
     final_count = clean_df.count()
     logger.info(f"Limpieza HLTB: {initial_count} -> {final_count} registros")
+
     return clean_df
 
 

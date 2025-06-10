@@ -1,19 +1,27 @@
-# Imagen base con Java y Python
-FROM openjdk:17-slim
+# Imagen base con Spark y Java ya configurado
+FROM bitnami/spark:latest
 
-# Instala Python y dependencias básicas
-RUN apt-get update && \
-    apt-get install -y python3 python3-pip && \
-    apt-get clean
+# Cambiar al usuario root para poder instalar dependencias
+USER root
 
-# Instala PySpark (compatible con Hadoop embebido)
-RUN pip install pyspark
+# Instalar Python y pip
+RUN apt-get update && apt-get install -y python3 python3-pip wget curl
 
-# Crea directorio de trabajo dentro del contenedor
+# Crear carpeta de jars y descargar el driver JDBC PostgreSQL
+RUN mkdir -p /opt/bitnami/spark/jars && \
+    wget -O /opt/bitnami/spark/jars/postgresql-42.7.3.jar https://jdbc.postgresql.org/download/postgresql-42.7.3.jar
+
+# Copiar archivo de requerimientos e instalar dependencias Python
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+# Crear carpeta de trabajo y copiar el resto del código
 WORKDIR /app
-
-# Copia los archivos del proyecto al contenedor
 COPY . /app
 
-# Comando por defecto para ejecutar el script de prueba
-CMD ["python3", "test_spark.py"]
+# Añadir utilidad wait-for-it para esperar a que PostgreSQL esté lista
+ADD https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh /wait-for-it.sh
+RUN chmod +x /wait-for-it.sh
+
+# Comando por defecto al iniciar el contenedor (espera a que la DB esté lista)
+CMD bash -c "/wait-for-it.sh db:5432 --timeout=100 --strict -- python3 main.py"

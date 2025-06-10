@@ -11,6 +11,21 @@ services:
       - "5432:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
+      - ./sql/create_database_structure.sql:/docker-entrypoint-initdb.d/01-init.sql
+
+  spark-etl:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vg_spark_etl
+    depends_on:
+      - db
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - .:/app
+    working_dir: /app
+    # command: ["python3", "main.py", "all"]
 
 volumes:
   db_data:

@@ -42,7 +42,7 @@ CREATE SCHEMA IF NOT EXISTS core;
 CREATE TABLE IF NOT EXISTS core.twitch_games (
     id SERIAL PRIMARY KEY,
     game_id VARCHAR(50) NOT NULL,
-    name VARCHAR(500) NOT NULL,
+    game_name VARCHAR(500) NOT NULL,
     box_art_url TEXT,
     igdb_id VARCHAR(50),
     
@@ -126,26 +126,53 @@ CREATE TABLE IF NOT EXISTS core.showdown_pokemon_usage (
     UNIQUE(pokemon_name, format, month_year, dw_id_carga)
 );
 
+CREATE TABLE IF NOT EXISTS core.showdown_ladder (
+    id SERIAL PRIMARY KEY,
+    format VARCHAR(50) NOT NULL,
+    username VARCHAR(100) NOT NULL,
+    rating INTEGER,
+    gxe DECIMAL(5,2),
+    pr DECIMAL(5,2),
+    extraction_time TIMESTAMP WITH TIME ZONE NOT NULL,
+
+    -- Campos técnicos DW
+    dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    dw_id_carga INTEGER REFERENCES logs.etl_logs(id),
+    dw_deleted BOOLEAN DEFAULT FALSE,
+    dw_source VARCHAR(50) DEFAULT 'SHOWDOWN',
+    dw_endpoint VARCHAR(200),
+    
+    UNIQUE(username, format, extraction_time)
+);
+
+CREATE TABLE IF NOT EXISTS core.showdown_profiles (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    format VARCHAR(50),
+    gxe DECIMAL(5,2),
+    rating INTEGER,
+    levels TEXT,
+    extraction_time TIMESTAMP WITH TIME ZONE NOT NULL,
+
+    -- Campos técnicos DW
+    dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    dw_id_carga INTEGER REFERENCES logs.etl_logs(id),
+    dw_deleted BOOLEAN DEFAULT FALSE,
+    dw_source VARCHAR(50) DEFAULT 'SHOWDOWN',
+    dw_endpoint VARCHAR(200),
+
+    UNIQUE(username, format, extraction_time)
+);
+
+
 -- Tabla para datos de HowLongToBeat
 CREATE TABLE IF NOT EXISTS core.hltb_games (
     id SERIAL PRIMARY KEY,
-    game_id VARCHAR(50) NOT NULL,
     game_title VARCHAR(500) NOT NULL,
-    game_alias VARCHAR(500),
-    game_type VARCHAR(50),
-    game_image TEXT,
-    game_image_url TEXT,
-    comp_main DECIMAL(6,2), -- Horas para historia principal
-    comp_plus DECIMAL(6,2), -- Horas para historia + extras  
-    comp_100 DECIMAL(6,2),  -- Horas para completar 100%
-    comp_all DECIMAL(6,2),  -- Promedio de todos los estilos
-    invested_co DECIMAL(6,2), -- Co-op
-    invested_mp DECIMAL(6,2), -- Multiplayer
-    count_comp INTEGER DEFAULT 0,
-    count_speedrun INTEGER DEFAULT 0,
-    count_backlog INTEGER DEFAULT 0,
-    count_review INTEGER DEFAULT 0,
-    review_score DECIMAL(3,1),
+    comp_main DECIMAL(6,2),
+    comp_plus DECIMAL(6,2),
+    comp_100 DECIMAL(6,2),
+    extraction_time TIMESTAMP WITH TIME ZONE,
     
     -- Campos técnicos DW
     dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
@@ -154,15 +181,16 @@ CREATE TABLE IF NOT EXISTS core.hltb_games (
     dw_source VARCHAR(50) DEFAULT 'HLTB',
     dw_endpoint VARCHAR(200),
     
-    UNIQUE(game_id, dw_id_carga)
+    UNIQUE(game_title, dw_id_carga)
 );
+
 
 -- =====================================================
 -- ÍNDICES PARA OPTIMIZAR CONSULTAS
 -- =====================================================
 
 -- Índices Twitch
-CREATE INDEX IF NOT EXISTS idx_twitch_games_name ON core.twitch_games(name);
+CREATE INDEX IF NOT EXISTS idx_twitch_games_name ON core.twitch_games(game_name);
 CREATE INDEX IF NOT EXISTS idx_twitch_games_dw_source ON core.twitch_games(dw_source);
 CREATE INDEX IF NOT EXISTS idx_twitch_streams_game_id ON core.twitch_streams(game_id);
 CREATE INDEX IF NOT EXISTS idx_twitch_streams_viewer_count ON core.twitch_streams(viewer_count DESC);
@@ -177,7 +205,7 @@ CREATE INDEX IF NOT EXISTS idx_showdown_pokemon_usage ON core.showdown_pokemon_u
 -- Índices HowLongToBeat
 CREATE INDEX IF NOT EXISTS idx_hltb_games_title ON core.hltb_games(game_title);
 CREATE INDEX IF NOT EXISTS idx_hltb_games_comp_main ON core.hltb_games(comp_main);
-CREATE INDEX IF NOT EXISTS idx_hltb_games_review_score ON core.hltb_games(review_score DESC);
+-- CREATE INDEX IF NOT EXISTS idx_hltb_games_review_score ON core.hltb_games(review_score DESC);
 
 -- =====================================================
 -- VISTAS PARA ANÁLISIS Y KPIs
@@ -186,7 +214,7 @@ CREATE INDEX IF NOT EXISTS idx_hltb_games_review_score ON core.hltb_games(review
 -- Vista de juegos más populares en Twitch
 CREATE OR REPLACE VIEW core.v_twitch_popular_games AS
 SELECT 
-    tg.name as game_name,
+    tg.game_name as game_name,
     COUNT(ts.stream_id) as active_streams,
     AVG(ts.viewer_count) as avg_viewers,
     SUM(ts.viewer_count) as total_viewers,
@@ -194,7 +222,7 @@ SELECT
 FROM core.twitch_games tg
 LEFT JOIN core.twitch_streams ts ON tg.game_id = ts.game_id
 WHERE tg.dw_deleted = FALSE AND (ts.dw_deleted = FALSE OR ts.dw_deleted IS NULL)
-GROUP BY tg.game_id, tg.name
+GROUP BY tg.game_id, tg.game_name
 ORDER BY total_viewers DESC;
 
 -- Vista de Pokémon más usados
@@ -217,7 +245,7 @@ SELECT
     comp_main,
     comp_plus,
     comp_100,
-    review_score,
+    -- review_score,
     CASE 
         WHEN comp_main < 10 THEN 'Corto (< 10h)'
         WHEN comp_main BETWEEN 10 AND 25 THEN 'Medio (10-25h)'
