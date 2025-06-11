@@ -67,6 +67,7 @@ Esto lanzará:
 ### FASE 1: Extracción
 
 Los scripts del módulo `extract/` obtienen los datos de APIs y los convierten en DataFrames de Spark.
+Después con `carga/to_parquet.py` se pasarían a parquet y se guardarían en `data/`
 
 ### FASE 2: Transformación
 
@@ -78,7 +79,7 @@ En `transform/clean.py` se limpian y homogeneizan los datos:
 
 ### FASE 3: Carga a BD
 
-El módulo `load/to_db.py` se encarga de:
+El módulo `carga/to_db.py` se encarga de:
 
 * Eliminar columnas incompatibles con JDBC
 * Insertar datos en tablas PostgreSQL con logs de carga
@@ -96,13 +97,9 @@ Cada ejecución:
 
 ---
 
-## 📊 Dashboard y Visualizaciones (opcional con Streamlit)
+## 📊 Dashboard y Visualizaciones
 
-Puedes lanzar el dashboard si has implementado `dashboard/` con Streamlit:
-
-```bash
-streamlit run dashboard/main.py
-```
+Puedes lanzar el dashboard en PowerBi en `dashboard/`
 
 ### Ejemplos:
 
