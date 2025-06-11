@@ -44,6 +44,11 @@ def clean_twitch_data(df: DataFrame, logger) -> DataFrame:
     logger.info("Iniciando limpieza de datos de Twitch...")
 
     df = normalize_column_names(df)
+    if (
+        "extraction_time" in df.columns
+        and df.schema["extraction_time"].simpleString() == "string"
+    ):
+        df = df.withColumn("extraction_time", to_timestamp("extraction_time"))
     logger.info(f"Columnas recibidas: {df.columns}")
     df.show(5, truncate=False)
 
@@ -108,15 +113,15 @@ def clean_twitch_data(df: DataFrame, logger) -> DataFrame:
                 to_timestamp(col("started_at"), "yyyy-MM-dd'T'HH:mm:ss'Z'"),
             )
 
-        if "extraction_time" in games_df.columns:
-            games_df = games_df.withColumn(
-                "extraction_time", to_timestamp(col("extraction_time"))
-            )
+        # if "extraction_time" in games_df.columns:
+        #     games_df = games_df.withColumn(
+        #         "extraction_time", to_timestamp(col("extraction_time"))
+        #     )
 
-        if "extraction_time" in streams_df.columns:
-            streams_df = streams_df.withColumn(
-                "extraction_time", to_timestamp(col("extraction_time"))
-            )
+        # if "extraction_time" in streams_df.columns:
+        #     streams_df = streams_df.withColumn(
+        #         "extraction_time", to_timestamp(col("extraction_time"))
+        #     )
 
         if "language" in streams_df.columns:
             streams_df = streams_df.withColumn(
@@ -228,6 +233,9 @@ def clean_pokedex_data(df: DataFrame, logger) -> DataFrame:
     df.show(5, truncate=False)
     initial_count = df.count()
 
+    if "abilities" in df.columns:
+        df = df.withColumn("abilities", to_json(col("abilities")))
+
     # Extraer estadísticas base del diccionario baseStats
     for stat in ["hp", "atk", "def", "spa", "spd", "spe"]:
         df = df.withColumn(stat, col("basestats").getItem(stat).cast(IntegerType()))
@@ -258,7 +266,7 @@ def clean_pokedex_data(df: DataFrame, logger) -> DataFrame:
 
     # Añadir columnas técnicas DW
     clean_df = add_technical_columns(df, "SHOWDOWN", "showdown_pokedex")
-    clean_df = clean_df.drop("source", "endpoint", "basestats")
+    clean_df = clean_df.drop("source", "endpoint", "basestats", "abilities")
     final_count = clean_df.count()
     logger.info(f"Limpieza Pokédex: {initial_count} -> {final_count} registros")
     return clean_df
@@ -314,7 +322,7 @@ def clean_hltb_data(df: DataFrame, logger) -> DataFrame:
             "review_score",
             when(
                 col("review_score").isNull() | (col("review_score") <= 0), None
-            ).otherwise(col("review_score").cast(DecimalType(3, 1))),
+            ).otherwise(col("review_score").cast(DecimalType(6, 2))),
         )
 
     # Conteos

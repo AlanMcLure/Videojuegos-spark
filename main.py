@@ -28,6 +28,7 @@ from transform.clean import clean_and_transform_data
 extracted_data = {}
 transformed_data = {}
 parquet_metadata = {}
+load_id = int(datetime.utcnow().timestamp())
 
 
 def setup_spark(app_name="VGDataETL"):
@@ -122,7 +123,7 @@ def load_to_parquet_phase(logger, engine):
             raise
 
 
-def transform_phase(spark, logger, engine):
+def transform_phase(spark, logger, engine, load_id):
     logger.info("=== FASE 2: TRANSFORMACIÓN ===")
     global transformed_data
     transformed_data = {}
@@ -200,7 +201,7 @@ def main():
     try:
         extract_phase(sc, logger)
         load_to_parquet_phase(logger, engine)
-        transform_phase(spark, logger, engine)
+        transform_phase(spark, logger, engine, load_id)
         load_to_db_phase(logger, engine)
     finally:
         sc.stop()

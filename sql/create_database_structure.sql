@@ -206,10 +206,10 @@ CREATE TABLE core.showdown_pokedex (
     spa INTEGER,
     spd INTEGER,
     spe INTEGER,
-    abilities JSONB,
-    base_stats JSONB,
+    -- abilities JSONB,
+    -- base_stats JSONB,
     types TEXT[],
-    extraction_time VARCHAR(500),
+    extraction_time TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
 
     -- Campos técnicos DW
     dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
@@ -225,13 +225,13 @@ CREATE TABLE core.showdown_pokedex (
 CREATE TABLE IF NOT EXISTS core.hltb_games (
     id SERIAL PRIMARY KEY,
     record_type VARCHAR(20),
-    game_title VARCHAR(500) NOT NULL,
+    -- game_title VARCHAR(500) NOT NULL,
     game_name VARCHAR(500),
     game_image_url TEXT,
-    review_score DECIMAL(3,2),
-    main_history DECIMAL(6,2),
-    main_extra DECIMAL(6,2),
-    completionist DECIMAL(6,2),
+    review_score NUMERIC(6,2),
+    main_story NUMERIC(6,2),
+    main_extra NUMERIC(6,2),
+    completionist NUMERIC(6,2),
     extraction_time VARCHAR(500),
     
     -- Campos técnicos DW
@@ -260,7 +260,7 @@ CREATE INDEX IF NOT EXISTS idx_twitch_streams_started_at ON core.twitch_streams(
 
 -- Índices HowLongToBeat
 CREATE INDEX IF NOT EXISTS idx_hltb_games_title ON core.hltb_games(game_title);
-CREATE INDEX IF NOT EXISTS idx_hltb_games_main_history ON core.hltb_games(main_history);
+CREATE INDEX IF NOT EXISTS idx_hltb_games_main_story ON core.hltb_games(main_story);
 -- CREATE INDEX IF NOT EXISTS idx_hltb_games_review_score ON core.hltb_games(review_score DESC);
 
 -- =====================================================
@@ -305,20 +305,20 @@ ORDER BY total_viewers DESC;
 CREATE OR REPLACE VIEW core.v_hltb_games_by_duration AS
 SELECT 
     game_title,
-    main_history,
+    main_story,
     main_extra,
     completionist,
     -- review_score,
     CASE 
-        WHEN main_history < 10 THEN 'Corto (< 10h)'
-        WHEN main_history BETWEEN 10 AND 25 THEN 'Medio (10-25h)'
-        WHEN main_history BETWEEN 25 AND 50 THEN 'Largo (25-50h)'
-        WHEN main_history > 50 THEN 'Muy Largo (> 50h)'
+        WHEN main_story < 10 THEN 'Corto (< 10h)'
+        WHEN main_story BETWEEN 10 AND 25 THEN 'Medio (10-25h)'
+        WHEN main_story BETWEEN 25 AND 50 THEN 'Largo (25-50h)'
+        WHEN main_story > 50 THEN 'Muy Largo (> 50h)'
         ELSE 'Sin datos'
     END as duration_category
 FROM core.hltb_games
-WHERE dw_deleted = FALSE AND main_history IS NOT NULL
-ORDER BY main_history DESC;
+WHERE dw_deleted = FALSE AND main_story IS NOT NULL
+ORDER BY main_story DESC;
 
 -- =====================================================
 -- FUNCIONES AUXILIARES
