@@ -41,10 +41,11 @@ CREATE SCHEMA IF NOT EXISTS core;
 -- Tabla para datos de Twitch
 CREATE TABLE IF NOT EXISTS core.twitch_games (
     id SERIAL PRIMARY KEY,
+    record_type VARCHAR(20),
     game_id VARCHAR(50) NOT NULL,
     game_name VARCHAR(500) NOT NULL,
     box_art_url TEXT,
-    igdb_id VARCHAR(50),
+    extraction_time VARCHAR(500),
     
     -- Campos técnicos DW
     dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
@@ -58,20 +59,18 @@ CREATE TABLE IF NOT EXISTS core.twitch_games (
 
 CREATE TABLE IF NOT EXISTS core.twitch_streams (
     id SERIAL PRIMARY KEY,
+    record_type VARCHAR(20),
     stream_id VARCHAR(50) NOT NULL,
     user_id VARCHAR(50) NOT NULL,
-    user_login VARCHAR(100),
     user_name VARCHAR(100),
     game_id VARCHAR(50),
     game_name VARCHAR(500),
     stream_type VARCHAR(20),
-    title TEXT,
+    stream_title TEXT,
     viewer_count INTEGER DEFAULT 0,
     started_at TIMESTAMP WITH TIME ZONE,
     language VARCHAR(10),
-    thumbnail_url TEXT,
-    tag_ids TEXT[], -- Array de tags
-    is_mature BOOLEAN DEFAULT FALSE,
+    extraction_time VARCHAR(500),
     
     -- Campos técnicos DW
     dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
@@ -81,98 +80,159 @@ CREATE TABLE IF NOT EXISTS core.twitch_streams (
     dw_endpoint VARCHAR(200)
 );
 
--- Tabla para datos de Pokémon Showdown
-CREATE TABLE IF NOT EXISTS core.showdown_battles (
-    id SERIAL PRIMARY KEY,
-    battle_id VARCHAR(100) NOT NULL,
-    format VARCHAR(50),
-    player1_name VARCHAR(100),
-    player1_rating INTEGER,
-    player2_name VARCHAR(100),
-    player2_rating INTEGER,
-    winner VARCHAR(100),
-    battle_date TIMESTAMP WITH TIME ZONE,
-    turns_count INTEGER,
-    duration_seconds INTEGER,
+-- CREATE TABLE IF NOT EXISTS core.showdown_pokedex (
+--     id SERIAL PRIMARY KEY,
+--     record_type VARCHAR(20),
+--     name VARCHAR(100) NOT NULL,
+--     types TEXT[],
+--     base_stats JSONB,
+--     abilities JSONB,
+--     weightkg DECIMAL(6,2),
+--     heightm DECIMAL(6,2),
+--     color VARCHAR(30),
+--     tier VARCHAR(30),
+--     extraction_time TIMESTAMP WITH TIME ZONE,
+
+--     -- Campos técnicos DW
+--     dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+--     dw_id_carga INTEGER REFERENCES logs.etl_logs(id),
+--     dw_deleted BOOLEAN DEFAULT FALSE,
+--     dw_source VARCHAR(50) DEFAULT 'SHOWDOWN',
+--     dw_endpoint VARCHAR(200),
+
+--     UNIQUE(name, dw_id_carga)
+-- );
+
+-- CREATE TABLE IF NOT EXISTS core.showdown_ladder (
+--     id SERIAL PRIMARY KEY,
+--     record_type VARCHAR(20),
+--     format VARCHAR(50) NOT NULL,
+--     username VARCHAR(100) NOT NULL,
+--     rating INTEGER,
+--     gxe DECIMAL(5,2),
+--     pr DECIMAL(5,2),
+--     extraction_time TIMESTAMP WITH TIME ZONE NOT NULL,
+
+--     -- Campos técnicos DW
+--     dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+--     dw_id_carga INTEGER REFERENCES logs.etl_logs(id),
+--     dw_deleted BOOLEAN DEFAULT FALSE,
+--     dw_source VARCHAR(50) DEFAULT 'SHOWDOWN',
+--     dw_endpoint VARCHAR(200),
     
+--     UNIQUE(username, format, extraction_time)
+-- );
+
+-- CREATE TABLE IF NOT EXISTS core.showdown_profiles (
+--     id SERIAL PRIMARY KEY,
+--     record_type VARCHAR(20),
+--     username VARCHAR(100) NOT NULL,
+--     format VARCHAR(50),
+--     gxe DECIMAL(5,2),
+--     rating INTEGER,
+--     levels TEXT,
+--     extraction_time TIMESTAMP WITH TIME ZONE NOT NULL,
+
+--     -- Campos técnicos DW
+--     dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+--     dw_id_carga INTEGER REFERENCES logs.etl_logs(id),
+--     dw_deleted BOOLEAN DEFAULT FALSE,
+--     dw_source VARCHAR(50) DEFAULT 'SHOWDOWN',
+--     dw_endpoint VARCHAR(200),
+
+--     UNIQUE(username, format, extraction_time)
+-- );
+-- Tabla para el ranking de jugadores (Ladder) de Pokémon Showdown
+-- DROP TABLE IF EXISTS core.showdown_ladder;
+-- CREATE TABLE IF NOT EXISTS core.showdown_ladder (
+--     id SERIAL PRIMARY KEY,
+--     record_type VARCHAR(20) NOT NULL,
+--     format VARCHAR(50) NOT NULL,
+--     username VARCHAR(100) NOT NULL,
+--     rating INTEGER,
+--     gxe DECIMAL(6, 2),
+--     pr DECIMAL(6, 2), -- Podría ser 'p-ranking', se mantiene por consistencia
+--     extraction_time TIMESTAMP WITH TIME ZONE NOT NULL,
+
+--     -- Campos técnicos DW
+--     dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+--     dw_id_carga INTEGER REFERENCES logs.etl_logs(id),
+--     dw_deleted BOOLEAN DEFAULT FALSE,
+--     dw_source VARCHAR(50) DEFAULT 'SHOWDOWN',
+--     dw_endpoint VARCHAR(200),
+    
+--     -- Un jugador tiene un único ranking por formato en un momento dado
+--     UNIQUE(username, format, extraction_time)
+-- );
+-- COMMENT ON TABLE core.showdown_ladder IS 'Almacena el ranking de jugadores (ladder) para diferentes formatos de Pokémon Showdown.';
+
+
+-- -- Tabla para los perfiles de usuarios de Pokémon Showdown
+-- DROP TABLE IF EXISTS core.showdown_profiles;
+-- CREATE TABLE IF NOT EXISTS core.showdown_profiles (
+--     id SERIAL PRIMARY KEY,
+--     record_type VARCHAR(20) NOT NULL,
+--     username VARCHAR(100) NOT NULL,
+--     format VARCHAR(50), -- El formato desde el que se obtuvo el perfil
+--     gxe DECIMAL(6, 2),
+--     rating INTEGER,
+--     levels JSONB, -- Usamos JSONB para poder consultar los niveles de manera eficiente
+--     extraction_time TIMESTAMP WITH TIME ZONE NOT NULL,
+
+--     -- Campos técnicos DW
+--     dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+--     dw_id_carga INTEGER REFERENCES logs.etl_logs(id),
+--     dw_deleted BOOLEAN DEFAULT FALSE,
+--     dw_source VARCHAR(50) DEFAULT 'SHOWDOWN',
+--     dw_endpoint VARCHAR(200),
+
+--     UNIQUE(username, format, extraction_time)
+-- );
+-- COMMENT ON TABLE core.showdown_profiles IS 'Contiene datos del perfil de usuario de Showdown, incluyendo sus ratings en diferentes formatos.';
+
+
+-- Tabla para los datos de la Pokédex extraídos de PokéAPI
+DROP TABLE IF EXISTS core.showdown_pokedex;
+CREATE TABLE core.showdown_pokedex (
+    id SERIAL PRIMARY KEY,
+    record_type VARCHAR(20) NOT NULL,
+    pokemon_id VARCHAR(100) NOT NULL,
+    name VARCHAR(100),
+    type1 VARCHAR(30),
+    type2 VARCHAR(30),
+    hp INTEGER,
+    atk INTEGER,
+    def INTEGER,
+    spa INTEGER,
+    spd INTEGER,
+    spe INTEGER,
+    abilities JSONB,
+    base_stats JSONB,
+    types TEXT[],
+    extraction_time VARCHAR(500),
+
     -- Campos técnicos DW
     dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     dw_id_carga INTEGER REFERENCES logs.etl_logs(id),
     dw_deleted BOOLEAN DEFAULT FALSE,
     dw_source VARCHAR(50) DEFAULT 'SHOWDOWN',
     dw_endpoint VARCHAR(200),
-    
-    UNIQUE(battle_id, dw_id_carga)
+
+    UNIQUE(pokemon_id, dw_id_carga)
 );
-
-CREATE TABLE IF NOT EXISTS core.showdown_pokemon_usage (
-    id SERIAL PRIMARY KEY,
-    pokemon_name VARCHAR(100) NOT NULL,
-    format VARCHAR(50) NOT NULL,
-    usage_percentage DECIMAL(5,2),
-    raw_usage_count INTEGER,
-    raw_usage_percentage DECIMAL(5,2),
-    real_usage_count INTEGER,
-    real_usage_percentage DECIMAL(5,2),
-    month_year VARCHAR(7), -- Format: YYYY-MM
-    
-    -- Campos técnicos DW
-    dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-    dw_id_carga INTEGER REFERENCES logs.etl_logs(id),
-    dw_deleted BOOLEAN DEFAULT FALSE,
-    dw_source VARCHAR(50) DEFAULT 'SHOWDOWN',
-    dw_endpoint VARCHAR(200),
-    
-    UNIQUE(pokemon_name, format, month_year, dw_id_carga)
-);
-
-CREATE TABLE IF NOT EXISTS core.showdown_ladder (
-    id SERIAL PRIMARY KEY,
-    format VARCHAR(50) NOT NULL,
-    username VARCHAR(100) NOT NULL,
-    rating INTEGER,
-    gxe DECIMAL(5,2),
-    pr DECIMAL(5,2),
-    extraction_time TIMESTAMP WITH TIME ZONE NOT NULL,
-
-    -- Campos técnicos DW
-    dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-    dw_id_carga INTEGER REFERENCES logs.etl_logs(id),
-    dw_deleted BOOLEAN DEFAULT FALSE,
-    dw_source VARCHAR(50) DEFAULT 'SHOWDOWN',
-    dw_endpoint VARCHAR(200),
-    
-    UNIQUE(username, format, extraction_time)
-);
-
-CREATE TABLE IF NOT EXISTS core.showdown_profiles (
-    id SERIAL PRIMARY KEY,
-    username VARCHAR(100) NOT NULL,
-    format VARCHAR(50),
-    gxe DECIMAL(5,2),
-    rating INTEGER,
-    levels TEXT,
-    extraction_time TIMESTAMP WITH TIME ZONE NOT NULL,
-
-    -- Campos técnicos DW
-    dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-    dw_id_carga INTEGER REFERENCES logs.etl_logs(id),
-    dw_deleted BOOLEAN DEFAULT FALSE,
-    dw_source VARCHAR(50) DEFAULT 'SHOWDOWN',
-    dw_endpoint VARCHAR(200),
-
-    UNIQUE(username, format, extraction_time)
-);
-
 
 -- Tabla para datos de HowLongToBeat
 CREATE TABLE IF NOT EXISTS core.hltb_games (
     id SERIAL PRIMARY KEY,
+    record_type VARCHAR(20),
     game_title VARCHAR(500) NOT NULL,
-    comp_main DECIMAL(6,2),
-    comp_plus DECIMAL(6,2),
-    comp_100 DECIMAL(6,2),
-    extraction_time TIMESTAMP WITH TIME ZONE,
+    game_name VARCHAR(500),
+    game_image_url TEXT,
+    review_score DECIMAL(3,2),
+    main_history DECIMAL(6,2),
+    main_extra DECIMAL(6,2),
+    completionist DECIMAL(6,2),
+    extraction_time VARCHAR(500),
     
     -- Campos técnicos DW
     dw_fecha_registro TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
@@ -197,19 +257,22 @@ CREATE INDEX IF NOT EXISTS idx_twitch_streams_viewer_count ON core.twitch_stream
 CREATE INDEX IF NOT EXISTS idx_twitch_streams_started_at ON core.twitch_streams(started_at);
 
 -- Índices Showdown
-CREATE INDEX IF NOT EXISTS idx_showdown_battles_format ON core.showdown_battles(format);
-CREATE INDEX IF NOT EXISTS idx_showdown_battles_date ON core.showdown_battles(battle_date);
-CREATE INDEX IF NOT EXISTS idx_showdown_pokemon_format ON core.showdown_pokemon_usage(format);
-CREATE INDEX IF NOT EXISTS idx_showdown_pokemon_usage ON core.showdown_pokemon_usage(usage_percentage DESC);
 
 -- Índices HowLongToBeat
 CREATE INDEX IF NOT EXISTS idx_hltb_games_title ON core.hltb_games(game_title);
-CREATE INDEX IF NOT EXISTS idx_hltb_games_comp_main ON core.hltb_games(comp_main);
+CREATE INDEX IF NOT EXISTS idx_hltb_games_main_history ON core.hltb_games(main_history);
 -- CREATE INDEX IF NOT EXISTS idx_hltb_games_review_score ON core.hltb_games(review_score DESC);
 
 -- =====================================================
 -- VISTAS PARA ANÁLISIS Y KPIs
 -- =====================================================
+
+CREATE VIEW core.twitch_streams_casted AS
+SELECT 
+    *,
+    extraction_time::timestamptz AS extraction_time_casted
+FROM core.twitch_streams
+WHERE extraction_time IS NOT NULL;
 
 -- Vista de juegos más populares en Twitch
 CREATE OR REPLACE VIEW core.v_twitch_popular_games AS
@@ -226,36 +289,36 @@ GROUP BY tg.game_id, tg.game_name
 ORDER BY total_viewers DESC;
 
 -- Vista de Pokémon más usados
-CREATE OR REPLACE VIEW core.v_showdown_top_pokemon AS
-SELECT 
-    pokemon_name,
-    format,
-    AVG(usage_percentage) as avg_usage_percentage,
-    COUNT(*) as months_tracked,
-    MAX(month_year) as latest_month
-FROM core.showdown_pokemon_usage
-WHERE dw_deleted = FALSE
-GROUP BY pokemon_name, format
-ORDER BY avg_usage_percentage DESC;
+-- CREATE OR REPLACE VIEW core.v_showdown_top_pokemon AS
+-- SELECT 
+--     pokemon_name,
+--     format,
+--     AVG(usage_percentage) as avg_usage_percentage,
+--     COUNT(*) as months_tracked,
+--     MAX(month_year) as latest_month
+-- FROM core.showdown_pokemon_usage
+-- WHERE dw_deleted = FALSE
+-- GROUP BY pokemon_name, format
+-- ORDER BY avg_usage_percentage DESC;
 
 -- Vista de juegos por duración
 CREATE OR REPLACE VIEW core.v_hltb_games_by_duration AS
 SELECT 
     game_title,
-    comp_main,
-    comp_plus,
-    comp_100,
+    main_history,
+    main_extra,
+    completionist,
     -- review_score,
     CASE 
-        WHEN comp_main < 10 THEN 'Corto (< 10h)'
-        WHEN comp_main BETWEEN 10 AND 25 THEN 'Medio (10-25h)'
-        WHEN comp_main BETWEEN 25 AND 50 THEN 'Largo (25-50h)'
-        WHEN comp_main > 50 THEN 'Muy Largo (> 50h)'
+        WHEN main_history < 10 THEN 'Corto (< 10h)'
+        WHEN main_history BETWEEN 10 AND 25 THEN 'Medio (10-25h)'
+        WHEN main_history BETWEEN 25 AND 50 THEN 'Largo (25-50h)'
+        WHEN main_history > 50 THEN 'Muy Largo (> 50h)'
         ELSE 'Sin datos'
     END as duration_category
 FROM core.hltb_games
-WHERE dw_deleted = FALSE AND comp_main IS NOT NULL
-ORDER BY comp_main DESC;
+WHERE dw_deleted = FALSE AND main_history IS NOT NULL
+ORDER BY main_history DESC;
 
 -- =====================================================
 -- FUNCIONES AUXILIARES
@@ -323,7 +386,7 @@ INSERT INTO logs.etl_logs (load_start_time, load_end_time, records_count, source
 VALUES 
 (NOW() - INTERVAL '1 hour', NOW() - INTERVAL '55 minutes', 1000, 'TWITCH', 'games/top', 'twitch_games_sample'),
 (NOW() - INTERVAL '50 minutes', NOW() - INTERVAL '45 minutes', 2500, 'TWITCH', 'streams', 'twitch_streams_sample'),
-(NOW() - INTERVAL '40 minutes', NOW() - INTERVAL '35 minutes', 500, 'SHOWDOWN', 'battles', 'showdown_battles_sample'),
+-- (NOW() - INTERVAL '40 minutes', NOW() - INTERVAL '35 minutes', 500, 'SHOWDOWN', 'battles', 'showdown_battles_sample'),
 (NOW() - INTERVAL '30 minutes', NOW() - INTERVAL '25 minutes', 750, 'HLTB', 'games', 'hltb_games_sample');
 
 -- =====================================================
@@ -354,8 +417,6 @@ COMMENT ON SCHEMA core IS 'Schema principal con datos limpios y transformados';
 COMMENT ON TABLE logs.etl_logs IS 'Registro de todas las operaciones ETL realizadas';
 COMMENT ON TABLE core.twitch_games IS 'Juegos extraídos de Twitch API';
 COMMENT ON TABLE core.twitch_streams IS 'Streams activos extraídos de Twitch API';
-COMMENT ON TABLE core.showdown_battles IS 'Batallas de Pokémon Showdown';
-COMMENT ON TABLE core.showdown_pokemon_usage IS 'Estadísticas de uso de Pokémon por formato';
 COMMENT ON TABLE core.hltb_games IS 'Información de duración de juegos de HowLongToBeat';
 
 -- Verificar que todo se creó correctamente

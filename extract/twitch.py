@@ -129,6 +129,7 @@ def extract_all_twitch(
                 {
                     "record_type": "stream",
                     "stream_id": s["id"],
+                    "stream_title": s["title"],
                     "game_id": s["game_id"],
                     "game_name": s.get("game_name", g["name"]),
                     "user_id": s["user_id"],

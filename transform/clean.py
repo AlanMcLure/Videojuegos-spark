@@ -108,6 +108,16 @@ def clean_twitch_data(df: DataFrame, logger) -> DataFrame:
                 to_timestamp(col("started_at"), "yyyy-MM-dd'T'HH:mm:ss'Z'"),
             )
 
+        if "extraction_time" in games_df.columns:
+            games_df = games_df.withColumn(
+                "extraction_time", to_timestamp(col("extraction_time"))
+            )
+
+        if "extraction_time" in streams_df.columns:
+            streams_df = streams_df.withColumn(
+                "extraction_time", to_timestamp(col("extraction_time"))
+            )
+
         if "language" in streams_df.columns:
             streams_df = streams_df.withColumn(
                 "language",
@@ -121,6 +131,22 @@ def clean_twitch_data(df: DataFrame, logger) -> DataFrame:
                 "is_mature", col("is_mature").cast(BooleanType())
             )
 
+        if (
+            "extraction_time" in games_df.columns
+            and games_df.schema["extraction_time"].dataType.simpleString() == "string"
+        ):
+            games_df = games_df.withColumn(
+                "extraction_time", to_timestamp("extraction_time")
+            )
+
+        if (
+            "extraction_time" in streams_df.columns
+            and streams_df.schema["extraction_time"].dataType.simpleString() == "string"
+        ):
+            streams_df = streams_df.withColumn(
+                "extraction_time", to_timestamp("extraction_time")
+            )
+
     # Unir ambos DataFrames si hay datos
     clean_df = (
         games_df.unionByName(streams_df, allowMissingColumns=True)
@@ -131,64 +157,110 @@ def clean_twitch_data(df: DataFrame, logger) -> DataFrame:
     )
 
     clean_df = add_technical_columns(clean_df, "TWITCH", "twitch_api")
+    clean_df = clean_df.drop("source", "endpoint")
     final_count = clean_df.count()
     logger.info(f"Limpieza Twitch: {initial_count} -> {final_count} registros")
+    clean_df.printSchema()
 
     return clean_df
 
 
-def clean_showdown_data(df: DataFrame, logger) -> DataFrame:
+# def clean_showdown_data(df: DataFrame, logger) -> DataFrame:
+#     """
+#     Limpiar y transformar datos de Pokémon Showdown (ladder y profiles)
+#     """
+#     logger.info("Iniciando limpieza de datos de Showdown...")
+#     df = normalize_column_names(df)
+#     logger.info(f"Columnas recibidas: {df.columns}")
+#     df.show(5, truncate=False)
+#     initial_count = df.count()
+
+#     # Separar tipos de registros
+#     ladder_df = df.filter(col("record_type") == "ladder")
+#     profile_df = df.filter(col("record_type") == "profile")
+
+#     if not ladder_df.rdd.isEmpty():
+#         logger.info("Limpieza específica para ladder")
+#         ladder_df = ladder_df.dropDuplicates(["username"])
+#         ladder_df = ladder_df.withColumn("elo", col("elo").cast(DoubleType()))
+#         ladder_df = ladder_df.withColumn("rating", col("rating").cast(DoubleType()))
+#         for col_name in ["wins", "losses", "games"]:
+#             ladder_df = ladder_df.withColumn(
+#                 col_name, col(col_name).cast(IntegerType())
+#             )
+
+#     if not profile_df.rdd.isEmpty():
+#         logger.info("Limpieza específica para profiles")
+#         profile_df = profile_df.dropDuplicates(["username"])
+#         profile_df = profile_df.withColumn(
+#             "games_played", col("games_played").cast(IntegerType())
+#         )
+#         profile_df = profile_df.withColumn(
+#             "win_ratio", col("win_ratio").cast(DoubleType())
+#         )
+
+#     clean_df = (
+#         ladder_df.unionByName(profile_df, allowMissingColumns=True)
+#         if not ladder_df.rdd.isEmpty() and not profile_df.rdd.isEmpty()
+#         else ladder_df
+#         if not ladder_df.rdd.isEmpty()
+#         else profile_df
+#     )
+
+#     clean_df = add_technical_columns(clean_df, "SHOWDOWN", "showdown_api")
+#     final_count = clean_df.count()
+#     logger.info(f"Limpieza Showdown: {initial_count} -> {final_count} registros")
+#     return clean_df
+
+
+def clean_pokedex_data(df: DataFrame, logger) -> DataFrame:
     """
-    Limpiar y transformar datos de Pokémon Showdown (tipos: ladder y profile)
+    Limpieza y transformación del Pokédex de Showdown
     """
-    logger.info("Iniciando limpieza de datos de Showdown...")
+    logger.info("Iniciando limpieza de datos del Pokédex de Showdown...")
     df = normalize_column_names(df)
+
+    # Convertir extraction_time si está presente
+    if "extraction_time" in df.columns:
+        df = df.withColumn("extraction_time", to_timestamp(col("extraction_time")))
+
     logger.info(f"Columnas recibidas: {df.columns}")
     df.show(5, truncate=False)
     initial_count = df.count()
 
-    ladder_df = df.filter(col("record_type") == "ladder")
-    profile_df = df.filter(col("record_type") == "profile")
+    # Extraer estadísticas base del diccionario baseStats
+    for stat in ["hp", "atk", "def", "spa", "spd", "spe"]:
+        df = df.withColumn(stat, col("basestats").getItem(stat).cast(IntegerType()))
 
-    if not ladder_df.rdd.isEmpty():
-        ladder_df = (
-            ladder_df.dropDuplicates(["username", "format"])
-            .filter(col("username").isNotNull() & (col("username") != ""))
-            .withColumn(
-                "format",
-                when(col("format").isNull(), "unknown").otherwise(trim(col("format"))),
-            )
-            .withColumn("gxe", col("gxe").cast(DoubleType()))
-            .withColumn("rating", col("rating").cast(DoubleType()))
-            .withColumn("pr", col("pr").cast(DoubleType()))
-        )
+    # Extraer tipos individuales desde el array "types"
+    df = df.withColumn("type1", col("types").getItem(0))
 
-    if not profile_df.rdd.isEmpty():
-        profile_df = (
-            profile_df.dropDuplicates(["username", "format"])
-            .filter(col("username").isNotNull() & (col("username") != ""))
-            .withColumn(
-                "format",
-                when(col("format").isNull(), "unknown").otherwise(trim(col("format"))),
-            )
-            .withColumn("gxe", col("gxe").cast(DoubleType()))
-            .withColumn("rating", col("rating").cast(DoubleType()))
-            .withColumn(
-                "levels", col("levels").cast(MapType(StringType(), IntegerType()))
-            )
-        )
+    try:
+        df = df.withColumn(
+            "type2", try_element_at(col("types"), 2)
+        )  # index 2 = segundo tipo
+    except:
+        logger.warning("type2 falló. No se incluirá esta columna.")
+        pass  # No agregamos nada y continuamos
 
-    clean_df = (
-        ladder_df.unionByName(profile_df, allowMissingColumns=True)
-        if not ladder_df.rdd.isEmpty() and not profile_df.rdd.isEmpty()
-        else ladder_df
-        if not ladder_df.rdd.isEmpty()
-        else profile_df
-    )
+    # Otras columnas pueden mantenerse como están (abilities como map)
+    df = df.withColumn("pokemon_id", col("pokemon_id").cast(StringType()))
+    df = df.withColumn("name", trim(col("name")))
 
-    clean_df = add_technical_columns(clean_df, "SHOWDOWN", "showdown_api")
+    # Eliminar duplicados por ID o nombre si fuera necesario
+    df = df.dropDuplicates(["pokemon_id"])
+
+    if (
+        "extraction_time" in df.columns
+        and df.schema["extraction_time"].dataType.simpleString() == "string"
+    ):
+        df = df.withColumn("extraction_time", to_timestamp("extraction_time"))
+
+    # Añadir columnas técnicas DW
+    clean_df = add_technical_columns(df, "SHOWDOWN", "showdown_pokedex")
+    clean_df = clean_df.drop("source", "endpoint", "basestats")
     final_count = clean_df.count()
-    logger.info(f"Limpieza Showdown: {initial_count} -> {final_count} registros")
+    logger.info(f"Limpieza Pokédex: {initial_count} -> {final_count} registros")
     return clean_df
 
 
@@ -199,6 +271,11 @@ def clean_hltb_data(df: DataFrame, logger) -> DataFrame:
     logger.info("Iniciando limpieza de datos de HowLongToBeat...")
 
     df = normalize_column_names(df)
+
+    # Convertir extraction_time a timestamp si existe
+    if "extraction_time" in df.columns:
+        df = df.withColumn("extraction_time", to_timestamp(col("extraction_time")))
+
     logger.info(f"Columnas recibidas: {df.columns}")
     df.show(5, truncate=False)
     initial_count = df.count()
@@ -222,7 +299,7 @@ def clean_hltb_data(df: DataFrame, logger) -> DataFrame:
         )
 
     # Tiempos
-    for colname in ["comp_main", "comp_plus", "comp_100"]:
+    for colname in ["main_history", "main_extra", "completionist"]:
         if colname in df.columns:
             df = df.withColumn(
                 colname,
@@ -251,14 +328,21 @@ def clean_hltb_data(df: DataFrame, logger) -> DataFrame:
             )
 
     # Filtro: al menos uno de los tiempos debe existir
-    if all(c in df.columns for c in ["comp_main", "comp_plus", "comp_100"]):
+    if all(c in df.columns for c in ["main_history", "main_extra", "completionist"]):
         df = df.filter(
-            col("comp_main").isNotNull()
-            | col("comp_plus").isNotNull()
-            | col("comp_100").isNotNull()
+            col("main_history").isNotNull()
+            | col("main_extra").isNotNull()
+            | col("completionist").isNotNull()
         )
 
+    if (
+        "extraction_time" in df.columns
+        and df.schema["extraction_time"].dataType.simpleString() == "string"
+    ):
+        df = df.withColumn("extraction_time", to_timestamp("extraction_time"))
+
     clean_df = add_technical_columns(df, "HLTB", "howlongtobeat_api")
+    clean_df = clean_df.drop("source", "endpoint")
     final_count = clean_df.count()
     logger.info(f"Limpieza HLTB: {initial_count} -> {final_count} registros")
 
@@ -266,16 +350,15 @@ def clean_hltb_data(df: DataFrame, logger) -> DataFrame:
 
 
 def clean_and_transform_data(df: DataFrame, source: str, logger) -> DataFrame:
-    """
-    Función principal de limpieza según la fuente de datos
-    """
     logger.info(f"Iniciando limpieza para fuente: {source}")
-    if source.lower() == "twitch":
+    source = source.lower()
+
+    if source == "twitch_games" or source == "twitch_streams":
         return clean_twitch_data(df, logger)
-    elif source.lower() == "showdown":
-        return clean_showdown_data(df, logger)
-    elif source.lower() == "howlongtobeat":
+    elif source == "howlongtobeat":
         return clean_hltb_data(df, logger)
+    elif source == "showdown_pokedex":
+        return clean_pokedex_data(df, logger)
     else:
         raise ValueError(f"Fuente no soportada: {source}")
 
