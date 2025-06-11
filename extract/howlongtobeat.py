@@ -17,6 +17,8 @@ class HLTBExtractor:
         return {
             "record_type": "hl_tb_time",
             "game_name": title,
+            "game_image_url": r.game_image_url,
+            "review_score": r.review_score,
             "main_story": r.main_story,
             "main_extra": r.main_extra,
             "completionist": r.completionist,

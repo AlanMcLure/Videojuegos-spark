@@ -14,6 +14,10 @@ DB_URI = os.getenv("VG_CORE_DB_URI")
 if not DB_URI:
     raise RuntimeError("Falta definir VG_CORE_DB_URI en el archivo .env")
 
+DB_JDBC_URI = os.getenv("VG_CORE_DB_JDBC_URI")
+if not DB_JDBC_URI:
+    raise RuntimeError("Falta definir VG_CORE_DB_JDBC_URI en el archivo .env")
+
 from extract.twitch import extract_all_twitch
 from extract.showdown import extract_all_showdown
 from extract.howlongtobeat import extract_all_hltb
@@ -75,9 +79,8 @@ def extract_phase(sc, logger):
         extracted_data["twitch_streams"] = rdd_twitch_streams
 
         logger.info("Extrayendo datos de Showdown...")
-        rdd_showdown_ladder, rdd_showdown_profiles = extract_all_showdown(sc, logger)
-        extracted_data["showdown_ladder"] = rdd_showdown_ladder
-        extracted_data["showdown_profiles"] = rdd_showdown_profiles
+        rdd_showdown_pokedex = extract_all_showdown(sc, logger)
+        extracted_data["showdown_pokedex"] = rdd_showdown_pokedex
 
         logger.info("Extrayendo datos de HowLongToBeat...")
         rdd_howlong = extract_all_hltb(sc, logger, games_list)
@@ -129,8 +132,7 @@ def transform_phase(spark, logger, engine):
             logger.info(f"Limpieza de {source}...")
             parquet_path = f"data/{source}.parquet"
             df_raw = spark.read.parquet(parquet_path)
-            source_base = source.split("_")[0]
-            df_clean = clean_and_transform_data(df_raw, source_base, logger)
+            df_clean = clean_and_transform_data(df_raw, source, logger)
             transformed_data[source] = df_clean
 
             transform_meta = {
@@ -153,13 +155,33 @@ def load_to_db_phase(logger, engine):
     logger.info("=== FASE 3: CARGA A BD ===")
     global transformed_data
 
+    # Mapeo de nombres internos de fuentes a nombres base usados en las funciones de carga
+    source_map = {
+        "twitch_games": "twitch",
+        "twitch_streams": "twitch",
+        "showdown_pokedex": "showdown_pokedex",
+        "howlongtobeat": "howlongtobeat",
+    }
+
     try:
-        for source, df_clean in transformed_data.items():
-            logger.info(f"Cargando {source} a base de datos...")
-            source_base = source.split("_")[0]
-            load_meta = load_to_core_schema(df_clean, source_base, engine, logger)
+        for source_name, df_clean in transformed_data.items():
+            logger.info(f"Cargando {source_name} a base de datos...")
+
+            # Obtener nombre base que entiende `load_to_core_schema`
+            mapped_source = source_map.get(source_name)
+            if not mapped_source:
+                logger.warning(f"Fuente no mapeada: {source_name}. Saltando carga...")
+                continue
+
+            # Ejecutar carga
+            load_meta = load_to_core_schema(
+                df_clean, mapped_source, DB_JDBC_URI, logger
+            )
+
+            # Guardar log
             log_id = insert_log(engine, load_meta)
-            logger.info(f"Carga completada para {source}. ID de log: {log_id}")
+            logger.info(f"Carga completada para {source_name}. ID de log: {log_id}")
+
         logger.info("Fase de carga completada con éxito.")
     except Exception as e:
         logger.error(f"Error en fase de carga: {str(e)}")
